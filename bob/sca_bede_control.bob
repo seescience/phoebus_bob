@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:53:02 by epics-->
+<display version="2.0.0">
+  <name>sca_bede_control</name>
+  <x>476</x>
+  <y>17</y>
+  <width>267</width>
+  <height>231</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>$(SCA) LLD</text>
+    <x>84</x>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #9</name>
+    <pv_name>$(P)$(SCA):LLD.VAL</pv_name>
+    <x>82</x>
+    <y>22</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #13</name>
+    <text>Value</text>
+    <x>32</x>
+    <y>25</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>valuator #16</name>
+    <pv_name>$(P)$(SCA):LLD.VAL</pv_name>
+    <x>33</x>
+    <y>43</y>
+    <width>200</width>
+    <height>25</height>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #20</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(SCA):LLD_tweak.A</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(SCA):LLD_tweak.A</pv_name>
+    <text>&lt;</text>
+    <y>44</y>
+    <width>27</width>
+    <height>24</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #23</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(SCA):LLD_tweak.B</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(SCA):LLD_tweak.B</pv_name>
+    <text>&gt;</text>
+    <x>237</x>
+    <y>44</y>
+    <width>27</width>
+    <height>24</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #26</name>
+    <pv_name>$(P)$(SCA):LLD_tweakVal</pv_name>
+    <x>82</x>
+    <y>69</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>Tweak</text>
+    <x>32</x>
+    <y>72</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #33</name>
+    <actions>
+      <action type="open_display">
+        <file>sca_dac.opi</file>
+        <macros>
+          <C>1</C>
+          <D>1</D>
+          <E>2</E>
+          <F>3</F>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Control DAC</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>242</x>
+    <y>206</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #36</name>
+    <text>$(SCA) WIN</text>
+    <x>84</x>
+    <y>105</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #39</name>
+    <pv_name>$(P)$(SCA):WIN.VAL</pv_name>
+    <x>82</x>
+    <y>127</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #43</name>
+    <text>Value</text>
+    <x>32</x>
+    <y>130</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>valuator #46</name>
+    <pv_name>$(P)$(SCA):WIN.VAL</pv_name>
+    <x>33</x>
+    <y>148</y>
+    <width>200</width>
+    <height>25</height>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #50</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(SCA):WIN_tweak.A</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(SCA):WIN_tweak.A</pv_name>
+    <text>&lt;</text>
+    <y>149</y>
+    <width>27</width>
+    <height>24</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #53</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(SCA):WIN_tweak.B</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(SCA):WIN_tweak.B</pv_name>
+    <text>&gt;</text>
+    <x>237</x>
+    <y>149</y>
+    <width>27</width>
+    <height>24</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #56</name>
+    <pv_name>$(P)$(SCA):WIN_tweakVal</pv_name>
+    <x>82</x>
+    <y>174</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #60</name>
+    <text>Tweak</text>
+    <x>32</x>
+    <y>177</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #63</name>
+    <text>Control DAC's</text>
+    <x>127</x>
+    <y>214</y>
+    <width>110</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

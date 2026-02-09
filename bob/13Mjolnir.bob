@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-09-11 12:08:30 by epics-->
+<display version="2.0.0">
+  <name>13Mjolnir</name>
+  <x>1150</x>
+  <y>142</y>
+  <width>389</width>
+  <height>240</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13MNIR:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13MNIR:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>3</N>
+          <P>13MNIR:</P>
+          <S>scan3</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 3</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>4</N>
+          <P>13MNIR:</P>
+          <S>scan4</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 4</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>151</y>
+    <width>80</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Scan</text>
+    <x>100</x>
+    <y>151</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #15</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>124</y>
+    <width>80</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #18</name>
+    <text>asyn records</text>
+    <x>100</x>
+    <y>124</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #21</name>
+    <x>47</x>
+    <y>17</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #24</name>
+    <actions>
+      <action type="open_display">
+        <file>E1608_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13MNIR:E1608:</P>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+        </macros>
+        <target>tab</target>
+        <description>E1608 #1</description>
+      </action>
+      <action type="open_display">
+        <file>pid_control.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+          <PID>PID1</PID>
+          <TITLE>$(P)PID1</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>PID #1</description>
+      </action>
+      <action type="open_display">
+        <file>ISCO_SinglePump.opi</file>
+        <macros>
+          <P>13MNIR:ISCO:</P>
+          <PUMP>A:</PUMP>
+        </macros>
+        <target>tab</target>
+        <description>ISCO pump A</description>
+      </action>
+      <action type="open_display">
+        <file>ISCO_SinglePump.opi</file>
+        <macros>
+          <P>13MNIR:ISCO:</P>
+          <PUMP>B:</PUMP>
+        </macros>
+        <target>tab</target>
+        <description>ISCO pump B</description>
+      </action>
+      <action type="open_display">
+        <file>ISCO_DualPump.opi</file>
+        <macros>
+          <DP>AB:</DP>
+          <P>13MNIR:ISCO:</P>
+          <P1>A:</P1>
+          <P2>B:</P2>
+        </macros>
+        <target>tab</target>
+        <description>ISCO pump AB</description>
+      </action>
+      <action type="open_display">
+        <file>Vindum_DualPump.opi</file>
+        <macros>
+          <P>13MNIR:VINDUM:</P>
+        </macros>
+        <target>tab</target>
+        <description>Vindum pumps</description>
+      </action>
+      <action type="open_display">
+        <file>MjolnirGraphic.opi</file>
+        <macros>
+          <ALP>Ai4</ALP>
+          <AP>B:</AP>
+          <CLP>Ai1</CLP>
+          <CP>A:</CP>
+          <E1608>E1608:</E1608>
+          <ISCO>ISCO:</ISCO>
+          <LC>Ai6</LC>
+          <LVDT>Ai5</LVDT>
+          <P>13MNIR:</P>
+        </macros>
+        <target>tab</target>
+        <description>Mjolnir graphic</description>
+      </action>
+      <action type="open_display">
+        <file>PACE5000.opi</file>
+        <macros>
+          <P>13MNIR:PACE:</P>
+          <R>PC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>GE PACE5000</description>
+      </action>
+      <action type="open_display">
+        <file>HeittMjolnirGraphic.opi</file>
+        <macros>
+          <ALP>Ai4</ALP>
+          <AP>B:</AP>
+          <CLP>Ai1</CLP>
+          <CP>A:</CP>
+          <E1608>E1608:</E1608>
+          <ETC>13ETC_2:</ETC>
+          <IP>13INSTEK_1:</IP>
+          <IR>Instek1:</IR>
+          <ISCO>ISCO:</ISCO>
+          <LC>Ai6</LC>
+          <LLP>Ai2</LLP>
+          <LP>B:</LP>
+          <LT>Ti2</LT>
+          <LVDT>Ai5</LVDT>
+          <P>13MNIR:</P>
+          <ULP>Ai3</ULP>
+          <UP>A:</UP>
+          <UT>Ti1</UT>
+          <VINDUM>VINDUM:</VINDUM>
+        </macros>
+        <target>tab</target>
+        <description>Heitt Mjolnir graphic</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>70</y>
+    <width>80</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #35</name>
+    <text>Electronics</text>
+    <x>100</x>
+    <y>70</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>User calcs, transforms</text>
+    <x>100</x>
+    <y>97</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #41</name>
+    <text>Mjolnir cell</text>
+    <x>77</x>
+    <y>26</y>
+    <width>231</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #44</name>
+    <actions>
+      <action type="open_display">
+        <file>userArrayCalcs10.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcOuts10.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+        </macros>
+        <target>tab</target>
+        <description>User calcOuts</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs10.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userStringSeqs10.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringSeqs</description>
+      </action>
+      <action type="open_display">
+        <file>userTransforms10.opi</file>
+        <macros>
+          <P>13MNIR:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>97</y>
+    <width>80</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

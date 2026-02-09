@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-07-01 12:24:05 by epics-->
+<display version="2.0.0">
+  <name>13GasLoading</name>
+  <x>605</x>
+  <y>686</y>
+  <width>370</width>
+  <height>320</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>30</x>
+    <y>12</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>GSECARS Gas Loading</text>
+    <x>47</x>
+    <y>20</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #12</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13GasLoad:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13GasLoad:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>253</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>Scan</text>
+    <x>91</x>
+    <y>253</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #19</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1 (Low-P meter)</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2 (High-P meter)</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3 (motor controller)</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4 (vacuum gauge)</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>226</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>Serial ports</text>
+    <x>91</x>
+    <y>226</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>Motors</text>
+    <x>91</x>
+    <y>172</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #31</name>
+    <actions>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m7</M1>
+          <M2>m8</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <P>13GasLoad:</P>
+          <TITLE>Gas_Loading</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Sample stage</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m3</M1>
+          <M2>m4</M2>
+          <M3>m5</M3>
+          <P>13GasLoad:</P>
+          <TITLE>Gas_Loading_Laser</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Laser stage</description>
+      </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <DMC>13GasLoad:Galil1:</DMC>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+          <R>Galil</R>
+        </macros>
+        <target>tab</target>
+        <description>Galil 1 screen</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>172</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #36</name>
+    <text>User calcs, transforms</text>
+    <x>91</x>
+    <y>199</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #39</name>
+    <actions>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>280</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #42</name>
+    <text>IOC status</text>
+    <x>92</x>
+    <y>280</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #45</name>
+    <actions>
+      <action type="open_display">
+        <file>Omega_DP41.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>Omega1</R>
+          <TITLE>Low_Pressure_In</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Low pressue in meter</description>
+      </action>
+      <action type="open_display">
+        <file>Omega_DP41.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>Omega3</R>
+          <TITLE>Low_Pressure_Out</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Low pressure out meter</description>
+      </action>
+      <action type="open_display">
+        <file>Omega_DP41.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>Omega2</R>
+          <TITLE>High_Pressure</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>High pressure meter</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>91</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #50</name>
+    <text>Omega meters</text>
+    <x>91</x>
+    <y>91</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #53</name>
+    <actions>
+      <action type="open_display">
+        <file>13GasLoadingGraphic.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>Gas Loading Expert</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>64</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #56</name>
+    <text>Graphic</text>
+    <x>91</x>
+    <y>64</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #59</name>
+    <actions>
+      <action type="open_display">
+        <file>modbusStatistics.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>XnB</R>
+        </macros>
+        <target>tab</target>
+        <description>X input statistics</description>
+      </action>
+      <action type="open_display">
+        <file>modbusStatistics.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>YnInB</R>
+        </macros>
+        <target>tab</target>
+        <description>Y input statistics</description>
+      </action>
+      <action type="open_display">
+        <file>modbusStatistics.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>CnInB</R>
+        </macros>
+        <target>tab</target>
+        <description>C input statistics</description>
+      </action>
+      <action type="open_display">
+        <file>modbusStatistics.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>CnOutB</R>
+        </macros>
+        <target>tab</target>
+        <description>C output statistics</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>118</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #65</name>
+    <text>PLC statistics</text>
+    <x>91</x>
+    <y>118</y>
+    <width>140</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #68</name>
+    <actions>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>XnBAsyn</R>
+        </macros>
+        <target>tab</target>
+        <description>X input debugging</description>
+      </action>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>YnInBAsyn</R>
+        </macros>
+        <target>tab</target>
+        <description>Y input debugging</description>
+      </action>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>CnInBAsyn</R>
+        </macros>
+        <target>tab</target>
+        <description>C input debugging</description>
+      </action>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>CnOutBAsyn</R>
+        </macros>
+        <target>tab</target>
+        <description>C output debugging</description>
+      </action>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+          <R>KoyoOctetAsyn</R>
+        </macros>
+        <target>tab</target>
+        <description>Koyo TCP port</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>145</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #75</name>
+    <text>PLC debugging</text>
+    <x>91</x>
+    <y>145</y>
+    <width>140</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #78</name>
+    <actions>
+      <action type="open_display">
+        <file>userArrayCalcs20.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcOuts20.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>User calcOuts</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs20.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userStringSeqs20.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringSeqs</description>
+      </action>
+      <action type="open_display">
+        <file>userTransforms20.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcsGlobalEnable.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>User calcs global enable</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>198</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

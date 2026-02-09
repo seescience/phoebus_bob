@@ -1,0 +1,5714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-11-03 14:37:17 by epics-->
+<display version="2.0.0">
+  <name>13BMD_Tomo_XRD</name>
+  <x>300</x>
+  <y>200</y>
+  <width>1105</width>
+  <height>774</height>
+  <background_color>
+    <color red="39" green="84" blue="141">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>1044</x>
+    <y>407</y>
+    <width>30</width>
+    <height>30</height>
+    <line_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #9</name>
+    <x>70</x>
+    <y>315</y>
+    <width>119</width>
+    <height>186</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==30&amp;pv1&lt;-9)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m70.RBV</pv_name>
+        <pv_name>13BMD:m121.RBV</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>composite #12</name>
+      <y>85</y>
+      <width>90</width>
+      <height>101</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #15</name>
+        <y>1</y>
+        <width>90</width>
+        <height>100</height>
+        <points>
+          <point x="0.0" y="92.0">
+          </point>
+          <point x="18.0" y="100.0">
+          </point>
+          <point x="90.0" y="7.0">
+          </point>
+          <point x="72.0" y="0.0">
+          </point>
+          <point x="0.0" y="92.0">
+          </point>
+        </points>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="105" green="105" blue="105">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="105" green="105" blue="105">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #19</name>
+        <x>1</x>
+        <width>89</width>
+        <height>100</height>
+        <points>
+          <point x="0.0" y="93.0">
+          </point>
+          <point x="18.0" y="99.0">
+          </point>
+          <point x="88.0" y="9.0">
+          </point>
+          <point x="70.0" y="0.0">
+          </point>
+          <point x="0.0" y="93.0">
+          </point>
+        </points>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #23</name>
+      <x>42</x>
+      <width>77</width>
+      <height>115</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #26</name>
+        <width>77</width>
+        <height>115</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="polygon" version="2.0.0">
+          <name>polygon #29</name>
+          <x>44</x>
+          <width>33</width>
+          <height>115</height>
+          <points>
+            <point x="33.0" y="0.0">
+            </point>
+            <point x="0.0" y="20.0">
+            </point>
+            <point x="0.0" y="115.0">
+            </point>
+            <point x="33.0" y="72.0">
+            </point>
+            <point x="33.0" y="0.0">
+            </point>
+          </points>
+          <line_width>1</line_width>
+          <line_color>
+            <color red="10" green="0" blue="184">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="10" green="0" blue="184">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="polygon" version="2.0.0">
+          <name>polygon #33</name>
+          <y>1</y>
+          <width>75</width>
+          <height>113</height>
+          <points>
+            <point x="48.0" y="113.0">
+            </point>
+            <point x="0.0" y="113.0">
+            </point>
+            <point x="0.0" y="19.0">
+            </point>
+            <point x="3.0" y="13.0">
+            </point>
+            <point x="20.0" y="0.0">
+            </point>
+            <point x="75.0" y="0.0">
+            </point>
+            <point x="48.0" y="17.0">
+            </point>
+            <point x="48.0" y="23.0">
+            </point>
+            <point x="48.0" y="113.0">
+            </point>
+          </points>
+          <line_width>1</line_width>
+          <line_color>
+            <color red="70" green="70" blue="70">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="70" green="70" blue="70">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="polygon" version="2.0.0">
+          <name>polygon #37</name>
+          <x>54</x>
+          <y>20</y>
+          <width>16</width>
+          <height>59</height>
+          <points>
+            <point x="0.0" y="9.0">
+            </point>
+            <point x="0.0" y="59.0">
+            </point>
+            <point x="16.0" y="43.0">
+            </point>
+            <point x="16.0" y="0.0">
+            </point>
+            <point x="0.0" y="9.0">
+            </point>
+          </points>
+          <line_width>1</line_width>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="group" version="2.0.0">
+          <name>composite #41</name>
+          <x>27</x>
+          <y>33</y>
+          <width>17</width>
+          <height>57</height>
+          <style>3</style>
+          <transparent>true</transparent>
+          <widget type="label" version="2.0.0">
+            <name>text #44</name>
+            <text>X</text>
+            <width>17</width>
+            <height>17</height>
+            <font>
+              <font family="Liberation Sans" style="REGULAR" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="115" green="223" blue="255">
+              </color>
+            </foreground_color>
+            <horizontal_alignment>1</horizontal_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>text #47</name>
+            <text>R</text>
+            <y>20</y>
+            <width>17</width>
+            <height>17</height>
+            <font>
+              <font family="Liberation Sans" style="REGULAR" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="115" green="223" blue="255">
+              </color>
+            </foreground_color>
+            <horizontal_alignment>1</horizontal_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>text #50</name>
+            <text>D</text>
+            <y>40</y>
+            <width>17</width>
+            <height>17</height>
+            <font>
+              <font family="Liberation Sans" style="REGULAR" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="115" green="223" blue="255">
+              </color>
+            </foreground_color>
+            <horizontal_alignment>1</horizontal_alignment>
+          </widget>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #53</name>
+      <x>2</x>
+      <y>19</y>
+      <width>78</width>
+      <height>158</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #56</name>
+        <y>118</y>
+        <width>50</width>
+        <height>40</height>
+        <points>
+          <point x="20.0" y="0.0">
+          </point>
+          <point x="0.0" y="25.0">
+          </point>
+          <point x="31.0" y="40.0">
+          </point>
+          <point x="50.0" y="14.0">
+          </point>
+          <point x="20.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="70" green="70" blue="70">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="70" green="70" blue="70">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #60</name>
+        <y>118</y>
+        <width>50</width>
+        <height>40</height>
+        <points>
+          <point x="20.0" y="0.0">
+          </point>
+          <point x="0.0" y="24.0">
+          </point>
+          <point x="31.0" y="40.0">
+          </point>
+          <point x="50.0" y="14.0">
+          </point>
+          <point x="20.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #64</name>
+        <x>18</x>
+        <width>60</width>
+        <height>141</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="0.0" y="141.0">
+          </point>
+          <point x="16.0" y="141.0">
+          </point>
+          <point x="16.0" y="97.0">
+          </point>
+          <point x="60.0" y="97.0">
+          </point>
+          <point x="60.0" y="82.0">
+          </point>
+          <point x="16.0" y="82.0">
+          </point>
+          <point x="16.0" y="21.0">
+          </point>
+          <point x="30.0" y="30.0">
+          </point>
+          <point x="30.0" y="60.0">
+          </point>
+          <point x="42.0" y="58.0">
+          </point>
+          <point x="42.0" y="27.0">
+          </point>
+          <point x="42.0" y="6.0">
+          </point>
+          <point x="16.0" y="5.0">
+          </point>
+          <point x="18.0" y="0.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="90" green="90" blue="90">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="90" green="90" blue="90">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #68</name>
+        <x>16</x>
+        <width>60</width>
+        <height>141</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="0.0" y="141.0">
+          </point>
+          <point x="16.0" y="141.0">
+          </point>
+          <point x="16.0" y="97.0">
+          </point>
+          <point x="60.0" y="97.0">
+          </point>
+          <point x="60.0" y="82.0">
+          </point>
+          <point x="16.0" y="82.0">
+          </point>
+          <point x="16.0" y="21.0">
+          </point>
+          <point x="30.0" y="30.0">
+          </point>
+          <point x="30.0" y="60.0">
+          </point>
+          <point x="42.0" y="58.0">
+          </point>
+          <point x="42.0" y="27.0">
+          </point>
+          <point x="42.0" y="6.0">
+          </point>
+          <point x="16.0" y="5.0">
+          </point>
+          <point x="18.0" y="0.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #72</name>
+        <x>44</x>
+        <y>44</y>
+        <width>19</width>
+        <height>9</height>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #75</name>
+        <x>44</x>
+        <y>51</y>
+        <width>19</width>
+        <height>18</height>
+        <line_color>
+          <color red="45" green="45" blue="45">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="45" green="45" blue="45">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #78</name>
+        <x>43</x>
+        <y>63</y>
+        <width>21</width>
+        <height>9</height>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #81</name>
+        <x>44</x>
+        <y>50</y>
+        <width>19</width>
+        <height>18</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #84</name>
+        <text>T</text>
+        <x>17</x>
+        <y>43</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #87</name>
+        <text>O</text>
+        <x>17</x>
+        <y>63</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #90</name>
+        <text>M</text>
+        <x>17</x>
+        <y>81</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #93</name>
+        <text>O</text>
+        <x>17</x>
+        <y>101</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #96</name>
+        <x>67</x>
+        <y>79</y>
+        <width>9</width>
+        <height>27</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="9.0" y="0.0">
+          </point>
+          <point x="9.0" y="17.0">
+          </point>
+          <point x="0.0" y="27.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #100</name>
+        <x>67</x>
+        <y>80</y>
+        <width>9</width>
+        <height>27</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="9.0" y="0.0">
+          </point>
+          <point x="9.0" y="17.0">
+          </point>
+          <point x="0.0" y="27.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #105</name>
+    <x>39</x>
+    <y>374</y>
+    <width>119</width>
+    <height>186</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;pv1==214)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m70.RBV</pv_name>
+        <pv_name>13BMD:m121.RBV</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>composite #108</name>
+      <y>85</y>
+      <width>90</width>
+      <height>101</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #111</name>
+        <y>1</y>
+        <width>90</width>
+        <height>100</height>
+        <points>
+          <point x="0.0" y="92.0">
+          </point>
+          <point x="18.0" y="100.0">
+          </point>
+          <point x="90.0" y="7.0">
+          </point>
+          <point x="72.0" y="0.0">
+          </point>
+          <point x="0.0" y="92.0">
+          </point>
+        </points>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="105" green="105" blue="105">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="105" green="105" blue="105">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #115</name>
+        <x>1</x>
+        <width>89</width>
+        <height>100</height>
+        <points>
+          <point x="0.0" y="93.0">
+          </point>
+          <point x="18.0" y="99.0">
+          </point>
+          <point x="88.0" y="9.0">
+          </point>
+          <point x="70.0" y="0.0">
+          </point>
+          <point x="0.0" y="93.0">
+          </point>
+        </points>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #119</name>
+      <x>42</x>
+      <width>77</width>
+      <height>115</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #122</name>
+        <width>77</width>
+        <height>115</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="polygon" version="2.0.0">
+          <name>polygon #125</name>
+          <x>44</x>
+          <width>33</width>
+          <height>115</height>
+          <points>
+            <point x="33.0" y="0.0">
+            </point>
+            <point x="0.0" y="20.0">
+            </point>
+            <point x="0.0" y="115.0">
+            </point>
+            <point x="33.0" y="72.0">
+            </point>
+            <point x="33.0" y="0.0">
+            </point>
+          </points>
+          <line_width>1</line_width>
+          <line_color>
+            <color red="10" green="0" blue="184">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="10" green="0" blue="184">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="polygon" version="2.0.0">
+          <name>polygon #129</name>
+          <y>1</y>
+          <width>75</width>
+          <height>113</height>
+          <points>
+            <point x="48.0" y="113.0">
+            </point>
+            <point x="0.0" y="113.0">
+            </point>
+            <point x="0.0" y="19.0">
+            </point>
+            <point x="3.0" y="13.0">
+            </point>
+            <point x="20.0" y="0.0">
+            </point>
+            <point x="75.0" y="0.0">
+            </point>
+            <point x="48.0" y="17.0">
+            </point>
+            <point x="48.0" y="23.0">
+            </point>
+            <point x="48.0" y="113.0">
+            </point>
+          </points>
+          <line_width>1</line_width>
+          <line_color>
+            <color red="70" green="70" blue="70">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="70" green="70" blue="70">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="polygon" version="2.0.0">
+          <name>polygon #133</name>
+          <x>54</x>
+          <y>20</y>
+          <width>16</width>
+          <height>59</height>
+          <points>
+            <point x="0.0" y="9.0">
+            </point>
+            <point x="0.0" y="59.0">
+            </point>
+            <point x="16.0" y="43.0">
+            </point>
+            <point x="16.0" y="0.0">
+            </point>
+            <point x="0.0" y="9.0">
+            </point>
+          </points>
+          <line_width>1</line_width>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="group" version="2.0.0">
+          <name>composite #137</name>
+          <x>27</x>
+          <y>33</y>
+          <width>17</width>
+          <height>57</height>
+          <style>3</style>
+          <transparent>true</transparent>
+          <widget type="label" version="2.0.0">
+            <name>text #140</name>
+            <text>X</text>
+            <width>17</width>
+            <height>17</height>
+            <font>
+              <font family="Liberation Sans" style="REGULAR" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="115" green="223" blue="255">
+              </color>
+            </foreground_color>
+            <horizontal_alignment>1</horizontal_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>text #143</name>
+            <text>R</text>
+            <y>20</y>
+            <width>17</width>
+            <height>17</height>
+            <font>
+              <font family="Liberation Sans" style="REGULAR" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="115" green="223" blue="255">
+              </color>
+            </foreground_color>
+            <horizontal_alignment>1</horizontal_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>text #146</name>
+            <text>D</text>
+            <y>40</y>
+            <width>17</width>
+            <height>17</height>
+            <font>
+              <font family="Liberation Sans" style="REGULAR" size="16.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color red="115" green="223" blue="255">
+              </color>
+            </foreground_color>
+            <horizontal_alignment>1</horizontal_alignment>
+          </widget>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #149</name>
+      <x>2</x>
+      <y>19</y>
+      <width>78</width>
+      <height>158</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #152</name>
+        <y>118</y>
+        <width>50</width>
+        <height>40</height>
+        <points>
+          <point x="20.0" y="0.0">
+          </point>
+          <point x="0.0" y="25.0">
+          </point>
+          <point x="31.0" y="40.0">
+          </point>
+          <point x="50.0" y="14.0">
+          </point>
+          <point x="20.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="70" green="70" blue="70">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="70" green="70" blue="70">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #156</name>
+        <y>118</y>
+        <width>50</width>
+        <height>40</height>
+        <points>
+          <point x="20.0" y="0.0">
+          </point>
+          <point x="0.0" y="24.0">
+          </point>
+          <point x="31.0" y="40.0">
+          </point>
+          <point x="50.0" y="14.0">
+          </point>
+          <point x="20.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #160</name>
+        <x>18</x>
+        <width>60</width>
+        <height>141</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="0.0" y="141.0">
+          </point>
+          <point x="16.0" y="141.0">
+          </point>
+          <point x="16.0" y="97.0">
+          </point>
+          <point x="60.0" y="97.0">
+          </point>
+          <point x="60.0" y="82.0">
+          </point>
+          <point x="16.0" y="82.0">
+          </point>
+          <point x="16.0" y="21.0">
+          </point>
+          <point x="30.0" y="30.0">
+          </point>
+          <point x="30.0" y="60.0">
+          </point>
+          <point x="42.0" y="58.0">
+          </point>
+          <point x="42.0" y="27.0">
+          </point>
+          <point x="42.0" y="6.0">
+          </point>
+          <point x="16.0" y="5.0">
+          </point>
+          <point x="18.0" y="0.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="90" green="90" blue="90">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="90" green="90" blue="90">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #164</name>
+        <x>16</x>
+        <width>60</width>
+        <height>141</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="0.0" y="141.0">
+          </point>
+          <point x="16.0" y="141.0">
+          </point>
+          <point x="16.0" y="97.0">
+          </point>
+          <point x="60.0" y="97.0">
+          </point>
+          <point x="60.0" y="82.0">
+          </point>
+          <point x="16.0" y="82.0">
+          </point>
+          <point x="16.0" y="21.0">
+          </point>
+          <point x="30.0" y="30.0">
+          </point>
+          <point x="30.0" y="60.0">
+          </point>
+          <point x="42.0" y="58.0">
+          </point>
+          <point x="42.0" y="27.0">
+          </point>
+          <point x="42.0" y="6.0">
+          </point>
+          <point x="16.0" y="5.0">
+          </point>
+          <point x="18.0" y="0.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #168</name>
+        <x>44</x>
+        <y>44</y>
+        <width>19</width>
+        <height>9</height>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #171</name>
+        <x>44</x>
+        <y>51</y>
+        <width>19</width>
+        <height>18</height>
+        <line_color>
+          <color red="45" green="45" blue="45">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="45" green="45" blue="45">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #174</name>
+        <x>43</x>
+        <y>63</y>
+        <width>21</width>
+        <height>9</height>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #177</name>
+        <x>44</x>
+        <y>50</y>
+        <width>19</width>
+        <height>18</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #180</name>
+        <text>T</text>
+        <x>17</x>
+        <y>43</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #183</name>
+        <text>O</text>
+        <x>17</x>
+        <y>63</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #186</name>
+        <text>M</text>
+        <x>17</x>
+        <y>81</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #189</name>
+        <text>O</text>
+        <x>17</x>
+        <y>101</y>
+        <width>17</width>
+        <height>17</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #192</name>
+        <x>67</x>
+        <y>79</y>
+        <width>9</width>
+        <height>27</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="9.0" y="0.0">
+          </point>
+          <point x="9.0" y="17.0">
+          </point>
+          <point x="0.0" y="27.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="polygon" version="2.0.0">
+        <name>polygon #196</name>
+        <x>67</x>
+        <y>80</y>
+        <width>9</width>
+        <height>27</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="9.0" y="0.0">
+          </point>
+          <point x="9.0" y="17.0">
+          </point>
+          <point x="0.0" y="27.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #201</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM.opi</file>
+        <target>tab</target>
+        <description>Full control</description>
+      </action>
+    </actions>
+    <text>Beamline</text>
+    <x>4</x>
+    <y>26</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #204</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM_monochromator.opi</file>
+        <macros>
+          <C>3</C>
+          <D>1</D>
+          <EN>E</EN>
+          <EXPTAB>m22</EXPTAB>
+          <MONO>m9</MONO>
+          <P1>13BMA:</P1>
+          <P2>13BMD:</P2>
+          <PID>mono_pid1</PID>
+          <SHUT>FOE</SHUT>
+          <TABLE>MON:</TABLE>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+        <description>Monochromator (full)</description>
+      </action>
+    </actions>
+    <text>Monochromator</text>
+    <x>798</x>
+    <y>722</y>
+    <width>175</width>
+    <height>22</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #207</name>
+    <actions>
+      <action type="open_display">
+        <file>4slitGraphic.opi</file>
+        <macros>
+          <H>Slit1H</H>
+          <P>13BMA:</P>
+          <SLIT>Slit1</SLIT>
+          <V>Slit1V</V>
+          <mXn>m3</mXn>
+          <mXp>m4</mXp>
+          <mYn>m2</mYn>
+          <mYp>m1</mYp>
+        </macros>
+        <target>tab</target>
+        <description>FOE Slits (compound)</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <P>13BMA:</P>
+          <TITLE>13BM_FOE_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>FOE Slits (individual)</description>
+      </action>
+      <action type="open_display">
+        <file>2slit.opi</file>
+        <macros>
+          <P>13BMA:</P>
+          <SLIT>Slit2V</SLIT>
+        </macros>
+        <target>tab</target>
+        <description>BMB Slits (compound)</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m24</M1>
+          <M2>m25</M2>
+          <P>13BMA:</P>
+          <TITLE>13BMB_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMB Slits (individual)</description>
+      </action>
+      <action type="open_display">
+        <file>4slitGraphic.opi</file>
+        <macros>
+          <H>BMDH</H>
+          <P>13BMD:</P>
+          <SLIT>BMD</SLIT>
+          <V>BMDV</V>
+          <mXn>m29</mXn>
+          <mXp>m30</mXp>
+          <mYn>m32</mYn>
+          <mYp>m31</mYp>
+        </macros>
+        <target>tab</target>
+        <description>BMD Slits (compound)</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m29</M1>
+          <M2>m30</M2>
+          <M3>m31</M3>
+          <M4>m32</M4>
+          <P>13BMD:</P>
+          <TITLE>13BMD_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMD Slits (individual)</description>
+      </action>
+    </actions>
+    <text>Beamline Slits</text>
+    <x>380</x>
+    <y>26</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #215</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m18</M1>
+          <M2>m19</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <M7>pm5</M7>
+          <M8>pm6</M8>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m20</M1>
+          <M2>m21</M2>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Mirror_Pitch_Simple</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Pitch (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m22</M1>
+          <M2>m23</M2>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Mirror_Base</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Base (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTiltSetup.opi</file>
+        <macros>
+          <P>13BMA:</P>
+          <PMR>pm6</PMR>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Base Setup</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTiltSetup.opi</file>
+        <macros>
+          <P>13BMA:</P>
+          <PMR>pm4</PMR>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Pitch Setup</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTemps.opi</file>
+        <macros>
+          <CH1>DMM2Ch2</CH1>
+          <CH2>DMM2Ch3</CH2>
+          <CH3>DMM2Ch4</CH3>
+          <P>13BMA:</P>
+          <TITLE>BM_Vert_Temperature</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Temperature</description>
+      </action>
+    </actions>
+    <text>Vertical Mirror</text>
+    <x>380</x>
+    <y>4</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #223</name>
+    <actions>
+      <action type="open_display">
+        <file>13BMD.opi</file>
+        <target>tab</target>
+        <description>Full control</description>
+      </action>
+    </actions>
+    <text>Full Control</text>
+    <x>4</x>
+    <y>4</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="stripchart" version="2.1.0">
+    <name>strip chart #226</name>
+    <x>798</x>
+    <y>483</y>
+    <width>301</width>
+    <height>211</height>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <title>setpoint and readback</title>
+    <show_toolbar>false</show_toolbar>
+    <start>30 second</start>
+    <y_axes>
+      <y_axis>
+        <title></title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <visible>true</visible>
+        <color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </color>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>13BMA:mono_pid1.VAL</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="253" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <y_pv>13BMA:mono_pid1.CVAL</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>valuator #233</name>
+    <pv_name>13BMA:MonoPiezoPitch.VAL</pv_name>
+    <x>827</x>
+    <y>694</y>
+    <width>243</width>
+    <height>22</height>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #237</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMA:MonoPiezoPitchTweakDown.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMA:MonoPiezoPitchTweakDown.PROC</pv_name>
+    <text>&lt;</text>
+    <x>798</x>
+    <y>697</y>
+    <width>26</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #240</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMA:MonoPiezoPitchTweakUp.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMA:MonoPiezoPitchTweakUp.PROC</pv_name>
+    <text>&gt;</text>
+    <x>1068</x>
+    <y>697</y>
+    <width>26</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #243</name>
+    <pv_name>13BMA:mono_pid1.FBON</pv_name>
+    <x>964</x>
+    <y>748</y>
+    <width>53</width>
+    <height>21</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #246</name>
+    <text>Feedback</text>
+    <x>882</x>
+    <y>751</y>
+    <width>76</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #249</name>
+    <pv_name>13BMA:mono_pid1.VAL</pv_name>
+    <x>1026</x>
+    <y>721</y>
+    <width>68</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #253</name>
+    <pv_name>13BMA:mono_pid1.CVAL</pv_name>
+    <x>1028</x>
+    <y>749</y>
+    <width>68</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #257</name>
+    <text>Set:</text>
+    <x>981</x>
+    <y>725</y>
+    <width>32</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #260</name>
+    <actions>
+      <action type="open_display">
+        <file>5motors.opi</file>
+        <macros>
+          <M1>m114</M1>
+          <M2>m122</M2>
+          <M3>m123</M3>
+          <M4>m119</M4>
+          <M5>m115</M5>
+          <P>13BMD:</P>
+          <TITLE>Tomography_stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Tomography_stage</description>
+      </action>
+    </actions>
+    <text>Sample Stages</text>
+    <x>129</x>
+    <y>48</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="89" green="126" blue="225">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #263</name>
+    <x>668</x>
+    <y>6</y>
+    <width>210</width>
+    <height>80</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #266</name>
+    <text>Pilatus 1M</text>
+    <x>712</x>
+    <y>7</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #269</name>
+    <actions>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <F>file1:</F>
+          <I>image1:</I>
+          <P>13PIL3:</P>
+          <R>cam1:</R>
+          <ROI>ROI1:</ROI>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 3x</description>
+      </action>
+    </actions>
+    <text> more</text>
+    <x>676</x>
+    <y>37</y>
+    <width>49</width>
+    <height>17</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #272</name>
+    <pv_name>13PIL3:cam1:DetectorState_RBV</pv_name>
+    <x>794</x>
+    <y>38</y>
+    <width>74</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #276</name>
+    <text>Status:</text>
+    <x>735</x>
+    <y>38</y>
+    <width>74</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #279</name>
+    <actions>
+      <action type="open_display">
+        <file>00Start.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Start</text>
+    <x>4</x>
+    <y>48</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #282</name>
+    <x>400</x>
+    <y>586</y>
+    <width>340</width>
+    <height>38</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(!pv0or!pv1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi4</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #285</name>
+      <text>There is no BEAM !</text>
+      <width>340</width>
+      <height>38</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="222" green="19" blue="9">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #289</name>
+    <x>572</x>
+    <y>267</y>
+    <width>115</width>
+    <height>144</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #292</name>
+      <pv_name>13BMD:m122.VAL</pv_name>
+      <y>37</y>
+      <width>108</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #296</name>
+      <pv_name>13BMD:m122.TWV</pv_name>
+      <x>21</x>
+      <y>67</y>
+      <width>64</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #300</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m122.TWR</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m122.TWR</pv_name>
+      <text>-</text>
+      <x>2</x>
+      <y>67</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #303</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m122.TWF</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m122.TWF</pv_name>
+      <text>+</text>
+      <x>90</x>
+      <y>67</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #306</name>
+      <x>4</x>
+      <y>90</y>
+      <width>14</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m122.HLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #310</name>
+      <x>91</x>
+      <y>91</y>
+      <width>14</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m122.LLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #314</name>
+      <text>Focus</text>
+      <x>25</x>
+      <width>54</width>
+      <height>17</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #318</name>
+      <pv_name>13BMD:m122.RBV</pv_name>
+      <x>57</x>
+      <y>22</y>
+      <width>58</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="115" green="255" blue="107">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #322</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m122.TWV</pv_name>
+          <value>.01</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m122.TWV</pv_name>
+      <text>.01</text>
+      <x>25</x>
+      <y>92</y>
+      <width>26</width>
+      <height>16</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #325</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m122.TWV</pv_name>
+          <value>.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m122.TWV</pv_name>
+      <text>.1</text>
+      <x>55</x>
+      <y>92</y>
+      <width>26</width>
+      <height>16</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #328</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m122.TWV</pv_name>
+          <value>.001</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m122.TWV</pv_name>
+      <text>.001</text>
+      <x>39</x>
+      <y>109</y>
+      <width>31</width>
+      <height>16</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #331</name>
+      <text>Now at:</text>
+      <x>1</x>
+      <y>22</y>
+      <width>54</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #335</name>
+      <text>Soft-Limit</text>
+      <x>15</x>
+      <y>128</y>
+      <width>73</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m122.LVIO</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #339</name>
+      <text>Moving</text>
+      <x>13</x>
+      <y>124</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m122.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #343</name>
+    <text>DETECTOR Z</text>
+    <x>148</x>
+    <y>641</y>
+    <width>94</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #347</name>
+    <pv_name>13BMD:m70.RBV</pv_name>
+    <x>192</x>
+    <y>660</y>
+    <width>59</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #351</name>
+    <text>Now at:</text>
+    <x>139</x>
+    <y>660</y>
+    <width>53</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #355</name>
+    <text>DETECTOR X</text>
+    <x>17</x>
+    <y>642</y>
+    <width>94</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #359</name>
+    <pv_name>13BMD:m121.RBV</pv_name>
+    <x>68</x>
+    <y>661</y>
+    <width>59</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #363</name>
+    <text>Now at:</text>
+    <x>13</x>
+    <y>661</y>
+    <width>53</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #367</name>
+    <text>Detector Stages</text>
+    <x>17</x>
+    <y>609</y>
+    <width>223</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #370</name>
+    <x>24</x>
+    <y>630</y>
+    <width>213</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="213.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #374</name>
+    <x>454</x>
+    <y>252</y>
+    <width>213</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="213.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #378</name>
+    <text>Sample Stages</text>
+    <x>448</x>
+    <y>231</y>
+    <width>223</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #381</name>
+    <x>702</x>
+    <y>267</y>
+    <width>114</width>
+    <height>145</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #384</name>
+      <pv_name>13BMD:m119.VAL</pv_name>
+      <y>37</y>
+      <width>107</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #388</name>
+      <pv_name>13BMD:m119.TWV</pv_name>
+      <x>21</x>
+      <y>67</y>
+      <width>64</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #392</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m119.TWR</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m119.TWR</pv_name>
+      <text>-</text>
+      <x>2</x>
+      <y>67</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #395</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m119.TWF</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m119.TWF</pv_name>
+      <text>+</text>
+      <x>89</x>
+      <y>68</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #398</name>
+      <x>87</x>
+      <y>91</y>
+      <width>15</width>
+      <height>15</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m119.HLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #402</name>
+      <x>1</x>
+      <y>92</y>
+      <width>15</width>
+      <height>15</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m119.LLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #406</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m119.TWV</pv_name>
+          <value>0.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m119.TWV</pv_name>
+      <text>0.1</text>
+      <x>24</x>
+      <y>92</y>
+      <width>26</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #409</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m119.TWV</pv_name>
+          <value>5</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m119.TWV</pv_name>
+      <text>5</text>
+      <x>38</x>
+      <y>109</y>
+      <width>32</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #412</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m119.TWV</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m119.TWV</pv_name>
+      <text>1</text>
+      <x>55</x>
+      <y>92</y>
+      <width>26</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #415</name>
+      <text>Theta</text>
+      <x>25</x>
+      <width>55</width>
+      <height>17</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #419</name>
+      <pv_name>13BMD:m119.RBV</pv_name>
+      <x>55</x>
+      <y>22</y>
+      <width>59</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="115" green="255" blue="107">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #423</name>
+      <text>Now at:</text>
+      <y>22</y>
+      <width>55</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #427</name>
+      <text>Soft-Limit</text>
+      <x>19</x>
+      <y>128</y>
+      <width>73</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m119.LVIO</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #431</name>
+      <text>Moving</text>
+      <x>15</x>
+      <y>125</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m119.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #435</name>
+    <x>435</x>
+    <y>267</y>
+    <width>126</width>
+    <height>144</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #438</name>
+      <pv_name>13BMD:m115.VAL</pv_name>
+      <x>13</x>
+      <y>37</y>
+      <width>107</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="153" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #442</name>
+      <y>69</y>
+      <width>15</width>
+      <height>15</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m115.HLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #446</name>
+      <y>106</y>
+      <width>15</width>
+      <height>15</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m115.LLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #450</name>
+      <pv_name>13BMD:m115.TWV</pv_name>
+      <x>19</x>
+      <y>85</y>
+      <width>61</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #454</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m115.TWR</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m115.TWR</pv_name>
+      <text>\/</text>
+      <x>21</x>
+      <y>106</y>
+      <width>61</width>
+      <height>16</height>
+      <background_color>
+        <color red="78" green="165" blue="249">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #457</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m115.TWF</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m115.TWF</pv_name>
+      <text>/\</text>
+      <x>19</x>
+      <y>68</y>
+      <width>61</width>
+      <height>16</height>
+      <background_color>
+        <color red="78" green="165" blue="249">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #460</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m115.TWV</pv_name>
+          <value>.01</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m115.TWV</pv_name>
+      <text>.01</text>
+      <x>82</x>
+      <y>87</y>
+      <width>37</width>
+      <height>15</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="58" green="94" blue="171">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #463</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m115.TWV</pv_name>
+          <value>.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m115.TWV</pv_name>
+      <text>.1</text>
+      <x>82</x>
+      <y>68</y>
+      <width>37</width>
+      <height>15</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="58" green="94" blue="171">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #466</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m115.TWV</pv_name>
+          <value>.001</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m115.TWV</pv_name>
+      <text>.001</text>
+      <x>82</x>
+      <y>105</y>
+      <width>37</width>
+      <height>15</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="58" green="94" blue="171">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #469</name>
+      <text>Vertical</text>
+      <x>34</x>
+      <width>69</width>
+      <height>17</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #473</name>
+      <pv_name>13BMD:m115.RBV</pv_name>
+      <x>66</x>
+      <y>22</y>
+      <width>60</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="115" green="255" blue="107">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #477</name>
+      <text>Now at:</text>
+      <x>13</x>
+      <y>22</y>
+      <width>55</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #481</name>
+      <text>Soft-Limit</text>
+      <x>34</x>
+      <y>128</y>
+      <width>73</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m115.LVIO</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #485</name>
+      <text>Moving</text>
+      <x>30</x>
+      <y>124</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m115.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #489</name>
+    <x>13</x>
+    <y>675</y>
+    <width>234</width>
+    <height>89</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #492</name>
+      <pv_name>13BMD:m70.VAL</pv_name>
+      <x>127</x>
+      <width>107</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="88" green="147" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #496</name>
+      <pv_name>13BMD:m70.TWV</pv_name>
+      <x>150</x>
+      <y>28</y>
+      <width>64</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="88" green="147" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #500</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m70.TWR</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m70.TWR</pv_name>
+      <text>-</text>
+      <x>129</x>
+      <y>28</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="42" green="99" blue="228">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #503</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m70.TWF</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m70.TWF</pv_name>
+      <text>+</text>
+      <x>217</x>
+      <y>28</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="42" green="99" blue="228">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #506</name>
+      <x>131</x>
+      <y>51</y>
+      <width>13</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.HLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #510</name>
+      <x>218</x>
+      <y>52</y>
+      <width>13</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.LLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #514</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m70.TWV</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m70.TWV</pv_name>
+      <text>1</text>
+      <x>153</x>
+      <y>53</y>
+      <width>26</width>
+      <height>16</height>
+      <background_color>
+        <color red="42" green="99" blue="228">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #517</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m70.TWV</pv_name>
+          <value>.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m70.TWV</pv_name>
+      <text>.1</text>
+      <x>181</x>
+      <y>53</y>
+      <width>26</width>
+      <height>16</height>
+      <background_color>
+        <color red="42" green="99" blue="228">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #520</name>
+      <text>Soft-Limit</text>
+      <x>145</x>
+      <y>72</y>
+      <width>73</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.LVIO</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #524</name>
+      <text>Moving</text>
+      <x>142</x>
+      <y>68</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #528</name>
+      <pv_name>13BMD:m121.VAL</pv_name>
+      <y>1</y>
+      <width>107</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="164" green="170" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #532</name>
+      <pv_name>13BMD:m121.TWV</pv_name>
+      <x>22</x>
+      <y>29</y>
+      <width>64</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="164" green="170" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #536</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m121.TWR</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m121.TWR</pv_name>
+      <text>-</text>
+      <x>2</x>
+      <y>29</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="106" green="115" blue="193">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #539</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m121.TWF</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m121.TWF</pv_name>
+      <text>+</text>
+      <x>89</x>
+      <y>29</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="106" green="115" blue="193">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #542</name>
+      <x>4</x>
+      <y>52</y>
+      <width>13</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m121.HLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #546</name>
+      <x>91</x>
+      <y>53</y>
+      <width>13</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m121.LLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #550</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m121.TWV</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m121.TWV</pv_name>
+      <text>1</text>
+      <x>25</x>
+      <y>54</y>
+      <width>26</width>
+      <height>16</height>
+      <background_color>
+        <color red="106" green="115" blue="193">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #553</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m121.TWV</pv_name>
+          <value>.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m121.TWV</pv_name>
+      <text>.1</text>
+      <x>55</x>
+      <y>54</y>
+      <width>26</width>
+      <height>16</height>
+      <background_color>
+        <color red="106" green="115" blue="193">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #556</name>
+      <text>Soft-Limit</text>
+      <x>17</x>
+      <y>73</y>
+      <width>73</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m121.LVIO</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #560</name>
+      <text>Moving</text>
+      <x>14</x>
+      <y>69</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m121.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #565</name>
+    <text>Cannot control while</text>
+    <x>22</x>
+    <y>688</y>
+    <width>212</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #569</name>
+    <text>the shutter is open</text>
+    <x>19</x>
+    <y>711</y>
+    <width>212</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #573</name>
+    <x>876</x>
+    <y>397</y>
+    <width>139</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="139.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #577</name>
+    <text>Table Shutter</text>
+    <x>871</x>
+    <y>377</y>
+    <width>149</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #580</name>
+    <actions>
+      <action type="open_display">
+        <file>5motors.opi</file>
+        <macros>
+          <M1>m33</M1>
+          <M2>m34</M2>
+          <M3>m35</M3>
+          <M4>m70</M4>
+          <M5>m121</M5>
+          <P>13BMD:</P>
+          <TITLE>Tomo_Camera_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Tomo_Camera_Stage</description>
+      </action>
+    </actions>
+    <text>Detector Stages</text>
+    <x>129</x>
+    <y>26</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="89" green="126" blue="225">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #583</name>
+    <x>884</x>
+    <y>170</y>
+    <width>215</width>
+    <height>97</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #586</name>
+    <x>883</x>
+    <y>4</y>
+    <width>217</width>
+    <height>160</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #589</name>
+    <x>886</x>
+    <y>7</y>
+    <width>212</width>
+    <height>155</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #592</name>
+    <text>13BM FE Shutter</text>
+    <x>892</x>
+    <y>15</y>
+    <width>127</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #595</name>
+    <text>Station Searched</text>
+    <x>937</x>
+    <y>105</y>
+    <width>127</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #598</name>
+    <text>A    B    C    D</text>
+    <x>945</x>
+    <y>123</y>
+    <width>91</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #601</name>
+    <x>939</x>
+    <y>123</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_A_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #605</name>
+    <x>939</x>
+    <y>123</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_A_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #609</name>
+    <x>979</x>
+    <y>123</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_B_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #613</name>
+    <x>979</x>
+    <y>123</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_B_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #617</name>
+    <x>1022</x>
+    <y>123</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_C_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #621</name>
+    <x>1022</x>
+    <y>123</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_C_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #625</name>
+    <x>1061</x>
+    <y>121</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_D_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #629</name>
+    <x>1061</x>
+    <y>121</y>
+    <width>15</width>
+    <height>15</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13BM:STA_D_SEARCHED_PL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #633</name>
+    <pv_name>13BMA:E:E_RBV</pv_name>
+    <x>892</x>
+    <y>61</y>
+    <width>73</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #637</name>
+    <text>eV</text>
+    <x>976</x>
+    <y>61</y>
+    <width>32</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #640</name>
+    <pv_name>S:SRcurrentAI.VAL</pv_name>
+    <x>892</x>
+    <y>38</y>
+    <width>73</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #644</name>
+    <text>mA</text>
+    <x>976</x>
+    <y>38</y>
+    <width>32</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #647</name>
+    <text>A</text>
+    <x>976</x>
+    <y>84</y>
+    <width>32</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #650</name>
+    <pv_name>13BMA:mono_pid1_incalc.O</pv_name>
+    <x>892</x>
+    <y>84</y>
+    <width>73</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #654</name>
+    <pv_name>S:IOC:timeOfDayForm1SI</pv_name>
+    <x>886</x>
+    <y>144</y>
+    <width>212</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #658</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM_EPS.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Vaccum</text>
+    <x>1027</x>
+    <y>66</y>
+    <width>64</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #661</name>
+    <x>1042</x>
+    <y>16</y>
+    <width>42</width>
+    <height>39</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi4</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #665</name>
+    <x>1042</x>
+    <y>16</y>
+    <width>42</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi4</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #668</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMA:OpenFEShutter.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMA:OpenFEShutter.PROC</pv_name>
+      <text></text>
+      <width>42</width>
+      <height>39</height>
+      <foreground_color>
+        <color red="51" green="153" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #672</name>
+    <x>883</x>
+    <y>168</y>
+    <width>217</width>
+    <height>100</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #675</name>
+    <text>Hutch Shutter</text>
+    <x>897</x>
+    <y>177</y>
+    <width>117</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #678</name>
+    <x>897</x>
+    <y>194</y>
+    <width>117</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="117.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #682</name>
+    <text>Status:</text>
+    <x>898</x>
+    <y>202</y>
+    <width>54</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #685</name>
+    <text>Open</text>
+    <x>961</x>
+    <y>204</y>
+    <width>54</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #689</name>
+    <text>Closed</text>
+    <x>961</x>
+    <y>204</y>
+    <width>54</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #693</name>
+    <x>1042</x>
+    <y>180</y>
+    <width>42</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #696</name>
+      <width>42</width>
+      <height>39</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMA:eps_mbbi99</pv_name>
+        </rule>
+      </rules>
+      <widget type="action_button" version="3.0.0">
+        <name>message button #699</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>13BMA:CloseBMDShutter.PROC</pv_name>
+            <value>1</value>
+            <description>Write</description>
+          </action>
+        </actions>
+        <pv_name>13BMA:CloseBMDShutter.PROC</pv_name>
+        <text></text>
+        <width>42</width>
+        <height>39</height>
+        <foreground_color>
+          <color red="255" green="176" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="30" green="187" blue="0">
+          </color>
+        </background_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #703</name>
+      <width>42</width>
+      <height>39</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:USBCTR:Bo1</pv_name>
+        </rule>
+      </rules>
+      <widget type="group" version="2.0.0">
+        <name>composite #706</name>
+        <width>42</width>
+        <height>39</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="vis_calc" prop_id="visible" out_exp="false">
+            <exp bool_exp="!((pv0==-127&amp;pv1==50)|(pv0==95&amp;pv1==0))">
+              <value>false</value>
+            </exp>
+            <pv_name>13BMD:m121.RBV</pv_name>
+            <pv_name>13BMD:m70.RBV</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>message button #709</name>
+          <actions>
+            <action type="write_pv">
+              <pv_name>13BMA:OpenBMDShutter.PROC</pv_name>
+              <value>1</value>
+              <description>Write</description>
+            </action>
+          </actions>
+          <pv_name>13BMA:OpenBMDShutter.PROC</pv_name>
+          <text></text>
+          <width>42</width>
+          <height>39</height>
+          <background_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </background_color>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #714</name>
+      <width>42</width>
+      <height>39</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #717</name>
+        <width>42</width>
+        <height>39</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="vis_calc" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(!((pv0==-127&amp;pv1==50)|(pv0==95&amp;pv1==0)))">
+              <value>false</value>
+            </exp>
+            <pv_name>13BMD:m121.RBV</pv_name>
+            <pv_name>13BMD:m70.RBV</pv_name>
+          </rule>
+        </rules>
+        <widget type="rectangle" version="2.0.0">
+          <name>rectangle #720</name>
+          <width>42</width>
+          <height>39</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>rectangle #723</name>
+          <width>42</width>
+          <height>39</height>
+          <line_width>2</line_width>
+          <line_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>text #726</name>
+          <text>!</text>
+          <x>1</x>
+          <y>4</y>
+          <width>38</width>
+          <height>30</height>
+          <font>
+            <font family="Liberation Sans" style="REGULAR" size="30.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #730</name>
+        <width>42</width>
+        <height>39</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>13BMD:USBCTR:Bo1</pv_name>
+          </rule>
+        </rules>
+        <widget type="rectangle" version="2.0.0">
+          <name>rectangle #733</name>
+          <width>42</width>
+          <height>39</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>rectangle #736</name>
+          <width>42</width>
+          <height>39</height>
+          <line_width>2</line_width>
+          <line_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>text #739</name>
+          <text>!</text>
+          <x>1</x>
+          <y>4</y>
+          <width>38</width>
+          <height>30</height>
+          <font>
+            <font family="Liberation Sans" style="REGULAR" size="30.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color red="253" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #743</name>
+    <text>! Random Detector position !</text>
+    <x>888</x>
+    <y>228</y>
+    <width>202</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(!((pv0==214&amp;pv1==0)|(pv0&lt;-9&amp;pv1==30)))">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m121.RBV</pv_name>
+        <pv_name>13BMD:m70.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #747</name>
+    <text>! Close Table shutter !</text>
+    <x>897</x>
+    <y>246</y>
+    <width>191</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(!(pv0==0|pv1==1))">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #751</name>
+    <x>894</x>
+    <y>33</y>
+    <width>127</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="127.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #755</name>
+    <actions>
+      <action type="open_display">
+        <file>tomoScan.opi</file>
+        <macros>
+          <BEAMLINE>tomoScan_13BM</BEAMLINE>
+          <P>13BMDPG1:</P>
+          <R>TS:</R>
+        </macros>
+        <target>tab</target>
+        <description>Tomography_stage</description>
+      </action>
+    </actions>
+    <text>Tomo Collection</text>
+    <x>254</x>
+    <y>4</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #758</name>
+    <actions>
+      <action type="open_display">
+        <file>tomoScan_13BM.opi</file>
+        <macros>
+          <BEAMLINE>tomoScan_13BM</BEAMLINE>
+          <P>13BMDPG1:</P>
+          <R>TS:</R>
+        </macros>
+        <target>tab</target>
+        <description>Beamline-specific display</description>
+      </action>
+    </actions>
+    <text>Tomo Log File</text>
+    <x>254</x>
+    <y>26</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #761</name>
+    <actions>
+      <action type="open_display">
+        <file>7motors.opi</file>
+        <macros>
+          <M1>m114</M1>
+          <M2>m115</M2>
+          <M3>m113</M3>
+          <M4>m116</M4>
+          <M5>m117</M5>
+          <M6>m118</M6>
+          <M7>m119</M7>
+          <P>13BMD:</P>
+          <TITLE>Aerotech_Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Aerotech_Motors</description>
+      </action>
+    </actions>
+    <text>Aerotech Stages</text>
+    <x>129</x>
+    <y>4</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="89" green="126" blue="225">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #764</name>
+    <x>12</x>
+    <y>250</y>
+    <width>250</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #767</name>
+      <text>RANDOM!</text>
+      <x>173</x>
+      <y>4</y>
+      <width>74</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="176" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #770</name>
+      <text>Position status:</text>
+      <y>2</y>
+      <width>171</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #773</name>
+      <x>171</x>
+      <width>79</width>
+      <height>24</height>
+      <line_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==50&amp;pv1==-127)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.RBV</pv_name>
+          <pv_name>13BMD:m121.RBV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #777</name>
+      <x>171</x>
+      <width>79</width>
+      <height>24</height>
+      <line_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0&amp;pv1==95)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.RBV</pv_name>
+          <pv_name>13BMD:m121.RBV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #781</name>
+      <text>TOMO</text>
+      <x>179</x>
+      <y>3</y>
+      <width>49</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="176" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==50&amp;pv1==-127)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.RBV</pv_name>
+          <pv_name>13BMD:m121.RBV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #785</name>
+      <text>XRD</text>
+      <x>179</x>
+      <y>3</y>
+      <width>49</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="176" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0&amp;pv1==95)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.RBV</pv_name>
+          <pv_name>13BMD:m121.RBV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #789</name>
+      <text>Moving</text>
+      <x>166</x>
+      <y>20</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0ORpv1==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m70.DMOV</pv_name>
+          <pv_name>13BMD:m121.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #793</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL3:cam1:ThresholdApply</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL3:cam1:ThresholdApply</pv_name>
+    <text>E-Set</text>
+    <x>676</x>
+    <y>60</y>
+    <width>49</width>
+    <height>17</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #796</name>
+    <x>673</x>
+    <y>27</y>
+    <width>200</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="200.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #800</name>
+    <x>666</x>
+    <y>4</y>
+    <width>214</width>
+    <height>84</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #803</name>
+    <pv_name>13PIL3:AcquireSequence.STR9</pv_name>
+    <x>734</x>
+    <y>60</y>
+    <width>135</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #807</name>
+    <x>506</x>
+    <y>488</y>
+    <width>118</width>
+    <height>50</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0|pv1==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:alldone.VAL</pv_name>
+        <pv_name>13BMD_AEROTECH:alldone.VAL</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #810</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:userTran3.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:userTran3.PROC</pv_name>
+      <text>STOP</text>
+      <width>118</width>
+      <height>50</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #814</name>
+    <x>144</x>
+    <y>421</y>
+    <width>956</width>
+    <height>5</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #818</name>
+    <x>144</x>
+    <y>421</y>
+    <width>956</width>
+    <height>5</height>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #822</name>
+    <x>540</x>
+    <y>402</y>
+    <width>50</width>
+    <height>119</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #825</name>
+      <x>3</x>
+      <y>45</y>
+      <width>2</width>
+      <height>74</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="1.0" y="73.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #829</name>
+      <x>48</x>
+      <y>45</y>
+      <width>2</width>
+      <height>74</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="1.0" y="73.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #833</name>
+      <x>2</x>
+      <y>32</y>
+      <width>48</width>
+      <height>25</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>polygon #836</name>
+      <x>1</x>
+      <y>1</y>
+      <width>48</width>
+      <height>48</height>
+      <points>
+        <point x="11.0" y="1.0">
+        </point>
+        <point x="0.0" y="13.0">
+        </point>
+        <point x="25.0" y="48.0">
+        </point>
+        <point x="48.0" y="13.0">
+        </point>
+        <point x="37.0" y="0.0">
+        </point>
+        <point x="12.0" y="0.0">
+        </point>
+        <point x="11.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="42" green="99" blue="228">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="42" green="99" blue="228">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>polygon #840</name>
+      <x>17</x>
+      <y>14</y>
+      <width>13</width>
+      <height>8</height>
+      <points>
+        <point x="0.0" y="3.0">
+        </point>
+        <point x="6.0" y="8.0">
+        </point>
+        <point x="13.0" y="3.0">
+        </point>
+        <point x="6.0" y="0.0">
+        </point>
+        <point x="0.0" y="3.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>polygon #844</name>
+      <x>23</x>
+      <y>23</y>
+      <width>10</width>
+      <height>8</height>
+      <points>
+        <point x="0.0" y="8.0">
+        </point>
+        <point x="6.0" y="0.0">
+        </point>
+        <point x="10.0" y="4.0">
+        </point>
+        <point x="7.0" y="8.0">
+        </point>
+        <point x="0.0" y="8.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>polygon #848</name>
+      <width>50</width>
+      <height>50</height>
+      <points>
+        <point x="12.0" y="2.0">
+        </point>
+        <point x="1.0" y="14.0">
+        </point>
+        <point x="26.0" y="49.0">
+        </point>
+        <point x="49.0" y="14.0">
+        </point>
+        <point x="38.0" y="1.0">
+        </point>
+        <point x="13.0" y="1.0">
+        </point>
+        <point x="12.0" y="2.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #853</name>
+    <x>668</x>
+    <y>93</y>
+    <width>210</width>
+    <height>90</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #856</name>
+    <x>666</x>
+    <y>90</y>
+    <width>214</width>
+    <height>90</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #859</name>
+    <text>Tomo Camera</text>
+    <x>712</x>
+    <y>93</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #862</name>
+    <x>673</x>
+    <y>112</y>
+    <width>200</width>
+    <height>0</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="200.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #866</name>
+    <text>Exposure:</text>
+    <x>672</x>
+    <y>126</y>
+    <width>65</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #869</name>
+    <text>Flat Field:</text>
+    <x>672</x>
+    <y>155</y>
+    <width>76</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #872</name>
+    <pv_name>13BMDPG4:cam1:AcquireTime</pv_name>
+    <x>737</x>
+    <y>124</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #876</name>
+    <x>312</x>
+    <y>267</y>
+    <width>114</width>
+    <height>144</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #879</name>
+      <pv_name>13BMD:m123.VAL</pv_name>
+      <y>37</y>
+      <width>107</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="176" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #883</name>
+      <pv_name>13BMD:m123.TWV</pv_name>
+      <x>23</x>
+      <y>67</y>
+      <width>64</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="176" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #887</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m123.TWR</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m123.TWR</pv_name>
+      <text>-</text>
+      <x>3</x>
+      <y>67</y>
+      <width>17</width>
+      <height>22</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="174" green="78" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #890</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m123.TWF</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m123.TWF</pv_name>
+      <text>+</text>
+      <x>91</x>
+      <y>67</y>
+      <width>17</width>
+      <height>22</height>
+      <background_color>
+        <color red="174" green="78" blue="188">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #893</name>
+      <x>5</x>
+      <y>90</y>
+      <width>14</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m123.HLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #897</name>
+      <x>92</x>
+      <y>91</y>
+      <width>14</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m123.LLS</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #901</name>
+      <text>Soft-Limit</text>
+      <x>16</x>
+      <y>128</y>
+      <width>73</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m123.LVIO</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #905</name>
+      <text>Moving</text>
+      <x>15</x>
+      <y>124</y>
+      <width>75</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMD:m123.DMOV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #909</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m123.TWV</pv_name>
+          <value>.01</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m123.TWV</pv_name>
+      <text>.01</text>
+      <x>26</x>
+      <y>92</y>
+      <width>26</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="139" green="26" blue="150">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #912</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m123.TWV</pv_name>
+          <value>.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m123.TWV</pv_name>
+      <text>.1</text>
+      <x>57</x>
+      <y>92</y>
+      <width>26</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="139" green="26" blue="150">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #915</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:m123.TWV</pv_name>
+          <value>.001</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:m123.TWV</pv_name>
+      <text>.001</text>
+      <x>40</x>
+      <y>109</y>
+      <width>32</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="139" green="26" blue="150">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #918</name>
+      <text>Horizontal</text>
+      <x>11</x>
+      <width>87</width>
+      <height>17</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #922</name>
+      <pv_name>13BMD:m123.RBV</pv_name>
+      <x>55</x>
+      <y>22</y>
+      <width>59</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="115" green="255" blue="107">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="39" green="84" blue="141">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #926</name>
+      <text>Now at:</text>
+      <y>22</y>
+      <width>55</width>
+      <height>13</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #930</name>
+    <pv_name>13BMD:scaler1.S2</pv_name>
+    <x>1035</x>
+    <y>323</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="82" green="218" blue="59">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #934</name>
+    <pv_name>13BMD:A3sens_num.VAL</pv_name>
+    <x>1037</x>
+    <y>361</y>
+    <width>56</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #937</name>
+    <pv_name>13BMD:A3sens_unit.VAL</pv_name>
+    <x>1037</x>
+    <y>381</y>
+    <width>56</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #940</name>
+    <actions>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A3</A>
+          <P>13BMD:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamp 2</description>
+      </action>
+    </actions>
+    <text>more</text>
+    <x>1037</x>
+    <y>345</y>
+    <width>56</width>
+    <height>15</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="82" green="218" blue="59">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #943</name>
+    <x>1051</x>
+    <y>411</y>
+    <width>30</width>
+    <height>30</height>
+    <line_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #946</name>
+    <text>Chamber</text>
+    <x>1029</x>
+    <y>307</y>
+    <width>70</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #949</name>
+    <text>Ion</text>
+    <x>1046</x>
+    <y>292</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #952</name>
+    <pv_name>13BMDPG4:Proc1:EnableFlatField</pv_name>
+    <x>752</x>
+    <y>156</y>
+    <width>68</width>
+    <height>17</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #955</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMDPG4:Proc1:SaveFlatField</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMDPG4:Proc1:SaveFlatField</pv_name>
+    <text>Save</text>
+    <x>824</x>
+    <y>156</y>
+    <width>49</width>
+    <height>17</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #958</name>
+    <actions>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13BMDPG4:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Point Grey 1</description>
+      </action>
+    </actions>
+    <text>Tomo Camera</text>
+    <x>254</x>
+    <y>48</y>
+    <width>123</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="45" green="45" blue="45">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #961</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMDPG1:TS:MoveSampleIn</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMDPG1:TS:MoveSampleIn</pv_name>
+    <text>Move Sample In</text>
+    <x>783</x>
+    <y>118</y>
+    <width>90</width>
+    <height>15</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #964</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMDPG1:TS:MoveSampleOut</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMDPG1:TS:MoveSampleOut</pv_name>
+    <text>Move Sample Out</text>
+    <x>783</x>
+    <y>134</y>
+    <width>90</width>
+    <height>15</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #967</name>
+    <x>897</x>
+    <y>404</y>
+    <width>94</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #970</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:USBCTR:Bo1</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      <text>OPEN</text>
+      <width>94</width>
+      <height>40</height>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #974</name>
+    <x>897</x>
+    <y>404</y>
+    <width>94</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #977</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:USBCTR:Bo1</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:USBCTR:Bo1</pv_name>
+      <text>CLOSE</text>
+      <width>94</width>
+      <height>40</height>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+</display>

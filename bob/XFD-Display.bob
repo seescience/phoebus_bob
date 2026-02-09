@@ -1,0 +1,3162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-07-24 12:57:03 by epics-->
+<display version="2.0.0">
+  <name>XFD-Display</name>
+  <x>805</x>
+  <y>369</y>
+  <width>530</width>
+  <height>609</height>
+  <background_color>
+    <color red="235" green="241" blue="181">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="picture" version="2.0.0">
+    <name>image #6</name>
+    <file>sr.gif</file>
+    <y>79</y>
+    <width>520</width>
+    <height>520</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #8</name>
+    <text>APS Storage Ring Displays</text>
+    <x>50</x>
+    <y>10</y>
+    <width>400</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #11</name>
+    <x>12</x>
+    <y>46</y>
+    <width>125</width>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #14</name>
+    <text>SR  Info</text>
+    <x>30</x>
+    <y>50</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #17</name>
+    <actions>
+      <action type="open_display">
+        <file>SR_Status.opi</file>
+        <target>tab</target>
+        <description>SR Status &amp; History</description>
+      </action>
+      <action type="open_display">
+        <file>SR_Status_PC.opi</file>
+        <target>tab</target>
+        <description>SR Status- (FOR PC)</description>
+      </action>
+      <action type="open_display">
+        <file>TV_SRparameters.opi</file>
+        <target>tab</target>
+        <description>SR Ops Parameters</description>
+      </action>
+      <action type="open_display">
+        <file>TopUp.opi</file>
+        <target>tab</target>
+        <description>Top Up Information</description>
+      </action>
+      <action type="open_display">
+        <file>srbpm/diagApp/BPLDTop.opi</file>
+        <target>tab</target>
+        <description>BPLD Status</description>
+      </action>
+      <action type="open_display">
+        <file>srbpm/sbpmApp/SbpmTop.opi</file>
+        <target>tab</target>
+        <description>SR BPM </description>
+      </action>
+      <action type="open_display">
+        <file>asdops/screens/X_inuse.opi</file>
+        <target>tab</target>
+        <description>X-BPMs for Orbit Correction</description>
+      </action>
+      <action type="open_display">
+        <file>SR_Current.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Info</text>
+    <x>11</x>
+    <y>73</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #27</name>
+    <x>252</x>
+    <y>47</y>
+    <width>95</width>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>Front End</text>
+    <x>254</x>
+    <y>49</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #33</name>
+    <actions>
+      <action type="open_display">
+        <file>iocs/vacuum/SRvacOverview02-18.opi</file>
+        <target>tab</target>
+        <description>SR Vacuum Overview S01-18</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/vacuum/SRvacOverview19-35.opi</file>
+        <target>tab</target>
+        <description>SR Vacuum Overview S19-35</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/vacuum/ZoneF_Vac.opi</file>
+        <target>tab</target>
+        <description>SR Vacuum Overview Zone F</description>
+      </action>
+      <action type="open_display">
+        <file>rf/vacApp/S36-VAC-RF-Cavities.opi</file>
+        <target>tab</target>
+        <description>S36 RF Cavity Vacuum</description>
+      </action>
+      <action type="open_display">
+        <file>rf/vacApp/S37-VAC-RF-Cavities.opi</file>
+        <target>tab</target>
+        <description>S37 RF Cavity Vacuum</description>
+      </action>
+      <action type="open_display">
+        <file>rf/vacApp/S38-VAC-RF-Cavities.opi</file>
+        <target>tab</target>
+        <description>S38 RF Cavity Vacuum</description>
+      </action>
+      <action type="open_display">
+        <file>rf/vacApp/S40-VAC-RF-Cavities.opi</file>
+        <target>tab</target>
+        <description>S36 RF Cavity Vacuum</description>
+      </action>
+    </actions>
+    <text>Vacuum</text>
+    <x>68</x>
+    <y>73</y>
+    <width>70</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #42</name>
+    <x>167</x>
+    <y>46</y>
+    <width>60</width>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #45</name>
+    <text>PSS</text>
+    <x>168</x>
+    <y>49</y>
+    <width>55</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #48</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/PSS_Main.opi</file>
+        <target>tab</target>
+        <description>Main</description>
+      </action>
+      <action type="open_display">
+        <file>sr/pss/pss-ioc-info.opi</file>
+        <target>tab</target>
+        <description>IOC Stats</description>
+      </action>
+      <action type="open_display">
+        <file>sr/pss/PSS_DIW_MAIN.opi</file>
+        <target>tab</target>
+        <description>DIW</description>
+      </action>
+      <action type="open_display">
+        <file>FEEPS_PSS_Status.opi</file>
+        <target>tab</target>
+        <description>FEEPS &amp; PSS Status</description>
+      </action>
+      <action type="open_display">
+        <file>sr/pss/adl/Door_Status.opi</file>
+        <target>tab</target>
+        <description>PSS Door Status</description>
+      </action>
+    </actions>
+    <text>PSS</text>
+    <x>170</x>
+    <y>74</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #55</name>
+    <x>428</x>
+    <y>45</y>
+    <width>90</width>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #58</name>
+    <text>BEAMLINE</text>
+    <x>433</x>
+    <y>49</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #61</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/Beamline_Status.opi</file>
+        <target>tab</target>
+        <description>Beamline Status</description>
+      </action>
+    </actions>
+    <text>Beamline</text>
+    <x>433</x>
+    <y>75</y>
+    <width>80</width>
+    <height>20</height>
+    <background_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #64</name>
+    <x>4</x>
+    <y>516</y>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #67</name>
+    <text>Misc</text>
+    <x>14</x>
+    <y>518</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #70</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/Barometric.opi</file>
+        <target>tab</target>
+        <description>Barometric Pressure</description>
+      </action>
+    </actions>
+    <text>Misc.</text>
+    <x>4</x>
+    <y>542</y>
+    <height>20</height>
+    <background_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #73</name>
+    <text>S1</text>
+    <x>295</x>
+    <y>177</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #76</name>
+    <text>S2</text>
+    <x>325</x>
+    <y>187</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #79</name>
+    <text>S3</text>
+    <x>356</x>
+    <y>202</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #82</name>
+    <text>S5</text>
+    <x>393</x>
+    <y>250</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #85</name>
+    <text>S6</text>
+    <x>409</x>
+    <y>275</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #88</name>
+    <text>S7</text>
+    <x>413</x>
+    <y>301</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #91</name>
+    <text>S8</text>
+    <x>419</x>
+    <y>327</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #94</name>
+    <text>S9</text>
+    <x>420</x>
+    <y>351</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #97</name>
+    <text>S10</text>
+    <x>413</x>
+    <y>377</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #100</name>
+    <text>S11</text>
+    <x>410</x>
+    <y>400</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #103</name>
+    <text>S12</text>
+    <x>396</x>
+    <y>424</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #106</name>
+    <text>S13</text>
+    <x>382</x>
+    <y>445</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #109</name>
+    <text>S14</text>
+    <x>367</x>
+    <y>464</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #112</name>
+    <text>S15</text>
+    <x>348</x>
+    <y>483</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #115</name>
+    <text>S17</text>
+    <x>299</x>
+    <y>517</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #118</name>
+    <text>S18</text>
+    <x>271</x>
+    <y>524</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #121</name>
+    <text>S19</text>
+    <x>243</x>
+    <y>525</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #124</name>
+    <text>S20</text>
+    <x>216</x>
+    <y>525</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #127</name>
+    <text>S33</text>
+    <x>97</x>
+    <y>253</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #130</name>
+    <text>S34</text>
+    <x>115</x>
+    <y>233</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #133</name>
+    <text>S35</text>
+    <x>133</x>
+    <y>209</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #136</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_01BM.opi</file>
+        <macros>
+          <xx>01</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>1 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S01BM</Z>
+          <a>S01BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>1 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>292</x>
+    <y>146</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #140</name>
+    <x>360</x>
+    <y>45</y>
+    <width>60</width>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #143</name>
+    <text>ID</text>
+    <x>373</x>
+    <y>48</y>
+    <width>30</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #146</name>
+    <actions>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_Status_1.opi</file>
+        <target>tab</target>
+        <description>ID S1-18 Status</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_Status_2.opi</file>
+        <target>tab</target>
+        <description>ID S19-35 Status</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_Global_Ctl.opi</file>
+        <target>tab</target>
+        <description>ID Global Controls</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_Control.opi</file>
+        <target>tab</target>
+        <description>ID Quick Controls</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_SysMgr_Citrix1.opi</file>
+        <target>tab</target>
+        <description>ID S01-18 System Manager </description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_SysMgr_Citrix2.opi</file>
+        <target>tab</target>
+        <description>ID S19-35 System Manager </description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_IOC_Status.opi</file>
+        <target>tab</target>
+        <description>ID IOC Status</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/IDStatus_Check/IDStatus_Check_1-18.opi</file>
+        <target>tab</target>
+        <description>ID S01-18 Status Check</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/IDStatus_Check/IDStatus_Check_19-35.opi</file>
+        <target>tab</target>
+        <description>ID S19-35 Status Check</description>
+      </action>
+    </actions>
+    <text>ID</text>
+    <x>363</x>
+    <y>73</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #157</name>
+    <text>S4</text>
+    <x>380</x>
+    <y>227</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #160</name>
+    <text>S32</text>
+    <x>84</x>
+    <y>280</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #163</name>
+    <x>10</x>
+    <y>115</y>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #166</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/GatewayStats.opi</file>
+        <macros>
+          <gateway>GW:401:MAIN2</gateway>
+        </macros>
+        <target>tab</target>
+        <description>ctlapps2-vm Gateway </description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/GatewayStats.opi</file>
+        <macros>
+          <gateway>GW:401:MAIN1</gateway>
+        </macros>
+        <target>tab</target>
+        <description>ctlapps4-vm Gateway</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/UserGatewayStats.opi</file>
+        <target>tab</target>
+        <description>Users Gateway</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/GatewayOverview.opi</file>
+        <target>tab</target>
+        <description>All Gateways Overview</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/ReversePVGateways.opi</file>
+        <target>tab</target>
+        <description>All Reverse PV Gateways</description>
+      </action>
+    </actions>
+    <text>Status</text>
+    <x>17</x>
+    <y>143</y>
+    <width>80</width>
+    <height>20</height>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #173</name>
+    <text>Gateway</text>
+    <x>18</x>
+    <y>117</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #176</name>
+    <x>407</x>
+    <y>116</y>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #179</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/LNDS_Top.opi</file>
+        <target>tab</target>
+        <description>Main LNDS</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/LNDS_Module.opi</file>
+        <macros>
+          <IC1>0</IC1>
+          <IC2>AB</IC2>
+          <IOC>IOC</IOC>
+          <KF1>A1</KF1>
+          <KF2>A2</KF2>
+          <KF3>5</KF3>
+          <KF4>6</KF4>
+          <LOM>431-432</LOM>
+          <MOD>A</MOD>
+          <MOD1>B</MOD1>
+          <S1>01</S1>
+          <S10>0</S10>
+          <S2>02</S2>
+          <S3>03</S3>
+          <S4>04</S4>
+          <S5>05</S5>
+          <S6>06</S6>
+          <S7>07</S7>
+          <S8>08</S8>
+          <S9>09</S9>
+          <TANK>37-38</TANK>
+          <name>LN:A</name>
+        </macros>
+        <target>tab</target>
+        <description>Module A</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/LNDS_Module.opi</file>
+        <macros>
+          <IC1>AB</IC1>
+          <IC2>BC</IC2>
+          <IOC>IOC</IOC>
+          <KF1>B1</KF1>
+          <KF2>B2</KF2>
+          <KF3>5</KF3>
+          <KF4>6</KF4>
+          <LOM>433-434</LOM>
+          <MOD>B</MOD>
+          <MOD1>C</MOD1>
+          <S1>10</S1>
+          <S10>0</S10>
+          <S2>11</S2>
+          <S3>12</S3>
+          <S4>13</S4>
+          <S5>14</S5>
+          <S6>15</S6>
+          <S7>16</S7>
+          <S8>17</S8>
+          <S9>0</S9>
+          <TANK>34</TANK>
+          <name>LN:B</name>
+        </macros>
+        <target>tab</target>
+        <description>Module B</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/LNDS_Module.opi</file>
+        <macros>
+          <IC1>BC</IC1>
+          <IC2>CD</IC2>
+          <IOC>IOC</IOC>
+          <KF1>C1</KF1>
+          <KF2>C2</KF2>
+          <KF3>5</KF3>
+          <KF4>6</KF4>
+          <LOM>435-436</LOM>
+          <MOD>C</MOD>
+          <MOD1>D</MOD1>
+          <S1>18</S1>
+          <S10>27</S10>
+          <S2>19</S2>
+          <S3>20</S3>
+          <S4>21</S4>
+          <S5>22</S5>
+          <S6>23</S6>
+          <S7>24</S7>
+          <S8>25</S8>
+          <S9>26</S9>
+          <TANK>35</TANK>
+          <name>LN:C</name>
+        </macros>
+        <target>tab</target>
+        <description>Module C</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/LNDS_Module.opi</file>
+        <macros>
+          <IC1>CD</IC1>
+          <IC2>CD</IC2>
+          <IOC>IOC</IOC>
+          <KF1>D1</KF1>
+          <KF2>D2</KF2>
+          <KF3>5</KF3>
+          <KF4>6</KF4>
+          <LOM>437-438</LOM>
+          <MOD>D</MOD>
+          <MOD1>C</MOD1>
+          <S1>28</S1>
+          <S10>0</S10>
+          <S2>29</S2>
+          <S3>30</S3>
+          <S4>31</S4>
+          <S5>32</S5>
+          <S6>33</S6>
+          <S7>34</S7>
+          <S8>35</S8>
+          <S9>0</S9>
+          <TANK>36</TANK>
+          <name>LN:D</name>
+        </macros>
+        <target>tab</target>
+        <description>Module D</description>
+      </action>
+    </actions>
+    <text>LNDS</text>
+    <x>414</x>
+    <y>144</y>
+    <width>80</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #186</name>
+    <text>LN Dis Sys</text>
+    <x>415</x>
+    <y>118</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #189</name>
+    <actions>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_Main.opi</file>
+        <target>tab</target>
+        <description>FE EPS Main Menu</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/FE_MpsInputs.opi</file>
+        <target>tab</target>
+        <description>FE MPS Inputs</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/FE_Controls.opi</file>
+        <target>tab</target>
+        <description>FE Controls</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FrontEndVacuum.opi</file>
+        <target>tab</target>
+        <description>FE VACUUM</description>
+      </action>
+      <action type="open_display">
+        <file>FEEPS_PSS_Status.opi</file>
+        <target>tab</target>
+        <description>FEEPS &amp; PSS Status</description>
+      </action>
+    </actions>
+    <text>Front End</text>
+    <x>253</x>
+    <y>74</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #196</name>
+    <text>S22</text>
+    <x>168</x>
+    <y>506</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #199</name>
+    <text>S16</text>
+    <x>331</x>
+    <y>498</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #202</name>
+    <text>S31</text>
+    <x>74</x>
+    <y>304</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #205</name>
+    <text>S23</text>
+    <x>149</x>
+    <y>493</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #208</name>
+    <text>S24</text>
+    <x>133</x>
+    <y>478</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #211</name>
+    <text>S21</text>
+    <x>192</x>
+    <y>517</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #214</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/Secon1.opi</file>
+        <target>tab</target>
+        <description>SECON1</description>
+      </action>
+    </actions>
+    <text>SECON1 Display</text>
+    <x>404</x>
+    <y>583</y>
+    <width>120</width>
+    <height>20</height>
+    <background_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #217</name>
+    <actions>
+      <action type="command">
+        <command>"/usr/local/oag/apps/bin/solaris/AttendanceChecklist &amp;" </command>
+        <description>"Attendance Checklist"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>584</y>
+    <height>20</height>
+    <background_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #220</name>
+    <actions>
+      <action type="open_display">
+        <file>systems/sr/mbaMain.opi</file>
+        <target>tab</target>
+        <description>Main SR Screens</description>
+      </action>
+    </actions>
+    <text>Main SR Screens</text>
+    <x>184</x>
+    <y>356</y>
+    <width>138</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #223</name>
+    <actions>
+      <action type="open_display">
+        <file>iocs/idctl/adl_Global/ID_Main.opi</file>
+        <target>tab</target>
+        <description>ID Main</description>
+      </action>
+    </actions>
+    <text>ID Main</text>
+    <x>203</x>
+    <y>381</y>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #226</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/id/IDSteeringGlobal.opi</file>
+        <target>tab</target>
+        <description>ID Steering Screens</description>
+      </action>
+      <action type="open_display">
+        <file>sr/id/BMSteeringGlobal.opi</file>
+        <target>tab</target>
+        <description>BM Steering Screens</description>
+      </action>
+      <action type="open_display">
+        <file>srbpm/sbpmApp/IDSrcPoints.opi</file>
+        <target>tab</target>
+        <description>ID Source Point Parameters</description>
+      </action>
+      <action type="open_display">
+        <file>srbpm/sbpmApp/BMSrcPoints.opi</file>
+        <target>tab</target>
+        <description>BM Source Point Parameters</description>
+      </action>
+    </actions>
+    <text>Beamline Steering</text>
+    <x>184</x>
+    <y>406</y>
+    <width>138</width>
+    <height>20</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #232</name>
+    <x>6</x>
+    <y>566</y>
+    <height>15</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #235</name>
+    <text>Attendance</text>
+    <x>16</x>
+    <y>563</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #238</name>
+    <text>S26</text>
+    <x>93</x>
+    <y>438</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #241</name>
+    <text>S30</text>
+    <x>68</x>
+    <y>329</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #244</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/PowerOutage.opi</file>
+        <target>tab</target>
+        <description>Power Outage Display</description>
+      </action>
+    </actions>
+    <text>Power Outage Display</text>
+    <x>174</x>
+    <y>584</y>
+    <width>165</width>
+    <height>20</height>
+    <background_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #247</name>
+    <text>S29</text>
+    <x>67</x>
+    <y>355</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #250</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/Televac.opi</file>
+        <macros>
+          <LOC>S29</LOC>
+          <c>1</c>
+          <xx>BNL</xx>
+          <yy>test</yy>
+        </macros>
+        <target>tab</target>
+        <description>29 - Televac1 BNL Bellows Test</description>
+      </action>
+      <action type="open_display">
+        <file>sr/fe/Televac.opi</file>
+        <macros>
+          <LOC>S29</LOC>
+          <c>2</c>
+          <xx>BNL</xx>
+          <yy>test</yy>
+        </macros>
+        <target>tab</target>
+        <description>29 - Televac2 BNL Bellows Test</description>
+      </action>
+    </actions>
+    <text>I</text>
+    <x>123</x>
+    <y>687</y>
+    <width>65</width>
+    <height>34</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #254</name>
+    <text>S25</text>
+    <x>112</x>
+    <y>458</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #257</name>
+    <text>S27</text>
+    <x>82</x>
+    <y>412</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #260</name>
+    <actions>
+      <action type="open_display">
+        <file>site/beamQualityOverview.opi</file>
+        <target>tab</target>
+        <description>Overview</description>
+      </action>
+    </actions>
+    <text>Beam Quality Reporting</text>
+    <x>164</x>
+    <y>431</y>
+    <width>178</width>
+    <height>20</height>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #263</name>
+    <text>S28</text>
+    <x>72</x>
+    <y>382</y>
+    <width>15</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #266</name>
+    <x>453</x>
+    <y>512</y>
+    <width>60</width>
+    <height>25</height>
+    <line_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #269</name>
+    <text>ACIS</text>
+    <x>454</x>
+    <y>515</y>
+    <width>55</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #272</name>
+    <actions>
+      <action type="open_display">
+        <file>acis/lea/ACIS_LEA_Main.opi</file>
+        <macros>
+          <Z>LU</Z>
+        </macros>
+        <target>tab</target>
+        <description>LEA</description>
+      </action>
+      <action type="open_display">
+        <file>acis/lp/ACIS_LP_Main.opi</file>
+        <macros>
+          <Z>LP</Z>
+        </macros>
+        <target>tab</target>
+        <description>Linac/PAR</description>
+      </action>
+      <action type="open_display">
+        <file>acis/boo/AcisBooMain.opi</file>
+        <macros>
+          <Z>BOO</Z>
+        </macros>
+        <target>tab</target>
+        <description>Booster</description>
+      </action>
+      <action type="open_display">
+        <file>acis/rf/AcisRfMain.opi</file>
+        <macros>
+          <Z>RF</Z>
+        </macros>
+        <target>tab</target>
+        <description>RF</description>
+      </action>
+      <action type="open_display">
+        <file>acis/sr/AcisSrMain.opi</file>
+        <macros>
+          <Z>SR</Z>
+        </macros>
+        <target>tab</target>
+        <description>SRing</description>
+      </action>
+    </actions>
+    <text>ACIS</text>
+    <x>456</x>
+    <y>540</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #279</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/fe/XFD-Display_Old.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Old XFD Display</text>
+    <x>405</x>
+    <y>5</y>
+    <width>120</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #282</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_01ID.opi</file>
+        <macros>
+          <xx>01</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>1 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S01ID</Z>
+          <a>S01IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>1 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>311</x>
+    <y>146</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #286</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_02BM.opi</file>
+        <macros>
+          <xx>02</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>2 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S02BM</Z>
+          <a>S02BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>2 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>331</x>
+    <y>164</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #290</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_02ID.opi</file>
+        <macros>
+          <xx>02</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>2 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S02ID</Z>
+          <a>S02IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>2 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>350</x>
+    <y>164</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #294</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_03ID.opi</file>
+        <macros>
+          <xx>03</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>3 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S03ID</Z>
+          <a>S03IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>3 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>389</x>
+    <y>185</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #298</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_04ID.opi</file>
+        <macros>
+          <xx>04</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>4 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S04ID</Z>
+          <a>S04IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>4 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>413</x>
+    <y>211</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #302</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_05BM.opi</file>
+        <macros>
+          <xx>05</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>5 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S05BM</Z>
+          <a>S05BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>5 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>413</x>
+    <y>236</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #306</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_05ID.opi</file>
+        <macros>
+          <xx>05</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>5 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S05ID</Z>
+          <a>S05IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>55 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>432</x>
+    <y>236</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #310</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_06BM.opi</file>
+        <macros>
+          <xx>06</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>6 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S06BM</Z>
+          <a>S06BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>6 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>426</x>
+    <y>264</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #314</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_06ID.opi</file>
+        <macros>
+          <xx>06</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>6 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S06ID</Z>
+          <a>S06IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>6 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>445</x>
+    <y>264</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #318</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_07BM.opi</file>
+        <macros>
+          <xx>07</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>7 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S07BM</Z>
+          <a>S07BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>7 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>433</x>
+    <y>293</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #322</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_07ID.opi</file>
+        <macros>
+          <xx>07</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>7 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S07ID</Z>
+          <a>S07IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>7 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>452</x>
+    <y>293</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #326</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_08BM.opi</file>
+        <macros>
+          <xx>08</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>8 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S08BM</Z>
+          <a>S08BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>8 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>438</x>
+    <y>318</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #330</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_08ID.opi</file>
+        <macros>
+          <xx>08</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>8 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S08ID</Z>
+          <a>S08IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>8 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>457</x>
+    <y>318</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #334</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_16BM.opi</file>
+        <macros>
+          <xx>16</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>16 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S16BM</Z>
+          <a>S16BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>16 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>343</x>
+    <y>511</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #338</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_09BM.opi</file>
+        <macros>
+          <xx>09</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>9 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S09BM</Z>
+          <a>S09BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>9 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>440</x>
+    <y>348</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #342</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_09ID.opi</file>
+        <macros>
+          <xx>09</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>9 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S09ID</Z>
+          <a>S09IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>9 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>459</x>
+    <y>348</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #346</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_10BM.opi</file>
+        <macros>
+          <xx>10</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>10 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S10BM</Z>
+          <a>S10BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>10 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>437</x>
+    <y>377</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #350</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_10ID.opi</file>
+        <macros>
+          <xx>10</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>10 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S10ID</Z>
+          <a>S10IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>10 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>456</x>
+    <y>377</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #354</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_11BM.opi</file>
+        <macros>
+          <xx>11</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>11 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S11BM</Z>
+          <a>S11BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>11 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>431</x>
+    <y>405</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #358</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_11ID.opi</file>
+        <macros>
+          <xx>11</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>11 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S11ID</Z>
+          <a>S11IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>11 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>450</x>
+    <y>405</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #362</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_12BM.opi</file>
+        <macros>
+          <xx>12</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>12 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S12BM</Z>
+          <a>S12BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>12 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>421</x>
+    <y>428</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #366</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_12ID.opi</file>
+        <macros>
+          <xx>12</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>12 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S12ID</Z>
+          <a>S12IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>12 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>440</x>
+    <y>428</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #370</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_13BM.opi</file>
+        <macros>
+          <xx>13</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>13 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S13BM</Z>
+          <a>S13BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>13 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>408</x>
+    <y>450</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #374</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_13ID.opi</file>
+        <macros>
+          <xx>13</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>13 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S13ID</Z>
+          <a>S13IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>13 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>427</x>
+    <y>450</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #378</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_14BM.opi</file>
+        <macros>
+          <xx>14</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>14 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S14BM</Z>
+          <a>S14BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>14 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>390</x>
+    <y>473</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #382</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_14ID.opi</file>
+        <macros>
+          <xx>14</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>14 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S14ID</Z>
+          <a>S14IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>14 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>409</x>
+    <y>473</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #386</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_17BM.opi</file>
+        <macros>
+          <xx>17</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>17 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S17BM</Z>
+          <a>S17BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>17 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>310</x>
+    <y>528</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #390</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_18ID.opi</file>
+        <macros>
+          <xx>18</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>18 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S18ID</Z>
+          <a>S18IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>18 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>272</x>
+    <y>559</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #394</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_19ID.opi</file>
+        <macros>
+          <xx>19</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>19 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S19ID</Z>
+          <a>S19IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>19 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>240</x>
+    <y>560</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #398</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_19BM.opi</file>
+        <macros>
+          <xx>19</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>19 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S19BM</Z>
+          <a>S19BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>19 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>241</x>
+    <y>538</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #402</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_17ID.opi</file>
+        <macros>
+          <xx>17</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>17 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S17ID</Z>
+          <a>S17IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>17 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>319</x>
+    <y>547</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #406</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_16ID.opi</file>
+        <macros>
+          <xx>16</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>16 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S16ID</Z>
+          <a>S16IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>16 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>354</x>
+    <y>530</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #410</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_15ID.opi</file>
+        <macros>
+          <xx>15</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>15 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S15ID</Z>
+          <a>S15IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>15 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>387</x>
+    <y>508</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #414</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_20BM.opi</file>
+        <macros>
+          <xx>20</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>20 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S20BM</Z>
+          <a>S20BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>20 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>213</x>
+    <y>537</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #418</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_20ID.opi</file>
+        <macros>
+          <xx>20</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>20 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S20ID</Z>
+          <a>S20IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>20 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>212</x>
+    <y>559</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #422</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_23BM.opi</file>
+        <macros>
+          <xx>23</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>23 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S23BM</Z>
+          <a>S23BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>23 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>130</x>
+    <y>501</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #426</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_33BM.opi</file>
+        <macros>
+          <xx>02</xx>
+          <yy>BM</yy>
+        </macros>
+        <target>tab</target>
+        <description>33 - BM FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_BM_Main.opi</file>
+        <macros>
+          <Z>S33BM</Z>
+          <a>S33BMFE</a>
+        </macros>
+        <target>tab</target>
+        <description>33 - BM FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>70</x>
+    <y>237</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #430</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_21ID.opi</file>
+        <macros>
+          <xx>21</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>21 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S21ID</Z>
+          <a>S21IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>21 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>171</x>
+    <y>556</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #434</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_22ID.opi</file>
+        <macros>
+          <xx>22</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>22 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S22ID</Z>
+          <a>S22IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>22 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>141</x>
+    <y>542</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #438</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_23ID.opi</file>
+        <macros>
+          <xx>23</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>23 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S23ID</Z>
+          <a>S23IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>23 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>118</x>
+    <y>522</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #442</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_26ID.opi</file>
+        <macros>
+          <xx>26</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>26 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S26ID</Z>
+          <a>S26IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>26 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>56</x>
+    <y>466</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #446</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_27ID.opi</file>
+        <macros>
+          <xx>27</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>27 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S27ID</Z>
+          <a>S27IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>27 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>36</x>
+    <y>434</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #450</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_28ID.opi</file>
+        <macros>
+          <xx>28</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>28 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S28ID</Z>
+          <a>S28IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>28 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>27</x>
+    <y>402</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #454</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_29ID.opi</file>
+        <macros>
+          <xx>29</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>29 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S29ID</Z>
+          <a>S29IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>29 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>22</x>
+    <y>368</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #458</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_30ID.opi</file>
+        <macros>
+          <xx>30</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>30 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S30ID</Z>
+          <a>S30IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>30 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>19</x>
+    <y>333</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #462</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_31ID.opi</file>
+        <macros>
+          <xx>31</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>31 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S31ID</Z>
+          <a>S31IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>31 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>23</x>
+    <y>298</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #466</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_32ID.opi</file>
+        <macros>
+          <xx>32</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>32 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S32ID</Z>
+          <a>S32IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>32 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>32</x>
+    <y>266</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #470</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_33ID.opi</file>
+        <macros>
+          <xx>33</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>33 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S33ID</Z>
+          <a>S33IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>33 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>49</x>
+    <y>233</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #474</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_34ID.opi</file>
+        <macros>
+          <xx>34</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>34 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S34ID</Z>
+          <a>S34IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>34 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>63</x>
+    <y>206</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #478</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_35ID.opi</file>
+        <macros>
+          <xx>35</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>35 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S35ID</Z>
+          <a>S35IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>35 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>82</x>
+    <y>183</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #482</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_25ID.opi</file>
+        <macros>
+          <xx>25</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>25 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S25ID</Z>
+          <a>S25IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>25 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>74</x>
+    <y>488</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #486</name>
+    <actions>
+      <action type="open_display">
+        <file>sr/pss/adl/Main_24ID.opi</file>
+        <macros>
+          <xx>24</xx>
+          <yy>ID</yy>
+        </macros>
+        <target>tab</target>
+        <description>24 - ID FE PSS</description>
+      </action>
+      <action type="open_display">
+        <file>iocs/frontend/FEEPS_HHL_Canted_Main.opi</file>
+        <macros>
+          <Z>S24ID</Z>
+          <a>S24IDFE</a>
+        </macros>
+        <target>tab</target>
+        <description>24 - ID FE EPS &amp; Control</description>
+      </action>
+    </actions>
+    <text>B</text>
+    <x>100</x>
+    <y>514</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+</display>

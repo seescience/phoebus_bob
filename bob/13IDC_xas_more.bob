@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:24 by epics-->
+<display version="2.0.0">
+  <name>13IDC_xas_more</name>
+  <x>341</x>
+  <y>671</y>
+  <width>393</width>
+  <height>268</height>
+  <background_color>
+    <color red="187" green="193" blue="135">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>Generic Serial and GPIB</text>
+    <x>76</x>
+    <y>108</y>
+    <width>230</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #9</name>
+    <actions>
+      <action type="open_display">
+        <file>GPIB_IO.opi</file>
+        <macros>
+          <REC>13IDC:gpib1</REC>
+        </macros>
+        <target>tab</target>
+        <description>GPIB 1</description>
+      </action>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>13IDC:ser1</REC>
+        </macros>
+        <target>tab</target>
+        <description>IDC Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>13IDC:ser2</REC>
+        </macros>
+        <target>tab</target>
+        <description>IDC Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>13IDA:ser1</REC>
+        </macros>
+        <target>tab</target>
+        <description>FOE Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>13IDA:ser2</REC>
+        </macros>
+        <target>tab</target>
+        <description>FOE Serial 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>21</x>
+    <y>108</y>
+    <width>50</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #16</name>
+    <actions>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <T>tran1</T>
+        </macros>
+        <target>tab</target>
+        <description>User transform 1</description>
+      </action>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <T>tran2</T>
+        </macros>
+        <target>tab</target>
+        <description>User transform 1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>21</x>
+    <y>80</y>
+    <width>50</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #20</name>
+    <text>User calcs</text>
+    <x>76</x>
+    <y>80</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #23</name>
+    <text>MCA Sweeps</text>
+    <x>76</x>
+    <y>52</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #26</name>
+    <actions>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mip330_1</M>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>IP330 Sweep #1</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mip330_2</M>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>IP330 Sweep #2</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mip330_3</M>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>IP330 Sweep #3</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mip330_4</M>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>IP330 Sweep #4</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>21</x>
+    <y>52</y>
+    <width>50</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #32</name>
+    <text>13IDC Microprobe/XAS:</text>
+    <x>10</x>
+    <y>10</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #35</name>
+    <text>More Info</text>
+    <x>234</x>
+    <y>10</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>Smart control</text>
+    <x>76</x>
+    <y>136</y>
+    <width>230</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #41</name>
+    <actions>
+      <action type="open_display">
+        <file>smartControl.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <R>smart1</R>
+        </macros>
+        <target>tab</target>
+        <description>Smart control</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>21</x>
+    <y>136</y>
+    <width>50</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #44</name>
+    <text>Camera control</text>
+    <x>78</x>
+    <y>174</y>
+    <width>230</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #47</name>
+    <actions>
+      <action type="open_display">
+        <file>camera_control.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <R>Unidig2</R>
+        </macros>
+        <target>tab</target>
+        <description>camera control</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>23</x>
+    <y>174</y>
+    <width>50</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+</display>

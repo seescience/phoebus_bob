@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:53:01 by epics-->
+<display version="2.0.0">
+  <name>Cummings</name>
+  <width>400</width>
+  <height>400</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>GPIB_IO.opi</file>
+        <macros>
+          <REC>245B:gpib1</REC>
+        </macros>
+        <target>tab</target>
+        <description>Generic GPIB</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>68</x>
+    <y>80</y>
+    <width>101</width>
+    <height>45</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>Generic GPIB for 245B</text>
+    <x>10</x>
+    <y>20</y>
+    <width>156</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

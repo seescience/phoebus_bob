@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-21 11:17:20 by epics-->
+<display version="2.0.0">
+  <name>13Galil_Test</name>
+  <x>311</x>
+  <y>89</y>
+  <width>370</width>
+  <height>250</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>30</x>
+    <y>12</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>Galil Test</text>
+    <x>47</x>
+    <y>20</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Motors</text>
+    <x>97</x>
+    <y>70</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #15</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+          <P>13GALIL_TEST:</P>
+          <TITLE>Galil_motors_1-8</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Galil motors 1-8</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>pm1</M4>
+          <M5>pm2</M5>
+          <M6>pm3</M6>
+          <M7>pm4</M7>
+          <M8>pm5</M8>
+          <P>13GALIL_TEST:</P>
+          <TITLE>DAC_Detector_motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>DAC detector motors</description>
+      </action>
+      <action type="open_display">
+        <file>IDD_DAC_Detector_Profile.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+          <PROF>Galil1:Prof1:</PROF>
+          <T>DAC_DETR:</T>
+        </macros>
+        <target>tab</target>
+        <description>DAC Profile move</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>17</x>
+    <y>70</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #20</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_soft.opi</file>
+        <macros>
+          <ioc>13GALIL_TEST:</ioc>
+        </macros>
+        <target>tab</target>
+        <description>devIocStats</description>
+      </action>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>17</x>
+    <y>178</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>IOC status</text>
+    <x>97</x>
+    <y>178</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #27</name>
+    <actions>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <AMP1>AD</AMP1>
+          <AMP2>EH</AMP2>
+          <DMC>13GALIL_TEST:Galil1:</DMC>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 1 controller</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>17</x>
+    <y>97</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>Galil Controllers</text>
+    <x>97</x>
+    <y>97</y>
+    <width>170</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #33</name>
+    <actions>
+      <action type="open_display">
+        <file>userArrayCalcs10.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcOuts10.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+        </macros>
+        <target>tab</target>
+        <description>User calcOuts</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs10.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userStringSeqs10.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringSeqs</description>
+      </action>
+      <action type="open_display">
+        <file>userTransforms10.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>17</x>
+    <y>124</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #40</name>
+    <text>User calcs</text>
+    <x>97</x>
+    <y>124</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #43</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13GALIL_TEST:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13GALIL_TEST:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>17</x>
+    <y>151</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #47</name>
+    <text>Scan</text>
+    <x>97</x>
+    <y>151</y>
+    <width>124</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #50</name>
+    <actions>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13GALIL_TEST:</P>
+          <R>asyn1</R>
+        </macros>
+        <target>tab</target>
+        <description>asyn #1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>17</x>
+    <y>205</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>asyn Records</text>
+    <x>97</x>
+    <y>205</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

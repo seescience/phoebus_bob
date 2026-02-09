@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-07-01 12:24:04 by epics-->
+<display version="2.0.0">
+  <name>13BMD_LVP_DIA_IC_control</name>
+  <x>1896</x>
+  <y>364</y>
+  <width>400</width>
+  <height>300</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>145</x>
+    <y>80</y>
+    <height>150</height>
+    <line_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #9</name>
+    <x>4</x>
+    <y>131</y>
+    <width>391</width>
+    <height>42</height>
+    <points>
+      <point x="24.0" y="34.0">
+      </point>
+      <point x="391.0" y="34.0">
+      </point>
+      <point x="391.0" y="9.0">
+      </point>
+      <point x="24.0" y="9.0">
+      </point>
+      <point x="24.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="24.0" y="42.0">
+      </point>
+      <point x="24.0" y="34.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #14</name>
+    <text>Beam Direction</text>
+    <x>136</x>
+    <y>143</y>
+    <width>132</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #17</name>
+    <x>45</x>
+    <y>128</y>
+    <width>68</width>
+    <height>48</height>
+    <line_color>
+      <color red="33" green="108" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="33" green="108" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPDSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #21</name>
+    <text>IN</text>
+    <x>67</x>
+    <y>139</y>
+    <width>33</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPDSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #25</name>
+    <x>45</x>
+    <y>55</y>
+    <width>68</width>
+    <height>48</height>
+    <line_color>
+      <color red="205" green="97" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="205" green="97" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPDSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #29</name>
+    <text>OUT</text>
+    <x>53</x>
+    <y>67</y>
+    <width>33</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPDSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #33</name>
+    <x>277</x>
+    <y>129</y>
+    <width>68</width>
+    <height>48</height>
+    <line_color>
+      <color red="33" green="108" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="33" green="108" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPUSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #37</name>
+    <text>IN</text>
+    <x>299</x>
+    <y>140</y>
+    <width>33</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPUSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #41</name>
+    <x>277</x>
+    <y>56</y>
+    <width>68</width>
+    <height>48</height>
+    <line_color>
+      <color red="205" green="97" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="205" green="97" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPUSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #45</name>
+    <text>OUT</text>
+    <x>285</x>
+    <y>68</y>
+    <width>33</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:LVPUSIonChamber_RBV.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #49</name>
+    <text>DIA</text>
+    <x>165</x>
+    <y>86</y>
+    <width>56</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #52</name>
+    <text>Downstream          Upstream</text>
+    <x>28</x>
+    <y>264</y>
+    <width>342</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #55</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVPDSIonChamber</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVPDSIonChamber</pv_name>
+    <text>Move IC In</text>
+    <x>18</x>
+    <y>178</y>
+    <width>121</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #58</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVPDSIonChamber</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVPDSIonChamber</pv_name>
+    <text>Move IC Out</text>
+    <x>18</x>
+    <y>30</y>
+    <width>121</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #61</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVPUSIonChamber</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVPUSIonChamber</pv_name>
+    <text>Move IC Out</text>
+    <x>247</x>
+    <y>30</y>
+    <width>121</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #64</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVPUSIonChamber</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVPUSIonChamber</pv_name>
+    <text>Move IC In</text>
+    <x>252</x>
+    <y>179</y>
+    <width>121</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #67</name>
+    <text>I                  Io</text>
+    <x>74</x>
+    <y>223</y>
+    <width>130</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

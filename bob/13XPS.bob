@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:26 by epics-->
+<display version="2.0.0">
+  <name>13XPS</name>
+  <x>420</x>
+  <y>39</y>
+  <width>493</width>
+  <height>240</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>30</x>
+    <y>12</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>GSECARS XPS test</text>
+    <x>47</x>
+    <y>20</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #12</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13XPS:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13XPS:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>121</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>Scan</text>
+    <x>93</x>
+    <y>121</y>
+    <width>53</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #19</name>
+    <text>Motors</text>
+    <x>93</x>
+    <y>94</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #22</name>
+    <actions>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <P>13XPS:</P>
+          <TITLE>XPS_Test</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Test motors</description>
+      </action>
+      <action type="open_display">
+        <file>profileMove.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <P>13XPS:</P>
+          <R>Prof1:</R>
+          <TITLE>Profile_Move</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Profile moves</description>
+      </action>
+      <action type="open_display">
+        <file>table.opi</file>
+        <macros>
+          <M0X>m4</M0X>
+          <M0Y>m3</M0Y>
+          <M1Y>m2</M1Y>
+          <M2X>m5</M2X>
+          <M2Y>m1</M2Y>
+          <M2Z>junk</M2Z>
+          <P>13XPS:</P>
+          <Q>XAS:T1</Q>
+          <T>XAS:t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Table record</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>94</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #27</name>
+    <actions>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13XPS:</P>
+          <R>asyn1</R>
+        </macros>
+        <target>tab</target>
+        <description>asyn record</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>175</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>IOC status</text>
+    <x>93</x>
+    <y>175</y>
+    <width>133</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #33</name>
+    <actions>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13XPS:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>148</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #36</name>
+    <text>asyn Records</text>
+    <x>93</x>
+    <y>148</y>
+    <width>133</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

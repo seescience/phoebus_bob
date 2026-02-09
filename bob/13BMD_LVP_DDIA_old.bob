@@ -1,0 +1,6070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-04-11 20:52:33 by epics-->
+<display version="2.0.0">
+  <name>13BMD_LVP_DDIA_old</name>
+  <x>17</x>
+  <y>65</y>
+  <width>1860</width>
+  <height>1000</height>
+  <background_color>
+    <color red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #6</name>
+    <pv_name>13PIL1MCdTe:cam1:Armed</pv_name>
+    <x>125</x>
+    <y>434</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>Armed</text>
+    <x>21</x>
+    <y>433</y>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #13</name>
+    <x>1357</x>
+    <y>111</y>
+    <width>110</width>
+    <height>360</height>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #16</name>
+    <x>1704</x>
+    <y>109</y>
+    <width>150</width>
+    <height>280</height>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #19</name>
+    <x>4</x>
+    <y>541</y>
+    <width>722</width>
+    <height>242</height>
+    <line_width>8</line_width>
+    <line_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;1&amp;&amp;pv1&lt;-1&amp;&amp;pv2&lt;0.8&amp;&amp;pv3&lt;0.8)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>bar #23</name>
+    <pv_name>13BMD:m61.RBV</pv_name>
+    <x>978</x>
+    <y>167</y>
+    <height>110</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #27</name>
+    <x>161</x>
+    <y>229</y>
+    <width>700</width>
+    <height>120</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="700.0" y="62.0">
+      </point>
+      <point x="0.0" y="120.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0.1&amp;&amp;pv1&lt;-0.1&amp;&amp;pv2&lt;1&amp;&amp;pv3&lt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #32</name>
+    <file>13BMD_LVP_DDIA_SlitsDiffResize.gif</file>
+    <x>1617</x>
+    <y>261</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;1&amp;&amp;pv1&lt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #35</name>
+    <file>13BMD_LVP_DDIA_DetectorResize.gif</file>
+    <x>19</x>
+    <y>229</y>
+    <height>120</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #37</name>
+    <x>4</x>
+    <y>784</y>
+    <width>722</width>
+    <height>210</height>
+    <line_width>8</line_width>
+    <line_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;0.1&amp;&amp;pv1&gt;-0.1&amp;&amp;pv2&gt;1&amp;&amp;pv3&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #41</name>
+    <x>4</x>
+    <y>784</y>
+    <width>722</width>
+    <height>210</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #44</name>
+    <x>4</x>
+    <y>541</y>
+    <width>722</width>
+    <height>242</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #47</name>
+    <x>971</x>
+    <y>296</y>
+    <width>380</width>
+    <height>180</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #50</name>
+    <x>971</x>
+    <y>109</y>
+    <width>380</width>
+    <height>180</height>
+    <line_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #53</name>
+    <actions>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <F>file1:</F>
+          <P>13PIL1MCdTe:</P>
+          <R>cam1:</R>
+          <ROI>ROI1:</ROI>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 1M CdTe</description>
+      </action>
+    </actions>
+    <text>Diffraction (Pilatus 1M CdTe)</text>
+    <x>111</x>
+    <y>550</y>
+    <width>500</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #56</name>
+    <x>13</x>
+    <y>144</y>
+    <width>315</width>
+    <height>75</height>
+    <line_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0.1&amp;&amp;pv1&lt;-0.1&amp;&amp;pv2&lt;1&amp;&amp;pv3&lt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #60</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m7.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m7.TWR</pv_name>
+    <text>Diff. (Move Out)</text>
+    <x>400</x>
+    <y>91</y>
+    <width>200</width>
+    <height>27</height>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #63</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m7.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m7.TWF</pv_name>
+    <text>Imaging (Move In)</text>
+    <x>400</x>
+    <y>145</y>
+    <width>200</width>
+    <height>27</height>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #66</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m57.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m57.TWR</pv_name>
+    <text>Imaging (Move In)</text>
+    <x>400</x>
+    <y>412</y>
+    <width>200</width>
+    <height>27</height>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #69</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m57.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m57.TWF</pv_name>
+    <text>Diff. (Move Out)</text>
+    <x>400</x>
+    <y>464</y>
+    <width>200</width>
+    <height>27</height>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #72</name>
+    <x>481</x>
+    <y>361</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #76</name>
+    <text>Soft-Limit</text>
+    <x>487</x>
+    <y>361</y>
+    <width>60</width>
+    <height>9</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="9.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #80</name>
+    <x>548</x>
+    <y>361</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #84</name>
+    <pv_name>13BMD:m57.RBV</pv_name>
+    <x>492</x>
+    <y>368</y>
+    <width>50</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #88</name>
+    <pv_name>13BMD:m61.SPMG</pv_name>
+    <x>978</x>
+    <y>114</y>
+    <height>40</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <horizontal>false</horizontal>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #91</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m61.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m61.TWF</pv_name>
+    <text>+</text>
+    <x>1287</x>
+    <y>207</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #94</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m61.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m61.TWR</pv_name>
+    <text>-</text>
+    <x>1204</x>
+    <y>207</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #97</name>
+    <pv_name>13BMD:m61.TWV</pv_name>
+    <x>1225</x>
+    <y>207</y>
+    <width>60</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #101</name>
+    <pv_name>13BMD:m61.VAL</pv_name>
+    <x>1221</x>
+    <y>180</y>
+    <width>80</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #105</name>
+    <x>1216</x>
+    <y>175</y>
+    <width>88</width>
+    <height>29</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m64.SET</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #109</name>
+    <pv_name>13BMD:m60.SPMG</pv_name>
+    <x>978</x>
+    <y>432</y>
+    <height>40</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <horizontal>false</horizontal>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #112</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m60.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m60.TWF</pv_name>
+    <text>+</text>
+    <x>1287</x>
+    <y>412</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #115</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m60.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m60.TWR</pv_name>
+    <text>-</text>
+    <x>1204</x>
+    <y>412</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #118</name>
+    <pv_name>13BMD:m60.TWV</pv_name>
+    <x>1225</x>
+    <y>412</y>
+    <width>60</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #122</name>
+    <pv_name>13BMD:m60.VAL</pv_name>
+    <x>1221</x>
+    <y>384</y>
+    <width>80</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #126</name>
+    <text>SET</text>
+    <x>1294</x>
+    <y>378</y>
+    <width>55</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m63.SET</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #130</name>
+    <x>1216</x>
+    <y>379</y>
+    <width>88</width>
+    <height>29</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m63.SET</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #134</name>
+    <pv_name>13BMD:m60.VELO</pv_name>
+    <x>1160</x>
+    <y>263</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #138</name>
+    <text>Top</text>
+    <x>1112</x>
+    <y>263</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #141</name>
+    <text>Bottom</text>
+    <x>1097</x>
+    <y>301</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #144</name>
+    <pv_name>13BMD:m61.VELO</pv_name>
+    <x>1160</x>
+    <y>302</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #148</name>
+    <x>481</x>
+    <y>227</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #152</name>
+    <text>Soft-Limit</text>
+    <x>487</x>
+    <y>227</y>
+    <width>60</width>
+    <height>9</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="9.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #156</name>
+    <x>548</x>
+    <y>227</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #160</name>
+    <pv_name>13BMD:m7.RBV</pv_name>
+    <x>492</x>
+    <y>234</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #164</name>
+    <x>1210</x>
+    <y>346</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m60.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #168</name>
+    <text>Soft-Limit</text>
+    <x>1216</x>
+    <y>346</y>
+    <width>60</width>
+    <height>8</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="8.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m60.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #172</name>
+    <x>1271</x>
+    <y>346</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m60.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #176</name>
+    <pv_name>13BMD:m60.RBV</pv_name>
+    <x>1221</x>
+    <y>360</y>
+    <width>119</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #180</name>
+    <x>1212</x>
+    <y>144</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m61.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #184</name>
+    <text>Soft-Limit</text>
+    <x>1218</x>
+    <y>144</y>
+    <width>60</width>
+    <height>8</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="8.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m61.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #188</name>
+    <x>1274</x>
+    <y>144</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m61.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #192</name>
+    <pv_name>13BMD:m61.RBV</pv_name>
+    <x>1225</x>
+    <y>159</y>
+    <width>119</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #196</name>
+    <text>SET</text>
+    <x>1294</x>
+    <y>176</y>
+    <width>55</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m64.SET</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #200</name>
+    <text>Diffraction Mode</text>
+    <x>13</x>
+    <y>166</y>
+    <width>315</width>
+    <height>32</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0.1&amp;&amp;pv1&lt;-0.1&amp;&amp;pv2&lt;1&amp;&amp;pv3&lt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #204</name>
+    <pv_name>13BMD:m60.VMAX</pv_name>
+    <x>1252</x>
+    <y>263</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #208</name>
+    <pv_name>13BMD:m61.VMAX</pv_name>
+    <x>1252</x>
+    <y>302</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #212</name>
+    <text>MAX Speed</text>
+    <x>1245</x>
+    <y>244</y>
+    <width>80</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #215</name>
+    <text>Speed</text>
+    <x>1164</x>
+    <y>244</y>
+    <width>50</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #218</name>
+    <pv_name>13BMD:EntSlitHt2.C</pv_name>
+    <x>1618</x>
+    <y>237</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #222</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:EntSlitHsize_tweak.A</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:EntSlitHsize_tweak.A</pv_name>
+    <text>Diff.(Close)</text>
+    <x>1530</x>
+    <y>171</y>
+    <width>130</width>
+    <height>27</height>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #225</name>
+    <pv_name>13BMD:EntSlitHsize_tweakVal.VAL</pv_name>
+    <x>1609</x>
+    <y>147</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #229</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:EntSlitHsize_tweak.B</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:EntSlitHsize_tweak.B</pv_name>
+    <text>Imaging(Open)</text>
+    <x>1530</x>
+    <y>116</y>
+    <width>130</width>
+    <height>27</height>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #232</name>
+    <pv_name>13BMD:EntSlitVt2.C</pv_name>
+    <x>1618</x>
+    <y>325</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #236</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:EntSlitVsize_tweak.A</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:EntSlitVsize_tweak.A</pv_name>
+    <text>Diff.(Close)</text>
+    <x>1530</x>
+    <y>390</y>
+    <width>130</width>
+    <height>27</height>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #239</name>
+    <pv_name>13BMD:EntSlitVsize_tweakVal.VAL</pv_name>
+    <x>1609</x>
+    <y>421</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #243</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:EntSlitVsize_tweak.B</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:EntSlitVsize_tweak.B</pv_name>
+    <text>Imaging(Open)</text>
+    <x>1530</x>
+    <y>446</y>
+    <width>130</width>
+    <height>27</height>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #246</name>
+    <actions>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <P>13BMDPG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Point Grey2</description>
+      </action>
+    </actions>
+    <text>Imaging (Point Grey Camera)</text>
+    <x>111</x>
+    <y>792</y>
+    <width>500</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #249</name>
+    <actions>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m60</M1>
+          <M2>m61</M2>
+          <P>13BMD:</P>
+          <TITLE>D-DIA_Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>D-DIA Motors Full</description>
+      </action>
+    </actions>
+    <text>D-DIA Motors</text>
+    <x>1056</x>
+    <y>63</y>
+    <width>240</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #252</name>
+    <text>Ent. H Size:</text>
+    <x>1485</x>
+    <y>214</y>
+    <width>144</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #255</name>
+    <text>Ent. V Size:</text>
+    <x>1485</x>
+    <y>346</y>
+    <width>144</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #258</name>
+    <x>156</x>
+    <y>287</y>
+    <width>12</width>
+    <height>9</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;-0.1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #262</name>
+    <x>161</x>
+    <y>289</y>
+    <width>3</width>
+    <height>59</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="1.0" y="57.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;-0.1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #267</name>
+    <actions>
+      <action type="open_display">
+        <file>4slitGraphic.opi</file>
+        <macros>
+          <H>EntSlitH</H>
+          <P>13BMD:</P>
+          <SLIT>LVP_Ent</SLIT>
+          <V>EntSlitV</V>
+          <mXn>m109</mXn>
+          <mXp>m110</mXp>
+          <mYn>m111</mYn>
+          <mYp>m112</mYp>
+        </macros>
+        <target>tab</target>
+        <description>LVP Entrance Slits Compound</description>
+      </action>
+    </actions>
+    <text>Ent. Slits</text>
+    <x>1513</x>
+    <y>69</y>
+    <width>160</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>bar #270</name>
+    <pv_name>13BMD:m60.RBV</pv_name>
+    <x>978</x>
+    <y>308</y>
+    <height>110</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #274</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVP_quench.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVP_quench.PROC</pv_name>
+    <text>Quench</text>
+    <x>800</x>
+    <y>930</y>
+    <width>140</width>
+    <height>50</height>
+    <background_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #277</name>
+    <pv_name>13BMD:LVPFurnacePower.DRVH</pv_name>
+    <x>911</x>
+    <y>657</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #281</name>
+    <text>Voltage limit</text>
+    <x>777</x>
+    <y>657</y>
+    <width>140</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #284</name>
+    <text>Control voltage</text>
+    <x>738</x>
+    <y>606</y>
+    <width>160</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #287</name>
+    <pv_name>13BMD:LVPFurnacePowerTweakVal</pv_name>
+    <x>911</x>
+    <y>632</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #291</name>
+    <text>tweak by</text>
+    <x>826</x>
+    <y>631</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #294</name>
+    <text>Temperature</text>
+    <x>745</x>
+    <y>899</y>
+    <width>140</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #297</name>
+    <text>Heater power</text>
+    <x>739</x>
+    <y>686</y>
+    <width>160</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #300</name>
+    <pv_name>13BMD:LVP_furnace_calcs.E</pv_name>
+    <x>882</x>
+    <y>899</y>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #304</name>
+    <pv_name>13BMD:LVP_furnace_calcs.D</pv_name>
+    <x>888</x>
+    <y>686</y>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #308</name>
+    <text>Temp. Setpoint</text>
+    <x>748</x>
+    <y>852</y>
+    <width>140</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #311</name>
+    <pv_name>13BMD:LVP_SP_tweak</pv_name>
+    <x>911</x>
+    <y>875</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #315</name>
+    <text>tweak by</text>
+    <x>826</x>
+    <y>875</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #318</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVPFurnacePowerTweakDown.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVPFurnacePowerTweakDown.PROC</pv_name>
+    <text>&lt;</text>
+    <x>891</x>
+    <y>607</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #321</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:LVPFurnacePowerTweakUp.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:LVPFurnacePowerTweakUp.PROC</pv_name>
+    <text>&gt;</text>
+    <x>971</x>
+    <y>607</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #324</name>
+    <pv_name>13BMD:LVPFurnacePower</pv_name>
+    <x>911</x>
+    <y>607</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #328</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:SP_tweak_down.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:SP_tweak_down.PROC</pv_name>
+    <text>&lt;</text>
+    <x>891</x>
+    <y>852</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #331</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:SP_tweak_up.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:SP_tweak_up.PROC</pv_name>
+    <text>&gt;</text>
+    <x>971</x>
+    <y>852</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #334</name>
+    <pv_name>13BMD:PID1.VAL</pv_name>
+    <x>911</x>
+    <y>852</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #338</name>
+    <x>729</x>
+    <y>541</y>
+    <width>270</width>
+    <height>452</height>
+    <line_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #341</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:allstop.VAL</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:allstop.VAL</pv_name>
+    <text>STOP ALL Motors!</text>
+    <x>1686</x>
+    <width>170</width>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #344</name>
+    <actions>
+      <action type="open_display">
+        <file>13BMD.opi</file>
+        <target>tab</target>
+        <description>13BMD Main Control</description>
+      </action>
+    </actions>
+    <text>13BMD Main Control</text>
+    <x>1710</x>
+    <y>455</y>
+    <width>140</width>
+    <height>21</height>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #347</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM.opi</file>
+        <target>tab</target>
+        <description>13BMD Main Control</description>
+      </action>
+    </actions>
+    <text>13BM Main Control</text>
+    <x>1710</x>
+    <y>436</y>
+    <width>140</width>
+    <height>21</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #350</name>
+    <actions>
+      <action type="open_display">
+        <file>00Start.opi</file>
+        <target>tab</target>
+        <description>13 Main Control</description>
+      </action>
+    </actions>
+    <text>13 Main Control</text>
+    <x>1710</x>
+    <y>415</y>
+    <width>140</width>
+    <height>21</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #353</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM_EPS.opi</file>
+        <target>tab</target>
+        <description>Vacuum and EPS</description>
+      </action>
+    </actions>
+    <text>BM Vacuum / EPS</text>
+    <x>1710</x>
+    <y>394</y>
+    <width>140</width>
+    <height>20</height>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #356</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMA:CloseBMDShutter.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMA:CloseBMDShutter.PROC</pv_name>
+    <text>Close</text>
+    <x>1742</x>
+    <y>335</y>
+    <width>80</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #359</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMA:OpenBMDShutter.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMA:OpenBMDShutter.PROC</pv_name>
+    <text>Open</text>
+    <x>1742</x>
+    <y>157</y>
+    <width>80</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #362</name>
+    <text>BMD Shutter</text>
+    <x>1726</x>
+    <y>130</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #365</name>
+    <x>1775</x>
+    <y>291</y>
+    <width>70</width>
+    <height>3</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #369</name>
+    <pv_name>13BMD:LVP_PressPump</pv_name>
+    <x>1229</x>
+    <y>643</y>
+    <width>85</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #373</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:Press_Stop.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:Press_Stop.PROC</pv_name>
+    <text>Stop Motor</text>
+    <x>1320</x>
+    <y>644</y>
+    <height>20</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #376</name>
+    <text>Current Load         (tons)</text>
+    <x>1095</x>
+    <y>761</y>
+    <width>320</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #379</name>
+    <pv_name>13BMD:Press_Value</pv_name>
+    <x>1258</x>
+    <y>761</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #383</name>
+    <pv_name>13BMD:MituValue</pv_name>
+    <x>1258</x>
+    <y>907</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #387</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:MituZero</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:MituZero</pv_name>
+    <text>Reset to ZERO</text>
+    <x>1389</x>
+    <y>875</y>
+    <width>82</width>
+    <height>18</height>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #390</name>
+    <text>Current Position         (mm)</text>
+    <x>1094</x>
+    <y>911</y>
+    <width>300</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #393</name>
+    <text>Update:</text>
+    <x>1270</x>
+    <y>691</y>
+    <width>89</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #396</name>
+    <pv_name>13BMD:Press_ReadValue.SCAN</pv_name>
+    <x>1327</x>
+    <y>687</y>
+    <width>122</width>
+    <height>21</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #399</name>
+    <text>Update:</text>
+    <x>1267</x>
+    <y>838</y>
+    <width>89</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #402</name>
+    <pv_name>13BMD:MituValue.SCAN</pv_name>
+    <x>1327</x>
+    <y>837</y>
+    <width>122</width>
+    <height>21</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #405</name>
+    <x>1004</x>
+    <y>678</y>
+    <width>476</width>
+    <height>150</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="105" green="105" blue="105">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #408</name>
+    <pv_name>13BMD:Press_LoadPID.VAL</pv_name>
+    <x>1255</x>
+    <y>729</y>
+    <width>70</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #412</name>
+    <text>Load Feedback</text>
+    <x>1018</x>
+    <y>688</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #415</name>
+    <x>1002</x>
+    <y>541</y>
+    <width>480</width>
+    <height>452</height>
+    <line_color>
+      <color red="26" green="115" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="26" green="115" blue="9">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #418</name>
+    <pv_name>13BMD:Press_PosnPID.VAL</pv_name>
+    <x>1258</x>
+    <y>874</y>
+    <width>80</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #422</name>
+    <text>Position Feedback</text>
+    <x>1018</x>
+    <y>838</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #425</name>
+    <pv_name>13BMD:Press_FeedbackMode</pv_name>
+    <x>1233</x>
+    <y>607</y>
+    <width>141</width>
+    <height>21</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #428</name>
+    <text>Feedback Mode:</text>
+    <x>1101</x>
+    <y>609</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #431</name>
+    <pv_name>13BMD:Press_LoadPID.FBON</pv_name>
+    <x>1019</x>
+    <y>742</y>
+    <width>60</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #435</name>
+    <pv_name>13BMD:Press_PosnPID.FBON</pv_name>
+    <x>1020</x>
+    <y>886</y>
+    <width>60</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #439</name>
+    <pv_name>13BMD:Press_PosnPID.DRVL</pv_name>
+    <x>1150</x>
+    <y>954</y>
+    <width>85</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #443</name>
+    <pv_name>13BMD:Press_PosnPID.DRVH</pv_name>
+    <x>1243</x>
+    <y>954</y>
+    <width>85</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #447</name>
+    <text>speed limit                       speed limit</text>
+    <x>1028</x>
+    <y>965</y>
+    <width>410</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #450</name>
+    <text>decompression                     compression</text>
+    <x>1027</x>
+    <y>945</y>
+    <width>400</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #453</name>
+    <pv_name>13BMD:Press_LoadPID.DRVL</pv_name>
+    <x>1152</x>
+    <y>801</y>
+    <width>85</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #457</name>
+    <pv_name>13BMD:Press_LoadPID.DRVH</pv_name>
+    <x>1242</x>
+    <y>801</y>
+    <width>85</width>
+    <height>21</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #461</name>
+    <text>Current Speed (%)</text>
+    <x>1041</x>
+    <y>644</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #464</name>
+    <text>Target Position          (mm)</text>
+    <x>1094</x>
+    <y>875</y>
+    <width>260</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #467</name>
+    <text>Target Load          (tons)</text>
+    <x>1104</x>
+    <y>729</y>
+    <width>300</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #470</name>
+    <x>1013</x>
+    <y>727</y>
+    <width>70</width>
+    <height>57</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #473</name>
+    <x>1015</x>
+    <y>873</y>
+    <width>70</width>
+    <height>57</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #476</name>
+    <actions>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m99</M1>
+          <M2>m98</M2>
+          <M3>m102</M3>
+          <P>13BMD:</P>
+          <TITLE>LVP_Press</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>LVP Press XPS</description>
+      </action>
+    </actions>
+    <text>Press Position</text>
+    <x>687</x>
+    <y>63</y>
+    <width>250</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #479</name>
+    <text>Current Position:</text>
+    <x>1079</x>
+    <y>159</y>
+    <width>150</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #482</name>
+    <text>Current Position:</text>
+    <x>1076</x>
+    <y>358</y>
+    <width>150</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #485</name>
+    <text>Target Position:</text>
+    <x>1076</x>
+    <y>184</y>
+    <width>150</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #488</name>
+    <text>Target Position:</text>
+    <x>1076</x>
+    <y>388</y>
+    <width>150</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #491</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m99.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m99.TWF</pv_name>
+    <text>+</text>
+    <x>817</x>
+    <y>474</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #494</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m99.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m99.TWR</pv_name>
+    <text>-</text>
+    <x>749</x>
+    <y>474</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #497</name>
+    <pv_name>13BMD:m99.TWV</pv_name>
+    <x>766</x>
+    <y>474</y>
+    <width>50</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #501</name>
+    <pv_name>13BMD:m99.VAL</pv_name>
+    <x>755</x>
+    <y>450</y>
+    <width>70</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #505</name>
+    <text>Soft-Limit</text>
+    <x>760</x>
+    <y>424</y>
+    <width>60</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m99.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #509</name>
+    <x>746</x>
+    <y>424</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m99.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #513</name>
+    <x>821</x>
+    <y>424</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m99.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #517</name>
+    <pv_name>13BMD:m99.RBV</pv_name>
+    <x>757</x>
+    <y>433</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #521</name>
+    <pv_name>13BMD:m99.DESC</pv_name>
+    <x>744</x>
+    <y>408</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #525</name>
+    <text>in(-)/outboard(+)</text>
+    <x>740</x>
+    <y>494</y>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #528</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m102.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m102.TWF</pv_name>
+    <text>+</text>
+    <x>702</x>
+    <y>382</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #531</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m102.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m102.TWR</pv_name>
+    <text>-</text>
+    <x>632</x>
+    <y>382</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #534</name>
+    <pv_name>13BMD:m102.TWV</pv_name>
+    <x>651</x>
+    <y>382</y>
+    <width>50</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #538</name>
+    <pv_name>13BMD:m102.VAL</pv_name>
+    <x>641</x>
+    <y>359</y>
+    <width>70</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #542</name>
+    <text>Soft-Limit</text>
+    <x>650</x>
+    <y>330</y>
+    <width>60</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m102.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #546</name>
+    <pv_name>13BMD:m102.RBV</pv_name>
+    <x>642</x>
+    <y>342</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #550</name>
+    <text>up(-)/downstream(+)</text>
+    <x>631</x>
+    <y>402</y>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #553</name>
+    <pv_name>13BMD:m102.DESC</pv_name>
+    <x>632</x>
+    <y>312</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #557</name>
+    <x>633</x>
+    <y>330</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m102.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #561</name>
+    <x>711</x>
+    <y>330</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m102.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="stripchart" version="2.1.0">
+    <name>strip chart #565</name>
+    <x>1495</x>
+    <y>678</y>
+    <width>350</width>
+    <height>280</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <title>setpoint and readback</title>
+    <show_toolbar>false</show_toolbar>
+    <start>30 second</start>
+    <y_axes>
+      <y_axis>
+        <title></title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <visible>true</visible>
+        <color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </color>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>13BMA:mono_pid1.VAL</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="253" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <y_pv>13BMA:mono_pid1.CVAL</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #572</name>
+    <x>1736</x>
+    <y>606</y>
+    <width>110</width>
+    <height>40</height>
+    <line_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #575</name>
+    <x>1485</x>
+    <y>541</y>
+    <width>368</width>
+    <height>452</height>
+    <line_color>
+      <color red="97" green="10" blue="117">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="97" green="10" blue="117">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #578</name>
+    <pv_name>13BMA:mono_pid1.VAL</pv_name>
+    <x>1559</x>
+    <y>606</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #582</name>
+    <text>Setpoint</text>
+    <x>1498</x>
+    <y>609</y>
+    <width>50</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #585</name>
+    <text>Readback</text>
+    <x>1499</x>
+    <y>629</y>
+    <width>40</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #588</name>
+    <pv_name>13BMA:mono_pid1.CVAL</pv_name>
+    <x>1557</x>
+    <y>626</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #592</name>
+    <text>On/Off</text>
+    <x>1637</x>
+    <y>607</y>
+    <width>50</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #595</name>
+    <pv_name>13BMA:mono_pid1.FBON</pv_name>
+    <x>1630</x>
+    <y>624</y>
+    <width>60</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #598</name>
+    <text>Locked</text>
+    <x>1692</x>
+    <y>607</y>
+    <width>40</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>oval #601</name>
+    <pv_name>=highestSeverity(`13BMA:mono_pid1Locked`)</pv_name>
+    <x>1705</x>
+    <y>621</y>
+    <line_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </line_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <states>
+      <state>
+        <value>0</value>
+        <label></label>
+        <color>
+          <color name="OK" red="0" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label></label>
+        <color>
+          <color name="MINOR" red="255" green="128" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label></label>
+        <color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>3</value>
+        <label></label>
+        <color>
+          <color name="INVALID" red="255" green="0" blue="255">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>4</value>
+        <label></label>
+        <color>
+          <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #605</name>
+    <text>Tilt(Piezo)</text>
+    <x>1495</x>
+    <y>656</y>
+    <width>90</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #608</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMA:MonoPiezoPitchTweakDown.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMA:MonoPiezoPitchTweakDown.PROC</pv_name>
+    <text>&lt;</text>
+    <x>1750</x>
+    <y>653</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #611</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMA:MonoPiezoPitchTweakUp.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMA:MonoPiezoPitchTweakUp.PROC</pv_name>
+    <text>&gt;</text>
+    <x>1825</x>
+    <y>653</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #614</name>
+    <pv_name>13BMA:MonoPiezoPitchTweakVal</pv_name>
+    <x>1773</x>
+    <y>653</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>valuator #618</name>
+    <pv_name>13BMA:MonoPiezoPitch</pv_name>
+    <x>1627</x>
+    <y>654</y>
+    <width>120</width>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #622</name>
+    <pv_name>13BMA:MonoPiezoPitch</pv_name>
+    <x>1574</x>
+    <y>653</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #626</name>
+    <pv_name>13BMD:A3sens_unit.VAL</pv_name>
+    <x>1793</x>
+    <y>625</y>
+    <width>50</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #629</name>
+    <pv_name>13BMD:A3sens_num.VAL</pv_name>
+    <x>1741</x>
+    <y>625</y>
+    <width>50</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #632</name>
+    <text>Sensitivity</text>
+    <x>1752</x>
+    <y>607</y>
+    <width>80</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #635</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM_monochromator.opi</file>
+        <macros>
+          <C>3</C>
+          <D>1</D>
+          <EN>E</EN>
+          <EXPTAB>m22</EXPTAB>
+          <MONO>m9</MONO>
+          <P1>13BMA:</P1>
+          <P2>13BMD:</P2>
+          <PID>mono_pid1</PID>
+          <TABLE>MON:</TABLE>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+        <description>Monochromator</description>
+      </action>
+    </actions>
+    <text>Monochromator</text>
+    <x>1523</x>
+    <y>550</y>
+    <width>300</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #638</name>
+    <pv_name>13BMA:E:E_RBV</pv_name>
+    <x>1623</x>
+    <y>964</y>
+    <width>140</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #642</name>
+    <text>Energy:              (eV)</text>
+    <x>1551</x>
+    <y>966</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #645</name>
+    <text>speed limit                       speed limit</text>
+    <x>1030</x>
+    <y>811</y>
+    <width>410</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #648</name>
+    <text>decompression                     compression</text>
+    <x>1029</x>
+    <y>791</y>
+    <width>400</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #651</name>
+    <text>Position</text>
+    <x>458</x>
+    <y>213</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #654</name>
+    <text>Position</text>
+    <x>458</x>
+    <y>344</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #657</name>
+    <text>Camera</text>
+    <x>458</x>
+    <y>325</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #660</name>
+    <actions>
+      <action type="open_display">
+        <file>BM_LVP_pressure.opi</file>
+        <macros>
+          <C>8</C>
+          <D>1</D>
+          <P>13BMD:</P>
+          <R>Press_</R>
+        </macros>
+        <target>tab</target>
+        <description>LVP pressure control</description>
+      </action>
+    </actions>
+    <text>250 Ton Pressure Control</text>
+    <x>1023</x>
+    <y>550</y>
+    <width>440</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #663</name>
+    <actions>
+      <action type="open_display">
+        <file>LVP_furnace.opi</file>
+        <macros>
+          <P>13BMD:</P>
+          <PID>PID1</PID>
+        </macros>
+        <target>tab</target>
+        <description>LVP furnace control</description>
+      </action>
+    </actions>
+    <text>Furnace Control</text>
+    <x>735</x>
+    <y>550</y>
+    <width>260</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #666</name>
+    <text>Last filename</text>
+    <x>14</x>
+    <y>928</y>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #669</name>
+    <pv_name>13BMDPG2:TIFF1:FullFileName_RBV</pv_name>
+    <x>118</x>
+    <y>927</y>
+    <width>570</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #673</name>
+    <text>Next file #</text>
+    <x>547</x>
+    <y>905</y>
+    <width>90</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #676</name>
+    <pv_name>13BMDPG2:TIFF1:FileNumber</pv_name>
+    <x>640</x>
+    <y>905</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #680</name>
+    <pv_name>13BMDPG2:TIFF1:FileNumber_RBV</pv_name>
+    <x>683</x>
+    <y>905</y>
+    <width>35</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #684</name>
+    <text>File name</text>
+    <x>12</x>
+    <y>906</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #687</name>
+    <pv_name>13BMDPG2:TIFF1:FileName</pv_name>
+    <x>86</x>
+    <y>905</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #691</name>
+    <pv_name>13BMDPG2:TIFF1:FileName_RBV</pv_name>
+    <x>86</x>
+    <y>890</y>
+    <width>500</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #695</name>
+    <pv_name>13BMDPG2:TIFF1:FilePath_RBV</pv_name>
+    <x>86</x>
+    <y>843</y>
+    <width>490</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #699</name>
+    <pv_name>13BMDPG2:TIFF1:FilePath</pv_name>
+    <x>86</x>
+    <y>858</y>
+    <width>600</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #703</name>
+    <text>Exists:</text>
+    <x>606</x>
+    <y>843</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #706</name>
+    <pv_name>13BMDPG2:TIFF1:FilePathExists_RBV</pv_name>
+    <x>666</x>
+    <y>843</y>
+    <width>30</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #710</name>
+    <text>Save file</text>
+    <x>419</x>
+    <y>907</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #713</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMDPG2:TIFF1:WriteFile</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMDPG2:TIFF1:WriteFile</pv_name>
+    <text>Save</text>
+    <x>490</x>
+    <y>904</y>
+    <width>60</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #716</name>
+    <text>Exposure time</text>
+    <x>514</x>
+    <y>965</y>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #719</name>
+    <pv_name>13BMDPG2:cam1:AcquireTime</pv_name>
+    <x>616</x>
+    <y>965</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #723</name>
+    <pv_name>13BMDPG2:cam1:AcquireTime_RBV</pv_name>
+    <x>680</x>
+    <y>965</y>
+    <width>40</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #727</name>
+    <text>Image mode</text>
+    <x>12</x>
+    <y>966</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #730</name>
+    <pv_name>13BMDPG2:cam1:ImageMode</pv_name>
+    <x>95</x>
+    <y>965</y>
+    <width>84</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #733</name>
+    <pv_name>13BMDPG2:cam1:ImageMode_RBV</pv_name>
+    <x>180</x>
+    <y>966</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #737</name>
+    <text>File</text>
+    <x>655</x>
+    <y>796</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #740</name>
+    <actions>
+      <action type="open_display">
+        <file>NDFileNetCDF.opi</file>
+        <macros>
+          <EXT>nc</EXT>
+          <P>13BMDPG2:</P>
+          <R>netCDF1:</R>
+        </macros>
+        <target>tab</target>
+        <description>netCDF file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileTIFF.opi</file>
+        <macros>
+          <EXT>tif</EXT>
+          <P>13BMDPG2:</P>
+          <R>TIFF1:</R>
+        </macros>
+        <target>tab</target>
+        <description>TIFF file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileJPEG.opi</file>
+        <macros>
+          <EXT>jpg</EXT>
+          <P>13BMDPG2:</P>
+          <R>JPEG1:</R>
+        </macros>
+        <target>tab</target>
+        <description>JPEG file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileNexus.opi</file>
+        <macros>
+          <EXT>h5</EXT>
+          <P>13BMDPG2:</P>
+          <R>Nexus1:</R>
+        </macros>
+        <target>tab</target>
+        <description>NeXus file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileMagick.opi</file>
+        <macros>
+          <EXT>tif</EXT>
+          <P>13BMDPG2:</P>
+          <R>Magick1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Magick file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileHDF5.opi</file>
+        <macros>
+          <EXT>h5</EXT>
+          <P>13BMDPG2:</P>
+          <R>HDF1:</R>
+        </macros>
+        <target>tab</target>
+        <description>HDF5 file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileNull.opi</file>
+        <macros>
+          <EXT>null</EXT>
+          <P>13BMDPG2:</P>
+          <R>Null1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Null file #1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>644</x>
+    <y>815</y>
+    <width>64</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #749</name>
+    <text>Next file #</text>
+    <x>547</x>
+    <y>659</y>
+    <width>90</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #752</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FileNumber</pv_name>
+    <x>641</x>
+    <y>659</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #756</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FileNumber_RBV</pv_name>
+    <x>683</x>
+    <y>659</y>
+    <width>35</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #760</name>
+    <text>File name</text>
+    <x>-7</x>
+    <y>655</y>
+    <width>90</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #763</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FileName</pv_name>
+    <x>92</x>
+    <y>659</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #767</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FileName_RBV</pv_name>
+    <x>92</x>
+    <y>643</y>
+    <width>511</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #771</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FilePath</pv_name>
+    <x>92</x>
+    <y>618</y>
+    <width>600</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #775</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FilePath_RBV</pv_name>
+    <x>92</x>
+    <y>603</y>
+    <width>490</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #779</name>
+    <text>File path</text>
+    <x>-7</x>
+    <y>614</y>
+    <width>90</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #782</name>
+    <text>Exists:</text>
+    <x>606</x>
+    <y>603</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #785</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FilePathExists_RBV</pv_name>
+    <x>666</x>
+    <y>603</y>
+    <width>30</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #789</name>
+    <text>Save file</text>
+    <x>419</x>
+    <y>662</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #792</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL1MCdTe:TIFF1:WriteFile</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL1MCdTe:TIFF1:WriteFile</pv_name>
+    <text>Save</text>
+    <x>490</x>
+    <y>659</y>
+    <width>62</width>
+    <height>20</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #795</name>
+    <text>Auto save</text>
+    <x>214</x>
+    <y>662</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #798</name>
+    <pv_name>13PIL1MCdTe:TIFF1:AutoSave</pv_name>
+    <x>295</x>
+    <y>659</y>
+    <width>64</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #801</name>
+    <pv_name>13PIL1MCdTe:TIFF1:AutoSave_RBV</pv_name>
+    <x>360</x>
+    <y>662</y>
+    <width>40</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #805</name>
+    <text>Last filename</text>
+    <x>-15</x>
+    <y>678</y>
+    <width>130</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #808</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FullFileName_RBV</pv_name>
+    <x>124</x>
+    <y>683</y>
+    <width>570</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #812</name>
+    <text>Image mode</text>
+    <x>12</x>
+    <y>753</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #815</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FileWriteMode</pv_name>
+    <x>95</x>
+    <y>753</y>
+    <width>120</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #818</name>
+    <text>Exposure time</text>
+    <x>485</x>
+    <y>753</y>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #821</name>
+    <pv_name>13PIL1MCdTe:cam1:AcquireTime</pv_name>
+    <x>587</x>
+    <y>753</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #825</name>
+    <pv_name>13PIL1MCdTe:cam1:AcquireTime_RBV</pv_name>
+    <x>650</x>
+    <y>754</y>
+    <width>60</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #829</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FileWriteMode_RBV</pv_name>
+    <x>220</x>
+    <y>755</y>
+    <width>60</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #833</name>
+    <x>112</x>
+    <y>361</y>
+    <width>105</width>
+    <height>14</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #836</name>
+    <text>Status</text>
+    <x>133</x>
+    <y>361</y>
+    <width>60</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #839</name>
+    <text>Detector</text>
+    <x>22</x>
+    <y>385</y>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #842</name>
+    <pv_name>13PIL1MCdTe:cam1:DetectorState_RBV</pv_name>
+    <x>125</x>
+    <y>386</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #846</name>
+    <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+    <x>125</x>
+    <y>410</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #850</name>
+    <text>Acquire</text>
+    <x>21</x>
+    <y>409</y>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #853</name>
+    <x>292</x>
+    <y>945</y>
+    <width>175</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #856</name>
+      <text>Collecting</text>
+      <x>72</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMDPG2:cam1:Acquire</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #860</name>
+      <text>Done</text>
+      <x>101</x>
+      <width>40</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMDPG2:cam1:Acquire</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #864</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMDPG2:cam1:Acquire</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMDPG2:cam1:Acquire</pv_name>
+      <text>Stop</text>
+      <x>125</x>
+      <y>20</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #867</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMDPG2:cam1:Acquire</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMDPG2:cam1:Acquire</pv_name>
+      <text>Start</text>
+      <x>71</x>
+      <y>20</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #870</name>
+      <text>Acquire</text>
+      <y>20</y>
+      <width>70</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #873</name>
+    <text>Collecting</text>
+    <x>361</x>
+    <y>732</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #877</name>
+    <text>Done</text>
+    <x>390</x>
+    <y>732</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #881</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+    <text>Start</text>
+    <x>360</x>
+    <y>753</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #884</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL1MCdTe:cam1:Acquire</pv_name>
+    <text>Stop</text>
+    <x>414</x>
+    <y>753</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #887</name>
+    <text>Acquire</text>
+    <x>289</x>
+    <y>753</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #890</name>
+    <text>Scintillator</text>
+    <x>458</x>
+    <y>194</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #893</name>
+    <text>File path</text>
+    <x>12</x>
+    <y>860</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #896</name>
+    <text>13BMD LVP D-DIA Control Window</text>
+    <y>4</y>
+    <width>1860</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #899</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m98.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m98.TWF</pv_name>
+    <text>+</text>
+    <x>798</x>
+    <y>191</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #902</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13BMD:m98.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13BMD:m98.TWR</pv_name>
+    <text>-</text>
+    <x>729</x>
+    <y>191</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #905</name>
+    <pv_name>13BMD:m98.TWV</pv_name>
+    <x>747</x>
+    <y>191</y>
+    <width>50</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #909</name>
+    <pv_name>13BMD:m98.VAL</pv_name>
+    <x>736</x>
+    <y>167</y>
+    <width>70</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #913</name>
+    <text>Soft-Limit</text>
+    <x>740</x>
+    <y>136</y>
+    <width>60</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m98.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #917</name>
+    <x>727</x>
+    <y>136</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m98.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #921</name>
+    <x>801</x>
+    <y>136</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m98.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #925</name>
+    <pv_name>13BMD:m98.RBV</pv_name>
+    <x>738</x>
+    <y>151</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #929</name>
+    <text>down(-)/up(+)</text>
+    <x>724</x>
+    <y>212</y>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #932</name>
+    <pv_name>13BMD:m98.DESC</pv_name>
+    <x>726</x>
+    <y>118</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #936</name>
+    <file>13BMD_LVP_DDIA_CameraResize.gif</file>
+    <x>328</x>
+    <y>371</y>
+    <width>70</width>
+    <height>65</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;40)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #939</name>
+    <file>13BMD_LVP_DDIA_ScintillatorResize.gif</file>
+    <x>482</x>
+    <y>260</y>
+    <width>40</width>
+    <height>65</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;-0.1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #942</name>
+    <file>13BMD_LVP_DDIA_CameraResize.gif</file>
+    <x>407</x>
+    <y>309</y>
+    <width>70</width>
+    <height>65</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;3)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #945</name>
+    <x>449</x>
+    <y>290</y>
+    <width>55</width>
+    <height>44</height>
+    <points>
+      <point x="53.0" y="1.0">
+      </point>
+      <point x="1.0" y="42.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;0.1&amp;&amp;pv1&gt;0&amp;&amp;pv2&gt;-1&amp;&amp;pv3&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #950</name>
+    <file>13BMD_LVP_DDIA_ScintillatorResize.gif</file>
+    <x>585</x>
+    <y>179</y>
+    <width>40</width>
+    <height>65</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;-80)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m7.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #953</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1763</x>
+    <y>261</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #956</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1763</x>
+    <y>201</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #959</name>
+    <file>13BMD_LVP_DDIA_ShutterOpenResize.gif</file>
+    <x>1763</x>
+    <y>261</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #961</name>
+    <file>13BMD_LVP_DDIA_SlitsResize.gif</file>
+    <x>1617</x>
+    <y>261</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;1&amp;&amp;pv1&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #964</name>
+    <text>by:</text>
+    <x>1557</x>
+    <y>147</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #967</name>
+    <text>by:</text>
+    <x>1557</x>
+    <y>421</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #970</name>
+    <pv_name>13BMD:DMM2Ch10_calc.VAL</pv_name>
+    <x>1268</x>
+    <y>115</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #974</name>
+    <pv_name>13BMD:DMM2Ch9_calc.VAL</pv_name>
+    <x>1268</x>
+    <y>449</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #978</name>
+    <text>Diff. Ram Pressure:      psi</text>
+    <x>1076</x>
+    <y>116</y>
+    <width>300</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #981</name>
+    <text>Diff. Ram Pressure:      psi</text>
+    <x>1076</x>
+    <y>450</y>
+    <width>300</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #984</name>
+    <file>13BMD_LVP_DDIA_Press_Resize.gif</file>
+    <x>812</x>
+    <y>186</y>
+    <width>140</width>
+    <height>200</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #986</name>
+    <pv_name>13BMDPG2:TIFF1:AutoSave</pv_name>
+    <x>295</x>
+    <y>902</y>
+    <width>64</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #989</name>
+    <pv_name>13BMDPG2:TIFF1:AutoSave_RBV</pv_name>
+    <x>360</x>
+    <y>905</y>
+    <width>40</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #993</name>
+    <text>Auto save</text>
+    <x>214</x>
+    <y>907</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #996</name>
+    <pv_name>13BMD:m7.TWV</pv_name>
+    <x>504</x>
+    <y>121</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #1000</name>
+    <pv_name>13BMD:m57.TWV</pv_name>
+    <x>504</x>
+    <y>442</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1004</name>
+    <text>Move by:</text>
+    <x>398</x>
+    <y>441</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1007</name>
+    <text>Move by:</text>
+    <x>398</x>
+    <y>120</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #1010</name>
+    <x>13</x>
+    <y>138</y>
+    <width>315</width>
+    <height>315</height>
+    <line_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;0.1&amp;&amp;pv1&gt;-0.1&amp;&amp;pv2&gt;1&amp;&amp;pv3&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1014</name>
+    <text>Imaging</text>
+    <x>13</x>
+    <y>247</y>
+    <width>315</width>
+    <height>32</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;0.1&amp;&amp;pv1&gt;-0.1&amp;&amp;pv2&gt;1&amp;&amp;pv3&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1018</name>
+    <text>Mode</text>
+    <x>13</x>
+    <y>309</y>
+    <width>315</width>
+    <height>32</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;0.1&amp;&amp;pv1&gt;-0.1&amp;&amp;pv2&gt;1&amp;&amp;pv3&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m57.RBV</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:EntSlitHt2.C</pv_name>
+        <pv_name>13BMD:EntSlitVt2.C</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1022</name>
+    <text>For both diffraction and imaging: Image Mode: SINGLE; AutoSave: YES</text>
+    <x>20</x>
+    <y>713</y>
+    <width>700</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1025</name>
+    <text>LOOP Settings:</text>
+    <x>20</x>
+    <y>697</y>
+    <width>500</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1028</name>
+    <text>Voltage(V):</text>
+    <x>740</x>
+    <y>734</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1031</name>
+    <text>Current(A):</text>
+    <x>740</x>
+    <y>768</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1034</name>
+    <text>Resistance(Ohm):</text>
+    <x>740</x>
+    <y>802</y>
+    <width>140</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #1037</name>
+    <pv_name>13BMD:LVP_furnace_calcs.A</pv_name>
+    <x>832</x>
+    <y>734</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #1041</name>
+    <pv_name>13BMD:LVP_furnace_calcs.B</pv_name>
+    <x>832</x>
+    <y>768</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #1045</name>
+    <pv_name>13BMD:LVP_furnace_calcs.C</pv_name>
+    <x>874</x>
+    <y>802</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #1049</name>
+    <actions>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m57</M1>
+          <M2>m58</M2>
+          <M3>m59</M3>
+          <M4>m7</M4>
+          <P>13BMD:</P>
+          <TITLE>CCD_Camera_stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>CCD Camera Stage</description>
+      </action>
+    </actions>
+    <text>Camera Stage</text>
+    <x>381</x>
+    <y>45</y>
+    <width>240</width>
+    <height>44</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #1052</name>
+    <pv_name>13BMD:EntSlitHsize.VAL</pv_name>
+    <x>1617</x>
+    <y>215</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #1056</name>
+    <pv_name>13BMD:EntSlitVsize.VAL</pv_name>
+    <x>1617</x>
+    <y>346</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1060</name>
+    <text>Current Value:</text>
+    <x>1458</x>
+    <y>237</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1063</name>
+    <text>Current Value:</text>
+    <x>1458</x>
+    <y>325</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #1066</name>
+    <file>13BMD_LVP_DDIA_ShutterOpenResize.gif</file>
+    <x>1394</x>
+    <y>261</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #1068</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1394</x>
+    <y>319</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #1071</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL1MCdTe:cam1:ShutterControl</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL1MCdTe:cam1:ShutterControl</pv_name>
+    <text>Open</text>
+    <x>1372</x>
+    <y>399</y>
+    <width>80</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #1074</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL1MCdTe:cam1:ShutterControl</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL1MCdTe:cam1:ShutterControl</pv_name>
+    <text>Close</text>
+    <x>1372</x>
+    <y>198</y>
+    <width>80</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #1077</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1394</x>
+    <y>261</y>
+    <width>40</width>
+    <height>60</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1080</name>
+    <x>1656</x>
+    <y>291</y>
+    <width>124</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="122.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1085</name>
+    <x>1433</x>
+    <y>291</y>
+    <width>199</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="197.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1090</name>
+    <x>1357</x>
+    <y>143</y>
+    <width>110</width>
+    <height>45</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #1093</name>
+      <text>Hutch</text>
+      <width>110</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #1096</name>
+      <text>Shutter</text>
+      <y>25</y>
+      <width>110</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1099</name>
+    <x>1656</x>
+    <y>291</y>
+    <width>124</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="122.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1104</name>
+    <x>1433</x>
+    <y>291</y>
+    <width>199</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="197.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1109</name>
+    <x>944</x>
+    <y>291</y>
+    <width>502</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="500.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1114</name>
+    <x>507</x>
+    <y>291</y>
+    <width>316</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="314.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #1119</name>
+    <x>165</x>
+    <y>291</y>
+    <width>346</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="344.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0&amp;&amp;pv1&gt;0&amp;&amp;pv2&lt;-50&amp;&amp;pv3&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL1MCdTe:cam1:ShutterStatusEPICS_RBV</pv_name>
+        <pv_name>13BMA:eps_mbbi99</pv_name>
+        <pv_name>13BMD:m7.RBV</pv_name>
+        <pv_name>13BMD:m57.RBV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1124</name>
+    <x>722</x>
+    <y>228</y>
+    <width>72</width>
+    <height>168</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #1127</name>
+      <x>43</x>
+      <y>151</y>
+      <width>3</width>
+      <height>17</height>
+      <points>
+        <point x="1.0" y="15.0">
+        </point>
+        <point x="1.0" y="1.0">
+        </point>
+      </points>
+      <line_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #1131</name>
+      <width>72</width>
+      <height>168</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1134</name>
+        <x>4</x>
+        <y>117</y>
+        <width>64</width>
+        <height>3</height>
+        <points>
+          <point x="62.0" y="1.0">
+          </point>
+          <point x="1.0" y="1.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1138</name>
+        <x>64</x>
+        <width>3</width>
+        <height>121</height>
+        <points>
+          <point x="1.0" y="1.0">
+          </point>
+          <point x="1.0" y="119.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1142</name>
+        <x>45</x>
+        <y>117</y>
+        <width>23</width>
+        <height>49</height>
+        <points>
+          <point x="21.0" y="1.0">
+          </point>
+          <point x="1.0" y="47.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1146</name>
+        <x>44</x>
+        <y>156</y>
+        <width>14</width>
+        <height>12</height>
+        <points>
+          <point x="1.0" y="10.0">
+          </point>
+          <point x="12.0" y="1.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1150</name>
+        <y>112</y>
+        <width>14</width>
+        <height>13</height>
+        <points>
+          <point x="12.0" y="1.0">
+          </point>
+          <point x="1.0" y="6.0">
+          </point>
+          <point x="12.0" y="11.0">
+          </point>
+          <point x="12.0" y="11.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1154</name>
+        <x>59</x>
+        <y>1</y>
+        <width>13</width>
+        <height>14</height>
+        <points>
+          <point x="11.0" y="12.0">
+          </point>
+          <point x="6.0" y="1.0">
+          </point>
+          <point x="1.0" y="12.0">
+          </point>
+          <point x="1.0" y="12.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

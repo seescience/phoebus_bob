@@ -1,0 +1,1933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-28 17:38:32 by epics-->
+<display version="2.0.0">
+  <name>00Start</name>
+  <x>796</x>
+  <y>192</y>
+  <width>400</width>
+  <height>455</height>
+  <background_color>
+    <color red="218" green="218" blue="218">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>400</width>
+    <height>25</height>
+    <line_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>GSECARS: Sector 13 Main Menu</text>
+    <x>25</x>
+    <y>5</y>
+    <width>330</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #12</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM_EPS.opi</file>
+        <target>tab</target>
+        <description>Vacuum and EPS</description>
+      </action>
+    </actions>
+    <text>BM Vacuum / EPS</text>
+    <x>200</x>
+    <y>30</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #15</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM.opi</file>
+        <target>tab</target>
+        <description>13 BM</description>
+      </action>
+      <action type="open_display">
+        <file>13BM_monochromator.opi</file>
+        <macros>
+          <C>3</C>
+          <D>1</D>
+          <EN>E</EN>
+          <EXPTAB>m22</EXPTAB>
+          <MONO>m9</MONO>
+          <P1>13BMA:</P1>
+          <P2>13BMD:</P2>
+          <PID>mono_pid1</PID>
+          <SHUT>FOE</SHUT>
+          <TABLE>MON:</TABLE>
+          <TILT>m12</TILT>
+          <TITLE>Energy</TITLE>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+        <description>BM Monochromator</description>
+      </action>
+      <action type="open_display">
+        <file>xbpmBMTop.opi</file>
+        <target>tab</target>
+        <description>X-ray BPMs All Sectors</description>
+      </action>
+      <action type="open_display">
+        <file>BMbpm.opi</file>
+        <macros>
+          <sec>13</sec>
+        </macros>
+        <target>tab</target>
+        <description>13-BM RF &amp; X-ray BPM</description>
+      </action>
+      <action type="open_display">
+        <file>SR_Status.opi</file>
+        <target>tab</target>
+        <description>Storage Ring Status</description>
+      </action>
+      <action type="open_display">
+        <file>beamQualityReport.opi</file>
+        <macros>
+          <name>13BM</name>
+          <pv>BM13</pv>
+        </macros>
+        <target>tab</target>
+        <description>BeamQuality Report</description>
+      </action>
+      <action type="open_display">
+        <file>apsbss.opi</file>
+        <macros>
+          <P>13BMC:bss:</P>
+        </macros>
+        <target>tab</target>
+        <description>ESAF/Proposal 13BM-C</description>
+      </action>
+      <action type="open_display">
+        <file>apsbss.opi</file>
+        <macros>
+          <P>13BMD:bss:</P>
+        </macros>
+        <target>tab</target>
+        <description>ESAF/Proposal 13BM-D</description>
+      </action>
+    </actions>
+    <text> BM Main Control</text>
+    <x>200</x>
+    <y>65</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #25</name>
+    <actions>
+      <action type="open_display">
+        <file>13BMD.opi</file>
+        <target>tab</target>
+        <description>13 BMD Main Control</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_xas.opi</file>
+        <target>tab</target>
+        <description>13 BMD XAS Control</description>
+      </action>
+      <action type="open_display">
+        <file>13BM_monochromator.opi</file>
+        <macros>
+          <C>3</C>
+          <D>1</D>
+          <EN>E</EN>
+          <EXPTAB>m22</EXPTAB>
+          <MONO>m9</MONO>
+          <P1>13BMA:</P1>
+          <P2>13BMD:</P2>
+          <PID>mono_pid1</PID>
+          <SHUT>FOE</SHUT>
+          <TABLE>MON:</TABLE>
+          <TILT>m12</TILT>
+          <TITLE>Energy</TITLE>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+        <description>13 BM Monochromator</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_DAC_PIL_3X.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <P>13BMD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 BMD DAC Pilatus3X</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_brill_Compact.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <D>1</D>
+          <P>13BMD:</P>
+          <R>Unidig2</R>
+          <TITLE>Brillouin</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>13 BMD Brill compact</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_DAC_PIL.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <P>13BMD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 BMD DAC Pilatus1M</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_Tomo_XRD.opi</file>
+        <macros>
+          <P>13BMD:</P>
+          <Title>Tomo_XRD</Title>
+        </macros>
+        <target>tab</target>
+        <description>13 BMD Tomo XRD</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_DAC_PIL300K.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <P>13BMD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 BMD DAC Pil300K</description>
+      </action>
+      <action type="open_display">
+        <file>13BMD_brill_PIL300K.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <D>1</D>
+          <P>13BMD:</P>
+          <R>Unidig2</R>
+          <TITLE>Brillouin</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>13 BMD Brill PIL300K</description>
+      </action>
+    </actions>
+    <text> BMD Experiments</text>
+    <x>200</x>
+    <y>135</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #36</name>
+    <actions>
+      <action type="open_display">
+        <file>13BMC.opi</file>
+        <target>tab</target>
+        <description>13 BMC</description>
+      </action>
+      <action type="open_display">
+        <file>13BMC_Diff.opi</file>
+        <target>tab</target>
+        <description>13 BMC Diffraction</description>
+      </action>
+      <action type="open_display">
+        <file>13BMC_Beam.opi</file>
+        <target>tab</target>
+        <description>13 BMC Beam Status</description>
+      </action>
+      <action type="open_display">
+        <file>13BMC_DAC.opi</file>
+        <target>tab</target>
+        <description>13 BMC DAC</description>
+      </action>
+      <action type="open_display">
+        <file>13BMC_Laser.opi</file>
+        <target>tab</target>
+        <description>13 BMC Lasers</description>
+      </action>
+    </actions>
+    <text> BMC Experiments</text>
+    <x>200</x>
+    <y>100</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #43</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID_EPS.opi</file>
+        <target>tab</target>
+        <description>Vacuum and EPS</description>
+      </action>
+    </actions>
+    <text>ID Vacuum / EPS</text>
+    <x>5</x>
+    <y>30</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #46</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID.opi</file>
+        <target>tab</target>
+        <description>13 ID</description>
+      </action>
+      <action type="open_display">
+        <file>IDbpmCanted.opi</file>
+        <macros>
+          <ds>14</ds>
+          <sec>13</sec>
+          <us>13</us>
+        </macros>
+        <target>tab</target>
+        <description>RF &amp; X-ray BPM</description>
+      </action>
+      <action type="open_display">
+        <file>SR_Status.opi</file>
+        <target>tab</target>
+        <description>Storage Ring Status</description>
+      </action>
+      <action type="open_display">
+        <file>beamQualityReport.opi</file>
+        <macros>
+          <name>13ID-US</name>
+          <pv>ID13us</pv>
+        </macros>
+        <target>tab</target>
+        <description>Beam Quality Form 13ID E</description>
+      </action>
+      <action type="open_display">
+        <file>beamQualityReport.opi</file>
+        <macros>
+          <name>13ID-DS</name>
+          <pv>ID13ds</pv>
+        </macros>
+        <target>tab</target>
+        <description>Beam Qaulity 13ID C/D</description>
+      </action>
+      <action type="open_display">
+        <file>apsbss.opi</file>
+        <macros>
+          <P>13IDCD:bss:</P>
+        </macros>
+        <target>tab</target>
+        <description>ESAF/Proposal 13ID-C/D</description>
+      </action>
+      <action type="open_display">
+        <file>apsbss.opi</file>
+        <macros>
+          <P>13IDE:bss:</P>
+        </macros>
+        <target>tab</target>
+        <description>ESAF/Proposal 13ID-E</description>
+      </action>
+      <action type="open_display">
+        <file>13CryoCooler.opi</file>
+        <macros>
+          <P>13Cryo1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Cryo Cooler 1</description>
+      </action>
+      <action type="open_display">
+        <file>xbpmIDTop.opi</file>
+        <target>tab</target>
+        <description>All X-ray BPMs</description>
+      </action>
+    </actions>
+    <text> ID Main Control</text>
+    <x>5</x>
+    <y>65</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #57</name>
+    <actions>
+      <action type="open_display">
+        <file>13IDC.opi</file>
+        <target>tab</target>
+        <description>IDC Main Control</description>
+      </action>
+      <action type="open_display">
+        <file>camera_control.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <R>Unidig2</R>
+        </macros>
+        <target>tab</target>
+        <description>IDC Hutch Camera</description>
+      </action>
+    </actions>
+    <text> IDC Experiments</text>
+    <x>5</x>
+    <y>100</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #61</name>
+    <actions>
+      <action type="open_display">
+        <file>13IDD.opi</file>
+        <target>tab</target>
+        <description>13 IDD  Main Control</description>
+      </action>
+      <action type="open_display">
+        <file>13IDD_dac_user_PIL3.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <D>1</D>
+          <P>13IDD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 IDD DAC Pilatus</description>
+      </action>
+      <action type="open_display">
+        <file>13IDD_dac_user_PIL300k.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <D>1</D>
+          <P>13IDD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 IDD DAC Pilatus 300k</description>
+      </action>
+      <action type="open_display">
+        <file>13IDD_dac_user_PIL3S.opi</file>
+        <macros>
+          <C>Peloco1</C>
+          <D>1</D>
+          <P>13IDD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 IDD DAC Pilatus 3S</description>
+      </action>
+      <action type="open_display">
+        <file>13IDD_dac_Eiger9M.opi</file>
+        <macros>
+          <C>Pelco1</C>
+          <D>1</D>
+          <P>13IDD:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 IDD DAC Eiger 9M</description>
+      </action>
+    </actions>
+    <text> IDD Experiments</text>
+    <x>5</x>
+    <y>135</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #68</name>
+    <actions>
+      <action type="open_display">
+        <file>13Lab.opi</file>
+        <target>tab</target>
+        <description>13 Lab</description>
+      </action>
+      <action type="open_display">
+        <file>13Lab2.opi</file>
+        <target>tab</target>
+        <description>13 Lab 2</description>
+      </action>
+      <action type="open_display">
+        <file>13Raman.opi</file>
+        <target>tab</target>
+        <description>13 Raman</description>
+      </action>
+      <action type="open_display">
+        <file>13Laser.opi</file>
+        <target>tab</target>
+        <description>13 Laser</description>
+      </action>
+      <action type="open_display">
+        <file>TomoCollect.opi</file>
+        <macros>
+          <P>13LABTC:</P>
+          <R>TC:</R>
+        </macros>
+        <target>tab</target>
+        <description>13 Lab tomography</description>
+      </action>
+      <action type="open_display">
+        <file>13Raman2.opi</file>
+        <target>tab</target>
+        <description>13 Raman 2</description>
+      </action>
+      <action type="open_display">
+        <file>HindsXray.opi</file>
+        <target>tab</target>
+        <description>Hinds X-ray lab</description>
+      </action>
+      <action type="open_display">
+        <file>13XPS.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M6>m6</M6>
+          <P>13XPS:</P>
+        </macros>
+        <target>tab</target>
+        <description>Spare table</description>
+      </action>
+    </actions>
+    <text> Lab IOCs</text>
+    <x>200</x>
+    <y>170</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #78</name>
+    <actions>
+      <action type="open_display">
+        <file>16element.opi</file>
+        <macros>
+          <P>13GE1:med:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 GE 1</description>
+      </action>
+      <action type="open_display">
+        <file>16element_dxp.opi</file>
+        <macros>
+          <D>dxp</D>
+          <M>mca</M>
+          <P>13GEXMAP:</P>
+        </macros>
+        <target>tab</target>
+        <description>13 GE (xMAP)</description>
+      </action>
+      <action type="open_display">
+        <file>dxpSaturn.opi</file>
+        <macros>
+          <D>dxp1:</D>
+          <M>mca1</M>
+          <P>13Saturn1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Vortex (Saturn) #1</description>
+      </action>
+      <action type="open_display">
+        <file>dxpSaturn.opi</file>
+        <macros>
+          <D>dxp1:</D>
+          <M>mca1</M>
+          <P>13Saturn2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Vortex (Saturn) #2</description>
+      </action>
+      <action type="open_display">
+        <file>4element_dxp.opi</file>
+        <macros>
+          <D>dxp</D>
+          <M>mca</M>
+          <P>13SDD1:</P>
+        </macros>
+        <target>tab</target>
+        <description>SII ME-4 SDD #1</description>
+      </action>
+      <action type="open_display">
+        <file>4element_dxp.opi</file>
+        <macros>
+          <D>dxp</D>
+          <M>mca</M>
+          <P>13Mercury1:</P>
+        </macros>
+        <target>tab</target>
+        <description>SII ME-4 Mercury</description>
+      </action>
+      <action type="open_display">
+        <file>FTomoCollect.opi</file>
+        <macros>
+          <P>13XRM:</P>
+          <Q>FT</Q>
+        </macros>
+        <target>tab</target>
+        <description>FTomo Detector</description>
+      </action>
+      <action type="open_display">
+        <file>QXsp3_mca.opi</file>
+        <macros>
+          <P>QXSP4:</P>
+          <R>MMCA:</R>
+        </macros>
+        <target>tab</target>
+        <description>Quantum XSP3 MCA</description>
+      </action>
+    </actions>
+    <text> XRF detectors</text>
+    <x>5</x>
+    <y>205</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #88</name>
+    <actions>
+      <action type="open_display">
+        <file>13IDE_mprobe.opi</file>
+        <macros>
+          <FD>13QX4</FD>
+        </macros>
+        <target>tab</target>
+        <description>13IDE Microprobe </description>
+      </action>
+      <action type="open_display">
+        <file>13IDE.opi</file>
+        <target>tab</target>
+        <description>13 IDE  Main </description>
+      </action>
+    </actions>
+    <text> IDE Experiments</text>
+    <x>5</x>
+    <y>170</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #92</name>
+    <actions>
+      <action type="open_display">
+        <file>LightField.opi</file>
+        <macros>
+          <P>13IDDLF1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD LightField</description>
+      </action>
+      <action type="open_display">
+        <file>Roper.opi</file>
+        <macros>
+          <P>13IDD_OMA1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>133IDD OMA V</description>
+      </action>
+      <action type="open_display">
+        <file>LightField.opi</file>
+        <macros>
+          <P>13BMDLF1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD LightField</description>
+      </action>
+      <action type="open_display">
+        <file>LightField.opi</file>
+        <macros>
+          <P>13RamanLF1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13Raman LightField</description>
+      </action>
+      <action type="open_display">
+        <file>dante1.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>13BMC_Dante1:</P>
+          <R>dante1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Dante 1</description>
+      </action>
+      <action type="open_display">
+        <file>dante1.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>13BMD_Dante1:</P>
+          <R>dante1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Dante 1</description>
+      </action>
+      <action type="open_display">
+        <file>dante1.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>13IDC_Dante1:</P>
+          <R>dante1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Dante 1</description>
+      </action>
+      <action type="open_display">
+        <file>dante1.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>13IDD_Dante1:</P>
+          <R>dante1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Dante 1</description>
+      </action>
+      <action type="open_display">
+        <file>ketek.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>13KETEK1:</P>
+          <R>DSP1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13Ketek1</description>
+      </action>
+    </actions>
+    <text>Spectroscopy dets.</text>
+    <x>200</x>
+    <y>205</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #103</name>
+    <actions>
+      <action type="open_display">
+        <file>marCCD.opi</file>
+        <macros>
+          <P>13MARCCD1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>MAR-CCD #1</description>
+      </action>
+      <action type="open_display">
+        <file>marCCD.opi</file>
+        <macros>
+          <P>13MARCCD2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>MAR-CCD #2</description>
+      </action>
+      <action type="open_display">
+        <file>mar345.opi</file>
+        <macros>
+          <P>13MAR345_1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Mar345 #1</description>
+      </action>
+      <action type="open_display">
+        <file>PerkinElmer.opi</file>
+        <macros>
+          <P>13PEL1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Perkin Elmer #1</description>
+      </action>
+      <action type="open_display">
+        <file>PerkinElmer.opi</file>
+        <macros>
+          <P>dp_pe1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Perkin Elmer DP #1</description>
+      </action>
+      <action type="open_display">
+        <file>marCCD.opi</file>
+        <macros>
+          <P>13MARCCD3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>MAR-CCD #3</description>
+      </action>
+      <action type="open_display">
+        <file>marCCD.opi</file>
+        <macros>
+          <P>13MARCCD4:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>MAR-CCD #4</description>
+      </action>
+      <action type="open_display">
+        <file>pixirad.opi</file>
+        <macros>
+          <P>dp_pixirad_xrd43:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pixirad DP xrd43</description>
+      </action>
+    </actions>
+    <text> Other XRD dets.</text>
+    <x>200</x>
+    <y>240</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #113</name>
+    <actions>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_GT1380</C>
+          <P>13IDBPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDB Prosilica (SSA Viewer)</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_GC1380H</C>
+          <P>13BMCPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_Manta_G146C</C>
+          <P>13BMCPS2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Prosilica 2</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13IDDPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13IDAPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDA Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_Manta_G507C</C>
+          <P>13IDC_PS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13IDC_PS2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Prosilica 2</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13RamanPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13Raman Prosilica</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_Manta_G507B</C>
+          <P>HindsXray_PS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Hinds Prosilica 1</description>
+      </action>
+    </actions>
+    <text>AVT cameras (ID)</text>
+    <x>200</x>
+    <y>275</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #124</name>
+    <actions>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13IDAPG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDA Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13IDA_PG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDA PG2 (Beam viewer)</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_Flea3_GE_28S4</C>
+          <P>13IDA_PG3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDA PG3 (E WhiteBeam)</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_BlackflyS_16S2M</C>
+          <P>13IDBPG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDB Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13IDC_PG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13IDC_PG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Point Grey 2</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13IDC_PG3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Point Grey 3</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-FG-P5G-51S4C</C>
+          <P>13IDD_PG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-FG-P5G-51S4C</C>
+          <P>13IDD_PG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Point Grey 2</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_PGE_23S6C</C>
+          <P>13IDD_PG3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Point Grey 3</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13IDDPG4:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Point Grey 4</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-13Y3M</C>
+          <P>13IDD_PG5:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Point Grey 5</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-FG-P5G-51S4C</C>
+          <P>13IDD_PG6:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Point Grey 6</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13IDCPG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDE Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_BlackflyS_16S2M</C>
+          <P>13IDEPG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDE Point Grey 2</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13IDC_PG4:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Point Grey 4</description>
+      </action>
+    </actions>
+    <text>FLIR cameras (ID)</text>
+    <x>5</x>
+    <y>275</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #142</name>
+    <actions>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <P>13IDC-PIL:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 100K 13IDC</description>
+      </action>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <P>13BMC-PIL:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 100K 13BMC</description>
+      </action>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <P>13PIL1MSi:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 1M Si</description>
+      </action>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <P>13PIL1MCdTe:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 1M CdTe</description>
+      </action>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <P>13PIL3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus CdTe sector 13</description>
+      </action>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <P>13PIL300K:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 300K CdTe</description>
+      </action>
+      <action type="open_display">
+        <file>eigerDetector.opi</file>
+        <macros>
+          <P>13EIG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Eiger #1</description>
+      </action>
+      <action type="open_display">
+        <file>eiger2Detector.opi</file>
+        <macros>
+          <P>13EIG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Eiger #2</description>
+      </action>
+      <action type="open_display">
+        <file>eiger2Detector.opi</file>
+        <macros>
+          <P>13EIG2_9M:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Eiger #2 9M</description>
+      </action>
+    </actions>
+    <text> Dectris detectors</text>
+    <x>5</x>
+    <y>240</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #153</name>
+    <actions>
+      <action type="open_display">
+        <file>13Keithley.opi</file>
+        <macros>
+          <P>13Keithley1:</P>
+        </macros>
+        <target>tab</target>
+        <description>13Keithley1</description>
+      </action>
+      <action type="open_display">
+        <file>13Keithley.opi</file>
+        <macros>
+          <P>13Keithley2:</P>
+        </macros>
+        <target>tab</target>
+        <description>13Keithley2</description>
+      </action>
+      <action type="open_display">
+        <file>13Keithley.opi</file>
+        <macros>
+          <P>13Keithley3:</P>
+        </macros>
+        <target>tab</target>
+        <description>13Keithley3</description>
+      </action>
+      <action type="open_display">
+        <file>13LAE500.opi</file>
+        <macros>
+          <P>13LAE100:</P>
+        </macros>
+        <target>tab</target>
+        <description>13LAE500</description>
+      </action>
+      <action type="open_display">
+        <file>13GasLoading.opi</file>
+        <macros>
+          <P>13GasLoad:</P>
+        </macros>
+        <target>tab</target>
+        <description>Gas Loading</description>
+      </action>
+      <action type="open_display">
+        <file>13BNC505.opi</file>
+        <macros>
+          <P>13BMC1:</P>
+        </macros>
+        <target>tab</target>
+        <description>13BNC1</description>
+      </action>
+      <action type="open_display">
+        <file>PACE5000.opi</file>
+        <macros>
+          <P>13IDD_PACE5000:</P>
+          <R>PC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD PACE5000</description>
+      </action>
+      <action type="open_display">
+        <file>PACE5000.opi</file>
+        <macros>
+          <P>13BMC_PACE5000:</P>
+          <R>PC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC PACE5000</description>
+      </action>
+      <action type="open_display">
+        <file>CPSyringe.opi</file>
+        <macros>
+          <P>13Syringe1:</P>
+          <R>S1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Syringe pump 1</description>
+      </action>
+      <action type="open_display">
+        <file>CPSyringe.opi</file>
+        <macros>
+          <P>13Syringe2:</P>
+          <R>S1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Syringe pump 2</description>
+      </action>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <P>13IDD:Auto1:</P>
+          <TITLE>Automation1</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>IDD Automation1</description>
+      </action>
+      <action type="open_display">
+        <file>13Rigol_DG4000.opi</file>
+        <macros>
+          <P>13DG4162_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Rigol DG4162</description>
+      </action>
+      <action type="open_display">
+        <file>13Rigol_DS1000.opi</file>
+        <macros>
+          <P>13DS1054_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Rigol DS1054</description>
+      </action>
+      <action type="open_display">
+        <file>ADEuresys.opi</file>
+        <macros>
+          <C>Mikrotron_CXP_MC206xS11</C>
+          <P>13BMD_MIK1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Mikrotron</description>
+      </action>
+      <action type="open_display">
+        <file>13Galil_Test.opi</file>
+        <target>tab</target>
+        <description>13Galil_Test</description>
+      </action>
+    </actions>
+    <text> Other IOCs #1</text>
+    <x>5</x>
+    <y>345</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #170</name>
+    <actions>
+      <action type="open_display">
+        <file>All_IOC_status.opi</file>
+        <target>tab</target>
+        <description>All IOC status</description>
+      </action>
+    </actions>
+    <text> All IOC Status</text>
+    <x>200</x>
+    <y>415</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #173</name>
+    <actions>
+      <action type="open_display">
+        <file>ETC_module.opi</file>
+        <macros>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13ETC_1:</P>
+          <Ti>Ti</Ti>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp E-TC #1</description>
+      </action>
+      <action type="open_display">
+        <file>13E1608.opi</file>
+        <macros>
+          <P>13E1608_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp E-1608 #1</description>
+      </action>
+      <action type="open_display">
+        <file>13E1608.opi</file>
+        <macros>
+          <P>13E1608_2:</P>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp E-1608 #2</description>
+      </action>
+      <action type="open_display">
+        <file>13USB2408.opi</file>
+        <macros>
+          <P>13USB2408_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp USB-2408 #1</description>
+      </action>
+      <action type="open_display">
+        <file>13USB2408.opi</file>
+        <macros>
+          <P>13USB2408_2:</P>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp USB-2408 #2</description>
+      </action>
+      <action type="open_display">
+        <file>USBCTR.opi</file>
+        <macros>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13USBCTR1:</P>
+          <Pg>PulseGen</Pg>
+          <Ti>Ti</Ti>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp USB-CTR08 #1</description>
+      </action>
+      <action type="open_display">
+        <file>USBCTR.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <MP>13MCBOX:MCS1:</MP>
+          <P>13MCBOX:USBCTR:</P>
+          <Pg>PulseGen</Pg>
+          <S>scaler1</S>
+          <SP>13MCBOX:</SP>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>MeasCompBox USBCTR</description>
+      </action>
+      <action type="open_display">
+        <file>USB1808_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13MCBOX:USB1808:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>MeasCompBox USB1808X</description>
+      </action>
+      <action type="open_display">
+        <file>USB3104_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13MCBOX:USB3104:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>MeasCompBox USB3104</description>
+      </action>
+      <action type="open_display">
+        <file>ETC_module.opi</file>
+        <macros>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13ETC_2:</P>
+          <Ti>Ti</Ti>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp E-TC #2</description>
+      </action>
+      <action type="open_display">
+        <file>ETC_module.opi</file>
+        <macros>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13ETC_3:</P>
+          <Ti>Ti</Ti>
+        </macros>
+        <target>tab</target>
+        <description>MeasComp E-TC #3</description>
+      </action>
+    </actions>
+    <text> MeasComp IOCs</text>
+    <x>5</x>
+    <y>380</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #187</name>
+    <actions>
+      <action type="open_display">
+        <file>PACE5000.opi</file>
+        <macros>
+          <P>13BMD_PACE5000:</P>
+          <R>PC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>BMD PACE5000</description>
+      </action>
+      <action type="open_display">
+        <file>13HG100.opi</file>
+        <target>tab</target>
+        <description>L&amp;C HG-100</description>
+      </action>
+      <action type="open_display">
+        <file>13Mjolnir.opi</file>
+        <target>tab</target>
+        <description>Mjolnir pumps</description>
+      </action>
+      <action type="open_display">
+        <file>13SmarAct1.opi</file>
+        <target>tab</target>
+        <description>SmarAct #1</description>
+      </action>
+      <action type="open_display">
+        <file>13CryoJet1.opi</file>
+        <target>tab</target>
+        <description>CryoJet #1</description>
+      </action>
+      <action type="open_display">
+        <file>13SMKB_XPS.opi</file>
+        <macros>
+          <P>13SMKB:</P>
+        </macros>
+        <target>tab</target>
+        <description>SMKB XPS</description>
+      </action>
+      <action type="open_display">
+        <file>13Cryocon.opi</file>
+        <macros>
+          <P>13Cryocon1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Cryocon 22C #1</description>
+      </action>
+      <action type="open_display">
+        <file>PACE5000.opi</file>
+        <macros>
+          <P>13RAMAN_PACE5000:</P>
+          <R>PC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Raman PACE5000</description>
+      </action>
+      <action type="open_display">
+        <file>13PECell.opi</file>
+        <macros>
+          <S>PS1:</S>
+        </macros>
+        <target>tab</target>
+        <description>PE Cell</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <P>13MCC:</P>
+          <TITLE>SollerSlits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Soller Slits</description>
+      </action>
+    </actions>
+    <text> Other IOCs #2</text>
+    <x>200</x>
+    <y>345</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #199</name>
+    <actions>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13BMA_PG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMA Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13BMB_PG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMB Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR-BFS-PGE-23S6C</C>
+          <P>13BMC_PG3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Point Grey 3</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13BMCPG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Point Grey 2</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13BMDPG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13BMDPG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Point Grey 2</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_BlackflyS_50S5C</C>
+          <P>13BMDPG3:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Point Grey 3</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_51S5C</C>
+          <P>13RamanPG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13Raman Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_BlackflyS_50S5C</C>
+          <P>13RamanPG2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13Raman Point Grey 2</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_Blackfly_20E4C</C>
+          <P>13GLS_PG1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13GasLoad Point Grey 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>FLIR_ORX_10G_51S5M</C>
+          <P>13BMDPG4:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMD Point Grey 4</description>
+      </action>
+      <action type="open_display">
+        <file>ADSpinnaker.opi</file>
+        <macros>
+          <C>PGR_GS3_U3_23S6M</C>
+          <P>13BV1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Beam viewer #1</description>
+      </action>
+    </actions>
+    <text>FLIR cameras (BM)</text>
+    <x>5</x>
+    <y>310</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #213</name>
+    <actions>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_GT1380</C>
+          <P>13IDBPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDB Prosilica (SSA Viewer)</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_GC1380H</C>
+          <P>13BMCPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_Manta_G146C</C>
+          <P>13BMCPS2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Prosilica 2</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13IDDPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDD Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13IDAPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDA Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_GC1380CH</C>
+          <P>13BV2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13BeamViewer2</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_Manta_G507C</C>
+          <P>13IDC_PS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Prosilica 1</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13IDC_PS2:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13IDC Prosilica 2</description>
+      </action>
+      <action type="open_display">
+        <file>prosilica.opi</file>
+        <macros>
+          <P>13RamanPS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>13Raman Prosilica</description>
+      </action>
+      <action type="open_display">
+        <file>ADVimba.opi</file>
+        <macros>
+          <C>AVT_Manta_G507B</C>
+          <P>HindsXray_PS1:</P>
+          <R>cam1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Hinds Prosilica 1</description>
+      </action>
+    </actions>
+    <text>AVT cameras (BM)</text>
+    <x>200</x>
+    <y>310</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #225</name>
+    <actions>
+      <action type="open_display">
+        <file>13LabJack.opi</file>
+        <macros>
+          <P>13LJT7_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>LabJack T7 #1</description>
+      </action>
+      <action type="open_display">
+        <file>13LabJack.opi</file>
+        <macros>
+          <P>13LJT7Pro_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>LabJack T7 Pro #1</description>
+      </action>
+      <action type="open_display">
+        <file>13LabJack.opi</file>
+        <macros>
+          <P>13LJT8_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>LabJack T8 #1</description>
+      </action>
+      <action type="open_display">
+        <file>13LabJack.opi</file>
+        <macros>
+          <P>13LJT8_2:</P>
+        </macros>
+        <target>tab</target>
+        <description>LabJack T8 #2</description>
+      </action>
+    </actions>
+    <text> LabJack IOCs</text>
+    <x>5</x>
+    <y>415</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #231</name>
+    <actions>
+      <action type="open_display">
+        <file>13InstekGPP.opi</file>
+        <macros>
+          <P>13INSTEK_1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Instek GPP #1</description>
+      </action>
+      <action type="open_display">
+        <file>13VPower.opi</file>
+        <macros>
+          <P>13VPower1:</P>
+          <R>VP1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Versatile Power #1</description>
+      </action>
+      <action type="open_display">
+        <file>13VPower.opi</file>
+        <macros>
+          <P>13VPower2:</P>
+          <R>VP1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Versatile Power #2</description>
+      </action>
+    </actions>
+    <text> Power Supplies</text>
+    <x>200</x>
+    <y>380</y>
+    <width>190</width>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

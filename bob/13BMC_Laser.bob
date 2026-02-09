@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:53:12 by epics-->
+<display version="2.0.0">
+  <name>13BMC_Laser</name>
+  <x>2799</x>
+  <y>302</y>
+  <width>370</width>
+  <height>272</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>30</x>
+    <y>12</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>GSECARS 13-BM-C Lasers</text>
+    <x>47</x>
+    <y>20</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #12</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13BMC_Laser:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13BMC_Laser:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>151</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>Scan</text>
+    <x>94</x>
+    <y>151</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #19</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>124</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #23</name>
+    <text>asyn records</text>
+    <x>94</x>
+    <y>124</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #26</name>
+    <actions>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>178</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #29</name>
+    <text>IOC status</text>
+    <x>95</x>
+    <y>178</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #32</name>
+    <text>User calcs, transforms</text>
+    <x>94</x>
+    <y>97</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #35</name>
+    <actions>
+      <action type="open_display">
+        <file>userArrayCalcs10.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcOuts10.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>User calcOuts</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs10.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userStringSeqs10.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringSeqs</description>
+      </action>
+      <action type="open_display">
+        <file>userTransforms10.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>97</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #42</name>
+    <actions>
+      <action type="open_display">
+        <file>IPG_YLR_laser.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+          <R>IPG1</R>
+        </macros>
+        <target>tab</target>
+        <description>IPG YLR Laser</description>
+      </action>
+      <action type="open_display">
+        <file>LaserQuantum.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+          <R>LQE1</R>
+        </macros>
+        <target>tab</target>
+        <description>Laser Quantum GEM 532</description>
+      </action>
+      <action type="open_display">
+        <file>13BMC_LaserPLC.opi</file>
+        <macros>
+          <P>13BMC_Laser:</P>
+        </macros>
+        <target>tab</target>
+        <description>Laser PLC</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>70</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #47</name>
+    <text>Laser</text>
+    <x>94</x>
+    <y>70</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #50</name>
+    <actions>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <P>13BMC_Laser:</P>
+          <TITLE>BMC_laser_picometers</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>13BMC_Laser_picomotors</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>205</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>Picomotors</text>
+    <x>96</x>
+    <y>207</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

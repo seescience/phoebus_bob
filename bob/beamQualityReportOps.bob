@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:57 by epics-->
+<display version="2.0.0">
+  <name>beamQualityReportOps</name>
+  <x>4</x>
+  <y>517</y>
+  <width>280</width>
+  <height>420</height>
+  <background_color>
+    <color red="218" green="218" blue="218">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>145</x>
+    <y>100</y>
+    <width>130</width>
+    <height>25</height>
+    <line_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;&amp;pv1==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>S:VID1:XemittanceEff.SEVR</pv_name>
+        <pv_name>S:VID1:YemittanceEff.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #10</name>
+    <x>5</x>
+    <y>100</y>
+    <width>130</width>
+    <height>25</height>
+    <line_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;&amp;pv1==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>SRFB:xRMSmotion30HzAlarmM.SEVR</pv_name>
+        <pv_name>SRFB:yRMSmotion30HzAlarmM.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #14</name>
+    <x>5</x>
+    <y>100</y>
+    <width>130</width>
+    <height>25</height>
+    <line_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!((pv0==1&amp;&amp;pv1!=2)||(pv1==1&amp;&amp;pv0!=2))">
+          <value>false</value>
+        </exp>
+        <pv_name>SRFB:xRMSmotion30HzAlarmM.SEVR</pv_name>
+        <pv_name>SRFB:yRMSmotion30HzAlarmM.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #18</name>
+    <x>145</x>
+    <y>100</y>
+    <width>130</width>
+    <height>25</height>
+    <line_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!((pv0==1&amp;&amp;pv1!=2)||(pv1==1&amp;&amp;pv0!=2))">
+          <value>false</value>
+        </exp>
+        <pv_name>S:VID1:XemittanceEff.SEVR</pv_name>
+        <pv_name>S:VID1:YemittanceEff.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #22</name>
+    <x>5</x>
+    <y>5</y>
+    <width>270</width>
+    <height>90</height>
+    <line_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>BeamQualityReport:$(pv):Status</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #26</name>
+    <x>5</x>
+    <y>5</y>
+    <width>270</width>
+    <height>90</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>BeamQualityReport:$(pv):Status</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #30</name>
+    <pv_name>OPS:message4</pv_name>
+    <x>5</x>
+    <y>150</y>
+    <width>270</width>
+    <height>14</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #34</name>
+    <x>5</x>
+    <y>100</y>
+    <width>130</width>
+    <height>25</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;1||pv1&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>SRFB:xRMSmotion30HzAlarmM.SEVR</pv_name>
+        <pv_name>SRFB:yRMSmotion30HzAlarmM.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>30Hz Motion</text>
+    <x>5</x>
+    <y>102</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #42</name>
+    <x>145</x>
+    <y>100</y>
+    <width>130</width>
+    <height>25</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;1||pv1&gt;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>S:VID1:XemittanceEff.SEVR</pv_name>
+        <pv_name>S:VID1:YemittanceEff.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #46</name>
+    <text>Emittance</text>
+    <x>145</x>
+    <y>102</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #50</name>
+    <x>-1</x>
+    <y>170</y>
+    <width>282</width>
+    <height>7</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #53</name>
+      <y>5</y>
+      <width>282</width>
+      <height>2</height>
+      <points>
+        <point x="0.0" y="1.0">
+        </point>
+        <point x="280.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #57</name>
+      <width>282</width>
+      <height>2</height>
+      <points>
+        <point x="0.0" y="1.0">
+        </point>
+        <point x="280.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #61</name>
+    <x>5</x>
+    <y>15</y>
+    <width>270</width>
+    <height>75</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #64</name>
+      <text>$(name) Beam</text>
+      <width>270</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #67</name>
+      <text>Quality</text>
+      <y>35</y>
+      <width>270</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #71</name>
+    <x>5</x>
+    <y>183</y>
+    <width>270</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #74</name>
+      <pv_name>BeamQualityReport:$(pv):Comment</pv_name>
+      <y>10</y>
+      <width>270</width>
+      <height>14</height>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #78</name>
+      <text>Ops Message to $(name):</text>
+      <width>80</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #81</name>
+    <x>-1</x>
+    <y>215</y>
+    <width>282</width>
+    <height>7</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #84</name>
+      <y>5</y>
+      <width>282</width>
+      <height>2</height>
+      <points>
+        <point x="0.0" y="1.0">
+        </point>
+        <point x="280.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #88</name>
+      <width>282</width>
+      <height>2</height>
+      <points>
+        <point x="0.0" y="1.0">
+        </point>
+        <point x="280.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #92</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'We are investigating.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-We are investigating.</text>
+    <x>5</x>
+    <y>258</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #95</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'Cursory investigation found no issues.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-Cursory investigation found no issues.</text>
+    <x>5</x>
+    <y>288</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #98</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'Further investigation found no issues.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-Further investigation found no issues.</text>
+    <x>5</x>
+    <y>308</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #101</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'Potential issue found. Addressing.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-Potential issue found. Addressing.</text>
+    <x>5</x>
+    <y>338</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #104</name>
+    <pv_name>BeamQualityReport:$(pv):Comment</pv_name>
+    <x>5</x>
+    <y>227</y>
+    <width>270</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #108</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'Known issue(s) resolved.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-Known issue(s) resolved.</text>
+    <x>5</x>
+    <y>378</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #111</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'Consulting with Ring Manager.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-Consulting with CO/Ring Manager.</text>
+    <x>5</x>
+    <y>358</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #114</name>
+    <x>-1</x>
+    <y>280</y>
+    <width>281</width>
+    <height>2</height>
+    <points>
+      <point x="0.0" y="1.0">
+      </point>
+      <point x="279.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #119</name>
+    <x>-1</x>
+    <y>331</y>
+    <width>281</width>
+    <height>2</height>
+    <points>
+      <point x="0.0" y="1.0">
+      </point>
+      <point x="279.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #124</name>
+    <x>15</x>
+    <y>131</y>
+    <width>262</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #127</name>
+      <text>Number of beamlines reporting an issue:</text>
+      <y>3</y>
+      <width>260</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #130</name>
+      <pv_name>BeamQualityReport:Global:Count1or2</pv_name>
+      <x>237</x>
+      <width>25</width>
+      <height>15</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #134</name>
+    <actions>
+      <action type="command">
+        <command>"caput BeamQualityReport:$(pv):Comment " "'Please call the MCR, 2-9424.'"</command>
+        <description>"update"</description>
+      </action>
+    </actions>
+    <text>-Please call the MCR, 2-9424.</text>
+    <x>5</x>
+    <y>398</y>
+    <width>270</width>
+    <height>17</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+</display>

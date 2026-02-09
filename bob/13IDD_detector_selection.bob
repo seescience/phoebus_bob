@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:51 by epics-->
+<display version="2.0.0">
+  <name>13IDD_detector_selection</name>
+  <x>773</x>
+  <y>529</y>
+  <width>425</width>
+  <height>142</height>
+  <background_color>
+    <color red="105" green="105" blue="105">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>Switch Detectors</text>
+    <x>75</x>
+    <y>14</y>
+    <width>275</width>
+    <height>28</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #9</name>
+    <x>30</x>
+    <y>99</y>
+    <width>148</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&lt;-120)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:m8.RBV</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #12</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:userStringSeq7.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:userStringSeq7.PROC</pv_name>
+      <text>to MARCCD (step 1)</text>
+      <width>148</width>
+      <height>25</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #16</name>
+    <x>224</x>
+    <y>98</y>
+    <width>168</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;-180)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:m8.RBV</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #19</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:userStringSeq8.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:userStringSeq8.PROC</pv_name>
+      <text>to Pilatus (step 1)</text>
+      <width>168</width>
+      <height>25</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #23</name>
+    <text>Moves the detector stage!</text>
+    <x>64</x>
+    <y>63</y>
+    <width>311</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>

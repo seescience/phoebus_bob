@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:51 by epics-->
+<display version="2.0.0">
+  <name>X26A</name>
+  <x>1182</x>
+  <y>254</y>
+  <width>350</width>
+  <height>240</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>X26A:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>X26A:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>204</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>Scan</text>
+    <x>92</x>
+    <y>204</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #13</name>
+    <actions>
+      <action type="open_display">
+        <file>CAMAC_IO.opi</file>
+        <macros>
+          <REC>X26A:camac1</REC>
+        </macros>
+        <target>tab</target>
+        <description>CAMAC</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>177</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>Generic CAMAC</text>
+    <x>92</x>
+    <y>177</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #19</name>
+    <actions>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>aim_adc1</M>
+          <P>X26A:</P>
+        </macros>
+        <target>tab</target>
+        <description>AIM ADC1</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbAmp.opi</file>
+        <macros>
+          <AMP>amp1</AMP>
+          <P>X26A:</P>
+        </macros>
+        <target>tab</target>
+        <description>Amplifier</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbHVPS.opi</file>
+        <macros>
+          <HVPS>hvps1</HVPS>
+          <P>X26A:</P>
+        </macros>
+        <target>tab</target>
+        <description>High voltage</description>
+      </action>
+      <action type="open_display">
+        <file>l</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>96</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>MCA electronics</text>
+    <x>92</x>
+    <y>96</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #28</name>
+    <x>20</x>
+    <y>17</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #31</name>
+    <text>X-26A Beamline Control</text>
+    <x>37</x>
+    <y>26</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #34</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>X26A:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>CAMAC Scaler</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>123</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #37</name>
+    <text>Other electronics</text>
+    <x>92</x>
+    <y>123</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #40</name>
+    <actions>
+      <action type="open_display">
+        <file>userTrans10.opi</file>
+        <macros>
+          <P>X26A:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>yysCalcoutRecord.opi</file>
+        <macros>
+          <C>userStringCalc1</C>
+          <P>X26A:</P>
+        </macros>
+        <target>tab</target>
+        <description>User sCalcOut1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>150</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #44</name>
+    <text>User calcs, transforms</text>
+    <x>92</x>
+    <y>150</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #47</name>
+    <actions>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <P>X26A:</P>
+          <TITLE>Sample_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Sample stage</description>
+      </action>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m10</M1>
+          <P>X26A:</P>
+          <TITLE>Monochromator</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Monochromator</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>pm5</M1>
+          <M2>pm6</M2>
+          <M3>pm7</M3>
+          <M4>pm8</M4>
+          <P>X26A:</P>
+          <TITLE>Virtual_4_Jaw_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>4-jaw slits virtual</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m11</M1>
+          <M2>m16</M2>
+          <M3>m14</M3>
+          <M4>m13</M4>
+          <P>X26A:</P>
+          <TITLE>Real_4_Jaw_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>4-jaw slits real</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <P>X26A:</P>
+          <TITLE>Vertical_KB_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical K/B mirror</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m21</M1>
+          <M2>m22</M2>
+          <M3>m23</M3>
+          <M4>m24</M4>
+          <M5>pm1</M5>
+          <M6>pm2</M6>
+          <P>X26A:</P>
+          <TITLE>Horizonal_KB_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Horizontal K/B mirror</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m5</M1>
+          <M2>m6</M2>
+          <M3>m7</M3>
+          <M4>m8</M4>
+          <P>X26A:</P>
+          <TITLE>Pinhole_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Pinhole</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m9</M1>
+          <M2>m12</M2>
+          <M3>m15</M3>
+          <P>X26A:</P>
+          <TITLE>Lift_table_and_aperture</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Lift table and aperture</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>69</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #57</name>
+    <text>Motors</text>
+    <x>92</x>
+    <y>69</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

@@ -1,0 +1,4026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-07-24 12:56:49 by epics-->
+<display version="2.0.0">
+  <name>FEEPS_Engineering</name>
+  <x>1024</x>
+  <y>72</y>
+  <width>1202</width>
+  <height>500</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>170</x>
+    <y>401</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:PH_OR:StatusM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>SECTOR:</text>
+    <x>123</x>
+    <y>7</y>
+    <width>80</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #13</name>
+    <pv_name>$(Z)-FEEPS:Beamline:NumberM</pv_name>
+    <x>206</x>
+    <y>7</y>
+    <width>25</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #17</name>
+    <x>241</x>
+    <y>7</y>
+    <width>24</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #20</name>
+      <text>ID</text>
+      <width>24</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #24</name>
+      <text>BM</text>
+      <width>24</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>Inputs</text>
+    <x>117</x>
+    <y>88</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #31</name>
+    <text>Internal Signals</text>
+    <x>697</x>
+    <y>88</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #34</name>
+    <text>Outputs</text>
+    <x>464</x>
+    <y>88</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #37</name>
+    <text>FE Air Pressure</text>
+    <x>193</x>
+    <y>172</y>
+    <width>120</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #40</name>
+    <x>170</x>
+    <y>172</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:FE:AirPressureM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #44</name>
+    <x>170</x>
+    <y>187</y>
+    <width>113</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #47</name>
+      <text>ID Gap Open</text>
+      <x>23</x>
+      <width>90</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #50</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:ID_Gap:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #55</name>
+    <x>27</x>
+    <y>187</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #58</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS2:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #62</name>
+      <text>PS2 Opened</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #65</name>
+    <x>27</x>
+    <y>202</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #68</name>
+      <width>143</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #71</name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(Z)-FEEPS:PS2:ClosedM</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #75</name>
+        <text>PS2 Closed</text>
+        <x>23</x>
+        <width>120</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #78</name>
+    <x>27</x>
+    <y>262</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #81</name>
+      <text>SRV Closed</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #84</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:SRV:ClosedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #88</name>
+    <x>27</x>
+    <y>277</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #91</name>
+      <text>SRV Opened</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #94</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:SRV:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #98</name>
+    <x>27</x>
+    <y>298</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #101</name>
+      <text>FEV Closed</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #104</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FEV:ClosedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #108</name>
+    <x>27</x>
+    <y>313</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #111</name>
+      <text>FEV Opened</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #114</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FEV:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #118</name>
+    <x>27</x>
+    <y>371</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #121</name>
+      <text>Ion Pump 1</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #124</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:IP1:VacuumOKM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #128</name>
+    <x>27</x>
+    <y>386</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #131</name>
+      <text>Ion Pump 2</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #134</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:IP2:VacuumOKM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #138</name>
+    <x>27</x>
+    <y>401</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:IP3:VacuumOKM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #142</name>
+    <text>Ion Pump 3</text>
+    <x>50</x>
+    <y>401</y>
+    <width>120</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #145</name>
+    <x>27</x>
+    <y>416</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #148</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:IP4:VacuumOKM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #152</name>
+      <text>Ion Pump 4</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #155</name>
+    <x>27</x>
+    <y>431</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #158</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:IP5:VacuumOKM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #162</name>
+      <text>Ion Pump 5</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #165</name>
+    <x>27</x>
+    <y>446</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #168</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:IP6:VacuumOKM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #172</name>
+      <text>Ion Pump 6</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #175</name>
+    <x>27</x>
+    <y>461</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #178</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:IP7:VacuumOKM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #182</name>
+      <text>Ion Pump 7</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #185</name>
+    <text>SRV Open Command</text>
+    <x>466</x>
+    <y>127</y>
+    <width>120</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #188</name>
+    <x>444</x>
+    <y>127</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:SRV:OpenCommandM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #192</name>
+    <x>444</x>
+    <y>142</y>
+    <width>142</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #195</name>
+      <text>FEV Open Command</text>
+      <x>22</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #198</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FEV:OpenCommandM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #202</name>
+    <x>444</x>
+    <y>157</y>
+    <width>142</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #205</name>
+      <text>BIV Open Command</text>
+      <x>22</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #208</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:BIV:OpenCommandM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #213</name>
+    <x>444</x>
+    <y>244</y>
+    <width>163</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #216</name>
+      <text>MPS Permit (Slow Abort)</text>
+      <x>22</x>
+      <y>1</y>
+      <width>141</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #219</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:MPS:SlowPermitM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #223</name>
+    <x>444</x>
+    <y>260</y>
+    <width>163</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #226</name>
+      <text>MPS Permit (Fast Abort)</text>
+      <x>22</x>
+      <width>141</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #229</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:MPS:FastPermitM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #233</name>
+    <text>NO Beam Signal to BLEPS</text>
+    <x>466</x>
+    <y>287</y>
+    <width>120</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #236</name>
+    <x>444</x>
+    <y>287</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BLEPS:NoBeamM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #240</name>
+    <text>PSS Test Key</text>
+    <x>192</x>
+    <y>128</y>
+    <width>86</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #243</name>
+    <x>170</x>
+    <y>127</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:PSS_TestKeyM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #247</name>
+    <x>953</x>
+    <y>127</y>
+    <width>187</width>
+    <height>26</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #250</name>
+      <width>187</width>
+      <height>11</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #253</name>
+        <text>Remote MPS Test (Slow Abort)</text>
+        <x>22</x>
+        <y>1</y>
+        <width>165</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>rectangle #256</name>
+        <pv_name>=highestSeverity(`$(Z)-FEEPS:MPS:SlowEPICS_TripM`)</pv_name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </line_color>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label></label>
+            <color>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label></label>
+            <color>
+              <color name="MINOR" red="255" green="128" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label></label>
+            <color>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label></label>
+            <color>
+              <color name="INVALID" red="255" green="0" blue="255">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>4</value>
+            <label></label>
+            <color>
+              <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #260</name>
+      <y>15</y>
+      <width>187</width>
+      <height>11</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #263</name>
+        <text>Remote MPS Test (Fast Abort)</text>
+        <x>22</x>
+        <y>1</y>
+        <width>165</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>rectangle #266</name>
+        <pv_name>=highestSeverity(`$(Z)-FEEPS:MPS:FastEPICS_TripM`)</pv_name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </line_color>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label></label>
+            <color>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label></label>
+            <color>
+              <color name="MINOR" red="255" green="128" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label></label>
+            <color>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label></label>
+            <color>
+              <color name="INVALID" red="255" green="0" blue="255">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>4</value>
+            <label></label>
+            <color>
+              <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #270</name>
+    <x>170</x>
+    <y>262</y>
+    <width>132</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #273</name>
+      <text>SRV Override Close</text>
+      <x>22</x>
+      <y>1</y>
+      <width>110</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #276</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:SRV:Override:CloseM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #280</name>
+    <x>170</x>
+    <y>277</y>
+    <width>123</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #283</name>
+      <text>SRV Override Open</text>
+      <x>22</x>
+      <y>1</y>
+      <width>101</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #286</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:SRV:Override:OpenM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #290</name>
+    <x>170</x>
+    <y>298</y>
+    <width>132</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #293</name>
+      <text>FEV Override Close</text>
+      <x>22</x>
+      <y>1</y>
+      <width>110</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #296</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:FEV:Override:CloseM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #300</name>
+    <x>170</x>
+    <y>313</y>
+    <width>123</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #303</name>
+      <text>FEV Override Open</text>
+      <x>22</x>
+      <y>1</y>
+      <width>101</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #306</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:FEV:Override:OpenM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #310</name>
+    <x>953</x>
+    <y>182</y>
+    <width>123</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #313</name>
+      <text>PLC Forces Present</text>
+      <x>22</x>
+      <y>1</y>
+      <width>101</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #316</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:ForcesPresentWarnM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #320</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:ForcesPresentWarnM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #324</name>
+    <x>953</x>
+    <y>197</y>
+    <width>108</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #327</name>
+      <text>PLC Power Cycle</text>
+      <x>22</x>
+      <y>1</y>
+      <width>86</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>rectangle #330</name>
+      <pv_name>=highestSeverity(`$(Z)-FEEPS:PowerUpTripM`)</pv_name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="OK" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
+            <color name="MINOR" red="255" green="128" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label></label>
+          <color>
+            <color name="MAJOR" red="255" green="0" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>3</value>
+          <label></label>
+          <color>
+            <color name="INVALID" red="255" green="0" blue="255">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>4</value>
+          <label></label>
+          <color>
+            <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #334</name>
+    <x>953</x>
+    <y>167</y>
+    <width>123</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #337</name>
+      <text>PLC Key In Remote</text>
+      <x>22</x>
+      <y>1</y>
+      <width>101</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #340</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PLC_KeyRemoteWarnM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #344</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PLC_KeyRemoteWarnM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #348</name>
+    <x>170</x>
+    <y>371</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:PH_PS1:StatusM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #352</name>
+    <text>Phoenix PS1 Status</text>
+    <x>192</x>
+    <y>372</y>
+    <width>126</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #355</name>
+    <text>Phoenix PS2 Status</text>
+    <x>192</x>
+    <y>387</y>
+    <width>126</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #358</name>
+    <x>170</x>
+    <y>386</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:PH_PS2:StatusM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #362</name>
+    <text>Phoenix ORing Status</text>
+    <x>192</x>
+    <y>402</y>
+    <width>126</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #365</name>
+    <x>708</x>
+    <y>127</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #368</name>
+      <text>LPPS1 Open Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #371</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1_OpenPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #376</name>
+    <x>708</x>
+    <y>157</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #379</name>
+      <text>PS1 Open Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #382</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1_OpenPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #387</name>
+    <x>708</x>
+    <y>142</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #390</name>
+      <text>LPPS1 Close Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #393</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1_ClosePermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #398</name>
+    <x>708</x>
+    <y>172</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #401</name>
+      <text>PS1 Close Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #404</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1_ClosePermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #409</name>
+    <x>708</x>
+    <y>187</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #412</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:SRV_OpenPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #416</name>
+      <text>SRV Open Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #419</name>
+    <x>708</x>
+    <y>202</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #422</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:SRV_ClosePermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #426</name>
+      <text>SRV Close Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #429</name>
+    <x>708</x>
+    <y>217</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #432</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FEV_OpenPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #436</name>
+      <text>FEV Open Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #439</name>
+    <x>708</x>
+    <y>232</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #442</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FEV_ClosePermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #446</name>
+      <text>FEV Close Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #449</name>
+    <x>708</x>
+    <y>247</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+      </rule>
+    </rules>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #452</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:BIV_OpenPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #456</name>
+      <text>BIV Open Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #460</name>
+    <x>708</x>
+    <y>262</y>
+    <width>142</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+      </rule>
+    </rules>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #463</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:BIV_ClosePermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #467</name>
+      <text>BIV Close Permit</text>
+      <x>22</x>
+      <y>1</y>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #471</name>
+    <x>708</x>
+    <y>277</y>
+    <width>173</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #474</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FEV:VacuumPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #478</name>
+      <text>Vacuum Permit (FEV) from BLEPS</text>
+      <x>23</x>
+      <width>150</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #481</name>
+    <x>708</x>
+    <y>292</y>
+    <width>173</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #484</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:BIV:VacuumPermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #488</name>
+      <text>Vacuum Permit (BIV) from BLEPS</text>
+      <x>23</x>
+      <width>150</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #491</name>
+    <text>FE Shutter Permit from BLEPS</text>
+    <x>192</x>
+    <y>143</y>
+    <width>127</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #494</name>
+    <x>170</x>
+    <y>142</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BLEPS_ShutterPermitM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #498</name>
+    <text>Vacuum Permit from BLEPS</text>
+    <x>192</x>
+    <y>158</y>
+    <width>127</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #501</name>
+    <x>170</x>
+    <y>157</y>
+    <width>15</width>
+    <height>10</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==1||pv1==1)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:FEV:VacuumPermitM</pv_name>
+        <pv_name>$(Z)-FEEPS:BIV:VacuumPermitM</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #505</name>
+    <x>170</x>
+    <y>203</y>
+    <width>169</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:PSS_GenerationM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #508</name>
+      <text>Emergency FE Shutter Disable</text>
+      <x>24</x>
+      <width>145</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #511</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FES_DisablePBM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #516</name>
+    <text>Misc. Signals</text>
+    <x>977</x>
+    <y>88</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #519</name>
+    <x>976</x>
+    <y>218</y>
+    <width>169</width>
+    <height>12</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #522</name>
+      <text>Software Version</text>
+      <y>1</y>
+      <width>86</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #525</name>
+      <pv_name>$(Z)-FEEPS:SoftwareVersionM</pv_name>
+      <x>119</x>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #529</name>
+    <text>Processor Version</text>
+    <x>976</x>
+    <y>234</y>
+    <width>86</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #532</name>
+    <pv_name>$(Z)-FEEPS:CPU:ProductCodeM</pv_name>
+    <x>1095</x>
+    <y>233</y>
+    <width>50</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #536</name>
+    <text>Processor Revision</text>
+    <x>976</x>
+    <y>249</y>
+    <width>86</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #539</name>
+    <pv_name>$(Z)-FEEPS:CPU:ProductRevisionM</pv_name>
+    <x>1095</x>
+    <y>248</y>
+    <width>50</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #543</name>
+    <text>Processor SN</text>
+    <x>976</x>
+    <y>264</y>
+    <width>86</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #546</name>
+    <pv_name>$(Z)-FEEPS:CPU:SerialNumberM</pv_name>
+    <x>1095</x>
+    <y>263</y>
+    <width>80</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #550</name>
+    <x>976</x>
+    <y>278</y>
+    <width>199</width>
+    <height>12</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #553</name>
+      <text>Last Scan Time</text>
+      <y>1</y>
+      <width>86</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #556</name>
+      <x>119</x>
+      <width>80</width>
+      <height>12</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #559</name>
+        <pv_name>$(Z)-FEEPS:ScanTime:LastM</pv_name>
+        <width>50</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #563</name>
+        <text>(mS)</text>
+        <x>55</x>
+        <y>1</y>
+        <width>25</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #566</name>
+    <x>976</x>
+    <y>293</y>
+    <width>200</width>
+    <height>12</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #569</name>
+      <text>Maximum Scan Time</text>
+      <y>1</y>
+      <width>86</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #572</name>
+      <x>119</x>
+      <width>81</width>
+      <height>12</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #575</name>
+        <pv_name>$(Z)-FEEPS:ScanTime:LastM</pv_name>
+        <width>50</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #579</name>
+        <text>(mS)</text>
+        <x>56</x>
+        <y>1</y>
+        <width>25</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #582</name>
+    <text>Current PLC Time</text>
+    <x>1031</x>
+    <y>314</y>
+    <width>120</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #585</name>
+    <pv_name>$(Z)-FEEPS:Current:YearM</pv_name>
+    <x>1125</x>
+    <y>329</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #589</name>
+    <pv_name>$(Z)-FEEPS:Current:MonthM</pv_name>
+    <x>1058</x>
+    <y>329</y>
+    <width>20</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #593</name>
+    <pv_name>$(Z)-FEEPS:Current:DayM</pv_name>
+    <x>1090</x>
+    <y>329</y>
+    <width>26</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #597</name>
+    <text>/</text>
+    <x>1084</x>
+    <y>331</y>
+    <width>10</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #600</name>
+    <text>/</text>
+    <x>1115</x>
+    <y>331</y>
+    <width>10</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #603</name>
+    <pv_name>$(Z)-FEEPS:Current:HourM</pv_name>
+    <x>971</x>
+    <y>329</y>
+    <width>20</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #607</name>
+    <pv_name>$(Z)-FEEPS:Current:SecondM</pv_name>
+    <x>1030</x>
+    <y>329</y>
+    <width>26</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #611</name>
+    <pv_name>$(Z)-FEEPS:Current:MinuteM</pv_name>
+    <x>999</x>
+    <y>329</y>
+    <width>26</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #615</name>
+    <text>:</text>
+    <x>994</x>
+    <y>331</y>
+    <width>10</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #618</name>
+    <text>:</text>
+    <x>1023</x>
+    <y>331</y>
+    <width>13</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #621</name>
+    <text>FRONT END EQUIPMENT PROTECTION SYSTEM</text>
+    <x>445</x>
+    <y>8</y>
+    <width>400</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #624</name>
+    <x>518</x>
+    <y>33</y>
+    <width>240</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #627</name>
+      <text>(Canted ID FE with BIV)</text>
+      <width>240</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==1&amp;&amp;pv1==1)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:CantedM</pv_name>
+          <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #631</name>
+      <text>(Canted ID FE with BeW)</text>
+      <width>240</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==1&amp;&amp;pv1==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:CantedM</pv_name>
+          <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #635</name>
+      <text>(HHL ID FE with BIV)</text>
+      <width>240</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0&amp;&amp;pv1==1)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:CantedM</pv_name>
+          <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #639</name>
+      <text>(HHL ID FE with BeW)</text>
+      <width>240</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0&amp;&amp;pv1==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:CantedM</pv_name>
+          <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #643</name>
+    <x>27</x>
+    <y>232</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #646</name>
+      <text>SS2 Opened</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #649</name>
+      <width>15</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #652</name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(Z)-FEEPS:SS2:OpenedM</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #656</name>
+    <x>27</x>
+    <y>217</y>
+    <width>143</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #659</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:SS1:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #663</name>
+      <text>SS1 Opened</text>
+      <x>23</x>
+      <width>120</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #666</name>
+    <x>27</x>
+    <y>331</y>
+    <width>143</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>composite #669</name>
+      <width>143</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #672</name>
+        <text>BIV Closed</text>
+        <x>23</x>
+        <width>120</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #675</name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(Z)-FEEPS:BIV:ClosedM</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #679</name>
+      <y>15</y>
+      <width>143</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #682</name>
+        <text>BIV Opened</text>
+        <x>23</x>
+        <width>120</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #685</name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="0" green="216" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(Z)-FEEPS:BIV:OpenedM</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #690</name>
+    <x>170</x>
+    <y>331</y>
+    <width>132</width>
+    <height>26</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:BIV_PresentM</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>composite #693</name>
+      <width>132</width>
+      <height>11</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #696</name>
+        <text>BIV Override Close</text>
+        <x>22</x>
+        <y>1</y>
+        <width>110</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>rectangle #699</name>
+        <pv_name>=highestSeverity(`$(Z)-FEEPS:BIV:Override:CloseM`)</pv_name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </line_color>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label></label>
+            <color>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label></label>
+            <color>
+              <color name="MINOR" red="255" green="128" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label></label>
+            <color>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label></label>
+            <color>
+              <color name="INVALID" red="255" green="0" blue="255">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>4</value>
+            <label></label>
+            <color>
+              <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #703</name>
+      <y>15</y>
+      <width>123</width>
+      <height>11</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #706</name>
+        <text>BIV Override Open</text>
+        <x>22</x>
+        <y>1</y>
+        <width>101</width>
+        <height>10</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="multi_state_led" version="2.0.0">
+        <name>rectangle #709</name>
+        <pv_name>=highestSeverity(`$(Z)-FEEPS:BIV:Override:OpenM`)</pv_name>
+        <width>15</width>
+        <height>10</height>
+        <line_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </line_color>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <states>
+          <state>
+            <value>0</value>
+            <label></label>
+            <color>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>1</value>
+            <label></label>
+            <color>
+              <color name="MINOR" red="255" green="128" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>2</value>
+            <label></label>
+            <color>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>3</value>
+            <label></label>
+            <color>
+              <color name="INVALID" red="255" green="0" blue="255">
+              </color>
+            </color>
+          </state>
+          <state>
+            <value>4</value>
+            <label></label>
+            <color>
+              <color name="DISCONNECTED" red="200" green="0" blue="200" alpha="200">
+              </color>
+            </color>
+          </state>
+        </states>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #714</name>
+    <x>444</x>
+    <y>302</y>
+    <width>227</width>
+    <height>23</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #717</name>
+      <text>Last Valve Closed signal to BLEPS</text>
+      <x>22</x>
+      <y>1</y>
+      <width>205</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #720</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:BLEPS:LV_ClosedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #724</name>
+      <text>(FEV) or (BIV if present)</text>
+      <x>22</x>
+      <y>13</y>
+      <width>205</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #727</name>
+    <x>708</x>
+    <y>322</y>
+    <width>94</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #730</name>
+      <text>BL Type: BM</text>
+      <x>24</x>
+      <y>1</y>
+      <width>70</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #734</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #738</name>
+    <x>708</x>
+    <y>307</y>
+    <width>93</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #741</name>
+      <text>BL Type: ID</text>
+      <x>23</x>
+      <y>1</y>
+      <width>70</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #745</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #749</name>
+    <x>27</x>
+    <y>157</y>
+    <width>103</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #752</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #756</name>
+      <text>PS1 Opened</text>
+      <x>23</x>
+      <width>80</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #759</name>
+      <y>15</y>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1:ClosedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #763</name>
+      <text>PS1 Closed</text>
+      <x>23</x>
+      <y>15</y>
+      <width>80</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #767</name>
+    <x>27</x>
+    <y>127</y>
+    <width>103</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #770</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1:OpenedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #774</name>
+      <text>LPPS1 Opened</text>
+      <x>23</x>
+      <width>80</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #777</name>
+      <y>15</y>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1:ClosedM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #781</name>
+      <text>LPPS1 Closed</text>
+      <x>23</x>
+      <y>15</y>
+      <width>80</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #785</name>
+    <x>444</x>
+    <y>202</y>
+    <width>191</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #788</name>
+      <text>LPPS1 Open Request to PSS</text>
+      <x>26</x>
+      <width>165</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #792</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1:OpenRequestM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #797</name>
+    <x>444</x>
+    <y>188</y>
+    <width>165</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:TypeM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #800</name>
+      <text>PS1 Open Request to PSS</text>
+      <x>26</x>
+      <width>139</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #803</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:PS1:OpenRequestM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #808</name>
+    <x>444</x>
+    <y>217</y>
+    <width>170</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #811</name>
+      <text>FE Shutter Permit to PSS</text>
+      <x>27</x>
+      <width>143</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #814</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:FES_PermitM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #818</name>
+    <x>170</x>
+    <y>218</y>
+    <width>138</width>
+    <height>11</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(Z)-FEEPS:Beamline:CantedM</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>text #821</name>
+      <text>Canted PS Interlock</text>
+      <x>23</x>
+      <y>1</y>
+      <width>115</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #824</name>
+      <width>15</width>
+      <height>10</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Z)-FEEPS:Cant_DPSI_StatusM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+</display>

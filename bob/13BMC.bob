@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-11-03 14:37:15 by epics-->
+<display version="2.0.0">
+  <name>13BMC</name>
+  <x>192</x>
+  <y>62</y>
+  <width>310</width>
+  <height>650</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13BMC:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13BMC:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>350</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>Scan</text>
+    <x>86</x>
+    <y>350</y>
+    <width>124</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #13</name>
+    <text>Motors</text>
+    <x>86</x>
+    <y>134</y>
+    <width>132</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #16</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+          <P>13BMC:</P>
+          <TITLE>Test Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Test motors</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m55</M1>
+          <M2>m56</M2>
+          <M3>m57</M3>
+          <M4>m58</M4>
+          <M5>m59</M5>
+          <M6>m60</M6>
+          <M7>m61</M7>
+          <M8>m62</M8>
+          <P>13BMC:</P>
+          <TITLE>MaxV</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MaxV DC Motors</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>m21</M5>
+          <M6>m22</M6>
+          <M7>m23</M7>
+          <M8>m24</M8>
+          <P>13BMC:</P>
+          <TITLE>Entrance Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Detector Slits</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m33</M1>
+          <M2>m34</M2>
+          <M3>m35</M3>
+          <M4>m36</M4>
+          <M5>m37</M5>
+          <M6>m38</M6>
+          <P>13BMC:</P>
+          <TITLE>Newport_Rotation</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Diffractometer rotation</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m39</M1>
+          <M2>m40</M2>
+          <M3>m41</M3>
+          <M4>m42</M4>
+          <M5>m43</M5>
+          <M6>m44</M6>
+          <M7>m45</M7>
+          <M8>m46</M8>
+          <P>13BMC:</P>
+          <TITLE>Newport_Base</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Diffractometer Base</description>
+      </action>
+      <action type="open_display">
+        <file>table.opi</file>
+        <macros>
+          <M0X>m43</M0X>
+          <M0Y>m39</M0Y>
+          <M1Y>m41</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m40</M2Y>
+          <M2Z>m42</M2Z>
+          <P>13BMC:</P>
+          <Q>DIF:T1</Q>
+          <T>DIF:t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Table Record</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m25</M1>
+          <M2>m26</M2>
+          <M3>m27</M3>
+          <M4>m28</M4>
+          <M5>m29</M5>
+          <M6>m30</M6>
+          <M7>m31</M7>
+          <M8>m32</M8>
+          <P>13BMC:</P>
+          <TITLE>13BMB_Mono</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Monochromator</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m63</M1>
+          <M2>m64</M2>
+          <M3>m65</M3>
+          <M4>m66</M4>
+          <M5>m67</M5>
+          <M6>m68</M6>
+          <M7>m69</M7>
+          <M8>m70</M8>
+          <P>13BMC:</P>
+          <TITLE>MaxV_Stepping</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MaxV Stepping Motors</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m74</M1>
+          <M2>m75</M2>
+          <M3>m76</M3>
+          <P>13BMC:</P>
+          <TITLE>DAC_Cleanup_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>DAC cleanup slit</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m71</M1>
+          <M2>m72</M2>
+          <M3>m73</M3>
+          <M4>m77</M4>
+          <P>13BMC:</P>
+          <TITLE>DAC_Microscope</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>DAC Microscope</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <P>13BMC:</P>
+          <TITLE>13BMC_KB_Bender</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>KB Bender Real</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>pm13</M1>
+          <M2>pm14</M2>
+          <M3>pm15</M3>
+          <M4>pm16</M4>
+          <P>13BMC:</P>
+          <TITLE>13BMC_KB_Bender</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>KB Bender</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>134</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #30</name>
+    <x>5</x>
+    <y>15</y>
+    <width>300</width>
+    <height>47</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #33</name>
+    <text>GeoCARS 13-BM-C</text>
+    <x>22</x>
+    <y>28</y>
+    <width>267</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #36</name>
+    <actions>
+      <action type="open_display">
+        <file>ionPump.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <PUMP>ip1</PUMP>
+          <TITLE>Mirror_Tank</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Digitel ion pump</description>
+      </action>
+      <action type="open_display">
+        <file>DualVacuumGauge.opi</file>
+        <macros>
+          <CC>cc1</CC>
+          <P>13BMC:</P>
+          <PR>pr1</PR>
+          <TITLE>Mirror_Tank</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MKS vacuum gauge #1</description>
+      </action>
+      <action type="open_display">
+        <file>DualVacuumGauge.opi</file>
+        <macros>
+          <CC>cc2</CC>
+          <P>13BMC:</P>
+          <PR>pr2</PR>
+          <TITLE>Mirror_Tank_2</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MKS vacuum gauge #2</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13BMC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithey thermocouples</description>
+      </action>
+      <action type="open_display">
+        <file>MPC.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <PUMP>ip1</PUMP>
+        </macros>
+        <target>tab</target>
+        <description>MPC ion pump #1</description>
+      </action>
+      <action type="open_display">
+        <file>MPC.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <PUMP>ip2</PUMP>
+        </macros>
+        <target>tab</target>
+        <description>MPC ion pump #2</description>
+      </action>
+      <action type="open_display">
+        <file>MPC_TSP.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <TSP>tsp1</TSP>
+        </macros>
+        <target>tab</target>
+        <description>MPC TSP</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>404</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #45</name>
+    <text>Vacuum</text>
+    <x>86</x>
+    <y>404</y>
+    <width>132</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #48</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_soft.opi</file>
+        <macros>
+          <ioc>13BMC:</ioc>
+        </macros>
+        <target>tab</target>
+        <description>devIocStats</description>
+      </action>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13BMC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+      <action type="open_display">
+        <file>motorStatus120.opi</file>
+        <macros>
+          <P>13BMC:</P>
+        </macros>
+        <target>tab</target>
+        <description>All motor status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>431</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>IOC status</text>
+    <x>86</x>
+    <y>431</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #56</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>serial5</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 5</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>serial6</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 6</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>tcp1</R>
+        </macros>
+        <target>tab</target>
+        <description>tcp1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>tcp2</R>
+        </macros>
+        <target>tab</target>
+        <description>tcp2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>377</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #66</name>
+    <text>asyn records 1-8</text>
+    <x>86</x>
+    <y>377</y>
+    <width>124</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #69</name>
+    <actions>
+      <action type="command">
+        <command>"start http://13BMC_AXIS.cars.aps.anl.gov" </command>
+        <description>"Axis 4-channel server"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>80</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #72</name>
+    <text>Web video</text>
+    <x>86</x>
+    <y>80</y>
+    <width>174</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #75</name>
+    <actions>
+      <action type="open_display">
+        <file>Pelco_CM6700.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>Pelco1</R>
+        </macros>
+        <target>tab</target>
+        <description>Video switch</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>107</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #78</name>
+    <text>Video switch</text>
+    <x>86</x>
+    <y>107</y>
+    <width>124</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #81</name>
+    <actions>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <P>13BMC:</P>
+          <TITLE>13BMC-Temp</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>13BMC Temp</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>458</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #84</name>
+    <text>13BMC Temp Mono</text>
+    <x>86</x>
+    <y>458</y>
+    <width>152</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #87</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m47</M1>
+          <M2>m48</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <M7>pm5</M7>
+          <M8>pm6</M8>
+          <P>13BMC:</P>
+          <TITLE>BM_Vertical_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m49</M1>
+          <M2>m50</M2>
+          <P>13BMC:</P>
+          <TITLE>BM_Vertical_Mirror_Pitch_Simple</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Pitch (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m51</M1>
+          <M2>m52</M2>
+          <P>13BMC:</P>
+          <TITLE>BM_Vertical_Mirror_Base</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Base (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTiltSetup.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <PMR>pm6</PMR>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Base Setup</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTiltSetup.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <PMR>pm4</PMR>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Pitch Setup</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTemps.opi</file>
+        <macros>
+          <CH1>DMM2Ch2</CH1>
+          <CH2>DMM2Ch3</CH2>
+          <CH3>DMM2Ch4</CH3>
+          <P>13BMC:</P>
+          <TITLE>BM_Vert_Temperature</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Temperature</description>
+      </action>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m53</M1>
+          <P>13BMC:</P>
+          <TITLE>BM_Vertical_Mirror_Grav_Sag</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMC Vertical Grav Sag</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>485</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #96</name>
+    <text>BMC Vertical Mirror</text>
+    <x>86</x>
+    <y>485</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #99</name>
+    <actions>
+      <action type="open_display">
+        <file>5motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <P>13BMC:</P>
+          <TITLE>Tomo Sample</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Tomo Sample Stage</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m8</M3>
+          <P>13BMC:</P>
+          <TITLE>Tomo Camera Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Tomo Camera Stage</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m63</M1>
+          <M2>m64</M2>
+          <M3>m65</M3>
+          <M4>m66</M4>
+          <M5>m67</M5>
+          <M6>m68</M6>
+          <M7>m69</M7>
+          <M8>m70</M8>
+          <P>13BMC:</P>
+          <TITLE>BMC_Patch_Panel_B</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BMC Patch Panel B</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <M5>m13</M5>
+          <M6>m14</M6>
+          <M7>m15</M7>
+          <M8>m16</M8>
+          <P>13BMC:</P>
+          <TITLE>BP8000</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BP8000 Front Hutch</description>
+      </action>
+      <action type="open_display">
+        <file>TomoCollect.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>TC:</R>
+        </macros>
+        <target>tab</target>
+        <description>Tomo data collection</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>512</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #106</name>
+    <text>Tomo Motors</text>
+    <x>86</x>
+    <y>512</y>
+    <width>132</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #109</name>
+    <x>13</x>
+    <y>570</y>
+    <width>252</width>
+    <height>70</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #112</name>
+      <text>Done</text>
+      <x>164</x>
+      <y>50</y>
+      <width>48</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMC:moving</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #116</name>
+      <text># Motors moving</text>
+      <width>150</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #119</name>
+      <pv_name>13BMC:moving</pv_name>
+      <x>162</x>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="75" green="110" blue="199">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #123</name>
+      <text>Stop all motors</text>
+      <y>25</y>
+      <width>150</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #126</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMC:allstop</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMC:allstop</pv_name>
+      <text>Stop!</text>
+      <x>162</x>
+      <y>25</y>
+      <width>72</width>
+      <height>23</height>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #129</name>
+      <text>Motors moving</text>
+      <y>50</y>
+      <width>130</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #132</name>
+      <text>Moving</text>
+      <x>164</x>
+      <y>50</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13BMC:moving</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #136</name>
+    <text>Electronics</text>
+    <x>86</x>
+    <y>235</y>
+    <width>132</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #139</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scaler</description>
+      </action>
+      <action type="open_display">
+        <file>USBCTR_MCS.opi</file>
+        <macros>
+          <P>13BMC:MCS1:</P>
+        </macros>
+        <target>tab</target>
+        <description>MCS</description>
+      </action>
+      <action type="open_display">
+        <file>USBCTR.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <MP>13BMC:MCS1:</MP>
+          <P>13BMC:USBCTR:</P>
+          <Pg>PulseGen</Pg>
+          <S>scaler1</S>
+          <SP>13BMC:</SP>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-CTR08</description>
+      </action>
+      <action type="open_display">
+        <file>USB1808_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13BMC:USB1808:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-1808X</description>
+      </action>
+      <action type="open_display">
+        <file>USB3104_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13BMC:USB3104:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-3104</description>
+      </action>
+      <action type="open_display">
+        <file>EDIO24_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13BMC:EDIO24_1:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>E-DIO24_1</description>
+      </action>
+      <action type="open_display">
+        <file>EDIO24_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13BMC:EDIO24_2:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>E-DIO24_2</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13BMC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2000 DMM #1</description>
+      </action>
+      <action type="open_display">
+        <file>LAE500.opi</file>
+        <macros>
+          <P>13BMC:</P>
+          <R>LAE500</R>
+        </macros>
+        <target>tab</target>
+        <description>LAE500</description>
+      </action>
+      <action type="open_display">
+        <file>dante.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>13BMC_Dante1:</P>
+          <R>dante1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Dante 1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>235</y>
+    <width>71</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #151</name>
+    <x>10</x>
+    <y>264</y>
+    <width>208</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #154</name>
+      <actions>
+        <action type="open_display">
+          <file>SR570.opi</file>
+          <macros>
+            <A>A1</A>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Stanford #1</description>
+        </action>
+        <action type="open_display">
+          <file>SR570.opi</file>
+          <macros>
+            <A>A2</A>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Stanford #2</description>
+        </action>
+        <action type="open_display">
+          <file>SR570.opi</file>
+          <macros>
+            <A>A3</A>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Stanford #3</description>
+        </action>
+        <action type="open_display">
+          <file>SR570.opi</file>
+          <macros>
+            <A>A4</A>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Stanford #4</description>
+        </action>
+        <action type="open_display">
+          <file>SR570.opi</file>
+          <macros>
+            <A>A5</A>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Stanford #5</description>
+        </action>
+        <action type="open_display">
+          <file>SR570.opi</file>
+          <macros>
+            <A>A6</A>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Stanford #6</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>71</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #162</name>
+      <text>Amplifiers</text>
+      <x>76</x>
+      <width>132</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #165</name>
+    <x>10</x>
+    <y>293</y>
+    <width>208</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #168</name>
+      <actions>
+        <action type="open_display">
+          <file>CARS_attenuator.opi</file>
+          <macros>
+            <P>13BMC:</P>
+            <R>BenchAtten</R>
+          </macros>
+          <target>tab</target>
+          <description>Bench Attenuators</description>
+        </action>
+        <action type="open_display">
+          <file>CARS_attenuator.opi</file>
+          <macros>
+            <P>13BMC:</P>
+            <R>ArmAtten</R>
+          </macros>
+          <target>tab</target>
+          <description>Arm Attenuators</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>71</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #172</name>
+      <text>Attenuators</text>
+      <x>76</x>
+      <width>132</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #175</name>
+    <x>12</x>
+    <y>322</y>
+    <width>174</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #178</name>
+      <actions>
+        <action type="open_display">
+          <file>userArrayCalcs10.opi</file>
+          <macros>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>User arrayCalcs</description>
+        </action>
+        <action type="open_display">
+          <file>userCalcOuts10.opi</file>
+          <macros>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>User calcOuts</description>
+        </action>
+        <action type="open_display">
+          <file>userStringCalcs10.opi</file>
+          <macros>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>User stringCalcs</description>
+        </action>
+        <action type="open_display">
+          <file>userStringSeqs10.opi</file>
+          <macros>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>User stringSeqs</description>
+        </action>
+        <action type="open_display">
+          <file>userTransforms10.opi</file>
+          <macros>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>User transforms</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>71</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #185</name>
+      <text>User calcs</text>
+      <x>74</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #188</name>
+    <x>10</x>
+    <y>206</y>
+    <width>200</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #191</name>
+      <actions>
+        <action type="open_display">
+          <file>experiment_info.opi</file>
+          <macros>
+            <P>13BMC:</P>
+          </macros>
+          <target>tab</target>
+          <description>Experiment Information</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>71</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #194</name>
+      <text>Experiment Information</text>
+      <x>76</x>
+      <width>124</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #197</name>
+    <x>10</x>
+    <y>167</y>
+    <width>246</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #200</name>
+      <actions>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil1:</DMC>
+            <M1>m1</M1>
+            <M2>m2</M2>
+            <M3>m3</M3>
+            <M4>m4</M4>
+            <M5>m5</M5>
+            <M6>m6</M6>
+            <M7>m7</M7>
+            <M8>m8</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 1 controller</description>
+        </action>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil2:</DMC>
+            <M1>m9</M1>
+            <M2>m10</M2>
+            <M3>m11</M3>
+            <M4>m12</M4>
+            <M5>m13</M5>
+            <M6>m14</M6>
+            <M7>m15</M7>
+            <M8>m16</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 2 controller</description>
+        </action>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil3:</DMC>
+            <M1>m17</M1>
+            <M2>m18</M2>
+            <M3>m19</M3>
+            <M4>m20</M4>
+            <M5>m21</M5>
+            <M6>m22</M6>
+            <M7>m23</M7>
+            <M8>m24</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 3 controller</description>
+        </action>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil4:</DMC>
+            <M1>m25</M1>
+            <M2>m26</M2>
+            <M3>m27</M3>
+            <M4>m28</M4>
+            <M5>m29</M5>
+            <M6>m30</M6>
+            <M7>m31</M7>
+            <M8>m32</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 4 controller</description>
+        </action>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil5:</DMC>
+            <M1>m47</M1>
+            <M2>m48</M2>
+            <M3>m49</M3>
+            <M4>m50</M4>
+            <M5>m51</M5>
+            <M6>m52</M6>
+            <M7>m53</M7>
+            <M8>m54</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 5 controller</description>
+        </action>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil6:</DMC>
+            <M1>m63</M1>
+            <M2>m64</M2>
+            <M3>m65</M3>
+            <M4>m66</M4>
+            <M5>m67</M5>
+            <M6>m68</M6>
+            <M7>m69</M7>
+            <M8>m70</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 6 controller</description>
+        </action>
+        <action type="open_display">
+          <file>galil_dmc_ctrl.opi</file>
+          <macros>
+            <AMP1>AD</AMP1>
+            <AMP2>EH</AMP2>
+            <DMC>13BMC:Galil7:</DMC>
+            <M1>m71</M1>
+            <M2>m72</M2>
+            <M3>m73</M3>
+            <M4>m74</M4>
+            <M5>m75</M5>
+            <M6>m76</M6>
+            <M7>m77</M7>
+            <M8>m78</M8>
+          </macros>
+          <target>tab</target>
+          <description>Galil 7 controller</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>71</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #209</name>
+      <text>Galil Controllers</text>
+      <x>76</x>
+      <y>2</y>
+      <width>170</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+</display>

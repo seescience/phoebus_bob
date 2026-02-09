@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:41 by epics-->
+<display version="2.0.0">
+  <name>13Lab2</name>
+  <x>749</x>
+  <y>109</y>
+  <width>400</width>
+  <height>355</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13LAB2:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13LAB2:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>220</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>Scan</text>
+    <x>91</x>
+    <y>220</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #13</name>
+    <text>Motors</text>
+    <x>91</x>
+    <y>112</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #16</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+          <P>13LAB2:</P>
+          <TITLE>Test Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Test motors</description>
+      </action>
+      <action type="open_display">
+        <file>table.opi</file>
+        <macros>
+          <M0X>junk</M0X>
+          <M0Y>m6</M0Y>
+          <M1X>junk</M1X>
+          <M1Y>m7</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>junk</M2Z>
+          <P>13LAB2:</P>
+          <Q>MON:T1</Q>
+          <T>MON:t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Horz. Mirror Base</description>
+      </action>
+      <action type="open_display">
+        <file>table.opi</file>
+        <macros>
+          <M0X>junk</M0X>
+          <M0Y>m4</M0Y>
+          <M1X>junk</M1X>
+          <M1Y>junk</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m3</M2Y>
+          <M2Z>junk</M2Z>
+          <P>13LAB2:</P>
+          <Q>MIR:T1</Q>
+          <T>MIR:t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Horz. Mirror Base</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m3</M1>
+          <M2>m4</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <P>13LAB2:</P>
+          <TITLE>Test_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Mirror Translation</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>112</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #22</name>
+    <x>47</x>
+    <y>17</y>
+    <width>310</width>
+    <height>80</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>Electronics</text>
+    <x>91</x>
+    <y>166</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>GeoCARS Laboratory #2</text>
+    <x>64</x>
+    <y>29</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #31</name>
+    <actions>
+      <action type="open_display">
+        <file>userTrans10.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>yysCalcoutRecord.opi</file>
+        <macros>
+          <C>userStringCalc1</C>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User sCalcOut1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>193</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #35</name>
+    <text>User calcs, transforms</text>
+    <x>91</x>
+    <y>193</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #38</name>
+    <actions>
+      <action type="open_display">
+        <file>experiment_info.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Experiment Information</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>139</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #41</name>
+    <text>Experiment Information</text>
+    <x>91</x>
+    <y>139</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #44</name>
+    <actions>
+      <action type="open_display">
+        <file>ionPump.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <PUMP>ip1</PUMP>
+          <TITLE>Mirror_Tank</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Digitel ion pump</description>
+      </action>
+      <action type="open_display">
+        <file>DualVacuumGauge.opi</file>
+        <macros>
+          <CC>cc1</CC>
+          <P>13LAB2:</P>
+          <PR>pr1</PR>
+          <TITLE>Mirror_Tank</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MKS vacuum gauge #1</description>
+      </action>
+      <action type="open_display">
+        <file>DualVacuumGauge.opi</file>
+        <macros>
+          <CC>cc2</CC>
+          <P>13LAB2:</P>
+          <PR>pr2</PR>
+          <TITLE>Mirror_Tank_2</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MKS vacuum gauge #2</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kdmm_full_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithey thermocouples</description>
+      </action>
+      <action type="open_display">
+        <file>MPC.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <PUMP>ip1</PUMP>
+        </macros>
+        <target>tab</target>
+        <description>MPC ion pump #1</description>
+      </action>
+      <action type="open_display">
+        <file>MPC.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <PUMP>ip2</PUMP>
+        </macros>
+        <target>tab</target>
+        <description>MPC ion pump #2</description>
+      </action>
+      <action type="open_display">
+        <file>MPC_TSP.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <TSP>tsp1</TSP>
+        </macros>
+        <target>tab</target>
+        <description>MPC TSP</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>274</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>Vacuum</text>
+    <x>91</x>
+    <y>274</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #56</name>
+    <actions>
+      <action type="open_display">
+        <file>IOC_Status.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>vxWorks statistics</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>301</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #59</name>
+    <text>vxWorks statistics</text>
+    <x>91</x>
+    <y>301</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #62</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scaler</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A1</A>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamplifier</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2000 DMM #1</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM2</Dmm>
+          <P>13LAB2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2000 DMM #2</description>
+      </action>
+      <action type="open_display">
+        <file>IpUnidig.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>Unidig</R>
+        </macros>
+        <target>tab</target>
+        <description>IP-Unidig</description>
+      </action>
+      <action type="open_display">
+        <file>LAE500.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>LAE500</R>
+        </macros>
+        <target>tab</target>
+        <description>LAE500</description>
+      </action>
+      <action type="open_display">
+        <file>SIS38XX.opi</file>
+        <macros>
+          <P>13LAB2:SIS3801:</P>
+        </macros>
+        <target>tab</target>
+        <description>SIS3801</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>166</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #71</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial5</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 5</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial6</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 6</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial7</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 7</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13LAB2:</P>
+          <R>serial8</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 8</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>12</x>
+    <y>247</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #81</name>
+    <text>asyn serial 1-8</text>
+    <x>91</x>
+    <y>247</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

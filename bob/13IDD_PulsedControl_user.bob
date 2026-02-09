@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-11-17 15:27:57 by epics-->
+<display version="2.0.0">
+  <name>13IDD_PulsedControl_user</name>
+  <x>1157</x>
+  <y>1458</y>
+  <width>420</width>
+  <height>370</height>
+  <background_color>
+    <color red="42" green="99" blue="228">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>DOWN-STREAM</text>
+    <x>16</x>
+    <y>48</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #9</name>
+    <x>65</x>
+    <y>104</y>
+    <width>3</width>
+    <height>225</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #12</name>
+    <x>67</x>
+    <y>328</y>
+    <width>280</width>
+    <height>3</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #15</name>
+    <actions>
+      <action type="open_display">
+        <file>IPG_YLR_laser_up.opi</file>
+        <macros>
+          <P>13IDD:</P>
+          <R>Laser1</R>
+        </macros>
+        <target>tab</target>
+        <description>Fiber Laser</description>
+      </action>
+    </actions>
+    <text>more</text>
+    <x>327</x>
+    <y>136</y>
+    <width>40</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #18</name>
+    <actions>
+      <action type="open_display">
+        <file>IPG_YLR_laser_dn.opi</file>
+        <macros>
+          <P>13IDD:</P>
+          <R>Laser2</R>
+        </macros>
+        <target>tab</target>
+        <description>Fiber Laser</description>
+      </action>
+    </actions>
+    <text>more</text>
+    <x>46</x>
+    <y>136</y>
+    <width>40</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #21</name>
+    <pv_name>13IDD:US_LaserPower.VAL</pv_name>
+    <x>325</x>
+    <y>76</y>
+    <width>35</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #25</name>
+    <pv_name>13IDD:DS_LaserPower.VAL</pv_name>
+    <x>39</x>
+    <y>76</y>
+    <width>35</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #29</name>
+    <text>%</text>
+    <x>365</x>
+    <y>76</y>
+    <width>10</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #32</name>
+    <text>%</text>
+    <x>80</x>
+    <y>76</y>
+    <width>10</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="meter" version="3.0.0">
+    <name>meter #35</name>
+    <pv_name>13IDD:pm12.RBV</pv_name>
+    <x>164</x>
+    <y>94</y>
+    <width>91</width>
+    <height>80</height>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+    <show_value>false</show_value>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <needle_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </needle_color>
+    <knob_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </knob_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #39</name>
+    <x>156</x>
+    <y>323</y>
+    <width>110</width>
+    <height>14</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:LaserShutter.VAL</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #42</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:LaserShutter</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:LaserShutter</pv_name>
+      <text></text>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #46</name>
+    <x>156</x>
+    <y>323</y>
+    <width>110</width>
+    <height>14</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:LaserShutter.VAL</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #49</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:LaserShutter</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:LaserShutter</pv_name>
+      <text></text>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="160" green="18" blue="7">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #53</name>
+    <x>33</x>
+    <y>94</y>
+    <width>65</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:LaserPLC:L2EmissionRequest</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #56</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:LaserPLC:L2EmissionRequest</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:LaserPLC:L2EmissionRequest</pv_name>
+      <text>ON</text>
+      <width>65</width>
+      <background_color>
+        <color red="190" green="25" blue="11">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #60</name>
+    <x>33</x>
+    <y>94</y>
+    <width>65</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:LaserPLC:L2EmissionRequest</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #63</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:LaserPLC:L2EmissionRequest</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:LaserPLC:L2EmissionRequest</pv_name>
+      <text>OFF</text>
+      <width>65</width>
+      <foreground_color>
+        <color red="190" green="25" blue="11">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #67</name>
+    <x>314</x>
+    <y>94</y>
+    <width>65</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:LaserPLC:L1EmissionRequest</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #70</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:LaserPLC:L1EmissionRequest</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:LaserPLC:L1EmissionRequest</pv_name>
+      <text>OFF</text>
+      <width>65</width>
+      <foreground_color>
+        <color red="190" green="25" blue="11">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #74</name>
+    <x>314</x>
+    <y>94</y>
+    <width>65</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:LaserPLC:L1EmissionRequest</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #77</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:LaserPLC:L1EmissionRequest</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:LaserPLC:L1EmissionRequest</pv_name>
+      <text>ON</text>
+      <width>65</width>
+      <background_color>
+        <color red="190" green="25" blue="11">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #81</name>
+    <text>UP-STREAM</text>
+    <x>302</x>
+    <y>48</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #84</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.VAL</pv_name>
+        <value>0.</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.VAL</pv_name>
+    <text>Zero</text>
+    <x>114</x>
+    <y>110</y>
+    <width>40</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="214" green="127" blue="226">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #87</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.VAL</pv_name>
+        <value>45</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.VAL</pv_name>
+    <text>Max</text>
+    <x>266</x>
+    <y>110</y>
+    <width>40</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #90</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.TWR</pv_name>
+    <text>Both Down</text>
+    <x>160</x>
+    <y>251</y>
+    <height>22</height>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="135" green="147" blue="226">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #93</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.TWF</pv_name>
+    <text>Both UP</text>
+    <x>161</x>
+    <y>202</y>
+    <height>22</height>
+    <foreground_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="135" green="147" blue="226">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #96</name>
+    <pv_name>13IDD:pm12.TWV</pv_name>
+    <x>174</x>
+    <y>224</y>
+    <width>70</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #100</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm13.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm13.TWR</pv_name>
+    <text>Split DS</text>
+    <x>114</x>
+    <y>226</y>
+    <width>60</width>
+    <height>21</height>
+    <background_color>
+      <color red="214" green="127" blue="226">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #103</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm13.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm13.TWF</pv_name>
+    <text>split US</text>
+    <x>246</x>
+    <y>226</y>
+    <width>60</width>
+    <height>21</height>
+    <background_color>
+      <color red="214" green="127" blue="226">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #106</name>
+    <pv_name>13IDD:m71.TWV</pv_name>
+    <x>323</x>
+    <y>203</y>
+    <width>44</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #110</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:m71.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:m71.TWR</pv_name>
+    <text>-</text>
+    <x>324</x>
+    <y>223</y>
+    <width>44</width>
+    <height>18</height>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #113</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:m71.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:m71.TWF</pv_name>
+    <text>+</text>
+    <x>324</x>
+    <y>188</y>
+    <width>44</width>
+    <height>18</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #116</name>
+    <pv_name>13IDD:m71.RBV</pv_name>
+    <x>325</x>
+    <y>173</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #120</name>
+    <pv_name>13IDD:m72.TWV</pv_name>
+    <x>41</x>
+    <y>203</y>
+    <width>44</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #124</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:m72.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:m72.TWR</pv_name>
+    <text>-</text>
+    <x>42</x>
+    <y>223</y>
+    <width>44</width>
+    <height>18</height>
+    <foreground_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #127</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:m72.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:m72.TWF</pv_name>
+    <text>+</text>
+    <x>42</x>
+    <y>188</y>
+    <width>44</width>
+    <height>18</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #130</name>
+    <pv_name>13IDD:m72.RBV</pv_name>
+    <x>42</x>
+    <y>173</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #134</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm13.VAL</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm13.VAL</pv_name>
+    <text>Equalize</text>
+    <x>171</x>
+    <y>288</y>
+    <width>80</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #137</name>
+    <x>336</x>
+    <y>322</y>
+    <width>21</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:US_AlignSlide</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #140</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:US_AlignSlide</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:US_AlignSlide</pv_name>
+      <text></text>
+      <width>21</width>
+      <height>15</height>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #144</name>
+    <x>336</x>
+    <y>322</y>
+    <width>21</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:US_AlignSlide</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #147</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:US_AlignSlide</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:US_AlignSlide</pv_name>
+      <text></text>
+      <width>21</width>
+      <height>15</height>
+      <background_color>
+        <color red="160" green="18" blue="7">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #151</name>
+    <x>57</x>
+    <y>320</y>
+    <width>21</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:DS_AlignSlide</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #154</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:DS_AlignSlide</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:DS_AlignSlide</pv_name>
+      <text></text>
+      <width>21</width>
+      <height>15</height>
+      <background_color>
+        <color red="160" green="18" blue="7">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #158</name>
+    <x>57</x>
+    <y>320</y>
+    <width>21</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:DS_AlignSlide</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #161</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13IDD:DS_AlignSlide</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13IDD:DS_AlignSlide</pv_name>
+      <text></text>
+      <width>21</width>
+      <height>15</height>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #165</name>
+    <text>Pulsed Mode</text>
+    <x>115</x>
+    <y>9</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!==0&amp;&amp;pv1!==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:Laser1Modulation</pv_name>
+        <pv_name>13IDD:Laser2Modulation</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #169</name>
+    <text>Now using:</text>
+    <x>4</x>
+    <y>5</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #172</name>
+    <text>Mixed Mode</text>
+    <x>115</x>
+    <y>9</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!==0&amp;&amp;pv1==0ORpv0==0&amp;&amp;pv1!==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:Laser1Modulation</pv_name>
+        <pv_name>13IDD:Laser2Modulation</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #176</name>
+    <text>Continuous Mode</text>
+    <x>114</x>
+    <y>9</y>
+    <width>130</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;&amp;pv1==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:Laser1Modulation</pv_name>
+        <pv_name>13IDD:Laser2Modulation</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #180</name>
+    <text>Attenuation</text>
+    <x>155</x>
+    <y>65</y>
+    <width>110</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #183</name>
+    <x>344</x>
+    <y>104</y>
+    <width>3</width>
+    <height>225</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #186</name>
+    <x>140</x>
+    <y>243</y>
+    <width>3</width>
+    <height>55</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #189</name>
+    <x>276</x>
+    <y>243</y>
+    <width>3</width>
+    <height>55</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #192</name>
+    <x>142</x>
+    <y>295</y>
+    <width>136</width>
+    <height>3</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #195</name>
+    <actions>
+      <action type="open_display">
+        <file>BNC_505.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13IDD:</P>
+          <R>BNC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>BNC_Gates</description>
+      </action>
+    </actions>
+    <text>BNC Control</text>
+    <x>355</x>
+    <y>6</y>
+    <width>60</width>
+    <height>15</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #198</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.VAL</pv_name>
+        <value>11.25</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.VAL</pv_name>
+    <text>1/4</text>
+    <x>160</x>
+    <y>181</y>
+    <width>30</width>
+    <height>15</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #201</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.VAL</pv_name>
+        <value>22.5</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.VAL</pv_name>
+    <text>1/2</text>
+    <x>195</x>
+    <y>181</y>
+    <width>30</width>
+    <height>15</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #204</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDD:pm12.VAL</pv_name>
+        <value>33.75</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDD:pm12.VAL</pv_name>
+    <text>3/4</text>
+    <x>230</x>
+    <y>181</y>
+    <width>30</width>
+    <height>15</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #207</name>
+    <text>%</text>
+    <x>140</x>
+    <y>180</y>
+    <width>10</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #210</name>
+    <pv_name>13IDD:userArrayCalc13.VAL</pv_name>
+    <x>265</x>
+    <y>180</y>
+    <width>35</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #214</name>
+    <text>%</text>
+    <x>306</x>
+    <y>180</y>
+    <width>10</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #217</name>
+    <pv_name>13IDD:userArrayCalc14.VAL</pv_name>
+    <x>100</x>
+    <y>180</y>
+    <width>35</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

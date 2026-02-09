@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:59 by epics-->
+<display version="2.0.0">
+  <name>sector15bl</name>
+  <x>395</x>
+  <y>617</y>
+  <width>492</width>
+  <height>218</height>
+  <background_color>
+    <color red="218" green="218" blue="218">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>Moving</text>
+    <x>391</x>
+    <y>152</y>
+    <width>80</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>1bmb:alldone.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>Moving</text>
+    <x>392</x>
+    <y>153</y>
+    <width>80</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>1bmb:alldoneBlink.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #14</name>
+    <text>Moving</text>
+    <x>390</x>
+    <y>150</y>
+    <width>80</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>1bmb:alldone.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #18</name>
+    <x>392</x>
+    <y>2</y>
+    <height>126</height>
+    <line_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #21</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>1bma:allstop.VAL</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>1bma:allstop.VAL</pv_name>
+    <text>All Stop</text>
+    <x>386</x>
+    <y>176</y>
+    <height>40</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>Tools</text>
+    <x>414</x>
+    <y>65</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #27</name>
+    <actions>
+      <action type="command">
+        <command>"cd ../idl; catcher&amp;" </command>
+        <description>"Data catcher (for scans)"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../idl; catcher -c trend.config -d trend.dat -e trend.env&amp;" </command>
+        <description>"Auxiliary data catcher (for trending)"</description>
+      </action>
+      <action type="command">
+        <command>"stripTool&amp;" </command>
+        <description>"Strip chart"</description>
+      </action>
+      <action type="command">
+        <command>"stripTool.new&amp;" </command>
+        <description>"Strip chart (saves data; bad Y-axis display)"</description>
+      </action>
+      <action type="command">
+        <command>"probe&amp;" </command>
+        <description>"EPICS probe"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../idl; rt_catcher&amp;" </command>
+        <description>"RunTime Data catcher (for scans)"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../idl; wrapCmd startMCA&amp;" </command>
+        <description>"MCA control"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>394</x>
+    <y>64</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #36</name>
+    <x>394</x>
+    <y>24</y>
+    <width>82</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #39</name>
+      <text>Restore</text>
+      <x>22</x>
+      <y>2</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>shell command #42</name>
+      <actions>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f settings1.save" </command>
+          <description>"Restore settings from 'settings1.save' (scratch pad)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f settings2.save" </command>
+          <description>"Restore settings from 'settings2.save' (short term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f settings3.save" </command>
+          <description>"Restore settings from 'settings3.save' (long term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f settings4.save" </command>
+          <description>"Restore settings from 'settings4.save' (read only)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f positions1.save" </command>
+          <description>"Restore positions from 'positions1.save' (scratch pad)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f positions2.save" </command>
+          <description>"Restore positions from 'positions2.save' (short term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f positions3.save" </command>
+          <description>"Restore positions from 'positions3.save' (long term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtwb -f positions4.save" </command>
+          <description>"Restore positions from 'positions4.save' (read only)"</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>20</width>
+      <height>20</height>
+      <background_color>
+        <color red="174" green="174" blue="174">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #52</name>
+    <x>394</x>
+    <y>4</y>
+    <width>82</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #55</name>
+      <text>Save</text>
+      <x>22</x>
+      <y>2</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>shell command #58</name>
+      <actions>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o settings1.save" </command>
+          <description>"Save settings to 'settings1.save' (scratchpad)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o settings2.save" </command>
+          <description>"Save settings to 'settings2.save' (short term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o settings3.save" </command>
+          <description>"Save settings to 'settings3.save' (long term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o positions1.save" </command>
+          <description>"Save positions to 'positions1.save' (scratch pad)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o positions2.save" </command>
+          <description>"Save positions to 'positions2.save' (short term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o positions3.save" </command>
+          <description>"Save positions to 'positions3.save' (long term)"</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>20</width>
+      <height>20</height>
+      <background_color>
+        <color red="174" green="174" blue="174">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #66</name>
+    <text>Scalers</text>
+    <x>120</x>
+    <y>177</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #69</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Joerger Scalers (S)</description>
+      </action>
+      <action type="open_display">
+        <file>scaler_more.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Joerger Scalers (M)</description>
+      </action>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Joerger Scalers (L)</description>
+      </action>
+      <action type="open_display">
+        <file>scaler_full_calc.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Joerger Scalers &amp; User Calcs</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>100</x>
+    <y>175</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #75</name>
+    <text>Preamps</text>
+    <x>120</x>
+    <y>156</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #78</name>
+    <actions>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A1</A>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS 570 Current Preamplifier #A1</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A2</A>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS 570 Current Preamplifier #A2</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A3</A>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS 570 Current Preamplifier #A3</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A4</A>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS 570 Current Preamplifier #A4</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>100</x>
+    <y>153</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #84</name>
+    <text>ScanCtrl</text>
+    <x>21</x>
+    <y>199</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #87</name>
+    <actions>
+      <action type="open_display">
+        <file>scan.opi</file>
+        <macros>
+          <DW>Dwait1</DW>
+          <N>1</N>
+          <P>1bma:</P>
+          <PW>Pwait1</PW>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan1 (for 1D &amp; 2D &amp; 3D scans)</description>
+      </action>
+      <action type="open_display">
+        <file>scan.opi</file>
+        <macros>
+          <DW>Dwait2</DW>
+          <N>2</N>
+          <P>1bma:</P>
+          <PW>Pwait2</PW>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan2 (for 2D &amp; 3D scans)</description>
+      </action>
+      <action type="open_display">
+        <file>scan.opi</file>
+        <macros>
+          <DW>Dwait3</DW>
+          <N>3</N>
+          <P>1bma:</P>
+          <PW>Pwait3</PW>
+          <S>scan3</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan3 (for 3D scans)</description>
+      </action>
+      <action type="open_display">
+        <file>userCalc_full.opi</file>
+        <macros>
+          <C>Pwait_motors</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>positioner waits</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>1</x>
+    <y>197</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #93</name>
+    <text>Motors</text>
+    <x>127</x>
+    <y>38</y>
+    <width>50</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #96</name>
+    <actions>
+      <action type="open_display">
+        <file>topMotors8.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>a:1-8   (filter, slits)</description>
+      </action>
+      <action type="open_display">
+        <file>topMotors8.opi</file>
+        <macros>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <M5>m13</M5>
+          <M6>m14</M6>
+          <M7>m15</M7>
+          <M8>m16</M8>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>a:9-16  (Col. Mirror)</description>
+      </action>
+      <action type="open_display">
+        <file>topMotors8.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>m21</M5>
+          <M6>m22</M6>
+          <M7>m23</M7>
+          <M8>m24</M8>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>a:17-24 (mono Table)</description>
+      </action>
+      <action type="open_display">
+        <file>topMotors8.opi</file>
+        <macros>
+          <M1>m25</M1>
+          <M2>m26</M2>
+          <M3>m27</M3>
+          <M4>m28</M4>
+          <M5>m29</M5>
+          <M6>m30</M6>
+          <M7>m31</M7>
+          <M8>m32</M8>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>a:25-32 (monochromator)</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>105</x>
+    <y>35</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #102</name>
+    <text>UserCalc</text>
+    <x>304</x>
+    <y>179</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #105</name>
+    <actions>
+      <action type="open_display">
+        <file>userCalc.opi</file>
+        <macros>
+          <C>userCalc1</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>user calculation 1</description>
+      </action>
+      <action type="open_display">
+        <file>userCalc.opi</file>
+        <macros>
+          <C>userCalc2</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>user calculation 2</description>
+      </action>
+      <action type="open_display">
+        <file>userCalc.opi</file>
+        <macros>
+          <C>userCalc3</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>user calculation 3</description>
+      </action>
+      <action type="open_display">
+        <file>userCalc.opi</file>
+        <macros>
+          <C>userCalc4</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>user calculation 4</description>
+      </action>
+      <action type="open_display">
+        <file>userCalc.opi</file>
+        <macros>
+          <C>userCalc5</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>user calculation 5</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcs10.opi</file>
+        <macros>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>user calcs 1-10</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>284</x>
+    <y>177</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #113</name>
+    <text>DAC</text>
+    <x>204</x>
+    <y>178</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #116</name>
+    <actions>
+      <action type="open_display">
+        <file>DAC.opi</file>
+        <macros>
+          <D>1</D>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>DAC</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>184</x>
+    <y>176</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #119</name>
+    <text>Temp Ctrl</text>
+    <x>204</x>
+    <y>157</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #122</name>
+    <actions>
+      <action type="open_display">
+        <file>LakeShore.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <Q>TC1</Q>
+        </macros>
+        <target>tab</target>
+        <description>LakeShore Temp. Controller</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>184</x>
+    <y>154</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #125</name>
+    <text>UserTran</text>
+    <x>304</x>
+    <y>158</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #128</name>
+    <actions>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <T>tran1</T>
+        </macros>
+        <target>tab</target>
+        <description>user transform 1</description>
+      </action>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <T>tran2</T>
+        </macros>
+        <target>tab</target>
+        <description>user transform 2</description>
+      </action>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <T>tran3</T>
+        </macros>
+        <target>tab</target>
+        <description>user transform 3</description>
+      </action>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <T>tran4</T>
+        </macros>
+        <target>tab</target>
+        <description>user transform 4</description>
+      </action>
+      <action type="open_display">
+        <file>userTransform.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <T>tran5</T>
+        </macros>
+        <target>tab</target>
+        <description>user transform 5</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>284</x>
+    <y>155</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #135</name>
+    <text>Misc.</text>
+    <x>191</x>
+    <y>133</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #138</name>
+    <text>Calcs</text>
+    <x>287</x>
+    <y>134</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #141</name>
+    <actions>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>1bma:seriala[1]</REC>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>serialtest.opi</file>
+        <macros>
+          <CHAN>1</CHAN>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>Serial Test channel 1</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM.opi</file>
+        <macros>
+          <Dmm>D1</Dmm>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley DMM 2000</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>184</x>
+    <y>198</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #146</name>
+    <text>Gen. Serial</text>
+    <x>204</x>
+    <y>200</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #149</name>
+    <text>Top Level</text>
+    <x>304</x>
+    <y>201</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #152</name>
+    <actions>
+      <action type="open_display">
+        <file>1bma.opi</file>
+        <target>tab</target>
+        <description>Top Level</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>284</x>
+    <y>199</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #155</name>
+    <text>AIM MCA</text>
+    <x>120</x>
+    <y>199</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #158</name>
+    <actions>
+      <action type="open_display">
+        <file>mca_small.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>Canberra AIM Multichannel Analyzer</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mca1</M>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>AIM MCA with ROI's</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>100</x>
+    <y>197</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #162</name>
+    <text>Filter</text>
+    <x>9</x>
+    <y>61</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #165</name>
+    <actions>
+      <action type="open_display">
+        <file>2filter.opi</file>
+        <macros>
+          <LOCK1>fltr_1_2:</LOCK1>
+          <LOCK2>fltr_1_2:</LOCK2>
+          <P>1bma:</P>
+          <Q1>fltr1:</Q1>
+          <Q2>fltr2:</Q2>
+        </macros>
+        <target>tab</target>
+        <description>User Filter</description>
+      </action>
+      <action type="open_display">
+        <file>2filter_setup.opi</file>
+        <macros>
+          <LOCK1>fltr_1_2:</LOCK1>
+          <LOCK2>fltr_1_2:</LOCK2>
+          <P>1bma:</P>
+          <Q1>fltr1:</Q1>
+          <Q2>fltr2:</Q2>
+        </macros>
+        <target>tab</target>
+        <description>User Filter Setup</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>19</x>
+    <y>76</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #169</name>
+    <actions>
+      <action type="open_display">
+        <file>trs.opi</file>
+        <macros>
+          <M1>m7</M1>
+          <M2>m8</M2>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>TR_SLIT (S)</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>-114</x>
+    <y>538</y>
+    <width>136</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #172</name>
+    <actions>
+      <action type="open_display">
+        <file>beamHistory.opi</file>
+        <target>tab</target>
+        <description>24 hr. Beam History</description>
+      </action>
+      <action type="open_display">
+        <file>beamHistory_full.opi</file>
+        <target>tab</target>
+        <description>24 hr. beam history, etc.</description>
+      </action>
+      <action type="open_display">
+        <file>xx_BM_BPM.opi</file>
+        <macros>
+          <xx>01</xx>
+        </macros>
+        <target>tab</target>
+        <description>1-BM BPMs</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>1</x>
+    <y>1</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #177</name>
+    <text>ScanTables</text>
+    <x>21</x>
+    <y>177</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #180</name>
+    <actions>
+      <action type="command">
+        <command>"cd ../burt; burtwb -f scan1_PnPA.load" </command>
+        <description>"Load scan1 positioner table"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>1</x>
+    <y>175</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #183</name>
+    <text>ScanSetups</text>
+    <x>21</x>
+    <y>156</y>
+    <width>60</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #186</name>
+    <actions>
+      <action type="command">
+        <command>"cd ../burt; burtrb $BURT_INCLUDE -f scanConfig.req -o scanConfig1.save" </command>
+        <description>"Save scan config1"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtrb $BURT_INCLUDE -f scanConfig.req -o scanConfig2.save" </command>
+        <description>"Save scan config2"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtrb $BURT_INCLUDE -f scanConfig.req -o scanConfig3.save" </command>
+        <description>"Save scan config3"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtrb $BURT_INCLUDE -f scanConfig.req -o scanConfig4.save" </command>
+        <description>"Save scan config4"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtwb -f scanConfig1.save" </command>
+        <description>"Restore scan config1"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtwb -f scanConfig2.save" </command>
+        <description>"Restore scan config2"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtwb -f scanConfig3.save" </command>
+        <description>"Restore scan config3"</description>
+      </action>
+      <action type="command">
+        <command>"cd ../burt; burtwb -f scanConfig4.save" </command>
+        <description>"Restore scan config4"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>1</x>
+    <y>153</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #196</name>
+    <text>Slits</text>
+    <x>49</x>
+    <y>61</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #199</name>
+    <actions>
+      <action type="open_display">
+        <file>2slit.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <SLIT>Slit1H</SLIT>
+          <mXn>m6</mXn>
+          <mXp>m5</mXp>
+        </macros>
+        <target>tab</target>
+        <description>WB Slit (H)</description>
+      </action>
+      <action type="open_display">
+        <file>2slit.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <SLIT>Slit1V</SLIT>
+          <mXn>m4</mXn>
+          <mXp>m3</mXp>
+        </macros>
+        <target>tab</target>
+        <description>WB Slit (V)</description>
+      </action>
+      <action type="open_display">
+        <file>4slitGraphic.opi</file>
+        <macros>
+          <H>Slit1H</H>
+          <P>1bma:</P>
+          <SLIT>Slit_1</SLIT>
+          <V>Slit1V</V>
+          <mXn>m6</mXn>
+          <mXp>m5</mXp>
+          <mYn>m4</mYn>
+          <mYp>m3</mYp>
+        </macros>
+        <target>tab</target>
+        <description>WB Slit Graphic</description>
+      </action>
+      <action type="open_display">
+        <file>motor4x.opi</file>
+        <macros>
+          <M1>m5</M1>
+          <M2>m6</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>Slit Motors</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>59</x>
+    <y>76</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #205</name>
+    <x>394</x>
+    <y>44</y>
+    <width>83</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #208</name>
+      <text>Compare</text>
+      <x>23</x>
+      <y>2</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>shell command #211</name>
+      <actions>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save settings1.save'&amp;" </command>
+          <description>"Compare current settings with 'settings1.save' (scratchpad)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save settings2.save'&amp;" </command>
+          <description>"Compare current settings with 'settings2.save' (short term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save settings3.save'&amp;" </command>
+          <description>"Compare current settings with 'settings3.save' (long term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f settings.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save settings4.save'&amp;" </command>
+          <description>"Compare current settings with 'settings4.save' (read only)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save positions1.save'&amp;" </command>
+          <description>"Compare current positions with 'positions1.save' (scratch pad)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save positions2.save'&amp;" </command>
+          <description>"Compare current positions with 'positions2.save' (short term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save positions3.save'&amp;" </command>
+          <description>"Compare current positions with 'positions3.save' (long term)"</description>
+        </action>
+        <action type="command">
+          <command>"cd ../burt; burtrb $BURT_INCLUDE -f positions.req -o current.save 1&gt;&amp;- 2&gt;&amp;-; wrapCmd 'showBurtDiff current.save positions4.save'&amp;" </command>
+          <description>"Compare current positions with 'positions4.save' (long term)"</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>20</width>
+      <height>20</height>
+      <background_color>
+        <color red="174" green="174" blue="174">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #221</name>
+    <text>Kohzu Mono</text>
+    <x>104</x>
+    <y>61</y>
+    <width>50</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #224</name>
+    <actions>
+      <action type="open_display">
+        <file>kohzuSeqCtl_tiny.opi</file>
+        <macros>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>PSL monochromator control (tiny)</description>
+      </action>
+      <action type="open_display">
+        <file>kohzuSeqCtl.opi</file>
+        <macros>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>PSL monochromator control</description>
+      </action>
+      <action type="open_display">
+        <file>kohzuSeqCtl_All.opi</file>
+        <macros>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>PSL monochromator control (All)</description>
+      </action>
+      <action type="open_display">
+        <file>kohzuGraphic.opi</file>
+        <macros>
+          <P>1bma:</P>
+          <mCHI2>m27</mCHI2>
+          <mTH>m25</mTH>
+          <mTH2>m28</mTH2>
+          <mY1>m30</mY1>
+          <mZ2>m31</mZ2>
+        </macros>
+        <target>tab</target>
+        <description>PSL graphic (not all motors defined)</description>
+      </action>
+      <action type="open_display">
+        <file>motor6x.opi</file>
+        <macros>
+          <M1>m25</M1>
+          <M2>m30</M2>
+          <M3>m31</M3>
+          <M4>m28</M4>
+          <M5>m27</M5>
+          <M6>m7</M6>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>PSL Motors</description>
+      </action>
+      <action type="open_display">
+        <file>HeidND261.opi</file>
+        <macros>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>Theta encoder (Heidenhain ND261)</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>112</x>
+    <y>75</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #232</name>
+    <text>SPEC</text>
+    <x>417</x>
+    <y>84</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="97" green="10" blue="117">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #235</name>
+    <actions>
+      <action type="command">
+        <command>"cd $HOME; xterm -bg white -fg black -sb -T SPEC -fn -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1 -geometry 80x25 -e specBM&amp;" </command>
+        <description>"spec"</description>
+      </action>
+      <action type="command">
+        <command>"cd $HOME; xterm -bg white -fg black -sb -T SPEC -fn -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1 -geometry 80x25 -e specBM -f&amp;" </command>
+        <description>"spec -f"</description>
+      </action>
+      <action type="command">
+        <command>"cd $HOME; xterm -bg white -fg black -sb -T FOURC -fn -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1 -geometry 80x25 -e fourcBM&amp;" </command>
+        <description>"fourc"</description>
+      </action>
+      <action type="command">
+        <command>"cd $HOME; xterm -bg white -fg black -sb -T FOURC -fn -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1 -geometry 80x25 -e fourcBM -f&amp;" </command>
+        <description>"fourc -f"</description>
+      </action>
+      <action type="command">
+        <command>"cd $HOME; xterm -bg white -fg black -sb -T CPlot -fn -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1 -geometry 80x25 -e /usr/local/bin/cplot&amp;" </command>
+        <description>"cplot"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>394</x>
+    <y>84</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="214" green="127" blue="226">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #242</name>
+    <text>15-ID-A</text>
+    <x>19</x>
+    <y>33</y>
+    <width>45</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="139" green="26" blue="150">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #245</name>
+    <x>1</x>
+    <y>30</y>
+    <width>350</width>
+    <height>100</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #248</name>
+    <x>131</x>
+    <y>97</y>
+    <width>20</width>
+    <height>16</height>
+    <points>
+      <point x="0.0" y="15.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #252</name>
+    <x>148</x>
+    <y>98</y>
+    <width>65</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="64.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #256</name>
+    <x>25</x>
+    <y>105</y>
+    <width>10</width>
+    <line_color>
+      <color red="225" green="144" blue="21">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="225" green="144" blue="21">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #259</name>
+    <x>29</x>
+    <y>113</y>
+    <width>41</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="40.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #263</name>
+    <x>7</x>
+    <y>113</y>
+    <width>19</width>
+    <height>2</height>
+    <points>
+      <point x="18.0" y="1.0">
+      </point>
+      <point x="1.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #267</name>
+    <x>60</x>
+    <y>109</y>
+    <width>6</width>
+    <height>10</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #270</name>
+    <x>71</x>
+    <y>109</y>
+    <width>6</width>
+    <height>10</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #273</name>
+    <x>69</x>
+    <y>113</y>
+    <width>68</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="67.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #277</name>
+    <x>64</x>
+    <y>106</y>
+    <width>10</width>
+    <height>6</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #280</name>
+    <x>64</x>
+    <y>116</y>
+    <width>10</width>
+    <height>6</height>
+    <line_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="58" green="94" blue="171">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #283</name>
+    <x>115</x>
+    <y>108</y>
+    <width>34</width>
+    <height>15</height>
+    <points>
+      <point x="1.0" y="13.0">
+      </point>
+      <point x="32.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #287</name>
+    <x>390</x>
+    <y>130</y>
+    <width>82</width>
+    <height>29</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #290</name>
+      <text>Moving</text>
+      <x>1</x>
+      <y>2</y>
+      <width>80</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>1bma:alldone.VAL</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #294</name>
+      <text>Moving</text>
+      <x>2</x>
+      <y>3</y>
+      <width>80</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>1bma:alldoneBlink.VAL</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #298</name>
+      <text>Moving</text>
+      <width>80</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="153" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>1bma:alldone.VAL</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #302</name>
+    <text>Scans</text>
+    <x>16</x>
+    <y>132</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #305</name>
+    <text>Detects</text>
+    <x>105</x>
+    <y>132</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #308</name>
+    <actions>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_1</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_1 waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_2</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_2 waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_3</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_3 waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_4</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_4 waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_5</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_5 waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_6</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_6 waits</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_7</C>
+          <P>1bma:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_7 waits</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>470</x>
+    <y>133</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #318</name>
+    <actions>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>done</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone (all B motors) wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_1</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_1 wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_2</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_2 wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_3</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_3 wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_4</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_4 wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_5</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_5 wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone_6</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone_6 wait</description>
+      </action>
+      <action type="open_display">
+        <file>yyWaitRecord_full.opi</file>
+        <macros>
+          <C>alldone</C>
+          <P>1bmb:</P>
+        </macros>
+        <target>tab</target>
+        <description>alldone (all A&amp;B motors) wait</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>470</x>
+    <y>153</y>
+    <width>20</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #328</name>
+    <text>A</text>
+    <x>383</x>
+    <y>137</y>
+    <width>10</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #331</name>
+    <text>A/B</text>
+    <x>370</x>
+    <y>157</y>
+    <width>10</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #334</name>
+    <x>1</x>
+    <y>1</y>
+    <width>390</width>
+    <line_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #337</name>
+    <text>Sector 15 ID</text>
+    <x>138</x>
+    <y>3</y>
+    <width>200</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #340</name>
+    <text>Beam Info</text>
+    <x>26</x>
+    <y>6</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #343</name>
+    <x>189</x>
+    <y>95</y>
+    <width>42</width>
+    <height>9</height>
+    <points>
+      <point x="2.0" y="7.0">
+      </point>
+      <point x="40.0" y="2.0">
+      </point>
+    </points>
+    <line_width>4</line_width>
+    <line_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #347</name>
+    <x>209</x>
+    <y>79</y>
+    <width>69</width>
+    <height>19</height>
+    <points>
+      <point x="1.0" y="18.0">
+      </point>
+      <point x="68.0" y="1.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #351</name>
+    <x>276</x>
+    <y>81</y>
+    <width>67</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="66.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #355</name>
+    <x>132</x>
+    <y>89</y>
+    <width>34</width>
+    <height>15</height>
+    <points>
+      <point x="1.0" y="13.0">
+      </point>
+      <point x="32.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #359</name>
+    <x>255</x>
+    <y>74</y>
+    <width>42</width>
+    <height>9</height>
+    <points>
+      <point x="2.0" y="7.0">
+      </point>
+      <point x="40.0" y="2.0">
+      </point>
+    </points>
+    <line_width>4</line_width>
+    <line_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #363</name>
+    <text>Mirror 1</text>
+    <x>181</x>
+    <y>73</y>
+    <width>50</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #366</name>
+    <text>Mirror 2</text>
+    <x>258</x>
+    <y>92</y>
+    <width>50</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>

@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:23 by epics-->
+<display version="2.0.0">
+  <name>13IDC_mprobe</name>
+  <x>754</x>
+  <y>141</y>
+  <width>595</width>
+  <height>276</height>
+  <background_color>
+    <color red="218" green="218" blue="218">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>335</x>
+    <y>72</y>
+    <width>60</width>
+    <height>15</height>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #10</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID_EPS.opi</file>
+        <target>tab</target>
+        <description>Beamline EPS</description>
+      </action>
+    </actions>
+    <text>Shutter/EPS</text>
+    <x>220</x>
+    <y>41</y>
+    <width>105</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #13</name>
+    <actions>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A1</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>I0 Preamp (A1)</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A2</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>I1 Preamp (A2)</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A8</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A3</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Ipre Left Preamp (A3)</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A4</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Ipre Right Preamp (A4)</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley Multimeter (IDC)</description>
+      </action>
+      <action type="open_display">
+        <file>13IDC_tcouple.opi</file>
+        <target>tab</target>
+        <description>Thermocouple Stripchart</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>B4</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Ifoil Preamp (B4)</description>
+      </action>
+    </actions>
+    <text>Electronics</text>
+    <x>110</x>
+    <y>41</y>
+    <width>95</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #23</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <DW>Dwait1</DW>
+          <N>1</N>
+          <P>13IDC:</P>
+          <PW>Pwait1</PW>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <DW>Dwait2</DW>
+          <N>2</N>
+          <P>13IDC:</P>
+          <PW>Pwait2</PW>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+      <action type="open_display">
+        <file>table_full.opi</file>
+        <macros>
+          <M0X>m5</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>m4</M2X>
+          <M2Y>m1</M2Y>
+          <M2Z>junk</M2Z>
+          <P>13IDC:</P>
+          <Q>XAS:T1</Q>
+          <T>XAS:t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Lift Table Compound</description>
+      </action>
+      <action type="open_display">
+        <file>XRM_map.opi</file>
+        <macros>
+          <P>13XRM:</P>
+          <Q>map</Q>
+        </macros>
+        <target>tab</target>
+        <description>Fast Mapping </description>
+      </action>
+      <action type="open_display">
+        <file>scanner.opi</file>
+        <macros>
+          <P>13XRM:</P>
+          <Q>edb</Q>
+        </macros>
+        <target>tab</target>
+        <description>Expt Info</description>
+      </action>
+      <action type="open_display">
+        <file>13IDC_mprobe_uscope.opi</file>
+        <macros>
+          <M1>m16</M1>
+          <M2>m7</M2>
+          <M3>m8</M3>
+          <P>13IDC:</P>
+          <TITLE>Microscope</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Microscope Motors ()</description>
+      </action>
+    </actions>
+    <text>Setup</text>
+    <x>110</x>
+    <y>72</y>
+    <width>95</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #31</name>
+    <actions>
+      <action type="open_display">
+        <file>13IDC_SampleStage.opi</file>
+        <macros>
+          <P>13XRM:</P>
+          <TH>m3</TH>
+          <XC>m4</XC>
+          <XF>m1</XF>
+          <YC>m6</YC>
+          <YF>m2</YF>
+          <ZC>m5</ZC>
+        </macros>
+        <target>tab</target>
+        <description>Sample Stage</description>
+      </action>
+      <action type="open_display">
+        <file>SampleXYZ_full.opi</file>
+        <macros>
+          <IN>pm6</IN>
+          <P>13IDC:</P>
+          <TH>m14</TH>
+          <UP>pm5</UP>
+          <X>m13</X>
+          <Y>m16</Y>
+          <Z>m15</Z>
+        </macros>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <file>TableSlits.opi</file>
+        <macros>
+          <H>TTHSlit</H>
+          <P>13IDC:</P>
+          <SLIT>Table_Top_Slits</SLIT>
+          <V>TTVSlit</V>
+          <mXn>m87</mXn>
+          <mXp>m86</mXp>
+          <mYn>m84</mYn>
+          <mYp>m85</mYp>
+        </macros>
+        <target>tab</target>
+        <description>Table Top Slits</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <P>13IDC:</P>
+          <TITLE>Vertical_Focusing_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical KB Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m21</M1>
+          <M2>m22</M2>
+          <M3>m23</M3>
+          <M4>m24</M4>
+          <M5>pm1</M5>
+          <M6>pm2</M6>
+          <P>13IDC:</P>
+          <TITLE>Horizontal_Focusing_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Horizontal KB Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <P>13IDC:</P>
+          <TITLE>Lift_Table</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Lift Table (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m81</M1>
+          <M2>m16</M2>
+          <M3>m13</M3>
+          <M4>m82</M4>
+          <P>13IDC:</P>
+          <TITLE>Microscope</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Microscope motors</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m15</M1>
+          <M2>m16</M2>
+          <M3>m48</M3>
+          <M4>m7</M4>
+          <M5>m8</M5>
+          <M6>m42</M6>
+          <M7>m43</M7>
+          <M8>m83</M8>
+          <P>13IDC:</P>
+          <TITLE>XRF_DETECTOR</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Extra Motors</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m45</M1>
+          <M2>m46</M2>
+          <M3>m48</M3>
+          <P>13IDC:</P>
+          <TITLE>Vortex_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vortex Stage</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m7</M1>
+          <M2>m8</M2>
+          <M3>m16</M3>
+          <P>13IDC:</P>
+          <TITLE>WDS_DETECTOR</TITLE>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Motors</text>
+    <x>10</x>
+    <y>41</y>
+    <width>95</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #43</name>
+    <pv_name>13IDA:eps_bo3</pv_name>
+    <x>440</x>
+    <y>36</y>
+    <width>70</width>
+    <height>26</height>
+    <off_label>Open</off_label>
+    <off_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </off_color>
+    <on_label>Open</on_label>
+    <on_color>
+      <color red="48" green="144" blue="25">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #46</name>
+    <pv_name>13IDA:eps_bo4</pv_name>
+    <x>515</x>
+    <y>36</y>
+    <width>70</width>
+    <height>26</height>
+    <off_label>Close</off_label>
+    <off_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>Close</on_label>
+    <on_color>
+      <color red="202" green="0" blue="0">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #49</name>
+    <x>4000</x>
+    <y>4000</y>
+    <width>1</width>
+    <height>1</height>
+    <style>3</style>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #52</name>
+    <x>215</x>
+    <y>5</y>
+    <width>375</width>
+    <height>112</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="139" green="130" blue="57">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="139" green="130" blue="57">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #55</name>
+    <pv_name>13IDA:eps_mbbi4</pv_name>
+    <x>520</x>
+    <y>15</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #59</name>
+    <pv_name>13IDA:eps_mbbi5</pv_name>
+    <x>335</x>
+    <y>46</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #63</name>
+    <actions>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <P>13IDA:</P>
+          <TITLE>FOE_slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>FOE Slits</description>
+      </action>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m16</M1>
+          <P>13IDA:</P>
+          <TITLE>FOE_Flags</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Diagnostic Flag</description>
+      </action>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m82</M1>
+          <P>13IDC:</P>
+          <TITLE>Split_Ion_Chamber</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Split Ion Chamber </description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m18</M1>
+          <M2>m19</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <M5>pm5</M5>
+          <M6>pm6</M6>
+          <M7>pm9</M7>
+          <M8>pm10</M8>
+          <P>13IDA:</P>
+          <TITLE>Vertical_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Large Vertical Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m26</M1>
+          <M2>m27</M2>
+          <M3>pm3</M3>
+          <M4>pm4</M4>
+          <M5>pm7</M5>
+          <M6>pm8</M6>
+          <P>13IDA:</P>
+          <TITLE>Horizontal_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Large Horizontal Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>13ID_BPM.opi</file>
+        <macros>
+          <EN>E</EN>
+          <M1>m33</M1>
+          <M2>m15</M2>
+          <P>13IDA:</P>
+          <TITLE>BPM_Foil_Control</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>BPM in IDB</description>
+      </action>
+    </actions>
+    <text>Front End</text>
+    <x>110</x>
+    <y>102</y>
+    <width>95</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #71</name>
+    <pv_name>S:SRcurrentAI.VAL</pv_name>
+    <x>335</x>
+    <y>15</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #75</name>
+    <text>Yes</text>
+    <x>335</x>
+    <y>72</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="45" green="127" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ACIS:ShutterPermit</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #79</name>
+    <text>No</text>
+    <x>335</x>
+    <y>72</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ACIS:ShutterPermit</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #83</name>
+    <text>APS Permit</text>
+    <x>225</x>
+    <y>72</y>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #86</name>
+    <text>mA</text>
+    <x>400</x>
+    <y>15</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #89</name>
+    <text>Stations Searched:</text>
+    <x>225</x>
+    <y>97</y>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #92</name>
+    <x>420</x>
+    <y>95</y>
+    <width>14</width>
+    <height>14</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13ID:STA_C_SRCHD_TO_B.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #96</name>
+    <x>420</x>
+    <y>95</y>
+    <width>14</width>
+    <height>14</height>
+    <line_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13ID:STA_C_SRCHD_TO_B.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #100</name>
+    <text>Auto-Open:</text>
+    <x>485</x>
+    <y>70</y>
+    <width>70</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #103</name>
+    <pv_name>13IDA:FOEEnableShutter</pv_name>
+    <x>515</x>
+    <y>87</y>
+    <width>70</width>
+    <height>22</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #106</name>
+    <actions>
+      <action type="open_display">
+        <file>SR_Status.opi</file>
+        <target>tab</target>
+        <description>APS Info </description>
+      </action>
+      <action type="open_display">
+        <file>IDxbpm.opi</file>
+        <macros>
+          <sector>13</sector>
+          <sector0>13</sector0>
+          <sectorPlusOne>14</sectorPlusOne>
+        </macros>
+        <target>tab</target>
+        <description>Beam Positions</description>
+      </action>
+      <action type="open_display">
+        <file>00Start.opi</file>
+        <target>tab</target>
+        <description>GSE Main Menu</description>
+      </action>
+    </actions>
+    <text>Ring Current</text>
+    <x>220</x>
+    <y>10</y>
+    <width>105</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #111</name>
+    <actions>
+      <action type="open_display">
+        <file>00Start.opi</file>
+        <target>tab</target>
+        <description>GSE Main Menu</description>
+      </action>
+      <action type="open_display">
+        <file>Pelco_CM6700.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <R>Pelco2</R>
+        </macros>
+        <target>tab</target>
+        <description>IDE Video Switch</description>
+      </action>
+      <action type="open_display">
+        <file>Pelco_CM6700.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <R>Pelco1</R>
+        </macros>
+        <target>tab</target>
+        <description>IDC Video Switch</description>
+      </action>
+      <action type="open_display">
+        <file>scanner.opi</file>
+        <macros>
+          <P>13XRM:</P>
+          <Q>edb</Q>
+        </macros>
+        <target>tab</target>
+        <description>Experiment Info</description>
+      </action>
+      <action type="open_display">
+        <file>13ID.opi</file>
+        <target>tab</target>
+        <description>Main ID Control</description>
+      </action>
+      <action type="open_display">
+        <file>13IDC_xas.opi</file>
+        <target>tab</target>
+        <description>More IDC XAS</description>
+      </action>
+    </actions>
+    <text>13IDC Microprobe</text>
+    <x>10</x>
+    <y>5</y>
+    <width>195</width>
+    <height>29</height>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #119</name>
+    <pv_name>13IDA:E:E_RBV</pv_name>
+    <x>75</x>
+    <y>141</y>
+    <width>80</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #123</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:E:tweak.A</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:E:tweak.A</pv_name>
+    <text>&lt;</text>
+    <x>245</x>
+    <y>138</y>
+    <width>20</width>
+    <height>22</height>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #126</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:E:tweak.B</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:E:tweak.B</pv_name>
+    <text>&gt;</text>
+    <x>325</x>
+    <y>138</y>
+    <width>20</width>
+    <height>22</height>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #129</name>
+    <pv_name>13IDA:E:tweakval</pv_name>
+    <x>264</x>
+    <y>138</y>
+    <width>65</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #133</name>
+    <pv_name>13IDA:E:Energy</pv_name>
+    <x>158</x>
+    <y>138</y>
+    <width>90</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #137</name>
+    <text>step</text>
+    <x>270</x>
+    <y>123</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #140</name>
+    <pv_name>ID13ds:Energy.VAL</pv_name>
+    <x>433</x>
+    <y>141</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #144</name>
+    <pv_name>ID13ds:ScanEnergy.VAL</pv_name>
+    <x>495</x>
+    <y>138</y>
+    <width>65</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #148</name>
+    <text>keV</text>
+    <x>560</x>
+    <y>141</y>
+    <width>27</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #151</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID_mono_full.opi</file>
+        <macros>
+          <EN>E</EN>
+          <EXPTAB>m6</EXPTAB>
+          <ID>ID13ds:</ID>
+          <MONO>m17</MONO>
+          <P1>13IDA:</P1>
+          <P2>13IDC:</P2>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+        <description>Monochomator</description>
+      </action>
+      <action type="open_display">
+        <file>piezos3.opi</file>
+        <macros>
+          <D>1</D>
+          <P>13IDA:</P>
+          <PID>13IDA:mono_pid1</PID>
+        </macros>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m14</M2>
+          <M3>m12</M3>
+          <M4>m11</M4>
+          <M5>m10</M5>
+          <M6>m13</M6>
+          <P>13IDA:</P>
+          <TITLE>ID_Crystal_Cage</TITLE>
+        </macros>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <file>Energy.opi</file>
+        <macros>
+          <EN>E</EN>
+          <EXPTAB>m6</EXPTAB>
+          <ID>ID13ds:</ID>
+          <MONO>m17</MONO>
+          <P1>13IDA:</P1>
+          <P2>13IDC:</P2>
+          <TITLE>Energy</TITLE>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Mono</text>
+    <x>10</x>
+    <y>102</y>
+    <width>95</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #157</name>
+    <actions>
+      <action type="open_display">
+        <file>UndulatorCtl_ds.opi</file>
+        <macros>
+          <xx>13ds</xx>
+        </macros>
+        <target>tab</target>
+        <description>Undulator</description>
+      </action>
+      <action type="open_display">
+        <file>piezos3.opi</file>
+        <macros>
+          <D>1</D>
+          <P>13IDA:</P>
+          <PID>13IDA:mono_pid1</PID>
+        </macros>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m14</M2>
+          <M3>m12</M3>
+          <M4>m11</M4>
+          <M5>m10</M5>
+          <M6>m13</M6>
+          <P>13IDA:</P>
+          <TITLE>ID_Crystal_Cage</TITLE>
+        </macros>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <file>Energy.opi</file>
+        <macros>
+          <EN>E</EN>
+          <EXPTAB>m6</EXPTAB>
+          <ID>ID13ds:</ID>
+          <MONO>m17</MONO>
+          <P1>13IDA:</P1>
+          <P2>13IDC:</P2>
+          <TITLE>Energy</TITLE>
+          <Z>m14</Z>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Undulator</text>
+    <x>350</x>
+    <y>136</y>
+    <width>80</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #163</name>
+    <text>Fluorescence Detector:</text>
+    <x>10</x>
+    <y>174</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #166</name>
+    <x>380</x>
+    <y>95</y>
+    <width>14</width>
+    <height>14</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13ID:STA_A_SRCHD_TO_B.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #170</name>
+    <x>400</x>
+    <y>95</y>
+    <width>14</width>
+    <height>14</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13ID:STA_B_SRCHD_TO_B.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #174</name>
+    <x>380</x>
+    <y>95</y>
+    <width>14</width>
+    <height>14</height>
+    <line_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13ID:STA_A_SRCHD_TO_B.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #178</name>
+    <x>400</x>
+    <y>95</y>
+    <width>14</width>
+    <height>14</height>
+    <line_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>PA:13ID:STA_B_SRCHD_TO_B.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #182</name>
+    <x>5</x>
+    <y>164</y>
+    <width>290</width>
+    <height>107</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="139" green="130" blue="57">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="139" green="130" blue="57">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #185</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_calcs8.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <S>scaler2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scalers</description>
+      </action>
+      <action type="open_display">
+        <file>Struck8.opi</file>
+        <macros>
+          <P>13IDC:str:</P>
+        </macros>
+        <target>tab</target>
+        <description>Struck MCA</description>
+      </action>
+      <action type="open_display">
+        <file>xmap4_dxp.opi</file>
+        <macros>
+          <D>dxp</D>
+          <M>mca</M>
+          <P>13SDD1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Quad Vortex</description>
+      </action>
+      <action type="open_display">
+        <file>IonChamber.opi</file>
+        <macros>
+          <P>13XRM:</P>
+          <Q>ION</Q>
+        </macros>
+        <target>tab</target>
+        <description>Ion Chamber</description>
+      </action>
+      <action type="open_display">
+        <file>XRF_Collect.opi</file>
+        <macros>
+          <D>13SDD1:</D>
+          <P>13XRM:</P>
+          <Q>XRF</Q>
+        </macros>
+        <target>tab</target>
+        <description>XRF Collector</description>
+      </action>
+      <action type="open_display">
+        <file>scaler_calcs8.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scalers (old)</description>
+      </action>
+      <action type="open_display">
+        <file>single_dxp_top.opi</file>
+        <macros>
+          <D>dxp1</D>
+          <M>mca1</M>
+          <P>13XRM:</P>
+        </macros>
+        <target>tab</target>
+        <description>Single Vortex</description>
+      </action>
+    </actions>
+    <text>Detectors</text>
+    <x>10</x>
+    <y>72</y>
+    <width>95</width>
+    <height>25</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #195</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID_mono_fb_xas.opi</file>
+        <macros>
+          <M1>m12</M1>
+          <M2>m11</M2>
+          <P>13IDA:</P>
+        </macros>
+        <target>tab</target>
+        <description>XAS Feedback </description>
+      </action>
+      <action type="open_display">
+        <file>13ID_mono_feedback.opi</file>
+        <macros>
+          <M1>m12</M1>
+          <M2>m11</M2>
+          <P>13IDA:</P>
+          <PID1>fast_pitch_pid</PID1>
+          <PID2>fast_roll_pid</PID2>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Feedback</text>
+    <x>305</x>
+    <y>174</y>
+    <height>26</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #199</name>
+    <pv_name>13IDA:mono_pid2_incalc.M</pv_name>
+    <x>415</x>
+    <y>205</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #203</name>
+    <text>Pre-Slit:</text>
+    <x>305</x>
+    <y>205</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #206</name>
+    <text>Diff</text>
+    <x>485</x>
+    <y>205</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #209</name>
+    <pv_name>13IDA:mono_pid2_incalc.N</pv_name>
+    <x>520</x>
+    <y>205</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #213</name>
+    <text>I0 intensity</text>
+    <x>415</x>
+    <y>179</y>
+    <width>30</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #216</name>
+    <pv_name>13IDA:mono_pid2_incalc.I</pv_name>
+    <x>520</x>
+    <y>179</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #220</name>
+    <text>Shutter:</text>
+    <x>440</x>
+    <y>15</y>
+    <width>80</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #223</name>
+    <text>Sum</text>
+    <x>380</x>
+    <y>205</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #226</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(FD):EraseAll</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(FD):EraseAll</pv_name>
+    <text>Erase</text>
+    <x>150</x>
+    <y>195</y>
+    <width>60</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #229</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(FD):EraseStart</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(FD):EraseStart</pv_name>
+    <text>Start</text>
+    <x>20</x>
+    <y>194</y>
+    <width>60</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #232</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(FD):StopAll</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(FD):StopAll</pv_name>
+    <text>Stop</text>
+    <x>85</x>
+    <y>194</y>
+    <width>60</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #235</name>
+    <text>Done</text>
+    <x>215</x>
+    <y>196</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13SDD1:Acquiring</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #239</name>
+    <text>Acquiring</text>
+    <x>215</x>
+    <y>196</y>
+    <width>75</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="45" green="127" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(FD):Acquiring</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #243</name>
+    <pv_name>13SDD1:ElapsedReal</pv_name>
+    <x>145</x>
+    <y>223</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #247</name>
+    <pv_name>13SDD1:PresetReal</pv_name>
+    <x>210</x>
+    <y>220</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #251</name>
+    <text>Acquire time:</text>
+    <x>25</x>
+    <y>223</y>
+    <width>90</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #254</name>
+    <pv_name>13SDD1:DeadTime</pv_name>
+    <x>145</x>
+    <y>250</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #258</name>
+    <text>% Deadtime:</text>
+    <x>20</x>
+    <y>250</y>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #261</name>
+    <x>300</x>
+    <y>164</y>
+    <width>290</width>
+    <height>107</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="139" green="130" blue="57">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="139" green="130" blue="57">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #264</name>
+    <text>Energy</text>
+    <x>10</x>
+    <y>138</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="160" green="18" blue="7">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #267</name>
+    <pv_name>13IDA:mono_pid1.FBON</pv_name>
+    <x>310</x>
+    <y>245</y>
+    <width>70</width>
+    <height>20</height>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #270</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:m12.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:m12.TWR</pv_name>
+    <text>&lt;</text>
+    <x>400</x>
+    <y>245</y>
+    <width>20</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #273</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:m12.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:m12.TWF</pv_name>
+    <text>&gt;</text>
+    <x>440</x>
+    <y>245</y>
+    <width>20</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>valuator #276</name>
+    <pv_name>13IDA:DAC1_3.VAL</pv_name>
+    <x>475</x>
+    <y>245</y>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #280</name>
+    <text>Feedback   Coarse / Fine</text>
+    <x>305</x>
+    <y>228</y>
+    <width>120</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

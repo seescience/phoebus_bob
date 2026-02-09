@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:20 by epics-->
+<display version="2.0.0">
+  <name>13ID_FE</name>
+  <x>418</x>
+  <y>247</y>
+  <width>164</width>
+  <height>332</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #6</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:OpenFEShutter.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:OpenFEShutter.PROC</pv_name>
+    <text>Open</text>
+    <x>50</x>
+    <y>49</y>
+    <width>70</width>
+    <height>35</height>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #9</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:CloseFEShutter.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:CloseFEShutter.PROC</pv_name>
+    <text>Close</text>
+    <x>50</x>
+    <y>86</y>
+    <width>70</width>
+    <height>35</height>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #12</name>
+    <pv_name>13IDA:eps_mbbi4</pv_name>
+    <x>50</x>
+    <y>210</y>
+    <width>70</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #16</name>
+    <pv_name>13IDA:eps_bo1</pv_name>
+    <x>54</x>
+    <y>130</y>
+    <width>60</width>
+    <height>20</height>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #19</name>
+    <text>13-ID FE Shutter</text>
+    <x>8</x>
+    <y>21</y>
+    <width>160</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>Status</text>
+    <x>49</x>
+    <y>180</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #25</name>
+    <pv_name>13IDA:FOEEnableShutter</pv_name>
+    <x>50</x>
+    <y>296</y>
+    <width>70</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>Auto-open</text>
+    <x>55</x>
+    <y>274</y>
+    <width>60</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

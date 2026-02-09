@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:53:04 by epics-->
+<display version="2.0.0">
+  <name>13HG100</name>
+  <x>465</x>
+  <y>30</y>
+  <width>391</width>
+  <height>80</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>13HG100</text>
+    <x>55</x>
+    <y>12</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #9</name>
+    <actions>
+      <action type="open_display">
+        <file>HG-100.opi</file>
+        <macros>
+          <P>13HG100:</P>
+          <R>HG100:</R>
+        </macros>
+        <target>tab</target>
+        <description>HG-100</description>
+      </action>
+      <action type="open_display">
+        <file>pid_control.opi</file>
+        <macros>
+          <P>13HG100:</P>
+          <PID>PID1</PID>
+          <TITLE>13HG100:PID1</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>PID #1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>50</x>
+    <y>44</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #13</name>
+    <text>HG100 humidty generator</text>
+    <x>129</x>
+    <y>44</y>
+    <width>230</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

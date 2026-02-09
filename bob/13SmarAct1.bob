@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:38 by epics-->
+<display version="2.0.0">
+  <name>13SmarAct1</name>
+  <x>420</x>
+  <y>39</y>
+  <width>320</width>
+  <height>240</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <y>10</y>
+    <width>320</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>13 SmarAct1</text>
+    <x>94</x>
+    <y>18</y>
+    <width>132</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #12</name>
+    <x>10</x>
+    <y>70</y>
+    <height>132</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #15</name>
+      <actions>
+        <action type="open_display">
+          <file>scan_more.opi</file>
+          <macros>
+            <N>1</N>
+            <P>13SA1:</P>
+            <S>scan1</S>
+          </macros>
+          <target>tab</target>
+          <description>Scan 1</description>
+        </action>
+        <action type="open_display">
+          <file>scan_more.opi</file>
+          <macros>
+            <N>2</N>
+            <P>13SA1:</P>
+            <S>scan2</S>
+          </macros>
+          <target>tab</target>
+          <description>Scan 2</description>
+        </action>
+      </actions>
+      <text></text>
+      <y>27</y>
+      <width>75</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #19</name>
+      <text>Scan</text>
+      <x>80</x>
+      <y>27</y>
+      <width>53</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #22</name>
+      <text>Motors</text>
+      <x>80</x>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #25</name>
+      <actions>
+        <action type="open_display">
+          <file>2motors.opi</file>
+          <macros>
+            <M1>m1</M1>
+            <M2>m2</M2>
+            <P>13SA1:</P>
+            <TITLE>13_SmarAct1</TITLE>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text></text>
+      <width>75</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #28</name>
+      <actions>
+        <action type="open_display">
+          <file>asynRecord.opi</file>
+          <macros>
+            <P>13SA1:</P>
+            <R>asyn1</R>
+          </macros>
+          <target>tab</target>
+          <description>asyn record</description>
+        </action>
+      </actions>
+      <text></text>
+      <y>81</y>
+      <width>75</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #31</name>
+      <text>IOC status</text>
+      <x>80</x>
+      <y>108</y>
+      <width>133</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #34</name>
+      <actions>
+        <action type="open_display">
+          <file>save_restoreStatus_more.opi</file>
+          <macros>
+            <P>13SA1:</P>
+          </macros>
+          <target>tab</target>
+          <description>Save/restore status</description>
+        </action>
+      </actions>
+      <text></text>
+      <y>108</y>
+      <width>75</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #37</name>
+      <text>asyn Records</text>
+      <x>80</x>
+      <y>81</y>
+      <width>133</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #40</name>
+      <actions>
+        <action type="open_display">
+          <file>userArrayCalcs10.opi</file>
+          <macros>
+            <P>13SA1:</P>
+          </macros>
+          <target>tab</target>
+          <description>User arrayCalcs</description>
+        </action>
+        <action type="open_display">
+          <file>userCalcOuts10.opi</file>
+          <macros>
+            <P>13SA1:</P>
+          </macros>
+          <target>tab</target>
+          <description>User calcOuts</description>
+        </action>
+        <action type="open_display">
+          <file>userStringCalcs10.opi</file>
+          <macros>
+            <P>13SA1:</P>
+          </macros>
+          <target>tab</target>
+          <description>User stringCalcs</description>
+        </action>
+        <action type="open_display">
+          <file>userStringSeqs10.opi</file>
+          <macros>
+            <P>13SA1:</P>
+          </macros>
+          <target>tab</target>
+          <description>User stringSeqs</description>
+        </action>
+        <action type="open_display">
+          <file>userTransforms10.opi</file>
+          <macros>
+            <P>13SA1:</P>
+          </macros>
+          <target>tab</target>
+          <description>User transforms</description>
+        </action>
+      </actions>
+      <text></text>
+      <y>54</y>
+      <width>75</width>
+      <height>24</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #47</name>
+      <text>User calcs, transforms</text>
+      <x>80</x>
+      <y>54</y>
+      <width>220</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+</display>

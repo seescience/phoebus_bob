@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:37 by epics-->
+<display version="2.0.0">
+  <name>13Raman2</name>
+  <x>248</x>
+  <y>537</y>
+  <width>370</width>
+  <height>270</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>30</x>
+    <y>12</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>GSECARS Raman Lab 2</text>
+    <x>47</x>
+    <y>20</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #12</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13RAMAN2:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13RAMAN2:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>206</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>Scan</text>
+    <x>94</x>
+    <y>206</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #19</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>serial5</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 5</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>serial6</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 6</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>179</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #27</name>
+    <text>asyn records</text>
+    <x>94</x>
+    <y>179</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>Motors</text>
+    <x>94</x>
+    <y>71</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #33</name>
+    <actions>
+      <action type="open_display">
+        <file>7motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <P>13RAMAN2:</P>
+          <TITLE>Sample_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Sample stage</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <P>13RAMAN2:</P>
+          <TITLE>Mirrors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Mirrors</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m13</M1>
+          <M2>m14</M2>
+          <M3>m15</M3>
+          <P>13RAMAN2:</P>
+          <TITLE>LH_Objective</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>LH Objective</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>71</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #38</name>
+    <actions>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>233</y>
+    <width>75</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #41</name>
+    <text>IOC status</text>
+    <x>95</x>
+    <y>233</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #44</name>
+    <text>User calcs, transforms</text>
+    <x>94</x>
+    <y>152</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #47</name>
+    <actions>
+      <action type="open_display">
+        <file>userArrayCalcs20.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcOuts20.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User calcOuts</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs20.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userStringSeqs20.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringSeqs</description>
+      </action>
+      <action type="open_display">
+        <file>userTransforms20.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>userCalcsGlobalEnable.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+        </macros>
+        <target>tab</target>
+        <description>Global Enable</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>152</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #55</name>
+    <actions>
+      <action type="open_display">
+        <file>IPG_YLR_laser.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>IPG1</R>
+        </macros>
+        <target>tab</target>
+        <description>IPG YLR Laser</description>
+      </action>
+      <action type="open_display">
+        <file>VentusLaser_blue.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>LQE1</R>
+        </macros>
+        <target>tab</target>
+        <description>LQ1_Ventus_blue</description>
+      </action>
+      <action type="open_display">
+        <file>VentusLaser_red.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>LQE2</R>
+        </macros>
+        <target>tab</target>
+        <description>LQ2_Ventus_red</description>
+      </action>
+      <action type="open_display">
+        <file>VerdiLaser.opi</file>
+        <macros>
+          <P>13RAMAN2:</P>
+          <R>Verdi1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Verdi</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>98</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #61</name>
+    <text>Laser</text>
+    <x>94</x>
+    <y>98</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #64</name>
+    <actions>
+      <action type="open_display">
+        <file>13RamanPLC.opi</file>
+        <macros>
+          <P>13RamanPLC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Raman PLC</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>15</x>
+    <y>125</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #67</name>
+    <text>PLC</text>
+    <x>94</x>
+    <y>125</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #70</name>
+    <actions>
+      <action type="open_display">
+        <file>13Raman.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <P>13RAMAN2:</P>
+          <TITLE>Sample_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Expert</description>
+      </action>
+    </actions>
+    <text> Expert</text>
+    <x>245</x>
+    <y>73</y>
+    <width>98</width>
+    <height>34</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #73</name>
+    <actions>
+      <action type="open_display">
+        <file>13Raman_usermode.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <P>13RAMAN2:</P>
+          <TITLE>Sample_Stage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Expert</description>
+      </action>
+    </actions>
+    <text> UserMode</text>
+    <x>225</x>
+    <y>113</y>
+    <width>130</width>
+    <height>34</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #76</name>
+    <actions>
+      <action type="open_display">
+        <file>PACE5000.opi</file>
+        <macros>
+          <P>13RAMAN_PACE5000:</P>
+          <R>PC1:</R>
+        </macros>
+        <target>tab</target>
+        <description>PACE 5000</description>
+      </action>
+    </actions>
+    <text>Pace-5000</text>
+    <x>250</x>
+    <y>234</y>
+    <width>105</width>
+    <height>27</height>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+</display>

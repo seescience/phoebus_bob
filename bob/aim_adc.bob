@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:53:19 by epics-->
+<display version="2.0.0">
+  <name>aim_adc</name>
+  <x>546</x>
+  <y>241</y>
+  <width>220</width>
+  <height>200</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>aim_adc1</M>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>MCA Plot</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbAmp.opi</file>
+        <macros>
+          <AMP>amp1</AMP>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>Amplifier</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbAdc.opi</file>
+        <macros>
+          <ADC>adc1</ADC>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>ADC</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbHVPS.opi</file>
+        <macros>
+          <HVPS>hvps1</HVPS>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>HV Power Supply</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>10</x>
+    <y>45</y>
+    <width>200</width>
+    <height>150</height>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Canberra AIM ADC</text>
+    <x>10</x>
+    <y>20</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

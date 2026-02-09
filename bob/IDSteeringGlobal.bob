@@ -1,0 +1,6283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:50 by epics-->
+<display version="2.0.0">
+  <name>IDSteeringGlobal</name>
+  <x>147</x>
+  <y>72</y>
+  <width>969</width>
+  <height>849</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>619</x>
+    <y>57</y>
+    <width>344</width>
+    <height>768</height>
+    <line_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>Xp</text>
+    <x>111</x>
+    <y>59</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Yp</text>
+    <x>189</x>
+    <y>59</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>Steering Status</text>
+    <x>419</x>
+    <y>59</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #18</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>02</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>02</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>109</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>ID02</text>
+    <x>39</x>
+    <y>106</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #25</name>
+    <pv_name>ID02:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>106</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #29</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>03</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>132</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #32</name>
+    <text>ID03</text>
+    <x>39</x>
+    <y>129</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #35</name>
+    <pv_name>ID03:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>129</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #39</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>04</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>154</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #42</name>
+    <text>ID04</text>
+    <x>39</x>
+    <y>151</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #45</name>
+    <pv_name>ID04:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>151</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #49</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>05</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>05</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>176</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>ID05</text>
+    <x>39</x>
+    <y>173</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #56</name>
+    <pv_name>ID05:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>173</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #60</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>06</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>06</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>198</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #64</name>
+    <text>ID06</text>
+    <x>39</x>
+    <y>195</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #67</name>
+    <pv_name>ID06:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>195</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #71</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>07</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>07</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>220</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #75</name>
+    <text>ID07</text>
+    <x>39</x>
+    <y>217</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #78</name>
+    <pv_name>ID07:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>217</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #82</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>08</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>08</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>243</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #86</name>
+    <text>ID08</text>
+    <x>39</x>
+    <y>240</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #89</name>
+    <pv_name>ID08:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>240</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #93</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>09</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>09</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>265</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #97</name>
+    <text>ID09</text>
+    <x>39</x>
+    <y>262</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #100</name>
+    <pv_name>ID09:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>262</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #104</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>10</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>10</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>287</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #108</name>
+    <text>ID10</text>
+    <x>39</x>
+    <y>284</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #111</name>
+    <pv_name>ID10:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>284</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #115</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>11</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>11</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>309</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #119</name>
+    <text>ID11</text>
+    <x>39</x>
+    <y>306</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #122</name>
+    <pv_name>ID11:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>306</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #126</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>12</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>12</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>330</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #130</name>
+    <text>ID12</text>
+    <x>39</x>
+    <y>327</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #133</name>
+    <pv_name>ID12:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>327</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #137</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>13</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>13</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>352</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #141</name>
+    <text>ID13</text>
+    <x>39</x>
+    <y>349</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #144</name>
+    <pv_name>ID13:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>349</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #148</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>14</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>14</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>375</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #152</name>
+    <text>ID14</text>
+    <x>39</x>
+    <y>372</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #155</name>
+    <pv_name>ID14:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>372</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #159</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>15</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>15</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>397</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #163</name>
+    <text>ID15</text>
+    <x>39</x>
+    <y>394</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #166</name>
+    <pv_name>ID15:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>394</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #170</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>16</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>16</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>419</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #174</name>
+    <text>ID16</text>
+    <x>39</x>
+    <y>416</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #177</name>
+    <pv_name>ID16:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>416</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #181</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>17</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>17</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>441</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #185</name>
+    <text>ID17</text>
+    <x>39</x>
+    <y>438</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #188</name>
+    <pv_name>ID17:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>438</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #192</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>18</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>18</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>464</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #196</name>
+    <text>ID18</text>
+    <x>39</x>
+    <y>461</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #199</name>
+    <pv_name>ID18:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>461</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #203</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>20</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>20</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>510</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #207</name>
+    <text>ID20</text>
+    <x>39</x>
+    <y>507</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #210</name>
+    <pv_name>ID20:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>507</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #214</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <S>21</S>
+        </macros>
+        <target>tab</target>
+        <description>User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>533</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #217</name>
+    <text>ID21</text>
+    <x>39</x>
+    <y>530</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #220</name>
+    <pv_name>ID21:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>530</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #224</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>22</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>22</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>556</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #228</name>
+    <text>ID22</text>
+    <x>39</x>
+    <y>553</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #231</name>
+    <pv_name>ID22:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>553</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #235</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>23</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>23</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>579</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #239</name>
+    <text>ID23</text>
+    <x>39</x>
+    <y>576</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #242</name>
+    <pv_name>ID23:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>576</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #246</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>24</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>24</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>603</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #250</name>
+    <text>ID24</text>
+    <x>39</x>
+    <y>600</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #253</name>
+    <pv_name>ID24:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>600</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #257</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <S>26</S>
+        </macros>
+        <target>tab</target>
+        <description>User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>633</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #260</name>
+    <text>ID26</text>
+    <x>39</x>
+    <y>630</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #263</name>
+    <pv_name>ID26:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>630</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #267</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <S>27</S>
+        </macros>
+        <target>tab</target>
+        <description>User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>655</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #270</name>
+    <text>ID27</text>
+    <x>39</x>
+    <y>652</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #273</name>
+    <pv_name>ID27:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>652</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #277</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <S>30</S>
+        </macros>
+        <target>tab</target>
+        <description>User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>685</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #280</name>
+    <text>ID30</text>
+    <x>39</x>
+    <y>682</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #283</name>
+    <pv_name>ID30:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>682</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #287</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <S>31</S>
+        </macros>
+        <target>tab</target>
+        <description>User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>707</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #290</name>
+    <text>ID31</text>
+    <x>39</x>
+    <y>704</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #293</name>
+    <pv_name>ID31:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>704</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #297</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <S>32</S>
+        </macros>
+        <target>tab</target>
+        <description>User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>731</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #300</name>
+    <text>ID32</text>
+    <x>39</x>
+    <y>728</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #303</name>
+    <pv_name>ID32:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>728</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #307</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>33</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>33</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>756</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #311</name>
+    <text>ID33</text>
+    <x>39</x>
+    <y>753</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #314</name>
+    <pv_name>ID33:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>753</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #318</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>34</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>34</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>779</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #322</name>
+    <text>ID34</text>
+    <x>39</x>
+    <y>776</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #325</name>
+    <pv_name>ID34:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>776</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #329</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>35</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>35</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>803</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #333</name>
+    <text>ID35</text>
+    <x>39</x>
+    <y>800</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #336</name>
+    <pv_name>ID35:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>800</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #340</name>
+    <text>ID Beamline Steering</text>
+    <x>359</x>
+    <y>9</y>
+    <width>250</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #343</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>19</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>19</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>486</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #347</name>
+    <text>ID19</text>
+    <x>39</x>
+    <y>483</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #350</name>
+    <pv_name>ID19:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>483</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #354</name>
+    <actions>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>ID</BL>
+          <S>01</S>
+        </macros>
+        <target>tab</target>
+        <description>ID User Steering</description>
+      </action>
+      <action type="open_display">
+        <file>BLSteering.opi</file>
+        <macros>
+          <BL>BM</BL>
+          <S>01</S>
+        </macros>
+        <target>tab</target>
+        <description>BM User Steering</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>20</x>
+    <y>86</y>
+    <width>14</width>
+    <height>14</height>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #358</name>
+    <text>ID01</text>
+    <x>39</x>
+    <y>83</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #361</name>
+    <pv_name>ID01:BLSteerStatus</pv_name>
+    <x>368</x>
+    <y>83</y>
+    <width>250</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #365</name>
+    <pv_name>ID01:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>84</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #368</name>
+    <pv_name>ID01:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>83</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #372</name>
+    <pv_name>ID01:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>83</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #376</name>
+    <text>Run Accumulators</text>
+    <x>624</x>
+    <y>59</y>
+    <width>165</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #379</name>
+    <text>Xp(urad)</text>
+    <x>792</x>
+    <y>59</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #382</name>
+    <text>Yp(urad)</text>
+    <x>884</x>
+    <y>59</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #385</name>
+    <pv_name>ID02:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>107</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #388</name>
+    <pv_name>ID02:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>106</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #392</name>
+    <pv_name>ID02:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>106</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #396</name>
+    <pv_name>ID03:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>130</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #399</name>
+    <pv_name>ID03:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>129</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #403</name>
+    <pv_name>ID03:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>129</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #407</name>
+    <pv_name>ID04:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>152</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #410</name>
+    <pv_name>ID04:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>151</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #414</name>
+    <pv_name>ID04:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>151</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #418</name>
+    <pv_name>ID05:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>174</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #421</name>
+    <pv_name>ID05:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>173</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #425</name>
+    <pv_name>ID05:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>173</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #429</name>
+    <pv_name>ID06:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>196</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #432</name>
+    <pv_name>ID06:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>195</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #436</name>
+    <pv_name>ID06:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>195</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #440</name>
+    <pv_name>ID07:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>218</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #443</name>
+    <pv_name>ID07:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>217</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #447</name>
+    <pv_name>ID07:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>217</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #451</name>
+    <pv_name>ID08:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>241</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #454</name>
+    <pv_name>ID08:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>240</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #458</name>
+    <pv_name>ID08:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>240</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #462</name>
+    <pv_name>ID09:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>263</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #465</name>
+    <pv_name>ID09:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>262</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #469</name>
+    <pv_name>ID09:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>262</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #473</name>
+    <pv_name>ID10:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>285</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #476</name>
+    <pv_name>ID10:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>284</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #480</name>
+    <pv_name>ID10:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>284</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #484</name>
+    <pv_name>ID11:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>307</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #487</name>
+    <pv_name>ID11:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>306</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #491</name>
+    <pv_name>ID11:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>306</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #495</name>
+    <pv_name>ID12:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>328</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #498</name>
+    <pv_name>ID12:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>327</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #502</name>
+    <pv_name>ID12:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>327</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #506</name>
+    <pv_name>ID13:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>350</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #509</name>
+    <pv_name>ID13:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>349</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #513</name>
+    <pv_name>ID13:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>349</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #517</name>
+    <pv_name>ID14:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>373</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #520</name>
+    <pv_name>ID14:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>372</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #524</name>
+    <pv_name>ID14:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>372</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #528</name>
+    <pv_name>ID15:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>395</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #531</name>
+    <pv_name>ID15:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>394</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #535</name>
+    <pv_name>ID15:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>394</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #539</name>
+    <pv_name>ID16:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>417</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #542</name>
+    <pv_name>ID16:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>416</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #546</name>
+    <pv_name>ID16:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>416</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #550</name>
+    <pv_name>ID17:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>439</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #553</name>
+    <pv_name>ID17:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>438</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #557</name>
+    <pv_name>ID17:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>438</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #561</name>
+    <pv_name>ID18:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>462</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #564</name>
+    <pv_name>ID18:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>461</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #568</name>
+    <pv_name>ID18:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>461</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #572</name>
+    <pv_name>ID19:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>484</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #575</name>
+    <pv_name>ID19:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>483</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #579</name>
+    <pv_name>ID19:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>483</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #583</name>
+    <pv_name>ID20:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>508</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #586</name>
+    <pv_name>ID20:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>507</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #590</name>
+    <pv_name>ID20:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>507</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #594</name>
+    <pv_name>ID21:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>531</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #597</name>
+    <pv_name>ID21:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>530</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #601</name>
+    <pv_name>ID21:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>530</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #605</name>
+    <pv_name>ID22:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>554</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #608</name>
+    <pv_name>ID22:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>553</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #612</name>
+    <pv_name>ID22:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>553</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #616</name>
+    <pv_name>ID23:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>577</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #619</name>
+    <pv_name>ID23:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>576</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #623</name>
+    <pv_name>ID23:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>576</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #627</name>
+    <pv_name>ID24:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>601</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #630</name>
+    <pv_name>ID24:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>600</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #634</name>
+    <pv_name>ID24:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>600</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #638</name>
+    <pv_name>ID26:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>631</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #641</name>
+    <pv_name>ID26:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>630</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #645</name>
+    <pv_name>ID26:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>630</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #649</name>
+    <pv_name>ID27:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>653</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #652</name>
+    <pv_name>ID27:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>652</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #656</name>
+    <pv_name>ID27:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>652</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #660</name>
+    <pv_name>ID30:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>683</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #663</name>
+    <pv_name>ID30:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>682</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #667</name>
+    <pv_name>ID30:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>682</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #671</name>
+    <pv_name>ID31:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>705</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #674</name>
+    <pv_name>ID31:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>704</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #678</name>
+    <pv_name>ID31:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>704</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #682</name>
+    <pv_name>ID32:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>729</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #685</name>
+    <pv_name>ID32:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>728</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #689</name>
+    <pv_name>ID32:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>728</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #693</name>
+    <pv_name>ID33:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>754</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #696</name>
+    <pv_name>ID33:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>753</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #700</name>
+    <pv_name>ID33:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>753</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #704</name>
+    <pv_name>ID34:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>777</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #707</name>
+    <pv_name>ID34:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>776</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #711</name>
+    <pv_name>ID34:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>776</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>message button #715</name>
+    <pv_name>ID35:TotalRunRst</pv_name>
+    <x>624</x>
+    <y>801</y>
+    <width>155</width>
+    <height>19</height>
+    <off_label>Reset Run Accumulator</off_label>
+    <off_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </off_color>
+    <on_label>Reset Run Accumulator</on_label>
+    <on_color>
+      <color red="62" green="132" blue="199">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <mode>1</mode>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #718</name>
+    <pv_name>ID35:YpRunAccum</pv_name>
+    <x>884</x>
+    <y>800</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #722</name>
+    <pv_name>ID35:XpRunAccum</pv_name>
+    <x>797</x>
+    <y>800</y>
+    <width>75</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #726</name>
+    <x>85</x>
+    <y>83</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID01:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #729</name>
+      <pv_name>ID01:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #733</name>
+      <pv_name>ID01:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #737</name>
+      <pv_name>ID01:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #741</name>
+    <x>85</x>
+    <y>106</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #744</name>
+      <pv_name>ID02:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #748</name>
+      <pv_name>ID02:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #752</name>
+      <pv_name>ID02:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #756</name>
+    <x>85</x>
+    <y>129</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID03:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #759</name>
+      <pv_name>ID03:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #763</name>
+      <pv_name>ID03:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #767</name>
+      <pv_name>ID03:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #771</name>
+    <x>85</x>
+    <y>151</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID04:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #774</name>
+      <pv_name>ID04:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #778</name>
+      <pv_name>ID04:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #782</name>
+      <pv_name>ID04:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #786</name>
+    <x>85</x>
+    <y>173</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID05:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #789</name>
+      <pv_name>ID05:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #793</name>
+      <pv_name>ID05:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #797</name>
+      <pv_name>ID05:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #801</name>
+    <x>85</x>
+    <y>195</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID06:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #804</name>
+      <pv_name>ID06:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #808</name>
+      <pv_name>ID06:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #812</name>
+      <pv_name>ID06:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #816</name>
+    <x>85</x>
+    <y>217</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID07:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #819</name>
+      <pv_name>ID07:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #823</name>
+      <pv_name>ID07:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #827</name>
+      <pv_name>ID07:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #831</name>
+    <x>85</x>
+    <y>240</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID08:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #834</name>
+      <pv_name>ID08:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #838</name>
+      <pv_name>ID08:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #842</name>
+      <pv_name>ID08:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #846</name>
+    <x>85</x>
+    <y>262</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID09:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #849</name>
+      <pv_name>ID09:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #853</name>
+      <pv_name>ID09:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #857</name>
+      <pv_name>ID09:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #861</name>
+    <x>85</x>
+    <y>284</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID10:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #864</name>
+      <pv_name>ID10:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #868</name>
+      <pv_name>ID10:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #872</name>
+      <pv_name>ID10:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #876</name>
+    <x>85</x>
+    <y>306</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID11:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #879</name>
+      <pv_name>ID11:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #883</name>
+      <pv_name>ID11:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #887</name>
+      <pv_name>ID11:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #891</name>
+    <x>85</x>
+    <y>327</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID12:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #894</name>
+      <pv_name>ID12:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #898</name>
+      <pv_name>ID12:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #902</name>
+      <pv_name>ID12:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #906</name>
+    <x>85</x>
+    <y>349</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID13:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #909</name>
+      <pv_name>ID13:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #913</name>
+      <pv_name>ID13:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #917</name>
+      <pv_name>ID13:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #921</name>
+    <x>85</x>
+    <y>372</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID14:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #924</name>
+      <pv_name>ID14:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #928</name>
+      <pv_name>ID14:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #932</name>
+      <pv_name>ID14:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #936</name>
+    <x>85</x>
+    <y>394</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID15:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #939</name>
+      <pv_name>ID15:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #943</name>
+      <pv_name>ID15:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #947</name>
+      <pv_name>ID15:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #951</name>
+    <x>85</x>
+    <y>416</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID16:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #954</name>
+      <pv_name>ID16:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #958</name>
+      <pv_name>ID16:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #962</name>
+      <pv_name>ID16:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #966</name>
+    <x>85</x>
+    <y>438</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID17:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #969</name>
+      <pv_name>ID17:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #973</name>
+      <pv_name>ID17:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #977</name>
+      <pv_name>ID17:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #981</name>
+    <x>85</x>
+    <y>461</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID18:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #984</name>
+      <pv_name>ID18:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #988</name>
+      <pv_name>ID18:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #992</name>
+      <pv_name>ID18:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #996</name>
+    <x>85</x>
+    <y>483</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID19:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #999</name>
+      <pv_name>ID19:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1003</name>
+      <pv_name>ID19:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1007</name>
+      <pv_name>ID19:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1011</name>
+    <x>85</x>
+    <y>507</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID20:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>composite #1014</name>
+      <width>276</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #1017</name>
+        <width>276</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textentry" version="3.0.0">
+          <name>text entry #1020</name>
+          <pv_name>ID20:BLSteeringXp</pv_name>
+          <width>70</width>
+          <font>
+            <font family="Liberation Sans" style="REGULAR" size="16.0">
+            </font>
+          </font>
+          <background_color>
+            <color red="187" green="187" blue="187">
+            </color>
+          </background_color>
+          <format>1</format>
+          <show_units>false</show_units>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>text entry #1024</name>
+          <pv_name>ID20:BLSteeringYp</pv_name>
+          <x>78</x>
+          <width>70</width>
+          <font>
+            <font family="Liberation Sans" style="REGULAR" size="16.0">
+            </font>
+          </font>
+          <background_color>
+            <color red="187" green="187" blue="187">
+            </color>
+          </background_color>
+          <format>1</format>
+          <show_units>false</show_units>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+        <widget type="bool_button" version="2.0.0">
+          <name>message button #1028</name>
+          <pv_name>ID20:RequestSteering</pv_name>
+          <x>156</x>
+          <width>120</width>
+          <height>20</height>
+          <off_label>Request Steering</off_label>
+          <off_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </off_color>
+          <on_label>Request Steering</on_label>
+          <on_color>
+            <color red="65" green="174" blue="47">
+            </color>
+          </on_color>
+          <show_led>false</show_led>
+          <background_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </background_color>
+          <mode>1</mode>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1032</name>
+    <x>85</x>
+    <y>530</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID21:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1035</name>
+      <pv_name>ID21:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1039</name>
+      <pv_name>ID21:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1043</name>
+      <pv_name>ID21:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1047</name>
+    <x>85</x>
+    <y>553</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID22:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1050</name>
+      <pv_name>ID22:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1054</name>
+      <pv_name>ID22:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1058</name>
+      <pv_name>ID22:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1062</name>
+    <x>85</x>
+    <y>576</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID23:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1065</name>
+      <pv_name>ID23:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1069</name>
+      <pv_name>ID23:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1073</name>
+      <pv_name>ID23:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1077</name>
+    <x>85</x>
+    <y>600</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID24:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1080</name>
+      <pv_name>ID24:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1084</name>
+      <pv_name>ID24:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1088</name>
+      <pv_name>ID24:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1092</name>
+    <x>85</x>
+    <y>630</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID26:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1095</name>
+      <pv_name>ID26:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1099</name>
+      <pv_name>ID26:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1103</name>
+      <pv_name>ID26:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1107</name>
+    <x>85</x>
+    <y>652</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID27:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1110</name>
+      <pv_name>ID27:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1114</name>
+      <pv_name>ID27:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1118</name>
+      <pv_name>ID27:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1122</name>
+    <x>85</x>
+    <y>682</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID30:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1125</name>
+      <pv_name>ID30:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1129</name>
+      <pv_name>ID30:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1133</name>
+      <pv_name>ID30:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1137</name>
+    <x>85</x>
+    <y>704</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID31:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1140</name>
+      <pv_name>ID31:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1144</name>
+      <pv_name>ID31:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1148</name>
+      <pv_name>ID31:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1152</name>
+    <x>85</x>
+    <y>728</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID32:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1155</name>
+      <pv_name>ID32:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1159</name>
+      <pv_name>ID32:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1163</name>
+      <pv_name>ID32:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1167</name>
+    <x>85</x>
+    <y>753</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID33:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1170</name>
+      <pv_name>ID33:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1174</name>
+      <pv_name>ID33:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1178</name>
+      <pv_name>ID33:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1182</name>
+    <x>85</x>
+    <y>776</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID34:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1185</name>
+      <pv_name>ID34:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1189</name>
+      <pv_name>ID34:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1193</name>
+      <pv_name>ID34:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1197</name>
+    <x>85</x>
+    <y>800</y>
+    <width>276</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID35:EnableSteering</pv_name>
+      </rule>
+    </rules>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1200</name>
+      <pv_name>ID35:BLSteeringXp</pv_name>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #1204</name>
+      <pv_name>ID35:BLSteeringYp</pv_name>
+      <x>78</x>
+      <width>70</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>message button #1208</name>
+      <pv_name>ID35:RequestSteering</pv_name>
+      <x>156</x>
+      <width>120</width>
+      <height>20</height>
+      <off_label>Request Steering</off_label>
+      <off_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </off_color>
+      <on_label>Request Steering</on_label>
+      <on_color>
+        <color red="65" green="174" blue="47">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+      <mode>1</mode>
+    </widget>
+  </widget>
+</display>

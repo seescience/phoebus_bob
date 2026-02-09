@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:47 by epics-->
+<display version="2.0.0">
+  <name>userArrayCalcs20</name>
+  <x>1055</x>
+  <y>233</y>
+  <width>195</width>
+  <height>510</height>
+  <background_color>
+    <color red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #6</name>
+    <pv_name>$(P)userArrayCalcEnable.VAL</pv_name>
+    <width>195</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #9</name>
+    <macros>
+      <N>1</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>20</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #11</name>
+    <macros>
+      <N>2</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>40</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #13</name>
+    <macros>
+      <N>3</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>60</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #15</name>
+    <macros>
+      <N>4</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>80</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #17</name>
+    <macros>
+      <N>5</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>100</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #19</name>
+    <macros>
+      <N>6</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>120</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #21</name>
+    <macros>
+      <N>7</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>140</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #23</name>
+    <macros>
+      <N>8</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>160</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #25</name>
+    <macros>
+      <N>9</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>180</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #27</name>
+    <macros>
+      <N>10</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>200</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #29</name>
+    <actions>
+      <action type="open_display">
+        <file>userArrayCalcPlots10.opi</file>
+        <macros>
+          <N1>1</N1>
+          <N10>10</N10>
+          <N2>2</N2>
+          <N3>3</N3>
+          <N4>4</N4>
+          <N5>5</N5>
+          <N6>6</N6>
+          <N7>7</N7>
+          <N8>8</N8>
+          <N9>9</N9>
+        </macros>
+        <target>tab</target>
+        <description>userArrayCalcPlots10</description>
+      </action>
+    </actions>
+    <text>All Plots</text>
+    <y>425</y>
+    <width>140</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #32</name>
+    <y>450</y>
+    <width>65</width>
+    <height>58</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #35</name>
+      <text>recMem</text>
+      <y>20</y>
+      <width>65</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #38</name>
+      <text>calcMem</text>
+      <y>40</y>
+      <width>65</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #41</name>
+      <text>totMem</text>
+      <width>65</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #44</name>
+    <x>70</x>
+    <y>450</y>
+    <width>90</width>
+    <height>58</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #47</name>
+      <pv_name>$(P)acalcRecMem</pv_name>
+      <y>20</y>
+      <width>90</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #51</name>
+      <pv_name>$(P)acalcCalcMem</pv_name>
+      <y>40</y>
+      <width>90</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #55</name>
+      <pv_name>$(P)acalcTotMem</pv_name>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #59</name>
+    <pv_name>$(P)acalcRecMem.EGU</pv_name>
+    <x>165</x>
+    <y>470</y>
+    <width>20</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>5</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #63</name>
+    <pv_name>$(P)acalcCalcMem.EGU</pv_name>
+    <x>165</x>
+    <y>490</y>
+    <width>20</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>5</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #67</name>
+    <pv_name>$(P)acalcTotMem.EGU</pv_name>
+    <x>165</x>
+    <y>450</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>5</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #71</name>
+    <macros>
+      <N>11</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>220</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #73</name>
+    <macros>
+      <N>12</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>240</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #75</name>
+    <macros>
+      <N>13</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>260</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #77</name>
+    <macros>
+      <N>14</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>280</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #79</name>
+    <macros>
+      <N>15</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>300</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #81</name>
+    <macros>
+      <N>16</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>320</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #83</name>
+    <macros>
+      <N>17</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>340</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #85</name>
+    <macros>
+      <N>18</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>360</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #87</name>
+    <macros>
+      <N>19</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>380</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #89</name>
+    <macros>
+      <N>20</N>
+    </macros>
+    <file>userArrayCalcs_line.bob</file>
+    <y>400</y>
+    <width>195</width>
+    <height>20</height>
+  </widget>
+</display>

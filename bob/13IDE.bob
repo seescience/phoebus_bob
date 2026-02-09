@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-09-23 09:33:48 by epics-->
+<display version="2.0.0">
+  <name>13IDE</name>
+  <x>32</x>
+  <y>84</y>
+  <width>300</width>
+  <height>440</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <DW>Dwait1</DW>
+          <N>1</N>
+          <P>13IDE:</P>
+          <PW>Pwait1</PW>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <DW>Dwait2</DW>
+          <N>2</N>
+          <P>13IDE:</P>
+          <PW>Pwait2</PW>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <DW>Dwait3</DW>
+          <N>3</N>
+          <P>13IDE:</P>
+          <PW>Pwait3</PW>
+          <S>scan3</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 3</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <DW>Dwait4</DW>
+          <N>4</N>
+          <P>13IDE:</P>
+          <PW>Pwait4</PW>
+          <S>scan4</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 4</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>323</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #12</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial5</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 5</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial6</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 6</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial7</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 7</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <R>serial8</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 8</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>377</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>Asyn serial 1-8</text>
+    <x>70</x>
+    <y>377</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>IOC status</text>
+    <x>70</x>
+    <y>404</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #28</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_soft.opi</file>
+        <macros>
+          <ioc>13IDE:</ioc>
+        </macros>
+        <target>tab</target>
+        <description>devIocStats</description>
+      </action>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+      <action type="open_display">
+        <file>motorStatus120.opi</file>
+        <macros>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>All motor status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>404</y>
+    <width>60</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #33</name>
+    <text>Scan</text>
+    <x>70</x>
+    <y>323</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #36</name>
+    <actions>
+      <action type="open_display">
+        <file>ADBase.opi</file>
+        <macros>
+          <CC>CC1:</CC>
+          <F>file1:</F>
+          <I>image1:</I>
+          <P>13IDEPS1:</P>
+          <R>cam1:</R>
+          <ROI>ROI1:</ROI>
+        </macros>
+        <target>tab</target>
+        <description>Prosilica #1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>296</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #39</name>
+    <text>areaDetectors</text>
+    <x>70</x>
+    <y>296</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #42</name>
+    <actions>
+      <action type="open_display">
+        <file>userTransforms10.opi</file>
+        <macros>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs10.opi</file>
+        <macros>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userArrayCalcs10.opi</file>
+        <macros>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>350</y>
+    <width>60</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #47</name>
+    <x>13</x>
+    <y>12</y>
+    <width>270</width>
+    <height>60</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #50</name>
+    <text>GSECARS 13-ID-E</text>
+    <x>73</x>
+    <y>20</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>Microprobe Experiments</text>
+    <x>28</x>
+    <y>45</y>
+    <width>240</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #56</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID.opi</file>
+        <target>tab</target>
+        <description>Beamline Control</description>
+      </action>
+      <action type="open_display">
+        <file>13ID_FE.opi</file>
+        <target>tab</target>
+        <description>Front End Shutter</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>80</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #60</name>
+    <text>Beamline Control</text>
+    <x>70</x>
+    <y>80</y>
+    <width>160</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #63</name>
+    <actions>
+      <action type="open_display">
+        <file>experiment_info.opi</file>
+        <macros>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>Experiment Information</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>161</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #66</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+          <P>13IDE:</P>
+          <TITLE>XRM_Table</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>XRM Lift table</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m25</M1>
+          <M2>m26</M2>
+          <M3>m27</M3>
+          <M4>m28</M4>
+          <M5>pm1</M5>
+          <M6>pm2</M6>
+          <P>13IDE:</P>
+          <TITLE>Vertical_KB_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vert KB Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m29</M1>
+          <M2>m30</M2>
+          <M3>m31</M3>
+          <M4>m32</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <P>13IDE:</P>
+          <TITLE>Horizontal_KB_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Horiz KB Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m13</M1>
+          <M2>m14</M2>
+          <M3>m15</M3>
+          <M4>m16</M4>
+          <P>13IDE:</P>
+          <TITLE>Table_Top_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Table Top Slits</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m7</M1>
+          <M2>m8</M2>
+          <M3>m33</M3>
+          <M4>m34</M4>
+          <P>13IDE:</P>
+          <TITLE>Microscope_Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Mircoscope Motors</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <P>13IDE:</P>
+          <TITLE>Vortex_Stages</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vortex Stage</description>
+      </action>
+      <action type="open_display">
+        <file>6motors.opi</file>
+        <macros>
+          <M1>m35</M1>
+          <M2>m36</M2>
+          <M3>m37</M3>
+          <M4>m38</M4>
+          <M5>m39</M5>
+          <M6>m40</M6>
+          <P>13IDE:</P>
+          <TITLE>BP800_CMA</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>CMA Motors</description>
+      </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>m21</M5>
+          <M6>m22</M6>
+          <M7>m23</M7>
+          <M8>m24</M8>
+          <P>13IDE:</P>
+          <TITLE>StepPak_C</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Step Pak C</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>188</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #76</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>13IDE:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scaler</description>
+      </action>
+      <action type="open_display">
+        <file>USBCTR_MCS.opi</file>
+        <macros>
+          <P>13IDE:MCS1:</P>
+        </macros>
+        <target>tab</target>
+        <description>MCS</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A1</A>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>I0 Preamp SRS570</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A2</A>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>I1 Preamp SRS570</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A3</A>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>I2 Preamp SRS570</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A4</A>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>Pre-Slit 1 Preamp</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A5</A>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>Pre-Slit 2 Preamp</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 1</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM2</Dmm>
+          <P>13IDE:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2</description>
+      </action>
+      <action type="open_display">
+        <file>USBCTR.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <MP>13IDE:MCS1:</MP>
+          <P>13IDE:USBCTR:</P>
+          <Pg>PulseGen</Pg>
+          <S>scaler1</S>
+          <SP>13IDE:</SP>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-CTR08</description>
+      </action>
+      <action type="open_display">
+        <file>USB1808_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13IDE:USB1808:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-1808X</description>
+      </action>
+      <action type="open_display">
+        <file>USB3104_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13IDE:USB3104:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-3104</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>215</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #90</name>
+    <text>Motors</text>
+    <x>70</x>
+    <y>188</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #93</name>
+    <text>Electronics</text>
+    <x>70</x>
+    <y>215</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #96</name>
+    <text>Experiment Information</text>
+    <x>70</x>
+    <y>161</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>shell command #99</name>
+    <actions>
+      <action type="command">
+        <command>"start http://13IDE-AXIS.cars.aps.anl.gov" </command>
+        <description>"Axis 4-channel server"</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>107</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #102</name>
+    <text>Web video</text>
+    <x>70</x>
+    <y>107</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #105</name>
+    <text>User calcs, transforms</text>
+    <x>70</x>
+    <y>350</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #108</name>
+    <actions>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <DMC>13IDE:Galil1:</DMC>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 1 controller</description>
+      </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <DMC>13IDE:Galil2:</DMC>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <M5>m13</M5>
+          <M6>m14</M6>
+          <M7>m15</M7>
+          <M8>m16</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 2 controller</description>
+      </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <DMC>13IDE:Galil3:</DMC>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>m21</M5>
+          <M6>m22</M6>
+          <M7>m23</M7>
+          <M8>m24</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 3 controller</description>
+      </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <DMC>13IDE:Galil4:</DMC>
+          <M1>m25</M1>
+          <M2>m26</M2>
+          <M3>m27</M3>
+          <M4>m28</M4>
+          <M5>m29</M5>
+          <M6>m30</M6>
+          <M7>m31</M7>
+          <M8>m32</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 4 controller</description>
+      </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <DMC>13IDE:Galil5:</DMC>
+          <M1>m33</M1>
+          <M2>m34</M2>
+          <M3>m35</M3>
+          <M4>m36</M4>
+          <M5>m37</M5>
+          <M6>m38</M6>
+          <M7>m39</M7>
+          <M8>m40</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 5 controller</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>242</y>
+    <width>60</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #115</name>
+    <text>Galil Controllers</text>
+    <x>70</x>
+    <y>244</y>
+    <width>170</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

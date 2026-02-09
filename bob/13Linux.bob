@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:40 by epics-->
+<display version="2.0.0">
+  <name>13Linux</name>
+  <x>443</x>
+  <y>26</y>
+  <width>391</width>
+  <height>390</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13Linux:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13Linux:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13Linux:</P>
+          <S>scan3</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 3</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13Linux:</P>
+          <S>scan4</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 4</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>355</y>
+    <width>72</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Scan</text>
+    <x>85</x>
+    <y>355</y>
+    <width>125</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #15</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4</description>
+      </action>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>asynTest</R>
+        </macros>
+        <target>tab</target>
+        <description>asynTest</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>328</y>
+    <width>72</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>Generic RS-232, GPIB and CAMAC</text>
+    <x>85</x>
+    <y>328</y>
+    <width>125</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #25</name>
+    <actions>
+      <action type="open_display">
+        <file>xxIcbAmp.opi</file>
+        <macros>
+          <AMP>amp1</AMP>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Canberra Amp</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbAdc.opi</file>
+        <macros>
+          <ADC>adc1</ADC>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Canberra ADC</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbHVPS.opi</file>
+        <macros>
+          <HVPS>hvps1</HVPS>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Canberra HVPS</description>
+      </action>
+      <action type="open_display">
+        <file>dsp9660Gain.opi</file>
+        <macros>
+          <DSP>dsp1</DSP>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Canberra DSP 9660</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>aim_adc1</M>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>AIM MCA display #1</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>aim_adc2</M>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>AIM MCA display #2</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbTCA.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <TCA>tca1</TCA>
+        </macros>
+        <target>tab</target>
+        <description>Canberra TCA</description>
+      </action>
+      <action type="open_display">
+        <file>xxIcbAdc_1.1a.opi</file>
+        <macros>
+          <ADC>adc1</ADC>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Canberra ADC (old)</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>139</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #35</name>
+    <text>Canberra MCA electronics</text>
+    <x>87</x>
+    <y>139</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>Motors</text>
+    <x>87</x>
+    <y>112</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #41</name>
+    <actions>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <P>13Linux:</P>
+          <TITLE>MM4000_Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MM4000 motors</description>
+      </action>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m4</M1>
+          <M2>m5</M2>
+          <M3>m6</M3>
+          <M4>m7</M4>
+          <P>13Linux:</P>
+          <TITLE>MCB-4B_Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MCB-4B motor</description>
+      </action>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m8</M1>
+          <P>13Linux:</P>
+          <TITLE>MCDC2805_Motors</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>MCDC2805 motors</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>112</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #46</name>
+    <x>47</x>
+    <y>17</y>
+    <width>310</width>
+    <height>80</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #49</name>
+    <actions>
+      <action type="open_display">
+        <file>DualVacuumGauge.opi</file>
+        <macros>
+          <CC>cc1</CC>
+          <P>13Linux:</P>
+          <PR>pr1</PR>
+          <TITLE>Slit Tank</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vacuum Gauges</description>
+      </action>
+      <action type="open_display">
+        <file>ionPump.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <PUMP>ip1</PUMP>
+          <TITLE>Slit Tank</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Ion Pumps</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>247</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>Vacuum</text>
+    <x>87</x>
+    <y>247</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #56</name>
+    <text>GeoCARS Linux Test</text>
+    <x>64</x>
+    <y>29</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #59</name>
+    <actions>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2000 DMM #1</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A1</A>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamplifier</description>
+      </action>
+      <action type="open_display">
+        <file>LAE500.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>LAE500</R>
+        </macros>
+        <target>tab</target>
+        <description>LAE500</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>193</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #64</name>
+    <text>Other electronics #1</text>
+    <x>87</x>
+    <y>193</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #67</name>
+    <actions>
+      <action type="open_display">
+        <file>userTrans10.opi</file>
+        <macros>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>yysCalcoutRecord.opi</file>
+        <macros>
+          <C>userStringCalc1</C>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>User sCalcOut1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>274</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #71</name>
+    <text>User calcs, transforms</text>
+    <x>87</x>
+    <y>274</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #74</name>
+    <actions>
+      <action type="open_display">
+        <file>smartControl.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>smart1</R>
+        </macros>
+        <target>tab</target>
+        <description>SMART</description>
+      </action>
+      <action type="open_display">
+        <file>RSF715.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>enc1</R>
+        </macros>
+        <target>tab</target>
+        <description>RS715</description>
+      </action>
+      <action type="open_display">
+        <file>spherosyn.opi</file>
+        <macros>
+          <E>E1</E>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Spherosyn</description>
+      </action>
+      <action type="open_display">
+        <file>ccd.opi</file>
+        <macros>
+          <C>ccd1</C>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Roper CCD</description>
+      </action>
+      <action type="open_display">
+        <file>ccd.opi</file>
+        <macros>
+          <C>ccd2</C>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>marCCD</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>301</y>
+    <width>72</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #81</name>
+    <text>Test stuff</text>
+    <x>85</x>
+    <y>301</y>
+    <width>125</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #84</name>
+    <actions>
+      <action type="open_display">
+        <file>experiment_info.opi</file>
+        <macros>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>Experiment Information</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>220</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #87</name>
+    <text>Experiment Information</text>
+    <x>87</x>
+    <y>220</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #90</name>
+    <actions>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>dxp_adc1</M>
+          <P>13Linux:</P>
+        </macros>
+        <target>tab</target>
+        <description>DXP MCA</description>
+      </action>
+      <action type="open_display">
+        <file>dxp.opi</file>
+        <macros>
+          <P>13Linux:</P>
+          <R>dxp1</R>
+        </macros>
+        <target>tab</target>
+        <description>DXP parameters</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>8</x>
+    <y>166</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #94</name>
+    <text>DXP electronics</text>
+    <x>87</x>
+    <y>166</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

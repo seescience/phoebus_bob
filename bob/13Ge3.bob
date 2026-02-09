@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:44 by epics-->
+<display version="2.0.0">
+  <name>13Ge3</name>
+  <x>842</x>
+  <y>165</y>
+  <width>350</width>
+  <height>190</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>1</N>
+          <P>13GE3:</P>
+          <S>scan1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 1</description>
+      </action>
+      <action type="open_display">
+        <file>scan_more.opi</file>
+        <macros>
+          <N>2</N>
+          <P>13GE3:</P>
+          <S>scan2</S>
+        </macros>
+        <target>tab</target>
+        <description>Scan 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>150</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>Scan</text>
+    <x>92</x>
+    <y>150</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #13</name>
+    <actions>
+      <action type="open_display">
+        <file>CAMAC_IO.opi</file>
+        <macros>
+          <REC>13GE3:camac1</REC>
+        </macros>
+        <target>tab</target>
+        <description>CAMAC</description>
+      </action>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>13GE3:ser1</REC>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>Serial_IO.opi</file>
+        <macros>
+          <REC>13GE3:ser2</REC>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>123</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #18</name>
+    <text>Generic Serial and CAMAC</text>
+    <x>92</x>
+    <y>123</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #21</name>
+    <actions>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mca_dxp1</M>
+          <P>13GE3:</P>
+        </macros>
+        <target>tab</target>
+        <description>DXP MCA #1</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mca_dxp2</M>
+          <P>13GE3:</P>
+        </macros>
+        <target>tab</target>
+        <description>DXP MCA #2</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mca_dxp13</M>
+          <P>13GE3:</P>
+        </macros>
+        <target>tab</target>
+        <description>DXP MCA #13</description>
+      </action>
+      <action type="open_display">
+        <file>mca.opi</file>
+        <macros>
+          <M>mca_dxp14</M>
+          <P>13GE3:</P>
+        </macros>
+        <target>tab</target>
+        <description>DXP MCA #14</description>
+      </action>
+      <action type="open_display">
+        <file>dxp.opi</file>
+        <macros>
+          <P>13GE3:</P>
+          <R>dxp1</R>
+        </macros>
+        <target>tab</target>
+        <description>DXP record #1</description>
+      </action>
+      <action type="open_display">
+        <file>dxp.opi</file>
+        <macros>
+          <P>13GE3:</P>
+          <R>dxp2</R>
+        </macros>
+        <target>tab</target>
+        <description>DXP record #2</description>
+      </action>
+      <action type="open_display">
+        <file>dxp.opi</file>
+        <macros>
+          <P>13GE3:</P>
+          <R>dxp13</R>
+        </macros>
+        <target>tab</target>
+        <description>DXP record #13</description>
+      </action>
+      <action type="open_display">
+        <file>16element_dxp.opi</file>
+        <macros>
+          <P>13GE3:med:</P>
+        </macros>
+        <target>tab</target>
+        <description>8 element detector</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>69</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #31</name>
+    <text>MCA electronics</text>
+    <x>92</x>
+    <y>69</y>
+    <width>137</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #34</name>
+    <x>20</x>
+    <y>17</y>
+    <width>310</width>
+    <height>40</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #37</name>
+    <text>GSECARS Ge Detector #3</text>
+    <x>37</x>
+    <y>26</y>
+    <width>276</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #40</name>
+    <actions>
+      <action type="open_display">
+        <file>userTrans10.opi</file>
+        <macros>
+          <P>13GE3:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>yysCalcoutRecord.opi</file>
+        <macros>
+          <C>userStringCalc1</C>
+          <P>13GE3:</P>
+        </macros>
+        <target>tab</target>
+        <description>User sCalcOut1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>13</x>
+    <y>96</y>
+    <width>74</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #44</name>
+    <text>User calcs, transforms</text>
+    <x>92</x>
+    <y>96</y>
+    <width>128</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

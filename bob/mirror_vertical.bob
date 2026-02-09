@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-10 12:52:28 by epics-->
+<display version="2.0.0">
+  <name>mirror_vertical</name>
+  <x>428</x>
+  <y>50</y>
+  <width>680</width>
+  <height>519</height>
+  <background_color>
+    <color red="88" green="52" blue="15">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #6</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M1).TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M1).TWR</pv_name>
+    <text>&lt;</text>
+    <x>485</x>
+    <y>238</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #9</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M1).TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M1).TWF</pv_name>
+    <text>&gt;</text>
+    <x>571</x>
+    <y>237</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #12</name>
+    <pv_name>$(P)$(M1).TWV</pv_name>
+    <x>507</x>
+    <y>238</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #16</name>
+    <x>494</x>
+    <y>265</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M1).HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #20</name>
+    <text>Soft-Limit</text>
+    <x>509</x>
+    <y>265</y>
+    <width>70</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M1).LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #24</name>
+    <x>579</x>
+    <y>265</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M1).LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #28</name>
+    <pv_name>$(P)$(M1).VAL</pv_name>
+    <x>485</x>
+    <y>209</y>
+    <width>111</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #32</name>
+    <pv_name>$(P)$(M1).RBV</pv_name>
+    <x>493</x>
+    <y>188</y>
+    <width>98</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #36</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M2).TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M2).TWR</pv_name>
+    <text>&lt;</text>
+    <x>107</x>
+    <y>248</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #39</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M2).TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M2).TWF</pv_name>
+    <text>&gt;</text>
+    <x>193</x>
+    <y>247</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #42</name>
+    <pv_name>$(P)$(M2).TWV</pv_name>
+    <x>129</x>
+    <y>248</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #46</name>
+    <x>116</x>
+    <y>275</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M2).HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #50</name>
+    <text>Soft-Limit</text>
+    <x>131</x>
+    <y>275</y>
+    <width>70</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M2).LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #54</name>
+    <x>203</x>
+    <y>276</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M2).LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #58</name>
+    <pv_name>$(P)$(M2).VAL</pv_name>
+    <x>107</x>
+    <y>219</y>
+    <width>111</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #62</name>
+    <pv_name>$(P)$(M2).RBV</pv_name>
+    <x>115</x>
+    <y>198</y>
+    <width>98</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #66</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M4).TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M4).TWR</pv_name>
+    <text>&lt;</text>
+    <x>306</x>
+    <y>247</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="174" green="78" blue="188">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #69</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M4).TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M4).TWF</pv_name>
+    <text>&gt;</text>
+    <x>392</x>
+    <y>246</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="174" green="78" blue="188">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #72</name>
+    <pv_name>$(P)$(M4).TWV</pv_name>
+    <x>328</x>
+    <y>247</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="214" green="127" blue="226">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #76</name>
+    <x>315</x>
+    <y>274</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M4).HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #80</name>
+    <text>Soft-Limit</text>
+    <x>330</x>
+    <y>274</y>
+    <width>70</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M4).LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #84</name>
+    <x>400</x>
+    <y>274</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M4).LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #88</name>
+    <pv_name>$(P)$(M4).VAL</pv_name>
+    <x>306</x>
+    <y>218</y>
+    <width>111</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #92</name>
+    <pv_name>$(P)$(M4).RBV</pv_name>
+    <x>314</x>
+    <y>197</y>
+    <width>98</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #96</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M3).TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M3).TWR</pv_name>
+    <text>&lt;</text>
+    <x>308</x>
+    <y>101</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #99</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M3).TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M3).TWF</pv_name>
+    <text>&gt;</text>
+    <x>394</x>
+    <y>100</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="106" green="115" blue="193">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #102</name>
+    <pv_name>$(P)$(M3).TWV</pv_name>
+    <x>330</x>
+    <y>101</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="135" green="147" blue="226">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #106</name>
+    <x>317</x>
+    <y>128</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M3).HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #110</name>
+    <text>Soft-Limit</text>
+    <x>332</x>
+    <y>128</y>
+    <width>70</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M3).LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #114</name>
+    <x>402</x>
+    <y>128</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M3).LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #118</name>
+    <pv_name>$(P)$(M3).VAL</pv_name>
+    <x>308</x>
+    <y>72</y>
+    <width>111</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #122</name>
+    <pv_name>$(P)$(M3).RBV</pv_name>
+    <x>316</x>
+    <y>51</y>
+    <width>98</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #126</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M5).TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M5).TWR</pv_name>
+    <text>&lt;</text>
+    <x>495</x>
+    <y>464</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #129</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M5).TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M5).TWF</pv_name>
+    <text>&gt;</text>
+    <x>581</x>
+    <y>463</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #132</name>
+    <pv_name>$(P)$(M5).TWV</pv_name>
+    <x>517</x>
+    <y>464</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="193" blue="135">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #136</name>
+    <x>504</x>
+    <y>491</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M5).HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #140</name>
+    <text>Soft-Limit</text>
+    <x>519</x>
+    <y>491</y>
+    <width>70</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M5).LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #144</name>
+    <x>589</x>
+    <y>491</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M5).LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #148</name>
+    <pv_name>$(P)$(M5).VAL</pv_name>
+    <x>495</x>
+    <y>435</y>
+    <width>111</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #152</name>
+    <pv_name>$(P)$(M5).RBV</pv_name>
+    <x>503</x>
+    <y>414</y>
+    <width>98</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #156</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M6).TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M6).TWR</pv_name>
+    <text>&lt;</text>
+    <x>317</x>
+    <y>472</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="75" green="110" blue="199">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #159</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(M6).TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M6).TWF</pv_name>
+    <text>&gt;</text>
+    <x>403</x>
+    <y>471</y>
+    <width>25</width>
+    <height>25</height>
+    <background_color>
+      <color red="75" green="110" blue="199">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #162</name>
+    <pv_name>$(P)$(M6).TWV</pv_name>
+    <x>339</x>
+    <y>472</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="89" green="126" blue="225">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #166</name>
+    <x>326</x>
+    <y>499</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M6).HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #170</name>
+    <text>Soft-Limit</text>
+    <x>341</x>
+    <y>499</y>
+    <width>70</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M6).LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #174</name>
+    <x>411</x>
+    <y>499</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(M6).LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #178</name>
+    <pv_name>$(P)$(M6).VAL</pv_name>
+    <x>317</x>
+    <y>443</y>
+    <width>111</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #182</name>
+    <pv_name>$(P)$(M6).RBV</pv_name>
+    <x>325</x>
+    <y>422</y>
+    <width>98</width>
+    <height>17</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #186</name>
+    <text>$(TITLE)</text>
+    <x>213</x>
+    <y>8</y>
+    <width>302</width>
+    <height>41</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #189</name>
+    <actions>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m18</M1>
+          <M2>m19</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <M7>pm5</M7>
+          <M8>pm6</M8>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Mirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Mirror</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m20</M1>
+          <M2>m21</M2>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Mirror_Pitch_Simple</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Pitch (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>2motors.opi</file>
+        <macros>
+          <M1>m22</M1>
+          <M2>m23</M2>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Mirror_Base</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Base (simple)</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTiltSetup.opi</file>
+        <macros>
+          <P>13BMA:</P>
+          <PMR>pm6</PMR>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Base Setup</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTiltSetup.opi</file>
+        <macros>
+          <P>13BMA:</P>
+          <PMR>pm4</PMR>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Pitch Setup</description>
+      </action>
+      <action type="open_display">
+        <file>MirrorTemps.opi</file>
+        <macros>
+          <CH1>DMM2Ch2</CH1>
+          <CH2>DMM2Ch3</CH2>
+          <CH3>DMM2Ch4</CH3>
+          <P>13BMA:</P>
+          <TITLE>BM_Vert_Temperature</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical Temperature</description>
+      </action>
+      <action type="open_display">
+        <file>mirror_vertical.opi</file>
+        <macros>
+          <M1>m18</M1>
+          <M2>m19</M2>
+          <M3>pm1</M3>
+          <M4>pm2</M4>
+          <M5>pm3</M5>
+          <M6>pm4</M6>
+          <P>13BMA:</P>
+          <TITLE>BM_Vertical_Miirror</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Vertical mirror simple</description>
+      </action>
+    </actions>
+    <text>more</text>
+    <x>3</x>
+    <y>492</y>
+    <width>50</width>
+    <height>22</height>
+    <background_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="arc" version="2.0.0">
+    <name>arc #198</name>
+    <x>162</x>
+    <y>322</y>
+    <width>403</width>
+    <height>92</height>
+    <start_angle>33.0</start_angle>
+    <total_angle>136.0</total_angle>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="30" green="144" blue="255">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="arc" version="2.0.0">
+    <name>arc #201</name>
+    <x>345</x>
+    <y>384</y>
+    <width>58</width>
+    <height>55</height>
+    <total_angle>180.0</total_angle>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="30" green="144" blue="255">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #204</name>
+    <x>395</x>
+    <y>406</y>
+    <width>11</width>
+    <height>13</height>
+    <points>
+      <point x="0.0" y="4.0">
+      </point>
+      <point x="8.0" y="13.0">
+      </point>
+      <point x="11.0" y="1.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="7.0" y="6.0">
+      </point>
+      <point x="0.0" y="4.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #208</name>
+    <x>341</x>
+    <y>405</y>
+    <width>11</width>
+    <height>13</height>
+    <points>
+      <point x="11.0" y="4.0">
+      </point>
+      <point x="3.0" y="13.0">
+      </point>
+      <point x="0.0" y="1.0">
+      </point>
+      <point x="1.0" y="0.0">
+      </point>
+      <point x="4.0" y="6.0">
+      </point>
+      <point x="11.0" y="4.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #212</name>
+    <text>Moving</text>
+    <x>61</x>
+    <y>494</y>
+    <width>71</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13BMD:m38.DMOV</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #216</name>
+    <x>473</x>
+    <y>412</y>
+    <width>16</width>
+    <height>84</height>
+    <points>
+      <point x="8.0" y="0.0">
+      </point>
+      <point x="0.0" y="15.0">
+      </point>
+      <point x="6.0" y="13.0">
+      </point>
+      <point x="6.0" y="70.0">
+      </point>
+      <point x="0.0" y="65.0">
+      </point>
+      <point x="8.0" y="84.0">
+      </point>
+      <point x="16.0" y="66.0">
+      </point>
+      <point x="10.0" y="70.0">
+      </point>
+      <point x="10.0" y="14.0">
+      </point>
+      <point x="16.0" y="15.0">
+      </point>
+      <point x="9.0" y="3.0">
+      </point>
+      <point x="8.0" y="0.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #220</name>
+    <x>416</x>
+    <y>227</y>
+    <width>70</width>
+    <height>6</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #223</name>
+    <x>221</x>
+    <y>229</y>
+    <width>83</width>
+    <height>6</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #226</name>
+    <x>531</x>
+    <y>267</y>
+    <width>20</width>
+    <height>71</height>
+    <points>
+      <point x="8.0" y="0.0">
+      </point>
+      <point x="15.0" y="0.0">
+      </point>
+      <point x="15.0" y="52.0">
+      </point>
+      <point x="20.0" y="46.0">
+      </point>
+      <point x="12.0" y="71.0">
+      </point>
+      <point x="0.0" y="49.0">
+      </point>
+      <point x="8.0" y="53.0">
+      </point>
+      <point x="8.0" y="0.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #230</name>
+    <x>156</x>
+    <y>277</y>
+    <width>20</width>
+    <height>71</height>
+    <points>
+      <point x="8.0" y="0.0">
+      </point>
+      <point x="15.0" y="0.0">
+      </point>
+      <point x="15.0" y="52.0">
+      </point>
+      <point x="20.0" y="46.0">
+      </point>
+      <point x="12.0" y="71.0">
+      </point>
+      <point x="0.0" y="49.0">
+      </point>
+      <point x="8.0" y="53.0">
+      </point>
+      <point x="8.0" y="0.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #234</name>
+    <x>334</x>
+    <y>131</y>
+    <width>20</width>
+    <height>71</height>
+    <points>
+      <point x="8.0" y="0.0">
+      </point>
+      <point x="15.0" y="0.0">
+      </point>
+      <point x="15.0" y="52.0">
+      </point>
+      <point x="20.0" y="46.0">
+      </point>
+      <point x="12.0" y="71.0">
+      </point>
+      <point x="0.0" y="49.0">
+      </point>
+      <point x="8.0" y="53.0">
+      </point>
+      <point x="8.0" y="0.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #238</name>
+    <x>370</x>
+    <y>130</y>
+    <width>20</width>
+    <height>71</height>
+    <points>
+      <point x="8.0" y="0.0">
+      </point>
+      <point x="15.0" y="0.0">
+      </point>
+      <point x="15.0" y="52.0">
+      </point>
+      <point x="20.0" y="46.0">
+      </point>
+      <point x="12.0" y="71.0">
+      </point>
+      <point x="0.0" y="49.0">
+      </point>
+      <point x="8.0" y="53.0">
+      </point>
+      <point x="8.0" y="0.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #242</name>
+    <text>Up-stream</text>
+    <x>495</x>
+    <y>350</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #245</name>
+    <text>Down-stream</text>
+    <x>102</x>
+    <y>360</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #248</name>
+    <text>Pitch</text>
+    <x>309</x>
+    <y>367</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="88" green="147" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #251</name>
+    <text>Height</text>
+    <x>419</x>
+    <y>388</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #254</name>
+    <text>Ellipticity</text>
+    <x>298</x>
+    <y>291</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #257</name>
+    <text>Curvature</text>
+    <x>369</x>
+    <y>138</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="164" green="170" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #260</name>
+    <x>647</x>
+    <y>340</y>
+    <width>26</width>
+    <height>17</height>
+    <points>
+      <point x="0.0" y="9.0">
+      </point>
+      <point x="25.0" y="0.0">
+      </point>
+      <point x="13.0" y="8.0">
+      </point>
+      <point x="26.0" y="17.0">
+      </point>
+      <point x="0.0" y="9.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #264</name>
+    <x>226</x>
+    <y>348</y>
+    <width>451</width>
+    <height>2</height>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>polygon #267</name>
+    <x>216</x>
+    <y>340</y>
+    <width>26</width>
+    <height>17</height>
+    <points>
+      <point x="0.0" y="9.0">
+      </point>
+      <point x="25.0" y="0.0">
+      </point>
+      <point x="13.0" y="8.0">
+      </point>
+      <point x="26.0" y="17.0">
+      </point>
+      <point x="0.0" y="9.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+</display>
