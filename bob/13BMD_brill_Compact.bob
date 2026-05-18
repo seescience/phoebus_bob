@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-28 17:38:33 by epics-->
+<!--Saved on 2026-05-18 13:47:09 by epics-->
 <display version="2.0.0">
   <name>13BMD_brill_Compact</name>
-  <x>371</x>
-  <y>143</y>
+  <x>2125</x>
+  <y>1156</y>
   <width>1429</width>
   <height>785</height>
   <background_color>
@@ -8173,228 +8173,8 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>composite #1431</name>
-    <x>278</x>
-    <y>533</y>
-    <width>199</width>
-    <height>112</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <rules>
-      <rule name="vis_calc" prop_id="visible" out_exp="false">
-        <exp bool_exp="!(pv0&gt;-1)">
-          <value>false</value>
-        </exp>
-        <pv_name>13BMD:m23.RBV</pv_name>
-      </rule>
-    </rules>
-    <widget type="scrollbar" version="2.0.0">
-      <name>valuator #1434</name>
-      <pv_name>13BMDPG3:cam1:GC_Gain</pv_name>
-      <x>55</x>
-      <y>31</y>
-      <width>115</width>
-      <height>19</height>
-      <bar_length>1.0</bar_length>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>text entry #1438</name>
-      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-      <x>54</x>
-      <width>55</width>
-      <height>26</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="133" green="133" blue="133">
-        </color>
-      </background_color>
-      <format>1</format>
-      <show_units>false</show_units>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #1442</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>13BMDPG3:TIFF1:WriteFile</pv_name>
-          <value>1</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>13BMDPG3:TIFF1:WriteFile</pv_name>
-      <text>Image</text>
-      <x>58</x>
-      <y>79</y>
-      <width>35</width>
-      <height>16</height>
-      <background_color>
-        <color red="78" green="165" blue="249">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #1445</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-          <value>1</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-      <text>1</text>
-      <x>111</x>
-      <width>29</width>
-      <height>14</height>
-      <background_color>
-        <color red="187" green="187" blue="187">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #1448</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-          <value>.1</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-      <text>.1</text>
-      <x>141</x>
-      <width>32</width>
-      <height>14</height>
-      <background_color>
-        <color red="187" green="187" blue="187">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #1451</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-          <value>.02</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
-      <text>.02</text>
-      <x>119</x>
-      <y>15</y>
-      <width>42</width>
-      <height>14</height>
-      <background_color>
-        <color red="187" green="187" blue="187">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="scrollbar" version="2.0.0">
-      <name>valuator #1454</name>
-      <pv_name>13BMDPG3:Over1:2:CenterX</pv_name>
-      <x>55</x>
-      <y>55</y>
-      <width>115</width>
-      <height>22</height>
-      <bar_length>1.0</bar_length>
-    </widget>
-    <widget type="scrollbar" version="2.0.0">
-      <name>valuator #1458</name>
-      <pv_name>13BMDPG3:Over1:2:CenterY</pv_name>
-      <x>177</x>
-      <width>22</width>
-      <height>77</height>
-      <horizontal>false</horizontal>
-      <bar_length>1.0</bar_length>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>text update #1462</name>
-      <pv_name>13BMDPG3:TIFF1:FullFileName_RBV</pv_name>
-      <x>97</x>
-      <y>80</y>
-      <height>13</height>
-      <foreground_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="52" green="51" blue="134">
-        </color>
-      </background_color>
-      <format>6</format>
-      <show_units>false</show_units>
-      <horizontal_alignment>2</horizontal_alignment>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #1466</name>
-      <text>Exposure</text>
-      <y>6</y>
-      <width>55</width>
-      <height>12</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="236" green="236" blue="236">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #1469</name>
-      <text>Gain</text>
-      <x>4</x>
-      <y>36</y>
-      <width>55</width>
-      <height>12</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="212" green="219" blue="157">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>related display #1472</name>
-      <actions>
-        <action type="open_display">
-          <file>ADSSpinnaker.opi</file>
-          <macros>
-            <C>PGR_BlackflyS_50S5C</C>
-            <P>13BMDPG3:</P>
-            <R>cam1:</R>
-          </macros>
-          <target>tab</target>
-          <description>BMD PG3 camera</description>
-        </action>
-      </actions>
-      <text>more</text>
-      <x>57</x>
-      <y>96</y>
-      <width>35</width>
-      <height>16</height>
-      <foreground_color>
-        <color red="10" green="0" blue="184">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="82" green="218" blue="59">
-        </color>
-      </background_color>
-    </widget>
-  </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #1476</name>
+    <name>related display #1431</name>
     <actions>
       <action type="open_display">
         <file>3motors.opi</file>
@@ -8425,7 +8205,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1479</name>
+    <name>composite #1434</name>
     <x>1101</x>
     <y>212</y>
     <width>70</width>
@@ -8441,7 +8221,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1482</name>
+      <name>message button #1437</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:DACPellicle</pv_name>
@@ -8460,7 +8240,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1486</name>
+    <name>composite #1441</name>
     <x>1101</x>
     <y>211</y>
     <width>70</width>
@@ -8477,7 +8257,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1489</name>
+      <name>message button #1444</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:DACPellicle</pv_name>
@@ -8496,7 +8276,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1493</name>
+    <name>text #1448</name>
     <text>Now is:</text>
     <x>1095</x>
     <y>240</y>
@@ -8513,7 +8293,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1496</name>
+    <name>composite #1451</name>
     <x>1139</x>
     <y>238</y>
     <width>35</width>
@@ -8529,7 +8309,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="label" version="2.0.0">
-      <name>text #1499</name>
+      <name>text #1454</name>
       <text>Out</text>
       <width>35</width>
       <height>15</height>
@@ -8545,7 +8325,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1503</name>
+    <name>composite #1458</name>
     <x>1138</x>
     <y>238</y>
     <width>35</width>
@@ -8561,7 +8341,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="label" version="2.0.0">
-      <name>text #1506</name>
+      <name>text #1461</name>
       <text>In</text>
       <width>35</width>
       <height>15</height>
@@ -8577,7 +8357,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1510</name>
+    <name>composite #1465</name>
     <x>647</x>
     <y>501</y>
     <width>101</width>
@@ -8585,7 +8365,7 @@ widget.setPropertyValue('background_color', color)
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>text #1513</name>
+      <name>text #1468</name>
       <text>Omega</text>
       <x>20</x>
       <y>9</y>
@@ -8601,7 +8381,7 @@ widget.setPropertyValue('background_color', color)
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1517</name>
+      <name>text update #1472</name>
       <pv_name>13BMD:m92.RBV</pv_name>
       <x>22</x>
       <y>32</y>
@@ -8621,7 +8401,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="arc" version="2.0.0">
-      <name>arc #1521</name>
+      <name>arc #1476</name>
       <x>4</x>
       <width>90</width>
       <height>60</height>
@@ -8634,7 +8414,7 @@ widget.setPropertyValue('background_color', color)
       <transparent>true</transparent>
     </widget>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1524</name>
+      <name>polygon #1479</name>
       <x>87</x>
       <y>24</y>
       <width>11</width>
@@ -8664,7 +8444,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1528</name>
+      <name>polygon #1483</name>
       <y>23</y>
       <width>11</width>
       <height>12</height>
@@ -8693,7 +8473,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1532</name>
+      <name>composite #1487</name>
       <x>1</x>
       <y>48</y>
       <width>100</width>
@@ -8710,7 +8490,7 @@ widget.setPropertyValue('background_color', color)
         </rule>
       </rules>
       <widget type="ellipse" version="2.0.0">
-        <name>oval #1535</name>
+        <name>oval #1490</name>
         <x>3</x>
         <y>49</y>
         <width>13</width>
@@ -8733,7 +8513,7 @@ widget.setPropertyValue('background_color', color)
         </rules>
       </widget>
       <widget type="ellipse" version="2.0.0">
-        <name>oval #1539</name>
+        <name>oval #1494</name>
         <x>83</x>
         <y>50</y>
         <width>13</width>
@@ -8756,7 +8536,7 @@ widget.setPropertyValue('background_color', color)
         </rules>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>text #1543</name>
+        <name>text #1498</name>
         <text>Soft-Limit</text>
         <x>14</x>
         <y>52</y>
@@ -8781,7 +8561,7 @@ widget.setPropertyValue('background_color', color)
         </rules>
       </widget>
       <widget type="textentry" version="3.0.0">
-        <name>text entry #1547</name>
+        <name>text entry #1502</name>
         <pv_name>13BMD:m92.VAL</pv_name>
         <width>99</width>
         <height>25</height>
@@ -8798,7 +8578,7 @@ widget.setPropertyValue('background_color', color)
         <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="textentry" version="3.0.0">
-        <name>text entry #1551</name>
+        <name>text entry #1506</name>
         <pv_name>13BMD:m92.TWV</pv_name>
         <x>21</x>
         <y>26</y>
@@ -8816,7 +8596,7 @@ widget.setPropertyValue('background_color', color)
         <border_alarm_sensitive>false</border_alarm_sensitive>
       </widget>
       <widget type="action_button" version="3.0.0">
-        <name>message button #1555</name>
+        <name>message button #1510</name>
         <actions>
           <action type="write_pv">
             <pv_name>13BMD:m92.TWR</pv_name>
@@ -8835,7 +8615,7 @@ widget.setPropertyValue('background_color', color)
         </background_color>
       </widget>
       <widget type="action_button" version="3.0.0">
-        <name>message button #1558</name>
+        <name>message button #1513</name>
         <actions>
           <action type="write_pv">
             <pv_name>13BMD:m92.TWF</pv_name>
@@ -8855,7 +8635,7 @@ widget.setPropertyValue('background_color', color)
         </background_color>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>text #1561</name>
+        <name>text #1516</name>
         <text>Moving</text>
         <x>16</x>
         <y>46</y>
@@ -8880,7 +8660,7 @@ widget.setPropertyValue('background_color', color)
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1566</name>
+      <name>composite #1521</name>
       <x>4</x>
       <y>47</y>
       <width>90</width>
@@ -8897,7 +8677,7 @@ widget.setPropertyValue('background_color', color)
         </rule>
       </rules>
       <widget type="label" version="2.0.0">
-        <name>text #1569</name>
+        <name>text #1524</name>
         <text>Move</text>
         <x>21</x>
         <width>47</width>
@@ -8913,7 +8693,7 @@ widget.setPropertyValue('background_color', color)
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>text #1572</name>
+        <name>text #1527</name>
         <text>BLS mirrors</text>
         <y>16</y>
         <width>90</width>
@@ -8929,7 +8709,7 @@ widget.setPropertyValue('background_color', color)
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>text #1575</name>
+        <name>text #1530</name>
         <text>UP first</text>
         <x>12</x>
         <y>35</y>
@@ -8948,7 +8728,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #1579</name>
+    <name>text update #1534</name>
     <pv_name>13BMDLF1:cam1:LFReadyToRun</pv_name>
     <x>1357</x>
     <y>57</y>
@@ -8971,7 +8751,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1583</name>
+    <name>composite #1538</name>
     <x>1109</x>
     <y>206</y>
     <width>59</width>
@@ -8987,7 +8767,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="label" version="2.0.0">
-      <name>text #1586</name>
+      <name>text #1541</name>
       <text>Power is</text>
       <width>59</width>
       <height>14</height>
@@ -8998,7 +8778,7 @@ widget.setPropertyValue('background_color', color)
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1589</name>
+      <name>text #1544</name>
       <text>too high</text>
       <y>15</y>
       <width>59</width>
@@ -9011,7 +8791,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1593</name>
+    <name>composite #1548</name>
     <x>1189</x>
     <y>81</y>
     <width>235</width>
@@ -9019,7 +8799,7 @@ widget.setPropertyValue('background_color', color)
     <style>3</style>
     <transparent>true</transparent>
     <widget type="action_button" version="3.0.0">
-      <name>related display #1596</name>
+      <name>related display #1551</name>
       <actions>
         <action type="open_display">
           <file>SR_Status.opi</file>
@@ -9047,7 +8827,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
-      <name>rectangle #1600</name>
+      <name>rectangle #1555</name>
       <width>235</width>
       <height>199</height>
       <line_width>2</line_width>
@@ -9062,7 +8842,7 @@ widget.setPropertyValue('background_color', color)
       <transparent>true</transparent>
     </widget>
     <widget type="rectangle" version="2.0.0">
-      <name>rectangle #1603</name>
+      <name>rectangle #1558</name>
       <x>3</x>
       <y>2</y>
       <width>230</width>
@@ -9077,7 +8857,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1606</name>
+      <name>text #1561</name>
       <text>13BM FE Shutter</text>
       <x>9</x>
       <y>11</y>
@@ -9094,7 +8874,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1609</name>
+      <name>text #1564</name>
       <text>Station Searched</text>
       <x>58</x>
       <y>139</y>
@@ -9107,7 +8887,7 @@ widget.setPropertyValue('background_color', color)
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1612</name>
+      <name>text #1567</name>
       <text>A    B    C    D</text>
       <x>69</x>
       <y>157</y>
@@ -9124,7 +8904,7 @@ widget.setPropertyValue('background_color', color)
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1615</name>
+      <name>oval #1570</name>
       <x>64</x>
       <y>157</y>
       <width>15</width>
@@ -9147,7 +8927,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1619</name>
+      <name>oval #1574</name>
       <x>64</x>
       <y>157</y>
       <width>15</width>
@@ -9170,7 +8950,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1623</name>
+      <name>oval #1578</name>
       <x>102</x>
       <y>157</y>
       <width>15</width>
@@ -9193,7 +8973,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1627</name>
+      <name>oval #1582</name>
       <x>102</x>
       <y>157</y>
       <width>15</width>
@@ -9216,7 +8996,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1631</name>
+      <name>oval #1586</name>
       <x>142</x>
       <y>157</y>
       <width>15</width>
@@ -9239,7 +9019,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1635</name>
+      <name>oval #1590</name>
       <x>142</x>
       <y>157</y>
       <width>15</width>
@@ -9262,7 +9042,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1639</name>
+      <name>oval #1594</name>
       <x>181</x>
       <y>155</y>
       <width>15</width>
@@ -9285,7 +9065,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1643</name>
+      <name>oval #1598</name>
       <x>181</x>
       <y>155</y>
       <width>15</width>
@@ -9308,7 +9088,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1647</name>
+      <name>text update #1602</name>
       <pv_name>13BMA:E:E_RBV</pv_name>
       <x>13</x>
       <y>58</y>
@@ -9331,7 +9111,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1651</name>
+      <name>text #1606</name>
       <text>eV</text>
       <x>92</x>
       <y>58</y>
@@ -9348,7 +9128,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1654</name>
+      <name>text update #1609</name>
       <pv_name>S:SRcurrentAI.VAL</pv_name>
       <x>13</x>
       <y>35</y>
@@ -9371,7 +9151,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1658</name>
+      <name>text #1613</name>
       <text>mA</text>
       <x>92</x>
       <y>35</y>
@@ -9388,7 +9168,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1661</name>
+      <name>text #1616</name>
       <text>A</text>
       <x>92</x>
       <y>81</y>
@@ -9405,7 +9185,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1664</name>
+      <name>text update #1619</name>
       <pv_name>13BMA:mono_pid1_incalc.O</pv_name>
       <x>13</x>
       <y>81</y>
@@ -9428,7 +9208,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1668</name>
+      <name>text update #1623</name>
       <pv_name>S:IOC:timeOfDayForm1SI</pv_name>
       <x>4</x>
       <y>179</y>
@@ -9452,7 +9232,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>related display #1672</name>
+      <name>related display #1627</name>
       <actions>
         <action type="open_display">
           <file>13BM_EPS.opi</file>
@@ -9474,7 +9254,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
-      <name>rectangle #1675</name>
+      <name>rectangle #1630</name>
       <x>181</x>
       <y>11</y>
       <width>39</width>
@@ -9497,7 +9277,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1679</name>
+      <name>text #1634</name>
       <text>BM-D Shutter</text>
       <x>36</x>
       <y>110</y>
@@ -9513,7 +9293,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1682</name>
+      <name>composite #1637</name>
       <x>181</x>
       <y>97</y>
       <width>39</width>
@@ -9529,7 +9309,7 @@ widget.setPropertyValue('background_color', color)
         </rule>
       </rules>
       <widget type="action_button" version="3.0.0">
-        <name>message button #1685</name>
+        <name>message button #1640</name>
         <actions>
           <action type="write_pv">
             <pv_name>13BMA:CloseBMDShutter.PROC</pv_name>
@@ -9552,7 +9332,7 @@ widget.setPropertyValue('background_color', color)
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1689</name>
+      <name>composite #1644</name>
       <x>181</x>
       <y>97</y>
       <width>39</width>
@@ -9568,7 +9348,7 @@ widget.setPropertyValue('background_color', color)
         </rule>
       </rules>
       <widget type="action_button" version="3.0.0">
-        <name>message button #1692</name>
+        <name>message button #1647</name>
         <actions>
           <action type="write_pv">
             <pv_name>13BMA:OpenBMDShutter.PROC</pv_name>
@@ -9591,7 +9371,7 @@ widget.setPropertyValue('background_color', color)
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1696</name>
+      <name>composite #1651</name>
       <x>181</x>
       <y>11</y>
       <width>39</width>
@@ -9607,7 +9387,7 @@ widget.setPropertyValue('background_color', color)
         </rule>
       </rules>
       <widget type="action_button" version="3.0.0">
-        <name>message button #1699</name>
+        <name>message button #1654</name>
         <actions>
           <action type="write_pv">
             <pv_name>13BMA:OpenFEShutter.PROC</pv_name>
@@ -9631,7 +9411,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1703</name>
+    <name>composite #1658</name>
     <x>171</x>
     <y>30</y>
     <width>75</width>
@@ -9647,7 +9427,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1706</name>
+      <name>message button #1661</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:DACLaserShutter.VAL</pv_name>
@@ -9669,7 +9449,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1710</name>
+    <name>composite #1665</name>
     <x>171</x>
     <y>30</y>
     <width>75</width>
@@ -9685,7 +9465,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1713</name>
+      <name>message button #1668</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:DACLaserShutter.VAL</pv_name>
@@ -9707,7 +9487,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1717</name>
+    <name>text #1672</name>
     <text>Move Pilatus</text>
     <x>530</x>
     <y>131</y>
@@ -9724,7 +9504,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1720</name>
+    <name>text #1675</name>
     <text>at the Far</text>
     <x>530</x>
     <y>152</y>
@@ -9741,7 +9521,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1723</name>
+    <name>text #1678</name>
     <text>position</text>
     <x>530</x>
     <y>173</y>
@@ -9758,7 +9538,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1726</name>
+    <name>composite #1681</name>
     <x>647</x>
     <y>408</y>
     <width>108</width>
@@ -9774,7 +9554,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1729</name>
+      <name>message button #1684</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD_DAC_XPS:allstop</pv_name>
@@ -9797,7 +9577,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1733</name>
+    <name>text #1688</name>
     <text>Small</text>
     <x>676</x>
     <y>252</y>
@@ -9814,7 +9594,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1737</name>
+    <name>composite #1692</name>
     <x>635</x>
     <y>636</y>
     <width>124</width>
@@ -9822,7 +9602,7 @@ widget.setPropertyValue('background_color', color)
     <style>3</style>
     <transparent>true</transparent>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1740</name>
+      <name>oval #1695</name>
       <x>17</x>
       <y>107</y>
       <width>13</width>
@@ -9845,7 +9625,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1744</name>
+      <name>oval #1699</name>
       <x>93</x>
       <y>108</y>
       <width>13</width>
@@ -9868,7 +9648,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1748</name>
+      <name>text #1703</name>
       <text>Soft-Limit</text>
       <x>25</x>
       <y>111</y>
@@ -9893,7 +9673,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1752</name>
+      <name>text entry #1707</name>
       <pv_name>13BMD:m69.VAL</pv_name>
       <x>18</x>
       <y>58</y>
@@ -9916,7 +9696,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1756</name>
+      <name>text entry #1711</name>
       <pv_name>13BMD:m69.TWV</pv_name>
       <x>37</x>
       <y>85</y>
@@ -9935,7 +9715,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1760</name>
+      <name>message button #1715</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m69.TWR</pv_name>
@@ -9955,7 +9735,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1763</name>
+      <name>message button #1718</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m69.TWF</pv_name>
@@ -9975,7 +9755,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1766</name>
+      <name>text update #1721</name>
       <pv_name>13BMD:m69.RBV</pv_name>
       <x>34</x>
       <y>41</y>
@@ -9995,7 +9775,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1770</name>
+      <name>polygon #1725</name>
       <x>113</x>
       <y>72</y>
       <width>11</width>
@@ -10025,7 +9805,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1774</name>
+      <name>polygon #1729</name>
       <y>71</y>
       <width>11</width>
       <height>13</height>
@@ -10054,7 +9834,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1778</name>
+      <name>oval #1733</name>
       <x>3</x>
       <y>20</y>
       <width>117</width>
@@ -10071,7 +9851,7 @@ widget.setPropertyValue('background_color', color)
       <transparent>true</transparent>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1781</name>
+      <name>text #1736</name>
       <text>Moving</text>
       <x>27</x>
       <y>107</y>
@@ -10096,7 +9876,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1785</name>
+      <name>text #1740</name>
       <text>BIG CHI</text>
       <x>33</x>
       <width>55</width>
@@ -10113,7 +9893,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1789</name>
+    <name>composite #1744</name>
     <x>75</x>
     <y>462</y>
     <width>1355</width>
@@ -10121,7 +9901,7 @@ widget.setPropertyValue('background_color', color)
     <style>3</style>
     <transparent>true</transparent>
     <widget type="rectangle" version="2.0.0">
-      <name>rectangle #1792</name>
+      <name>rectangle #1747</name>
       <width>1355</width>
       <height>5</height>
       <line_color>
@@ -10135,7 +9915,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1795</name>
+    <name>text #1750</name>
     <text>Table</text>
     <x>1198</x>
     <y>397</y>
@@ -10151,7 +9931,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #1798</name>
+    <name>text #1753</name>
     <text>Shutter</text>
     <x>1198</x>
     <y>413</y>
@@ -10167,7 +9947,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #1801</name>
+    <name>related display #1756</name>
     <actions>
       <action type="open_display">
         <file>CARS_attenuator.opi</file>
@@ -10194,7 +9974,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="polyline" version="2.0.0">
-    <name>polyline #1804</name>
+    <name>polyline #1759</name>
     <x>1197</x>
     <y>433</y>
     <width>81</width>
@@ -10212,7 +9992,7 @@ widget.setPropertyValue('background_color', color)
     </line_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #1808</name>
+    <name>message button #1763</name>
     <actions>
       <action type="write_pv">
         <pv_name>13BMD:XIAFilter4</pv_name>
@@ -10236,7 +10016,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1811</name>
+    <name>composite #1766</name>
     <x>1208</x>
     <y>441</y>
     <width>60</width>
@@ -10252,7 +10032,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1814</name>
+      <name>message button #1769</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:XIAFilter4</pv_name>
@@ -10275,7 +10055,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #1818</name>
+    <name>composite #1773</name>
     <x>935</x>
     <y>314</y>
     <width>185</width>
@@ -10283,7 +10063,7 @@ widget.setPropertyValue('background_color', color)
     <style>3</style>
     <transparent>true</transparent>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1821</name>
+      <name>polygon #1776</name>
       <y>128</y>
       <width>36</width>
       <height>43</height>
@@ -10318,7 +10098,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1826</name>
+      <name>text #1781</name>
       <text>Pinhole</text>
       <x>42</x>
       <width>120</width>
@@ -10333,7 +10113,7 @@ widget.setPropertyValue('background_color', color)
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1829</name>
+      <name>polygon #1784</name>
       <x>65</x>
       <y>115</y>
       <width>68</width>
@@ -10375,7 +10155,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1833</name>
+      <name>composite #1788</name>
       <x>80</x>
       <y>125</y>
       <width>37</width>
@@ -10383,7 +10163,7 @@ widget.setPropertyValue('background_color', color)
       <style>3</style>
       <transparent>true</transparent>
       <widget type="ellipse" version="2.0.0">
-        <name>oval #1836</name>
+        <name>oval #1791</name>
         <width>28</width>
         <height>37</height>
         <line_color>
@@ -10396,7 +10176,7 @@ widget.setPropertyValue('background_color', color)
         </background_color>
       </widget>
       <widget type="ellipse" version="2.0.0">
-        <name>oval #1839</name>
+        <name>oval #1794</name>
         <x>6</x>
         <width>31</width>
         <height>37</height>
@@ -10410,7 +10190,7 @@ widget.setPropertyValue('background_color', color)
         </background_color>
       </widget>
       <widget type="ellipse" version="2.0.0">
-        <name>oval #1842</name>
+        <name>oval #1797</name>
         <x>18</x>
         <y>13</y>
         <width>9</width>
@@ -10426,7 +10206,7 @@ widget.setPropertyValue('background_color', color)
       </widget>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1845</name>
+      <name>text entry #1800</name>
       <pv_name>13BMD:m41.VAL</pv_name>
       <x>12</x>
       <y>183</y>
@@ -10445,7 +10225,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1849</name>
+      <name>message button #1804</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m41.TWR</pv_name>
@@ -10465,7 +10245,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1852</name>
+      <name>text entry #1807</name>
       <pv_name>13BMD:m41.TWV</pv_name>
       <x>31</x>
       <y>206</y>
@@ -10483,7 +10263,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1856</name>
+      <name>message button #1811</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m41.TWF</pv_name>
@@ -10503,7 +10283,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1859</name>
+      <name>oval #1814</name>
       <x>14</x>
       <y>226</y>
       <width>13</width>
@@ -10526,7 +10306,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1863</name>
+      <name>oval #1818</name>
       <x>78</x>
       <y>226</y>
       <width>13</width>
@@ -10549,7 +10329,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1867</name>
+      <name>text #1822</name>
       <text>Soft-Limit</text>
       <x>18</x>
       <y>231</y>
@@ -10574,7 +10354,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1871</name>
+      <name>text update #1826</name>
       <pv_name>13BMD:m41.RBV</pv_name>
       <x>52</x>
       <y>171</y>
@@ -10597,7 +10377,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1875</name>
+      <name>text #1830</name>
       <text>Moving</text>
       <x>20</x>
       <y>226</y>
@@ -10621,7 +10401,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1879</name>
+      <name>text #1834</name>
       <text>Horiz</text>
       <x>13</x>
       <y>168</y>
@@ -10634,7 +10414,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1882</name>
+      <name>text #1837</name>
       <text>m41</text>
       <x>59</x>
       <y>159</y>
@@ -10651,7 +10431,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1885</name>
+      <name>text entry #1840</name>
       <pv_name>13BMD:m42.VAL</pv_name>
       <x>104</x>
       <y>183</y>
@@ -10670,7 +10450,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1889</name>
+      <name>message button #1844</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m42.TWR</pv_name>
@@ -10690,7 +10470,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1892</name>
+      <name>text entry #1847</name>
       <pv_name>13BMD:m42.TWV</pv_name>
       <x>123</x>
       <y>206</y>
@@ -10708,7 +10488,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1896</name>
+      <name>message button #1851</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m42.TWF</pv_name>
@@ -10728,7 +10508,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1899</name>
+      <name>oval #1854</name>
       <x>106</x>
       <y>226</y>
       <width>13</width>
@@ -10751,7 +10531,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1903</name>
+      <name>oval #1858</name>
       <x>170</x>
       <y>226</y>
       <width>13</width>
@@ -10774,7 +10554,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1907</name>
+      <name>text #1862</name>
       <text>Soft-Limit</text>
       <x>110</x>
       <y>231</y>
@@ -10799,7 +10579,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1911</name>
+      <name>text update #1866</name>
       <pv_name>13BMD:m42.RBV</pv_name>
       <x>144</x>
       <y>171</y>
@@ -10822,7 +10602,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1915</name>
+      <name>text #1870</name>
       <text>Moving</text>
       <x>112</x>
       <y>226</y>
@@ -10846,7 +10626,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1919</name>
+      <name>text #1874</name>
       <text>Vert</text>
       <x>107</x>
       <y>168</y>
@@ -10859,7 +10639,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1922</name>
+      <name>text #1877</name>
       <text>m42</text>
       <x>149</x>
       <y>159</y>
@@ -10876,7 +10656,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1925</name>
+      <name>text entry #1880</name>
       <pv_name>13BMD:m43.VAL</pv_name>
       <x>61</x>
       <y>35</y>
@@ -10895,7 +10675,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1929</name>
+      <name>message button #1884</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m43.TWR</pv_name>
@@ -10915,7 +10695,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #1932</name>
+      <name>text entry #1887</name>
       <pv_name>13BMD:m43.TWV</pv_name>
       <x>80</x>
       <y>58</y>
@@ -10933,7 +10713,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1936</name>
+      <name>message button #1891</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m43.TWF</pv_name>
@@ -10953,7 +10733,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1939</name>
+      <name>oval #1894</name>
       <x>63</x>
       <y>78</y>
       <width>13</width>
@@ -10976,7 +10756,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="ellipse" version="2.0.0">
-      <name>oval #1943</name>
+      <name>oval #1898</name>
       <x>127</x>
       <y>78</y>
       <width>13</width>
@@ -10999,7 +10779,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1947</name>
+      <name>text #1902</name>
       <text>Soft-Limit</text>
       <x>67</x>
       <y>81</y>
@@ -11024,7 +10804,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>text update #1951</name>
+      <name>text update #1906</name>
       <pv_name>13BMD:m43.RBV</pv_name>
       <x>101</x>
       <y>23</y>
@@ -11047,7 +10827,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1955</name>
+      <name>text #1910</name>
       <text>Moving</text>
       <x>69</x>
       <y>75</y>
@@ -11071,7 +10851,7 @@ widget.setPropertyValue('background_color', color)
       </rules>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>text #1959</name>
+      <name>text #1914</name>
       <text>Along</text>
       <x>62</x>
       <y>20</y>
@@ -11084,7 +10864,7 @@ widget.setPropertyValue('background_color', color)
       <auto_size>true</auto_size>
     </widget>
     <widget type="polygon" version="2.0.0">
-      <name>polygon #1962</name>
+      <name>polygon #1917</name>
       <x>130</x>
       <y>124</y>
       <width>10</width>
@@ -11126,7 +10906,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1966</name>
+      <name>composite #1921</name>
       <x>49</x>
       <y>126</y>
       <width>23</width>
@@ -11134,7 +10914,7 @@ widget.setPropertyValue('background_color', color)
       <style>3</style>
       <transparent>true</transparent>
       <widget type="polygon" version="2.0.0">
-        <name>polygon #1969</name>
+        <name>polygon #1924</name>
         <y>26</y>
         <width>12</width>
         <height>10</height>
@@ -11159,7 +10939,7 @@ widget.setPropertyValue('background_color', color)
         </background_color>
       </widget>
       <widget type="polygon" version="2.0.0">
-        <name>polygon #1973</name>
+        <name>polygon #1928</name>
         <x>11</x>
         <width>12</width>
         <height>12</height>
@@ -11184,7 +10964,7 @@ widget.setPropertyValue('background_color', color)
         </background_color>
       </widget>
       <widget type="polygon" version="2.0.0">
-        <name>polygon #1977</name>
+        <name>polygon #1932</name>
         <x>4</x>
         <y>9</y>
         <width>14</width>
@@ -11213,7 +10993,7 @@ widget.setPropertyValue('background_color', color)
       </widget>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1981</name>
+      <name>message button #1936</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m43.VAL</pv_name>
@@ -11233,7 +11013,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>composite #1984</name>
+      <name>composite #1939</name>
       <x>13</x>
       <y>94</y>
       <width>40</width>
@@ -11249,7 +11029,7 @@ widget.setPropertyValue('background_color', color)
         </rule>
       </rules>
       <widget type="action_button" version="3.0.0">
-        <name>message button #1987</name>
+        <name>message button #1942</name>
         <actions>
           <action type="write_pv">
             <pv_name>13BMD:m43.VAL</pv_name>
@@ -11268,7 +11048,7 @@ widget.setPropertyValue('background_color', color)
       </widget>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #1991</name>
+      <name>message button #1946</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m43.VAL</pv_name>
@@ -11288,7 +11068,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>related display #1994</name>
+      <name>related display #1949</name>
       <actions>
         <action type="open_display">
           <file>3motors.opi</file>
@@ -11318,7 +11098,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="polyline" version="2.0.0">
-      <name>polyline #1997</name>
+      <name>polyline #1952</name>
       <x>64</x>
       <y>18</y>
       <width>75</width>
@@ -11336,7 +11116,7 @@ widget.setPropertyValue('background_color', color)
       </line_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2001</name>
+      <name>message button #1956</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m43.VAL</pv_name>
@@ -11357,7 +11137,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #2004</name>
+    <name>text update #1959</name>
     <pv_name>13Keithley1:DMM1Ch1_calc.VAL</pv_name>
     <x>1064</x>
     <y>681</y>
@@ -11380,7 +11160,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>text entry #2008</name>
+    <name>text entry #1963</name>
     <pv_name>13Keithley1:PID1.VAL</pv_name>
     <x>968</x>
     <y>654</y>
@@ -11399,7 +11179,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2012</name>
+    <name>text #1967</name>
     <text>Set:</text>
     <x>934</x>
     <y>659</y>
@@ -11416,7 +11196,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>2</horizontal_alignment>
   </widget>
   <widget type="combo" version="2.0.0">
-    <name>menu #2015</name>
+    <name>menu #1970</name>
     <pv_name>13Keithley1:PID1.FBON</pv_name>
     <x>975</x>
     <y>684</y>
@@ -11433,7 +11213,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2018</name>
+    <name>text #1973</name>
     <text>Feedback:</text>
     <x>892</x>
     <y>684</y>
@@ -11450,7 +11230,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #2021</name>
+    <name>related display #1976</name>
     <actions>
       <action type="open_display">
         <file>pid_control.opi</file>
@@ -11478,7 +11258,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #2024</name>
+    <name>text update #1979</name>
     <pv_name>13Keithley1:DMM1Ch2_calc.VAL</pv_name>
     <x>1064</x>
     <y>706</y>
@@ -11501,7 +11281,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2028</name>
+    <name>text #1983</name>
     <text>1:</text>
     <x>1041</x>
     <y>679</y>
@@ -11517,7 +11297,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2031</name>
+    <name>text #1986</name>
     <text>2:</text>
     <x>1041</x>
     <y>704</y>
@@ -11533,7 +11313,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #2034</name>
+    <name>related display #1989</name>
     <actions>
       <action type="open_display">
         <file>13Keithley1.opi</file>
@@ -11560,7 +11340,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #2037</name>
+    <name>text update #1992</name>
     <pv_name>13Keithley1:DMM1Ch3_calc.VAL</pv_name>
     <x>1064</x>
     <y>731</y>
@@ -11583,7 +11363,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #2041</name>
+    <name>text update #1996</name>
     <pv_name>13Keithley1:DMM1Ch4_calc.VAL</pv_name>
     <x>1064</x>
     <y>756</y>
@@ -11606,7 +11386,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2045</name>
+    <name>text #2000</name>
     <text>3:</text>
     <x>1041</x>
     <y>729</y>
@@ -11622,7 +11402,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2048</name>
+    <name>text #2003</name>
     <text>4:</text>
     <x>1041</x>
     <y>754</y>
@@ -11638,7 +11418,7 @@ widget.setPropertyValue('background_color', color)
     <auto_size>true</auto_size>
   </widget>
   <widget type="polyline" version="2.0.0">
-    <name>polyline #2051</name>
+    <name>polyline #2006</name>
     <x>962</x>
     <y>646</y>
     <width>160</width>
@@ -11656,7 +11436,7 @@ widget.setPropertyValue('background_color', color)
     </line_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2055</name>
+    <name>text #2010</name>
     <text>External Heating</text>
     <x>967</x>
     <y>626</y>
@@ -11672,7 +11452,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2058</name>
+    <name>text #2013</name>
     <text>T(C)</text>
     <x>1038</x>
     <y>658</y>
@@ -11688,108 +11468,8 @@ widget.setPropertyValue('background_color', color)
     </foreground_color>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
-  <widget type="scrollbar" version="2.0.0">
-    <name>valuator #2061</name>
-    <pv_name>13BMD:SchottIllumPower</pv_name>
-    <x>333</x>
-    <y>509</y>
-    <width>120</width>
-    <height>22</height>
-    <bar_length>1.0</bar_length>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #2065</name>
-    <text>Transmit</text>
-    <x>278</x>
-    <y>516</y>
-    <width>55</width>
-    <height>12</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="12.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color red="235" green="241" blue="181">
-      </color>
-    </foreground_color>
-    <horizontal_alignment>1</horizontal_alignment>
-  </widget>
-  <widget type="scrollbar" version="2.0.0">
-    <name>valuator #2068</name>
-    <pv_name>13BMD:JennerIllumPower</pv_name>
-    <x>333</x>
-    <y>485</y>
-    <width>120</width>
-    <height>22</height>
-    <bar_length>1.0</bar_length>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #2072</name>
-    <text>Reflect</text>
-    <x>280</x>
-    <y>492</y>
-    <width>55</width>
-    <height>12</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="12.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color red="225" green="144" blue="21">
-      </color>
-    </foreground_color>
-    <horizontal_alignment>1</horizontal_alignment>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #2075</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>13BMD:SchottIllumOffOn</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>13BMD:SchottIllumOffOn</pv_name>
-    <text>On</text>
-    <x>455</x>
-    <y>512</y>
-    <width>30</width>
-    <height>18</height>
-    <foreground_color>
-      <color red="97" green="10" blue="117">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="187" green="193" blue="135">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #2078</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>13BMD:SchottIllumOffOn</pv_name>
-        <value>0</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>13BMD:SchottIllumOffOn</pv_name>
-    <text>OFF</text>
-    <x>487</x>
-    <y>512</y>
-    <width>30</width>
-    <height>18</height>
-    <foreground_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="77" green="82" blue="164">
-      </color>
-    </background_color>
-  </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #2081</name>
+    <name>composite #2016</name>
     <x>531</x>
     <y>99</y>
     <width>95</width>
@@ -11805,7 +11485,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #2084</name>
+      <name>text entry #2019</name>
       <pv_name>13BMD:m68.VAL</pv_name>
       <width>95</width>
       <height>24</height>
@@ -11822,7 +11502,7 @@ widget.setPropertyValue('background_color', color)
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2088</name>
+      <name>message button #2023</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m68.TWV</pv_name>
@@ -11846,7 +11526,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2091</name>
+      <name>message button #2026</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m68.TWF</pv_name>
@@ -11870,7 +11550,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2094</name>
+      <name>message button #2029</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m68.TWV</pv_name>
@@ -11894,7 +11574,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2097</name>
+      <name>message button #2032</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m68.TWV</pv_name>
@@ -11918,7 +11598,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2100</name>
+      <name>message button #2035</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m68.TWV</pv_name>
@@ -11942,7 +11622,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2103</name>
+      <name>message button #2038</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m68.TWR</pv_name>
@@ -11966,7 +11646,7 @@ widget.setPropertyValue('background_color', color)
       </background_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>text entry #2106</name>
+      <name>text entry #2041</name>
       <pv_name>13BMD:m68.TWV</pv_name>
       <x>37</x>
       <y>46</y>
@@ -11986,7 +11666,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #2111</name>
+    <name>composite #2046</name>
     <x>78</x>
     <y>529</y>
     <width>35</width>
@@ -12002,7 +11682,7 @@ widget.setPropertyValue('background_color', color)
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
-      <name>message button #2114</name>
+      <name>message button #2049</name>
       <actions>
         <action type="write_pv">
           <pv_name>13BMD:m94.VAL</pv_name>
@@ -12021,7 +11701,7 @@ widget.setPropertyValue('background_color', color)
     </widget>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #2118</name>
+    <name>message button #2053</name>
     <actions>
       <action type="write_pv">
         <pv_name>13BMD:userStringSeq1.PROC</pv_name>
@@ -12041,7 +11721,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #2121</name>
+    <name>message button #2056</name>
     <actions>
       <action type="write_pv">
         <pv_name>13BMD:userStringSeq2.PROC</pv_name>
@@ -12061,7 +11741,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>text entry #2124</name>
+    <name>text entry #2059</name>
     <pv_name>13BMD:userStringSeq2.STR3</pv_name>
     <x>459</x>
     <y>381</y>
@@ -12080,7 +11760,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #2128</name>
+    <name>text update #2063</name>
     <pv_name>13BMD:m95.RBV</pv_name>
     <x>460</x>
     <y>410</y>
@@ -12099,7 +11779,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>rectangle #2132</name>
+    <name>rectangle #2067</name>
     <x>453</x>
     <y>324</y>
     <width>71</width>
@@ -12116,7 +11796,7 @@ widget.setPropertyValue('background_color', color)
     <transparent>true</transparent>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>text entry #2135</name>
+    <name>text entry #2070</name>
     <pv_name>13VPower1:VP1:Volt</pv_name>
     <x>896</x>
     <y>724</y>
@@ -12135,7 +11815,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #2139</name>
+    <name>message button #2074</name>
     <actions>
       <action type="write_pv">
         <pv_name>13VPower1:VP1:VoltTweakDown.PROC</pv_name>
@@ -12159,7 +11839,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #2142</name>
+    <name>message button #2077</name>
     <actions>
       <action type="write_pv">
         <pv_name>13VPower1:VP1:VoltTweakUp.PROC</pv_name>
@@ -12183,7 +11863,7 @@ widget.setPropertyValue('background_color', color)
     </background_color>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>text entry #2145</name>
+    <name>text entry #2080</name>
     <pv_name>13VPower1:VP1:VoltTweakVal</pv_name>
     <x>903</x>
     <y>749</y>
@@ -12201,7 +11881,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2149</name>
+    <name>text #2084</name>
     <text>Voltage:</text>
     <x>831</x>
     <y>729</y>
@@ -12218,7 +11898,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #2152</name>
+    <name>text update #2087</name>
     <pv_name>13VPower1:VP1:VoltMeas</pv_name>
     <x>921</x>
     <y>727</y>
@@ -12241,7 +11921,7 @@ widget.setPropertyValue('background_color', color)
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #2156</name>
+    <name>text #2091</name>
     <text>V</text>
     <x>1017</x>
     <y>727</y>
@@ -12258,7 +11938,7 @@ widget.setPropertyValue('background_color', color)
     <horizontal_alignment>2</horizontal_alignment>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #2159</name>
+    <name>related display #2094</name>
     <actions>
       <action type="open_display">
         <file>AE_ILS.opi</file>
@@ -12279,5 +11959,319 @@ widget.setPropertyValue('background_color', color)
       <color red="251" green="243" blue="74">
       </color>
     </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #2097</name>
+    <x>278</x>
+    <y>485</y>
+    <width>239</width>
+    <height>160</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="scrollbar" version="2.0.0">
+      <name>valuator #2100</name>
+      <pv_name>13BMDPG3:cam1:GC_Gain</pv_name>
+      <x>55</x>
+      <y>79</y>
+      <width>115</width>
+      <height>19</height>
+      <bar_length>1.0</bar_length>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #2104</name>
+      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+      <x>54</x>
+      <y>48</y>
+      <width>55</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #2108</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMDPG3:TIFF1:WriteFile</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMDPG3:TIFF1:WriteFile</pv_name>
+      <text>Image</text>
+      <x>58</x>
+      <y>127</y>
+      <width>35</width>
+      <height>16</height>
+      <background_color>
+        <color red="78" green="165" blue="249">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #2111</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+      <text>1</text>
+      <x>111</x>
+      <y>48</y>
+      <width>29</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #2114</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+          <value>.1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+      <text>.1</text>
+      <x>141</x>
+      <y>48</y>
+      <width>32</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #2117</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+          <value>.02</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMDPG3:cam1:AcquireTime</pv_name>
+      <text>.02</text>
+      <x>119</x>
+      <y>63</y>
+      <width>42</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="scrollbar" version="2.0.0">
+      <name>valuator #2120</name>
+      <pv_name>13BMDPG3:Over1:2:CenterX</pv_name>
+      <x>55</x>
+      <y>103</y>
+      <width>115</width>
+      <height>22</height>
+      <bar_length>1.0</bar_length>
+    </widget>
+    <widget type="scrollbar" version="2.0.0">
+      <name>valuator #2124</name>
+      <pv_name>13BMDPG3:Over1:2:CenterY</pv_name>
+      <x>177</x>
+      <y>48</y>
+      <width>22</width>
+      <height>77</height>
+      <horizontal>false</horizontal>
+      <bar_length>1.0</bar_length>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #2128</name>
+      <pv_name>13BMDPG3:TIFF1:FullFileName_RBV</pv_name>
+      <x>97</x>
+      <y>128</y>
+      <height>13</height>
+      <foreground_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="52" green="51" blue="134">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #2132</name>
+      <text>Exposure</text>
+      <y>54</y>
+      <width>55</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="236" green="236" blue="236">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #2135</name>
+      <text>Gain</text>
+      <x>4</x>
+      <y>84</y>
+      <width>55</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="212" green="219" blue="157">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #2138</name>
+      <actions>
+        <action type="open_display">
+          <file>ADSpinnaker.opi</file>
+          <macros>
+            <C>PGR_BlackflyS_50S5C</C>
+            <P>13BMDPG3:</P>
+            <R>cam1:</R>
+          </macros>
+          <target>tab</target>
+          <description>BMD PG3 camera</description>
+        </action>
+      </actions>
+      <text>more</text>
+      <x>57</x>
+      <y>144</y>
+      <width>35</width>
+      <height>16</height>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="82" green="218" blue="59">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="scrollbar" version="2.0.0">
+      <name>valuator #2141</name>
+      <pv_name>13BMD:SchottIllumPower</pv_name>
+      <x>55</x>
+      <y>24</y>
+      <width>120</width>
+      <height>22</height>
+      <bar_length>1.0</bar_length>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #2145</name>
+      <text>Transmit</text>
+      <y>31</y>
+      <width>55</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="scrollbar" version="2.0.0">
+      <name>valuator #2148</name>
+      <pv_name>13BMD:JennerIllumPower</pv_name>
+      <x>55</x>
+      <width>120</width>
+      <height>22</height>
+      <bar_length>1.0</bar_length>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #2152</name>
+      <text>Reflect</text>
+      <x>2</x>
+      <y>7</y>
+      <width>55</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="225" green="144" blue="21">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #2155</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:SchottIllumOffOn</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:SchottIllumOffOn</pv_name>
+      <text>On</text>
+      <x>177</x>
+      <y>27</y>
+      <width>30</width>
+      <height>18</height>
+      <foreground_color>
+        <color red="97" green="10" blue="117">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="187" green="193" blue="135">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #2158</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>13BMD:SchottIllumOffOn</pv_name>
+          <value>0</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>13BMD:SchottIllumOffOn</pv_name>
+      <text>OFF</text>
+      <x>209</x>
+      <y>27</y>
+      <width>30</width>
+      <height>18</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="77" green="82" blue="164">
+        </color>
+      </background_color>
+    </widget>
   </widget>
 </display>

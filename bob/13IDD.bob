@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-03 14:37:20 by epics-->
+<!--Saved on 2026-05-18 13:47:11 by epics-->
 <display version="2.0.0">
   <name>13IDD</name>
   <x>200</x>
@@ -330,6 +330,33 @@
         <target>tab</target>
         <description>Test_XPS-D8</description>
       </action>
+      <action type="open_display">
+        <file>8motors.opi</file>
+        <macros>
+          <M1>m115</M1>
+          <M2>m116</M2>
+          <M3>m117</M3>
+          <M4>pm20</M4>
+          <M5>pm21</M5>
+          <M6>pm22</M6>
+          <M7>pm23</M7>
+          <M8>pm24</M8>
+          <P>13IDD:</P>
+          <TITLE>DAC_Detector</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>DAC detector</description>
+      </action>
+      <action type="open_display">
+        <file>IDD_DAC_Detector_Profile.opi</file>
+        <macros>
+          <P>13IDD:</P>
+          <PROF>Galil11:Prof1:</PROF>
+          <T>DAC_DETR:</T>
+        </macros>
+        <target>tab</target>
+        <description>DAC detector profile</description>
+      </action>
     </actions>
     <text></text>
     <x>5</x>
@@ -342,7 +369,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #52</name>
+    <name>related display #54</name>
     <actions>
       <action type="open_display">
         <file>2motors.opi</file>
@@ -518,7 +545,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #67</name>
+    <name>related display #69</name>
     <actions>
       <action type="open_display">
         <file>4motors.opi</file>
@@ -566,7 +593,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #72</name>
+    <name>related display #74</name>
     <actions>
       <action type="open_display">
         <file>xxIcbAmp.opi</file>
@@ -643,7 +670,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #81</name>
+    <name>related display #83</name>
     <actions>
       <action type="open_display">
         <file>SR570.opi</file>
@@ -709,7 +736,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #89</name>
+    <name>related display #91</name>
     <actions>
       <action type="open_display">
         <file>SR570.opi</file>
@@ -861,7 +888,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #103</name>
+    <name>related display #105</name>
     <actions>
       <action type="open_display">
         <file>LAE500.opi</file>
@@ -991,7 +1018,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #112</name>
+    <name>text #114</name>
     <text>LVP motors #1</text>
     <x>70</x>
     <y>274</y>
@@ -1003,7 +1030,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #115</name>
+    <name>text #117</name>
     <text>LVP motors #2</text>
     <x>70</x>
     <y>301</y>
@@ -1015,7 +1042,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #118</name>
+    <name>text #120</name>
     <text>MCA electronics</text>
     <x>70</x>
     <y>328</y>
@@ -1027,7 +1054,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #121</name>
+    <name>text #123</name>
     <text>DAC electronics</text>
     <x>70</x>
     <y>355</y>
@@ -1039,7 +1066,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #124</name>
+    <name>text #126</name>
     <text>LVP electronics</text>
     <x>70</x>
     <y>382</y>
@@ -1051,7 +1078,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #127</name>
+    <name>text #129</name>
     <text>Other electronics</text>
     <x>70</x>
     <y>409</y>
@@ -1063,7 +1090,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #130</name>
+    <name>related display #132</name>
     <actions>
       <action type="open_display">
         <file>3motors.opi</file>
@@ -1191,7 +1218,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #141</name>
+    <name>text #143</name>
     <text>DAC Motors #2</text>
     <x>71</x>
     <y>247</y>
@@ -1203,7 +1230,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #144</name>
+    <name>text #146</name>
     <text>DAC Motors #1</text>
     <x>70</x>
     <y>221</y>
@@ -1215,7 +1242,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #147</name>
+    <name>related display #149</name>
     <actions>
       <action type="open_display">
         <file>softGlueMenu.opi</file>
@@ -1241,7 +1268,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #150</name>
+    <name>text #152</name>
     <text>SoftGlue</text>
     <x>70</x>
     <y>463</y>
@@ -1253,7 +1280,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #153</name>
+    <name>related display #155</name>
     <actions>
       <action type="open_display">
         <file>USBCTR_MCS.opi</file>
@@ -1284,7 +1311,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #157</name>
+    <name>text #159</name>
     <text>MCS and Scalers</text>
     <x>70</x>
     <y>436</y>
@@ -1296,7 +1323,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #160</name>
+    <name>related display #162</name>
     <actions>
       <action type="open_display">
         <file>scan_more.opi</file>
@@ -1358,7 +1385,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #166</name>
+    <name>related display #168</name>
     <actions>
       <action type="open_display">
         <file>pid_control.opi</file>
@@ -1456,7 +1483,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #177</name>
+    <name>text #179</name>
     <text>Laser control</text>
     <x>70</x>
     <y>570</y>
@@ -1468,7 +1495,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #180</name>
+    <name>related display #182</name>
     <actions>
       <action type="open_display">
         <file>asynOctet.opi</file>
@@ -1581,7 +1608,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #193</name>
+    <name>related display #195</name>
     <actions>
       <action type="open_display">
         <file>asynOctet.opi</file>
@@ -1667,7 +1694,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #203</name>
+    <name>text #205</name>
     <text>Generic serial 1-8</text>
     <x>70</x>
     <y>597</y>
@@ -1679,7 +1706,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #206</name>
+    <name>text #208</name>
     <text>Generic serial 9-16</text>
     <x>70</x>
     <y>624</y>
@@ -1691,7 +1718,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #209</name>
+    <name>text #211</name>
     <text>IOC status</text>
     <x>70</x>
     <y>651</y>
@@ -1702,7 +1729,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #212</name>
+    <name>related display #214</name>
     <actions>
       <action type="open_display">
         <file>ioc_stats_soft.opi</file>
@@ -1740,7 +1767,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #217</name>
+    <name>text #219</name>
     <text>Scan</text>
     <x>70</x>
     <y>516</y>
@@ -1752,7 +1779,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #220</name>
+    <name>related display #222</name>
     <actions>
       <action type="open_display">
         <file>Roper.opi</file>
@@ -1803,7 +1830,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #225</name>
+    <name>text #227</name>
     <text>areaDetectors</text>
     <x>70</x>
     <y>489</y>
@@ -1815,7 +1842,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #228</name>
+    <name>related display #230</name>
     <actions>
       <action type="open_display">
         <file>userArrayCalcs20.opi</file>
@@ -1877,7 +1904,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #236</name>
+    <name>text #238</name>
     <text>User calcs, transforms</text>
     <x>70</x>
     <y>543</y>
@@ -1889,7 +1916,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #239</name>
+    <name>related display #241</name>
     <actions>
       <action type="open_display">
         <file>13IDD_LVP_Shutter.opi</file>
@@ -1913,7 +1940,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #245</name>
+    <name>text #247</name>
     <text>LVP experiments</text>
     <x>70</x>
     <y>680</y>
@@ -1925,7 +1952,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #248</name>
+    <name>related display #250</name>
     <actions>
       <action type="open_display">
         <file>galil_dmc_ctrl.opi</file>
@@ -2125,6 +2152,24 @@
         <target>tab</target>
         <description>Galil 11 controller</description>
       </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <AMP1>AD</AMP1>
+          <AMP2>EH</AMP2>
+          <DMC>13IDD:Galil12:</DMC>
+          <M1>m85</M1>
+          <M2>m86</M2>
+          <M3>m87</M3>
+          <M4>m88</M4>
+          <M5>m89</M5>
+          <M6>m90</M6>
+          <M7>m91</M7>
+          <M8>m92</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 12 controller</description>
+      </action>
     </actions>
     <text></text>
     <x>5</x>
@@ -2137,7 +2182,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #261</name>
+    <name>text #264</name>
     <text>Galil Controllers</text>
     <x>70</x>
     <y>193</y>
