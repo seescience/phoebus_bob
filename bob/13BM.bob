@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-05-18 13:49:34 by epics-->
+<!--Saved on 2026-05-18 15:02:42 by epics-->
 <display version="2.0.0">
   <name>13BM</name>
   <x>892</x>
@@ -113,6 +113,14 @@
         <description>13-BM BPM</description>
       </action>
       <action type="open_display">
+        <file>UserSteeringBM.opi</file>
+        <macros>
+          <sector>S13BM</sector>
+        </macros>
+        <target>tab</target>
+        <description>BM Steering</description>
+      </action>
+      <action type="open_display">
         <file>Main_13BM.opi</file>
         <macros>
           <xx>13</xx>
@@ -161,7 +169,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #33</name>
+    <name>text #34</name>
     <text>Web Pages</text>
     <x>85</x>
     <y>138</y>
@@ -173,7 +181,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>shell command #36</name>
+    <name>shell command #37</name>
     <actions>
       <action type="command">
         <command>"start http://www.aps.anl.gov/asd/operations/gifplots/statgif.html" </command>
@@ -199,7 +207,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #41</name>
+    <name>related display #42</name>
     <actions>
       <action type="open_display">
         <file>4slitGraphic.opi</file>
@@ -289,7 +297,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #49</name>
+    <name>text #50</name>
     <text>BM-D Beamline Slits</text>
     <x>85</x>
     <y>219</y>
@@ -301,7 +309,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #52</name>
+    <name>text #53</name>
     <text>FOE electronics</text>
     <x>85</x>
     <y>354</y>
@@ -313,7 +321,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #55</name>
+    <name>related display #56</name>
     <actions>
       <action type="open_display">
         <file>Keithley2kDMM_mf.opi</file>
@@ -371,7 +379,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #61</name>
+    <name>related display #62</name>
     <actions>
       <action type="open_display">
         <file>1motors.opi</file>
@@ -473,7 +481,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #69</name>
+    <name>text #70</name>
     <text>Monochromator</text>
     <x>85</x>
     <y>300</y>
@@ -485,7 +493,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #72</name>
+    <name>related display #73</name>
     <actions>
       <action type="open_display">
         <file>1motors.opi</file>
@@ -531,7 +539,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #77</name>
+    <name>text #78</name>
     <text>Filters, flag</text>
     <x>85</x>
     <y>273</y>
@@ -543,7 +551,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #80</name>
+    <name>related display #81</name>
     <actions>
       <action type="open_display">
         <file>3motors.opi</file>
@@ -598,7 +606,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #86</name>
+    <name>text #87</name>
     <text>BM-C Beamline Slits</text>
     <x>85</x>
     <y>246</y>
@@ -610,7 +618,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #89</name>
+    <name>related display #90</name>
     <actions>
       <action type="open_display">
         <file>8motors.opi</file>
@@ -693,7 +701,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #97</name>
+    <name>text #98</name>
     <text>Vertical Mirror</text>
     <x>85</x>
     <y>327</y>
@@ -705,7 +713,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #100</name>
+    <name>related display #101</name>
     <actions>
       <action type="open_display">
         <file>asynOctet.opi</file>
@@ -791,7 +799,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #110</name>
+    <name>text #111</name>
     <text>Generic serial 1-8</text>
     <x>85</x>
     <y>435</y>
@@ -803,7 +811,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #113</name>
+    <name>related display #114</name>
     <actions>
       <action type="open_display">
         <file>scan_more.opi</file>
@@ -865,7 +873,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #119</name>
+    <name>text #120</name>
     <text>Scan</text>
     <x>85</x>
     <y>489</y>
@@ -877,7 +885,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #122</name>
+    <name>related display #123</name>
     <actions>
       <action type="open_display">
         <file>asynOctet.opi</file>
@@ -963,7 +971,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #132</name>
+    <name>text #133</name>
     <text>Generic serial 9-16</text>
     <x>85</x>
     <y>462</y>
@@ -975,7 +983,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #135</name>
+    <name>related display #136</name>
     <actions>
       <action type="open_display">
         <file>ioc_stats_soft.opi</file>
@@ -1013,7 +1021,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #140</name>
+    <name>text #141</name>
     <text>IOC status</text>
     <x>85</x>
     <y>516</y>
@@ -1024,7 +1032,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #143</name>
+    <name>related display #144</name>
     <actions>
       <action type="open_display">
         <file>userTransforms10.opi</file>
@@ -1062,7 +1070,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #148</name>
+    <name>text #149</name>
     <text>User calcs, transforms</text>
     <x>85</x>
     <y>408</y>
@@ -1074,7 +1082,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #151</name>
+    <name>related display #152</name>
     <actions>
       <action type="open_display">
         <file>singleDAC.opi</file>
@@ -1177,7 +1185,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #162</name>
+    <name>text #163</name>
     <text>DACs</text>
     <x>85</x>
     <y>381</y>
@@ -1189,7 +1197,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #165</name>
+    <name>related display #166</name>
     <actions>
       <action type="open_display">
         <file>galil_dmc_ctrl.opi</file>
@@ -1257,7 +1265,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #170</name>
+    <name>text #171</name>
     <text>Galil controllers</text>
     <x>85</x>
     <y>192</y>

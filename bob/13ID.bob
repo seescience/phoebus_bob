@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-05-18 13:47:10 by epics-->
+<!--Saved on 2026-05-18 15:02:43 by epics-->
 <display version="2.0.0">
   <name>13ID</name>
   <x>398</x>
@@ -283,39 +283,44 @@
         <description>RF &amp; X-ray BPM</description>
       </action>
       <action type="open_display">
-        <file>BLSteering.opi</file>
+        <file>UserSteering.opi</file>
         <macros>
-          <BL>ID</BL>
-          <S>13</S>
-          <SEC>13</SEC>
+          <sector>S13ID</sector>
         </macros>
         <target>tab</target>
-        <description>Ring Steering Full</description>
+        <description>Beam Steering </description>
       </action>
       <action type="open_display">
-        <file>BLSteering.opi</file>
+        <file>UserSteeringID.opi</file>
         <macros>
-          <BL>ID</BL>
-          <S>13us</S>
-          <SEC>13</SEC>
+          <sector>S13ID</sector>
         </macros>
         <target>tab</target>
-        <description>Ring Steering US</description>
+        <description>ID Steering Combined</description>
       </action>
       <action type="open_display">
-        <file>BLSteering.opi</file>
+        <file>UserSteeringUSID.opi</file>
         <macros>
-          <BL>ID</BL>
-          <S>13ds</S>
-          <SEC>13</SEC>
+          <sector>S13ID</sector>
         </macros>
         <target>tab</target>
-        <description>Ring Steering DS</description>
+        <description>ID Steering US</description>
       </action>
       <action type="open_display">
-        <file>IDSteeringGlobal.opi</file>
+        <file>UserSteeringDSID.opi</file>
+        <macros>
+          <sector>S13ID</sector>
+        </macros>
         <target>tab</target>
-        <description>IDSteeringGlobal</description>
+        <description>ID Steering DS</description>
+      </action>
+      <action type="open_display">
+        <file>UserSteeringBM.opi</file>
+        <macros>
+          <sector>S13BM</sector>
+        </macros>
+        <target>tab</target>
+        <description>BM Steering</description>
       </action>
     </actions>
     <text></text>
@@ -329,7 +334,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #51</name>
+    <name>text #52</name>
     <text>Ring Status/Beam Position</text>
     <x>110</x>
     <y>95</y>
@@ -341,7 +346,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>shell command #54</name>
+    <name>shell command #55</name>
     <actions>
       <action type="command">
         <command>"start http://www.aps.anl.gov/Facility/Status/" </command>
@@ -367,7 +372,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #59</name>
+    <name>text #60</name>
     <text>Web Pages</text>
     <x>111</x>
     <y>120</y>
@@ -379,7 +384,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>composite #62</name>
+    <name>composite #63</name>
     <x>31</x>
     <y>145</y>
     <width>220</width>
@@ -387,7 +392,7 @@
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
-      <name>text #65</name>
+      <name>text #66</name>
       <text>Vacuum and EPS</text>
       <x>80</x>
       <width>140</width>
@@ -398,7 +403,7 @@
       <auto_size>true</auto_size>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>related display #68</name>
+      <name>related display #69</name>
       <actions>
         <action type="open_display">
           <file>13ID_EPS.opi</file>
@@ -416,7 +421,7 @@
     </widget>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #71</name>
+    <name>related display #72</name>
     <actions>
       <action type="open_display">
         <file>4motors.opi</file>
@@ -452,7 +457,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #75</name>
+    <name>text #76</name>
     <text>Pinhole Tank BPM &amp; Viewer</text>
     <x>111</x>
     <y>195</y>
@@ -464,7 +469,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #78</name>
+    <name>related display #79</name>
     <actions>
       <action type="open_display">
         <file>measCompSingleAnalogOut.opi</file>
@@ -514,7 +519,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #84</name>
+    <name>text #85</name>
     <text>DACs</text>
     <x>462</x>
     <y>95</y>
@@ -526,7 +531,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #87</name>
+    <name>text #88</name>
     <text>13-ID-C/D</text>
     <x>121</x>
     <y>270</y>
@@ -543,7 +548,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>rectangle #90</name>
+    <name>rectangle #91</name>
     <x>10</x>
     <y>260</y>
     <width>330</width>
@@ -560,7 +565,7 @@
     <transparent>true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #93</name>
+    <name>text #94</name>
     <text>Monochromator</text>
     <x>111</x>
     <y>355</y>
@@ -572,7 +577,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #96</name>
+    <name>related display #97</name>
     <actions>
       <action type="open_display">
         <file>GSE_MonoEnergy.opi</file>
@@ -684,7 +689,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #105</name>
+    <name>related display #106</name>
     <actions>
       <action type="open_display">
         <file>newIDControl_Planar.opi</file>
@@ -714,7 +719,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #109</name>
+    <name>text #110</name>
     <text>Undulator Gap Control</text>
     <x>110</x>
     <y>305</y>
@@ -726,7 +731,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #112</name>
+    <name>related display #113</name>
     <actions>
       <action type="open_display">
         <file>4motors.opi</file>
@@ -783,7 +788,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #117</name>
+    <name>text #118</name>
     <text>Slits, Pinhole</text>
     <x>111</x>
     <y>330</y>
@@ -795,7 +800,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #120</name>
+    <name>related display #121</name>
     <actions>
       <action type="open_display">
         <file>2motors.opi</file>
@@ -855,7 +860,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #126</name>
+    <name>text #127</name>
     <text>Quad BPM</text>
     <x>111</x>
     <y>430</y>
@@ -867,7 +872,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #129</name>
+    <name>related display #130</name>
     <actions>
       <action type="open_display">
         <file>scan_more.opi</file>
@@ -929,7 +934,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #135</name>
+    <name>text #136</name>
     <text>Scan</text>
     <x>111</x>
     <y>455</y>
@@ -941,7 +946,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #138</name>
+    <name>related display #139</name>
     <actions>
       <action type="open_display">
         <file>8motors.opi</file>
@@ -1033,7 +1038,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #147</name>
+    <name>text #148</name>
     <text>Vertical Mirror</text>
     <x>111</x>
     <y>380</y>
@@ -1045,7 +1050,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #150</name>
+    <name>related display #151</name>
     <actions>
       <action type="open_display">
         <file>6motors.opi</file>
@@ -1134,7 +1139,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #158</name>
+    <name>text #159</name>
     <text>Horizontal Mirror</text>
     <x>111</x>
     <y>405</y>
@@ -1146,7 +1151,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #161</name>
+    <name>text #162</name>
     <text>13-ID-E</text>
     <x>483</x>
     <y>270</y>
@@ -1163,7 +1168,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>rectangle #164</name>
+    <name>rectangle #165</name>
     <x>360</x>
     <y>260</y>
     <width>330</width>
@@ -1180,7 +1185,7 @@
     <transparent>true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #167</name>
+    <name>text #168</name>
     <text>Monochromator</text>
     <x>461</x>
     <y>355</y>
@@ -1192,7 +1197,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #170</name>
+    <name>text #171</name>
     <text>Undulator Gap Control</text>
     <x>460</x>
     <y>305</y>
@@ -1204,7 +1209,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #173</name>
+    <name>related display #174</name>
     <actions>
       <action type="open_display">
         <file>4motors.opi</file>
@@ -1242,7 +1247,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #177</name>
+    <name>text #178</name>
     <text>Slits, Beam viewer</text>
     <x>461</x>
     <y>330</y>
@@ -1254,7 +1259,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #180</name>
+    <name>related display #181</name>
     <actions>
       <action type="open_display">
         <file>scan_more.opi</file>
@@ -1316,7 +1321,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #186</name>
+    <name>text #187</name>
     <text>Scan</text>
     <x>461</x>
     <y>480</y>
@@ -1328,7 +1333,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #189</name>
+    <name>text #190</name>
     <text>Horizontal Mirrors</text>
     <x>461</x>
     <y>380</y>
@@ -1340,7 +1345,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #192</name>
+    <name>related display #193</name>
     <actions>
       <action type="open_display">
         <file>13ID_EMirrors.opi</file>
@@ -1444,7 +1449,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #201</name>
+    <name>related display #202</name>
     <actions>
       <action type="open_display">
         <file>GSE_MonoEnergy.opi</file>
@@ -1565,7 +1570,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #213</name>
+    <name>related display #214</name>
     <actions>
       <action type="open_display">
         <file>newIDControl_Planar.opi</file>
@@ -1595,7 +1600,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #217</name>
+    <name>text #218</name>
     <text>Quad BPM</text>
     <x>461</x>
     <y>430</y>
@@ -1607,7 +1612,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #220</name>
+    <name>related display #221</name>
     <actions>
       <action type="open_display">
         <file>4motors.opi</file>
@@ -1645,7 +1650,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #224</name>
+    <name>text #225</name>
     <text>SSA</text>
     <x>461</x>
     <y>405</y>
@@ -1657,7 +1662,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #227</name>
+    <name>related display #228</name>
     <actions>
       <action type="open_display">
         <file>1motors.opi</file>
@@ -1717,7 +1722,7 @@
     </background_color>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #233</name>
+    <name>related display #234</name>
     <actions>
       <action type="open_display">
         <file>userTransform.opi</file>
@@ -1767,7 +1772,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #239</name>
+    <name>text #240</name>
     <text>User Calcs</text>
     <x>461</x>
     <y>454</y>
@@ -1779,7 +1784,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #242</name>
+    <name>related display #243</name>
     <actions>
       <action type="open_display">
         <file>asynOctet.opi</file>
@@ -1937,7 +1942,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #260</name>
+    <name>text #261</name>
     <text>asyn serial 1-16</text>
     <x>461</x>
     <y>170</y>
@@ -1949,7 +1954,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #263</name>
+    <name>related display #264</name>
     <actions>
       <action type="open_display">
         <file>asynOctet.opi</file>
@@ -2035,7 +2040,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #273</name>
+    <name>text #274</name>
     <text>asyn serial 17-24</text>
     <x>461</x>
     <y>195</y>
@@ -2047,7 +2052,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #276</name>
+    <name>related display #277</name>
     <actions>
       <action type="open_display">
         <file>ioc_stats_soft.opi</file>
@@ -2085,7 +2090,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #281</name>
+    <name>text #282</name>
     <text>IOC status</text>
     <x>461</x>
     <y>220</y>
@@ -2096,7 +2101,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #284</name>
+    <name>related display #285</name>
     <actions>
       <action type="open_display">
         <file>userTransforms10.opi</file>
@@ -2134,7 +2139,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #289</name>
+    <name>text #290</name>
     <text>User calcs, transforms</text>
     <x>461</x>
     <y>145</y>
@@ -2146,7 +2151,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>related display #292</name>
+    <name>related display #293</name>
     <actions>
       <action type="open_display">
         <file>galil_dmc_ctrl.opi</file>
@@ -2304,7 +2309,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #302</name>
+    <name>text #303</name>
     <text>Galil controllers</text>
     <x>112</x>
     <y>220</y>
