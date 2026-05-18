@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:22 by epics-->
+<display version="2.0.0">
+  <name>CalibHSAp</name>
+  <x>254</x>
+  <y>378</y>
+  <width>615</width>
+  <height>300</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>615</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>$(assy)</text>
+    <x>492</x>
+    <y>4</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #12</name>
+    <pv_name>$(assy)Start.DESC</pv_name>
+    <x>4</x>
+    <y>4</y>
+    <width>255</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #16</name>
+    <x>5</x>
+    <y>96</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #19</name>
+    <text>$(x2)</text>
+    <x>20</x>
+    <y>99</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #22</name>
+    <pv_name>$(x2)ActPos</pv_name>
+    <x>14</x>
+    <y>118</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #26</name>
+    <pv_name>$(assy)Invert</pv_name>
+    <x>130</x>
+    <y>100</y>
+    <width>41</width>
+    <height>37</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <horizontal>false</horizontal>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #29</name>
+    <text>* (</text>
+    <x>180</x>
+    <y>108</y>
+    <width>25</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #32</name>
+    <text>=</text>
+    <x>110</x>
+    <y>108</y>
+    <width>15</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #35</name>
+    <x>215</x>
+    <y>95</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>$(d2)</text>
+    <x>230</x>
+    <y>98</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #41</name>
+    <x>337</x>
+    <y>95</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #44</name>
+    <text>$(d1)</text>
+    <x>352</x>
+    <y>98</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #47</name>
+    <text>)</text>
+    <x>438</x>
+    <y>108</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #50</name>
+    <pv_name>$(d2)ActPos</pv_name>
+    <x>224</x>
+    <y>119</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #54</name>
+    <text>-</text>
+    <x>316</x>
+    <y>108</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #57</name>
+    <pv_name>$(d1)ActPos</pv_name>
+    <x>347</x>
+    <y>118</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #61</name>
+    <x>5</x>
+    <y>35</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #64</name>
+    <text>$(x1)</text>
+    <x>20</x>
+    <y>38</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #67</name>
+    <x>215</x>
+    <y>35</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #70</name>
+    <text>$(d2)</text>
+    <x>230</x>
+    <y>38</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #73</name>
+    <pv_name>$(x1)ActPos</pv_name>
+    <x>14</x>
+    <y>59</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #77</name>
+    <x>337</x>
+    <y>35</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #80</name>
+    <text>$(d1)</text>
+    <x>352</x>
+    <y>38</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #83</name>
+    <pv_name>$(d2)ActPos</pv_name>
+    <x>225</x>
+    <y>59</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #87</name>
+    <pv_name>$(d1)ActPos</pv_name>
+    <x>345</x>
+    <y>59</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #91</name>
+    <text>=  0.5 * (</text>
+    <x>110</x>
+    <y>48</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #94</name>
+    <text>)</text>
+    <x>438</x>
+    <y>48</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #97</name>
+    <text>+</text>
+    <x>316</x>
+    <y>48</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #100</name>
+    <x>4</x>
+    <y>150</y>
+    <width>519</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="517.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="105" green="105" blue="105">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #104</name>
+    <text>=</text>
+    <x>106</x>
+    <y>181</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #107</name>
+    <x>5</x>
+    <y>159</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #110</name>
+    <text>$(d1)</text>
+    <x>20</x>
+    <y>162</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #113</name>
+    <pv_name>$(d1)ActPos</pv_name>
+    <x>15</x>
+    <y>182</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #117</name>
+    <x>130</x>
+    <y>159</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #120</name>
+    <text>$(m1)</text>
+    <x>145</x>
+    <y>162</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #123</name>
+    <text>*</text>
+    <x>238</x>
+    <y>182</y>
+    <width>20</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #126</name>
+    <text>+</text>
+    <x>379</x>
+    <y>180</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #129</name>
+    <x>401</x>
+    <y>159</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #132</name>
+    <pv_name>$(d1)Offset</pv_name>
+    <x>411</x>
+    <y>178</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #136</name>
+    <text>$(d1)Offset</text>
+    <x>406</x>
+    <y>163</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #139</name>
+    <x>260</x>
+    <y>159</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #142</name>
+    <pv_name>$(d1)Scale</pv_name>
+    <x>270</x>
+    <y>178</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #146</name>
+    <text>$(d1)Scale</text>
+    <x>265</x>
+    <y>163</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #149</name>
+    <pv_name>$(m1)ActPos</pv_name>
+    <x>140</x>
+    <y>182</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #153</name>
+    <text>=</text>
+    <x>106</x>
+    <y>236</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #156</name>
+    <x>5</x>
+    <y>214</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #159</name>
+    <text>$(d2)</text>
+    <x>20</x>
+    <y>217</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #162</name>
+    <pv_name>$(d2)ActPos</pv_name>
+    <x>15</x>
+    <y>237</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #166</name>
+    <x>130</x>
+    <y>214</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #169</name>
+    <text>$(m2)</text>
+    <x>145</x>
+    <y>217</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #172</name>
+    <text>*</text>
+    <x>238</x>
+    <y>237</y>
+    <width>20</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #175</name>
+    <text>+</text>
+    <x>379</x>
+    <y>235</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #178</name>
+    <x>401</x>
+    <y>214</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #181</name>
+    <pv_name>$(d2)Offset</pv_name>
+    <x>411</x>
+    <y>233</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #185</name>
+    <text>$(d2)Offset</text>
+    <x>406</x>
+    <y>218</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #188</name>
+    <x>260</x>
+    <y>214</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #191</name>
+    <pv_name>$(d2)Scale</pv_name>
+    <x>270</x>
+    <y>233</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #195</name>
+    <text>$(d2)Scale</text>
+    <x>265</x>
+    <y>218</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #198</name>
+    <pv_name>$(m2)ActPos</pv_name>
+    <x>140</x>
+    <y>237</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #202</name>
+    <x>545</x>
+    <y>163</y>
+    <width>70</width>
+    <height>16</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #205</name>
+      <pv_name>$(m1)Mtr</pv_name>
+      <x>40</x>
+      <width>30</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #209</name>
+      <text>mtr=</text>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #212</name>
+    <pv_name>$(m2)Mtr</pv_name>
+    <x>585</x>
+    <y>218</y>
+    <width>30</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #216</name>
+    <text>mtr=</text>
+    <x>545</x>
+    <y>218</y>
+    <width>40</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #219</name>
+    <y>274</y>
+    <width>615</width>
+    <height>26</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #222</name>
+      <width>615</width>
+      <height>26</height>
+      <line_color>
+        <color red="212" green="219" blue="157">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="212" green="219" blue="157">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #225</name>
+      <x>5</x>
+      <y>6</y>
+      <width>230</width>
+      <height>16</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #228</name>
+        <text>pmac=</text>
+        <width>45</width>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>2</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #231</name>
+        <pv_name>$(assy)Pmac</pv_name>
+        <x>45</x>
+        <width>110</width>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="212" green="219" blue="157">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #235</name>
+        <text>pcs=</text>
+        <x>150</x>
+        <width>40</width>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>2</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #238</name>
+        <pv_name>$(assy)Pcs</pv_name>
+        <x>190</x>
+        <width>40</width>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="212" green="219" blue="157">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #242</name>
+      <text>ioc=$(ioc)</text>
+      <x>260</x>
+      <y>6</y>
+      <width>150</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #245</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(ioc):saveTrigger.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(ioc):saveTrigger.PROC</pv_name>
+      <text>Save $(ioc)</text>
+      <x>447</x>
+      <y>4</y>
+      <width>163</width>
+      <height>20</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="166" green="164" blue="98">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+</display>

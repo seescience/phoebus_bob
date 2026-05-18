@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:43 by epics-->
+<display version="2.0.0">
+  <name>firewireDCAMTop</name>
+  <x>29</x>
+  <y>251</y>
+  <width>301</width>
+  <height>89</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>Area Detector</text>
+    <x>50</x>
+    <y>6</y>
+    <width>201</width>
+    <height>31</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #9</name>
+    <actions>
+      <action type="open_display">
+        <file>NDStdArrays.opi</file>
+        <macros>
+          <P>DCAM:</P>
+          <R>image1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Image #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileNetCDF.opi</file>
+        <macros>
+          <P>DCAM:</P>
+          <R>netCDF1:</R>
+        </macros>
+        <target>tab</target>
+        <description>netCDF file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileTIFF.opi</file>
+        <macros>
+          <P>DCAM:</P>
+          <R>TIFF1:</R>
+        </macros>
+        <target>tab</target>
+        <description>TIFF file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileJPEG.opi</file>
+        <macros>
+          <P>DCAM:</P>
+          <R>JPEG1:</R>
+        </macros>
+        <target>tab</target>
+        <description>JPEG file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDFileNexus.opi</file>
+        <macros>
+          <P>DCAM:</P>
+          <R>Nexus1:</R>
+        </macros>
+        <target>tab</target>
+        <description>NeXus file #1</description>
+      </action>
+      <action type="open_display">
+        <file>NDROI.opi</file>
+        <macros>
+          <P>DCAM:</P>
+          <R>ROI1:</R>
+        </macros>
+        <target>tab</target>
+        <description>ROI #1</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>207</x>
+    <y>52</y>
+    <width>64</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #17</name>
+    <text>LAB2 camera Plug-ins</text>
+    <x>19</x>
+    <y>53</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #20</name>
+    <text>LAB2 Camera driver</text>
+    <x>29</x>
+    <y>28</y>
+    <width>170</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #23</name>
+    <actions>
+      <action type="open_display">
+        <file>ADBase.opi</file>
+        <macros>
+          <CC>CC1:</CC>
+          <I>image1:</I>
+          <JPEG>JPEG1:</JPEG>
+          <NETCDF>netCDF1:</NETCDF>
+          <NEXUS>Nexus1:</NEXUS>
+          <P>DCAM:</P>
+          <R>CAM1:</R>
+          <ROI>ROI1:</ROI>
+          <TIFF>TIFF1:</TIFF>
+        </macros>
+        <target>tab</target>
+        <description> cam #1 General</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>207</x>
+    <y>28</y>
+    <width>64</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+</display>

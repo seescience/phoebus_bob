@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:45 by epics-->
+<display version="2.0.0">
+  <name>SPiiPlusFeedback</name>
+  <x>238</x>
+  <y>101</y>
+  <width>680</width>
+  <height>250</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="group" version="2.0.0">
+    <name>composite #6</name>
+    <x>18</x>
+    <y>132</y>
+    <width>640</width>
+    <height>45</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #9</name>
+      <width>640</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #12</name>
+        <text>FPOS</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #15</name>
+        <text>FP</text>
+        <x>135</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #18</name>
+        <text>EFAC</text>
+        <x>270</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #21</name>
+        <text>EOFFS</text>
+        <x>405</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #24</name>
+        <text>E_AOFFS</text>
+        <x>540</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #27</name>
+        <text>=</text>
+        <x>105</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #30</name>
+        <text>*</text>
+        <x>240</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #33</name>
+        <text>+</text>
+        <x>375</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #36</name>
+        <text>or</text>
+        <x>510</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #39</name>
+      <y>25</y>
+      <width>640</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #42</name>
+        <pv_name>$(P)$(M):FPOS.VAL</pv_name>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #46</name>
+        <pv_name>$(P)$(M):EFAC.VAL</pv_name>
+        <x>270</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #50</name>
+        <pv_name>$(P)$(M):EOFFS.VAL</pv_name>
+        <x>405</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #54</name>
+        <pv_name>$(P)$(M):E_AOFFS.VAL</pv_name>
+        <x>540</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #58</name>
+        <text>=</text>
+        <x>105</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #61</name>
+        <text>FP</text>
+        <x>135</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #64</name>
+        <text>*</text>
+        <x>240</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #67</name>
+        <text>+</text>
+        <x>375</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #70</name>
+        <text>or</text>
+        <x>510</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #73</name>
+    <x>18</x>
+    <y>182</y>
+    <width>640</width>
+    <height>45</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #76</name>
+      <width>640</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #79</name>
+        <text>F2POS</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #82</name>
+        <text>FP2</text>
+        <x>135</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #85</name>
+        <text>E2FAC</text>
+        <x>270</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #88</name>
+        <text>E2OFFS</text>
+        <x>405</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #91</name>
+        <text>E2_AOFFS</text>
+        <x>540</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #94</name>
+        <text>=</text>
+        <x>105</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #97</name>
+        <text>*</text>
+        <x>240</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #100</name>
+        <text>+</text>
+        <x>375</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #103</name>
+        <text>or</text>
+        <x>510</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #106</name>
+      <y>25</y>
+      <width>640</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #109</name>
+        <pv_name>$(P)$(M):F2POS.VAL</pv_name>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #113</name>
+        <pv_name>$(P)$(M):E2FAC.VAL</pv_name>
+        <x>270</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #117</name>
+        <pv_name>$(P)$(M):E2OFFS.VAL</pv_name>
+        <x>405</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #121</name>
+        <pv_name>$(P)$(M):E2_AOFFS.VAL</pv_name>
+        <x>540</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #125</name>
+        <text>=</text>
+        <x>105</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #128</name>
+        <text>FP2</text>
+        <x>135</x>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #131</name>
+        <text>*</text>
+        <x>240</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #134</name>
+        <text>+</text>
+        <x>375</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #137</name>
+        <text>or</text>
+        <x>510</x>
+        <width>25</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #140</name>
+    <text>$(P)$(M) feedback parameters</text>
+    <x>10</x>
+    <y>10</y>
+    <width>390</width>
+    <height>29</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #143</name>
+    <x>46</x>
+    <y>67</y>
+    <width>600</width>
+    <height>45</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #146</name>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #149</name>
+        <text>APOS</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #152</name>
+        <pv_name>$(P)$(M):APOS.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #156</name>
+      <x>125</x>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #159</name>
+        <text>STEPF</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #162</name>
+        <pv_name>$(P)$(M):STEPF.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #166</name>
+      <x>250</x>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #169</name>
+        <text>EPOS</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #172</name>
+        <pv_name>$(P)$(M):EPOS.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #176</name>
+      <x>375</x>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #179</name>
+        <text>E_TYPE</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #182</name>
+        <pv_name>$(P)$(M):E_TYPE.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #186</name>
+      <x>500</x>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #189</name>
+        <text>E2_TYPE</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #192</name>
+        <pv_name>$(P)$(M):E2_TYPE.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #196</name>
+    <x>421</x>
+    <y>12</y>
+    <width>225</width>
+    <height>45</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #199</name>
+      <x>125</x>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #202</name>
+        <pv_name>$(P)$(M):FAULT:ENC2.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #206</name>
+        <text>FAULT:ENC2</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #209</name>
+      <width>100</width>
+      <height>45</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #212</name>
+        <text>FAULT:ENC</text>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #215</name>
+        <pv_name>$(P)$(M):FAULT:ENC.VAL</pv_name>
+        <y>25</y>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:34 by epics-->
+<display version="2.0.0">
+  <name>Overview23i</name>
+  <x>185</x>
+  <y>96</y>
+  <width>630</width>
+  <height>135</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>630</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>PMAC Driver Servo Clock Watchdog</text>
+    <x>4</x>
+    <y>4</y>
+    <width>500</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>$(B)</text>
+    <x>506</x>
+    <y>4</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>PMAC</text>
+    <x>3</x>
+    <y>35</y>
+    <width>87</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #18</name>
+    <text>Mailbox</text>
+    <x>100</x>
+    <y>35</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #21</name>
+    <text>Servo</text>
+    <x>200</x>
+    <y>28</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>Variable</text>
+    <x>400</x>
+    <y>28</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #27</name>
+    <text>Background</text>
+    <x>300</x>
+    <y>35</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>(gather)</text>
+    <x>200</x>
+    <y>44</y>
+    <width>80</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="75" green="110" blue="199">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #33</name>
+    <text>(i55=1)</text>
+    <x>400</x>
+    <y>44</y>
+    <width>80</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="75" green="110" blue="199">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #36</name>
+    <actions>
+      <action type="open_display">
+        <file>PmacCommands23i.opi</file>
+        <macros>
+          <bl>$(B)</bl>
+        </macros>
+        <target>tab</target>
+        <description>Command Strings</description>
+      </action>
+    </actions>
+    <text>Command Strings &gt;&gt;</text>
+    <x>500</x>
+    <y>33</y>
+    <width>128</width>
+    <height>18</height>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #39</name>
+    <x>3</x>
+    <y>59</y>
+    <width>621</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #42</name>
+      <text>$(B)pmac10:</text>
+      <x>2</x>
+      <y>7</y>
+      <width>87</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #45</name>
+      <pv_name>$(B)pmac10:mbx:SvoTm</pv_name>
+      <x>97</x>
+      <y>8</y>
+      <width>80</width>
+      <height>12</height>
+      <numBits>16</numBits>
+      <square>true</square>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #48</name>
+      <pv_name>$(B)pmac10:svo:SvoTm</pv_name>
+      <x>197</x>
+      <y>8</y>
+      <width>80</width>
+      <height>12</height>
+      <numBits>16</numBits>
+      <square>true</square>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #51</name>
+      <pv_name>$(B)pmac10:var:SvoTm</pv_name>
+      <x>397</x>
+      <y>8</y>
+      <width>80</width>
+      <height>12</height>
+      <numBits>16</numBits>
+      <square>true</square>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #54</name>
+      <pv_name>$(B)pmac10:bkg:SvoTm</pv_name>
+      <x>297</x>
+      <y>8</y>
+      <width>80</width>
+      <height>12</height>
+      <numBits>16</numBits>
+      <square>true</square>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #57</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(B)pmac10:StrCmd</pv_name>
+          <value>gather</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(B)pmac10:StrCmd</pv_name>
+      <text>gather</text>
+      <x>492</x>
+      <y>6</y>
+      <width>60</width>
+      <height>18</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #60</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(B)pmac10:StrCmd</pv_name>
+          <value>i55</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(B)pmac10:StrCmd</pv_name>
+      <text>i55</text>
+      <x>555</x>
+      <y>6</y>
+      <width>60</width>
+      <height>18</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #63</name>
+      <width>621</width>
+      <height>30</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #66</name>
+    <text>$(B)pmac20:</text>
+    <x>5</x>
+    <y>101</y>
+    <width>87</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>bar #69</name>
+    <pv_name>$(B)pmac20:mbx:SvoTm</pv_name>
+    <x>100</x>
+    <y>102</y>
+    <width>80</width>
+    <height>12</height>
+    <numBits>16</numBits>
+    <square>true</square>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>bar #72</name>
+    <pv_name>$(B)pmac20:svo:SvoTm</pv_name>
+    <x>200</x>
+    <y>102</y>
+    <width>80</width>
+    <height>12</height>
+    <numBits>16</numBits>
+    <square>true</square>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>bar #75</name>
+    <pv_name>$(B)pmac20:var:SvoTm</pv_name>
+    <x>400</x>
+    <y>102</y>
+    <width>80</width>
+    <height>12</height>
+    <numBits>16</numBits>
+    <square>true</square>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>bar #78</name>
+    <pv_name>$(B)pmac20:bkg:SvoTm</pv_name>
+    <x>300</x>
+    <y>102</y>
+    <width>80</width>
+    <height>12</height>
+    <numBits>16</numBits>
+    <square>true</square>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #81</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(B)pmac20:StrCmd</pv_name>
+        <value>gather</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(B)pmac20:StrCmd</pv_name>
+    <text>gather</text>
+    <x>495</x>
+    <y>100</y>
+    <width>60</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #84</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(B)pmac20:StrCmd</pv_name>
+        <value>i55</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(B)pmac20:StrCmd</pv_name>
+    <text>i55</text>
+    <x>558</x>
+    <y>100</y>
+    <width>60</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #87</name>
+    <x>3</x>
+    <y>94</y>
+    <width>621</width>
+    <height>30</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+</display>

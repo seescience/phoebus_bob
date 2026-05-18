@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:29:50 by epics-->
+<display version="2.0.0">
+  <name>UserSteering</name>
+  <x>1199</x>
+  <y>518</y>
+  <width>638</width>
+  <height>550</height>
+  <background_color>
+    <color red="90" green="90" blue="90">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>8</x>
+    <y>56</y>
+    <width>620</width>
+    <height>484</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #9</name>
+    <x>18</x>
+    <y>67</y>
+    <width>600</width>
+    <height>172</height>
+    <line_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #12</name>
+    <x>18</x>
+    <y>66</y>
+    <width>600</width>
+    <height>172</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>STEERING VALUE ENTRY</text>
+    <x>218</x>
+    <y>71</y>
+    <width>200</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #18</name>
+    <x>48</x>
+    <y>93</y>
+    <width>543</width>
+    <height>104</height>
+    <line_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #21</name>
+    <pv_name>$(sector)-Steering:Xp:SetValueC</pv_name>
+    <x>187</x>
+    <y>104</y>
+    <width>80</width>
+    <height>28</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>Xp</text>
+    <x>155</x>
+    <y>108</y>
+    <width>26</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #28</name>
+    <pv_name>$(sector)-Steering:Yp:SetValueC</pv_name>
+    <x>374</x>
+    <y>104</y>
+    <width>80</width>
+    <height>28</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #32</name>
+    <text>Yp</text>
+    <x>450</x>
+    <y>108</y>
+    <width>26</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #35</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(sector)-Yp:RequestSteeringC</pv_name>
+        <value></value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(sector)-Yp:RequestSteeringC</pv_name>
+    <text>WRITE VALUE</text>
+    <x>481</x>
+    <y>107</y>
+    <width>106</width>
+    <height>22</height>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>urad</text>
+    <x>300</x>
+    <y>108</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #41</name>
+    <x>119</x>
+    <y>13</y>
+    <width>402</width>
+    <height>28</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #44</name>
+      <text>SECTOR $(sector) - USER STEERING</text>
+      <x>2</x>
+      <y>2</y>
+      <width>400</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #47</name>
+      <text>SECTOR $(sector) - USER STEERING</text>
+      <width>400</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="212" green="219" blue="157">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #50</name>
+    <x>168</x>
+    <y>201</y>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #53</name>
+      <text>Positive Number = Outboard Steering</text>
+      <width>300</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="187" green="193" blue="135">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #56</name>
+      <text>Negative Number = Inboard Steering</text>
+      <y>17</y>
+      <width>300</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="187" green="193" blue="135">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #59</name>
+    <pv_name>$(sector)-Steering:Yp_ModeC</pv_name>
+    <x>374</x>
+    <y>132</y>
+    <width>78</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #63</name>
+    <pv_name>$(sector)-Steering:Yp_ModeC</pv_name>
+    <x>187</x>
+    <y>132</y>
+    <width>78</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #67</name>
+    <text>MODE</text>
+    <x>300</x>
+    <y>133</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #70</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(sector)-Xp:RequestSteeringC</pv_name>
+        <value></value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(sector)-Xp:RequestSteeringC</pv_name>
+    <text>WRITE VALUE</text>
+    <x>52</x>
+    <y>107</y>
+    <width>106</width>
+    <height>22</height>
+    <background_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #73</name>
+    <x>268</x>
+    <y>117</y>
+    <width>28</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="27.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #77</name>
+    <x>344</x>
+    <y>117</y>
+    <width>28</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="27.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #81</name>
+    <x>268</x>
+    <y>142</y>
+    <width>28</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="27.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #85</name>
+    <x>344</x>
+    <y>142</y>
+    <width>28</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="27.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #89</name>
+    <x>18</x>
+    <y>370</y>
+    <width>600</width>
+    <height>160</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #92</name>
+      <width>600</width>
+      <height>160</height>
+      <line_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #95</name>
+      <width>600</width>
+      <height>160</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #98</name>
+      <text>SERVER STATUS</text>
+      <x>196</x>
+      <y>6</y>
+      <width>200</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #101</name>
+      <x>305</x>
+      <y>30</y>
+      <width>268</width>
+      <height>125</height>
+      <line_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #104</name>
+      <x>30</x>
+      <y>30</y>
+      <width>268</width>
+      <height>125</height>
+      <line_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #107</name>
+      <x>186</x>
+      <y>35</y>
+      <width>20</width>
+      <height>14</height>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #110</name>
+      <x>189</x>
+      <y>38</y>
+      <width>14</width>
+      <height>8</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0&gt;1||pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(sector)-Steering:Xp:ServerRunningM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #114</name>
+      <x>189</x>
+      <y>38</y>
+      <width>14</width>
+      <height>8</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==1)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(sector)-Steering:Xp:ServerRunningM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #118</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(sector)-Steering:Xp_AccuValueRstC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(sector)-Steering:Xp_AccuValueRstC</pv_name>
+      <text>RESET</text>
+      <x>230</x>
+      <y>59</y>
+      <width>54</width>
+      <height>18</height>
+      <background_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #121</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(sector)-Steering:Xp:RunAccumRstC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(sector)-Steering:Xp:RunAccumRstC</pv_name>
+      <text>RESET</text>
+      <x>230</x>
+      <y>89</y>
+      <width>54</width>
+      <height>18</height>
+      <background_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #124</name>
+      <x>459</x>
+      <y>35</y>
+      <width>20</width>
+      <height>14</height>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #127</name>
+      <x>462</x>
+      <y>38</y>
+      <width>14</width>
+      <height>8</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0&gt;1||pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(sector)-Steering:Yp:ServerRunningM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #131</name>
+      <x>462</x>
+      <y>38</y>
+      <width>14</width>
+      <height>8</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_calc" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==1)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(sector)-Steering:Yp:ServerRunningM</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #135</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(sector)-Steering:Xp:RunAccumRstC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(sector)-Steering:Xp:RunAccumRstC</pv_name>
+      <text>RESET</text>
+      <x>504</x>
+      <y>89</y>
+      <width>54</width>
+      <height>18</height>
+      <background_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #138</name>
+      <x>309</x>
+      <y>86</y>
+      <width>260</width>
+      <height>24</height>
+      <line_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #141</name>
+      <text>TOTAL ACCUM</text>
+      <x>359</x>
+      <y>88</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #144</name>
+      <text>Yp</text>
+      <x>316</x>
+      <y>88</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #147</name>
+      <pv_name>$(sector)-Steering:Yp:RunAccumM</pv_name>
+      <x>462</x>
+      <y>88</y>
+      <width>40</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #151</name>
+      <x>459</x>
+      <y>86</y>
+      <width>102</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #154</name>
+      <x>309</x>
+      <y>56</y>
+      <width>260</width>
+      <height>24</height>
+      <line_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #157</name>
+      <text>BL ACCUM</text>
+      <x>359</x>
+      <y>59</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #160</name>
+      <text>Yp</text>
+      <x>344</x>
+      <y>59</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #163</name>
+      <pv_name>$(sector)-Steering:Yp_AccuValueM</pv_name>
+      <x>462</x>
+      <y>59</y>
+      <width>40</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #167</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(sector)-Steering:Xp_AccuValueRstC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(sector)-Steering:Xp_AccuValueRstC</pv_name>
+      <text>RESET</text>
+      <x>504</x>
+      <y>59</y>
+      <width>54</width>
+      <height>18</height>
+      <background_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #170</name>
+      <x>459</x>
+      <y>56</y>
+      <width>102</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #173</name>
+      <x>34</x>
+      <y>86</y>
+      <width>260</width>
+      <height>24</height>
+      <line_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #176</name>
+      <x>34</x>
+      <y>56</y>
+      <width>260</width>
+      <height>24</height>
+      <line_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #179</name>
+      <text>BL ACCUM</text>
+      <x>85</x>
+      <y>59</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #182</name>
+      <text>Xp</text>
+      <x>70</x>
+      <y>59</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #185</name>
+      <text>TOTAL ACCUM</text>
+      <x>85</x>
+      <y>88</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #188</name>
+      <text>Xp</text>
+      <x>42</x>
+      <y>88</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #191</name>
+      <pv_name>$(sector)-Steering:Xp_AccuValueM</pv_name>
+      <x>188</x>
+      <y>59</y>
+      <width>40</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #195</name>
+      <pv_name>$(sector)-Steering:Xp:RunAccumM</pv_name>
+      <x>188</x>
+      <y>88</y>
+      <width>40</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #199</name>
+      <x>185</x>
+      <y>86</y>
+      <width>102</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #202</name>
+      <x>185</x>
+      <y>56</y>
+      <width>102</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="199" green="187" blue="109">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #205</name>
+      <pv_name>$(sector)-Steering:Xp_StatusM</pv_name>
+      <x>36</x>
+      <y>35</y>
+      <width>150</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #209</name>
+      <pv_name>$(sector)-Steering:Yp_StatusM</pv_name>
+      <x>309</x>
+      <y>35</y>
+      <width>150</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #213</name>
+      <pv_name>$(sector)-Steering:Xp_TimeStampM</pv_name>
+      <x>53</x>
+      <y>136</y>
+      <width>220</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #217</name>
+      <pv_name>$(sector)-Steering:Yp_TimeStampM</pv_name>
+      <x>329</x>
+      <y>136</y>
+      <width>220</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #221</name>
+      <text>Xp STEERING START TIME</text>
+      <x>85</x>
+      <y>121</y>
+      <width>160</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #224</name>
+      <text>Yp STEERING START TIME</text>
+      <x>359</x>
+      <y>121</y>
+      <width>160</width>
+      <height>14</height>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #227</name>
+    <x>18</x>
+    <y>244</y>
+    <width>600</width>
+    <height>120</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #230</name>
+      <width>600</width>
+      <height>120</height>
+      <line_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #233</name>
+      <x>305</x>
+      <y>31</y>
+      <width>268</width>
+      <height>80</height>
+      <line_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #236</name>
+      <width>600</width>
+      <height>120</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #239</name>
+      <text>STEERING LIMITS</text>
+      <x>196</x>
+      <y>6</y>
+      <width>200</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #242</name>
+      <x>30</x>
+      <y>31</y>
+      <width>268</width>
+      <height>80</height>
+      <line_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="90" green="90" blue="90">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #245</name>
+      <x>161</x>
+      <y>37</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #249</name>
+      <x>443</x>
+      <y>37</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #253</name>
+      <text>MAX LIMIT</text>
+      <x>66</x>
+      <y>40</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #256</name>
+      <x>161</x>
+      <y>80</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #260</name>
+      <x>443</x>
+      <y>80</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #264</name>
+      <text>Xp</text>
+      <x>38</x>
+      <y>40</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #267</name>
+      <text>MAX LIMIT</text>
+      <x>348</x>
+      <y>40</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #270</name>
+      <text>Yp</text>
+      <x>320</x>
+      <y>40</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #273</name>
+      <text>MIN LIMIT</text>
+      <x>66</x>
+      <y>83</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #276</name>
+      <text>Xp</text>
+      <x>38</x>
+      <y>83</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #279</name>
+      <text>MIN LIMIT</text>
+      <x>347</x>
+      <y>83</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="235" green="241" blue="181">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #282</name>
+      <text>Yp</text>
+      <x>319</x>
+      <y>83</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #285</name>
+      <text>urad</text>
+      <x>245</x>
+      <y>40</y>
+      <width>26</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #288</name>
+      <text>urad</text>
+      <x>245</x>
+      <y>83</y>
+      <width>26</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #291</name>
+      <text>urad</text>
+      <x>526</x>
+      <y>40</y>
+      <width>26</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #294</name>
+      <text>urad</text>
+      <x>526</x>
+      <y>83</y>
+      <width>26</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+</display>

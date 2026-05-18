@@ -1,0 +1,5180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:52:01 by epics-->
+<display version="2.0.0">
+  <name>13IDC_LVP_PEC</name>
+  <x>1941</x>
+  <y>150</y>
+  <width>1650</width>
+  <height>960</height>
+  <background_color>
+    <color red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>1195</x>
+    <y>70</y>
+    <width>114</width>
+    <height>380</height>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #9</name>
+    <x>1483</x>
+    <y>91</y>
+    <width>155</width>
+    <height>285</height>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #12</name>
+    <file>13BMD_LVP_DDIA_SlitsDiffResize.gif</file>
+    <x>1393</x>
+    <y>245</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #15</name>
+    <x>10</x>
+    <y>573</y>
+    <width>870</width>
+    <height>380</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #18</name>
+    <actions>
+      <action type="open_display">
+        <file>pilatusDetector.opi</file>
+        <macros>
+          <F>file1:</F>
+          <P>13PIL300K:</P>
+          <R>cam1:</R>
+          <ROI>ROI1:</ROI>
+        </macros>
+        <target>tab</target>
+        <description>Pilatus 300KW CdTe</description>
+      </action>
+    </actions>
+    <text>Diffraction (Pilatus 300KW)</text>
+    <x>211</x>
+    <y>580</y>
+    <width>450</width>
+    <height>45</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #21</name>
+    <pv_name>13IDC:m2.RBV</pv_name>
+    <x>1402</x>
+    <y>221</y>
+    <width>41</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #25</name>
+    <pv_name>13IDC:m4.RBV</pv_name>
+    <x>1402</x>
+    <y>311</y>
+    <width>41</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #29</name>
+    <actions>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <P>13IDC:</P>
+          <TITLE>Entrance_Slits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Entrance_Slits</description>
+      </action>
+    </actions>
+    <text>Ent. Slits</text>
+    <x>1344</x>
+    <y>50</y>
+    <height>40</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #32</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:allstop.VAL</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:allstop.VAL</pv_name>
+    <text>STOP ALL Motors!</text>
+    <x>1464</x>
+    <width>175</width>
+    <height>31</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #35</name>
+    <actions>
+      <action type="open_display">
+        <file>13IDC.opi</file>
+        <target>tab</target>
+        <description>13IDC Main Control</description>
+      </action>
+    </actions>
+    <text>13IDC Main Control</text>
+    <x>1197</x>
+    <y>534</y>
+    <width>145</width>
+    <height>21</height>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #38</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID.opi</file>
+        <target>tab</target>
+        <description>13ID Main Control</description>
+      </action>
+    </actions>
+    <text>13ID Main Control</text>
+    <x>1197</x>
+    <y>514</y>
+    <width>145</width>
+    <height>21</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #41</name>
+    <actions>
+      <action type="open_display">
+        <file>00Start.opi</file>
+        <target>tab</target>
+        <description>13 Main Control</description>
+      </action>
+    </actions>
+    <text>13 Main Control</text>
+    <x>1197</x>
+    <y>493</y>
+    <width>145</width>
+    <height>21</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #44</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID_EPS.opi</file>
+        <target>tab</target>
+        <description>Vacuum and EPS</description>
+      </action>
+    </actions>
+    <text>ID Vacuum / EPS</text>
+    <x>1197</x>
+    <y>472</y>
+    <width>145</width>
+    <height>20</height>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #47</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:CloseCDShutter.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:CloseCDShutter.PROC</pv_name>
+    <text>Close</text>
+    <x>1522</x>
+    <y>321</y>
+    <width>83</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #50</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDA:OpenCDShutter.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDA:OpenCDShutter.PROC</pv_name>
+    <text>Open</text>
+    <x>1522</x>
+    <y>140</y>
+    <width>83</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #53</name>
+    <text>IDC Shutter</text>
+    <x>1506</x>
+    <y>112</y>
+    <width>114</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #56</name>
+    <x>1556</x>
+    <y>276</y>
+    <width>72</width>
+    <height>3</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:eps_mbbi25</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #60</name>
+    <x>901</x>
+    <y>573</y>
+    <width>742</width>
+    <height>380</height>
+    <line_color>
+      <color red="139" green="26" blue="150">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="139" green="26" blue="150">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #63</name>
+    <actions>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m60</M1>
+          <M2>m61</M2>
+          <M3>m62</M3>
+          <P>13IDC:</P>
+          <TITLE>CellStage</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>PE Press Stage</description>
+      </action>
+    </actions>
+    <text>PE Press Stages</text>
+    <x>958</x>
+    <y>50</y>
+    <width>200</width>
+    <height>40</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #66</name>
+    <text>Next file #</text>
+    <x>448</x>
+    <y>688</y>
+    <width>93</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #69</name>
+    <pv_name>13PIL300K:TIFF1:FileNumber</pv_name>
+    <x>545</x>
+    <y>689</y>
+    <width>41</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #73</name>
+    <text>File name</text>
+    <x>13</x>
+    <y>688</y>
+    <width>93</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #76</name>
+    <pv_name>13PIL300K:TIFF1:FileName</pv_name>
+    <x>114</x>
+    <y>689</y>
+    <width>300</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #80</name>
+    <pv_name>13PIL300K:TIFF1:FileName_RBV</pv_name>
+    <x>114</x>
+    <y>673</y>
+    <width>527</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #84</name>
+    <pv_name>13PIL300K:TIFF1:FilePath</pv_name>
+    <x>114</x>
+    <y>648</y>
+    <width>756</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #88</name>
+    <pv_name>13PIL300K:TIFF1:FilePath_RBV</pv_name>
+    <x>114</x>
+    <y>632</y>
+    <width>506</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #92</name>
+    <text>File path</text>
+    <x>13</x>
+    <y>646</y>
+    <width>93</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #95</name>
+    <text>Exists:</text>
+    <x>759</x>
+    <y>627</y>
+    <width>72</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #98</name>
+    <pv_name>13PIL1MCdTe:TIFF1:FilePathExists_RBV</pv_name>
+    <x>834</x>
+    <y>627</y>
+    <width>31</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #102</name>
+    <text>Auto save</text>
+    <x>694</x>
+    <y>688</y>
+    <width>72</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #105</name>
+    <pv_name>13PIL300K:TIFF1:AutoSave</pv_name>
+    <x>767</x>
+    <y>689</y>
+    <width>66</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #108</name>
+    <pv_name>13PIL300K:TIFF1:AutoSave_RBV</pv_name>
+    <x>834</x>
+    <y>692</y>
+    <width>41</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #112</name>
+    <text>Last filename</text>
+    <x>12</x>
+    <y>715</y>
+    <width>134</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #115</name>
+    <pv_name>13PIL300K:TIFF1:FullFileName_RBV</pv_name>
+    <x>150</x>
+    <y>719</y>
+    <width>720</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #119</name>
+    <text>Image mode</text>
+    <x>34</x>
+    <y>758</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #122</name>
+    <pv_name>13PIL300K:TIFF1:FileWriteMode</pv_name>
+    <x>120</x>
+    <y>758</y>
+    <width>124</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #125</name>
+    <text>Exposure time</text>
+    <x>632</x>
+    <y>758</y>
+    <width>103</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #128</name>
+    <pv_name>13PIL300K:cam1:AcquireTime</pv_name>
+    <x>737</x>
+    <y>758</y>
+    <width>62</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #132</name>
+    <pv_name>13PIL300K:cam1:AcquireTime_RBV</pv_name>
+    <x>802</x>
+    <y>759</y>
+    <width>62</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #136</name>
+    <pv_name>13PIL300K:TIFF1:FileWriteMode_RBV</pv_name>
+    <x>249</x>
+    <y>760</y>
+    <width>62</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #140</name>
+    <text>Collecting</text>
+    <x>432</x>
+    <y>736</y>
+    <width>103</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL300K:cam1:Acquire</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #144</name>
+    <text>Done</text>
+    <x>462</x>
+    <y>736</y>
+    <width>41</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13PIL300K:cam1:Acquire</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #148</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL300K:cam1:Acquire</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL300K:cam1:Acquire</pv_name>
+    <text>Start</text>
+    <x>431</x>
+    <y>758</y>
+    <width>52</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #151</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL300K:cam1:Acquire</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL300K:cam1:Acquire</pv_name>
+    <text>Stop</text>
+    <x>486</x>
+    <y>758</y>
+    <width>52</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #154</name>
+    <text>Acquire</text>
+    <x>357</x>
+    <y>758</y>
+    <width>72</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #157</name>
+    <text>13IDC LVP Paris Edinburgh Press Control Window</text>
+    <y>9</y>
+    <width>1650</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #160</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1544</x>
+    <y>245</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:eps_mbbi26</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #163</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1544</x>
+    <y>184</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:eps_mbbi26</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #166</name>
+    <file>13BMD_LVP_DDIA_ShutterOpenResize.gif</file>
+    <x>1544</x>
+    <y>245</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #168</name>
+    <text>H size:      um</text>
+    <x>1324</x>
+    <y>221</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #171</name>
+    <text>V size:      um</text>
+    <x>1324</x>
+    <y>311</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #174</name>
+    <file>13BMD_LVP_DDIA_ShutterOpenResize.gif</file>
+    <x>1234</x>
+    <y>245</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #176</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1234</x>
+    <y>184</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:USB1808:Bi1.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #179</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:USB1808:Bo1</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:USB1808:Bo1</pv_name>
+    <text>Open</text>
+    <x>1209</x>
+    <y>140</y>
+    <width>83</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="30" green="187" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #182</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:USB1808:Bo1</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:USB1808:Bo1</pv_name>
+    <text>Close</text>
+    <x>1211</x>
+    <y>396</y>
+    <width>83</width>
+    <height>27</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #185</name>
+    <file>13BMD_LVP_DDIA_ShutterResize.gif</file>
+    <x>1234</x>
+    <y>245</y>
+    <width>41</width>
+    <height>61</height>
+    <stretch_image>true</stretch_image>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:USB1808:Bi1.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #188</name>
+    <x>1196</x>
+    <y>95</y>
+    <width>114</width>
+    <height>46</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #191</name>
+      <text>Hutch</text>
+      <width>114</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #194</name>
+      <text>Shutter</text>
+      <y>26</y>
+      <width>114</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #197</name>
+    <x>1075</x>
+    <y>276</y>
+    <width>249</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="247.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0&amp;&amp;pv1&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:USB1808:Bi1.VAL</pv_name>
+        <pv_name>13IDA:eps_mbbi26</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #202</name>
+    <pv_name>S:SRcurrentAI.VAL</pv_name>
+    <x>1512</x>
+    <y>69</y>
+    <width>52</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="205" green="97" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #206</name>
+    <text>mA</text>
+    <x>1565</x>
+    <y>69</y>
+    <width>41</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #209</name>
+    <text>Storage Ring</text>
+    <x>1479</x>
+    <y>33</y>
+    <width>155</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="77" green="82" blue="164">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #212</name>
+    <text>Current</text>
+    <x>1477</x>
+    <y>49</y>
+    <width>155</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="77" green="82" blue="164">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #215</name>
+    <text></text>
+    <x>1632</x>
+    <y>131</y>
+    <width>2</width>
+    <height>2</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="8.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #218</name>
+    <x>1433</x>
+    <y>276</y>
+    <width>159</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="157.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:eps_mbbi26</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>image #223</name>
+    <file>13IDC_LVP_PEC.gif</file>
+    <x>618</x>
+    <y>208</y>
+    <width>458</width>
+    <height>326</height>
+    <stretch_image>true</stretch_image>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #225</name>
+    <actions>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <P>13MCC:</P>
+          <TITLE>SollerSlits</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Soller Slits</description>
+      </action>
+    </actions>
+    <text>Soller Slits Stages</text>
+    <x>762</x>
+    <y>51</y>
+    <width>150</width>
+    <height>40</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #228</name>
+    <x>543</x>
+    <y>194</y>
+    <width>74</width>
+    <height>171</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #231</name>
+      <x>44</x>
+      <y>154</y>
+      <width>3</width>
+      <height>17</height>
+      <points>
+        <point x="1.0" y="15.0">
+        </point>
+        <point x="1.0" y="1.0">
+        </point>
+      </points>
+      <line_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #235</name>
+      <width>74</width>
+      <height>171</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #238</name>
+        <x>4</x>
+        <y>119</y>
+        <width>65</width>
+        <height>3</height>
+        <points>
+          <point x="63.0" y="1.0">
+          </point>
+          <point x="1.0" y="1.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #242</name>
+        <x>66</x>
+        <width>3</width>
+        <height>122</height>
+        <points>
+          <point x="1.0" y="1.0">
+          </point>
+          <point x="1.0" y="120.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #246</name>
+        <x>46</x>
+        <y>119</y>
+        <width>23</width>
+        <height>49</height>
+        <points>
+          <point x="21.0" y="1.0">
+          </point>
+          <point x="1.0" y="47.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #250</name>
+        <x>45</x>
+        <y>159</y>
+        <width>14</width>
+        <height>12</height>
+        <points>
+          <point x="1.0" y="10.0">
+          </point>
+          <point x="12.0" y="1.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #254</name>
+        <y>114</y>
+        <width>14</width>
+        <height>13</height>
+        <points>
+          <point x="12.0" y="1.0">
+          </point>
+          <point x="1.0" y="6.0">
+          </point>
+          <point x="12.0" y="11.0">
+          </point>
+          <point x="12.0" y="11.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #258</name>
+        <x>61</x>
+        <y>1</y>
+        <width>13</width>
+        <height>14</height>
+        <points>
+          <point x="11.0" y="12.0">
+          </point>
+          <point x="6.0" y="1.0">
+          </point>
+          <point x="1.0" y="12.0">
+          </point>
+          <point x="1.0" y="12.0">
+          </point>
+        </points>
+        <line_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </line_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #262</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m61.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m61.TWF</pv_name>
+    <text>+</text>
+    <x>634</x>
+    <y>148</y>
+    <width>19</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #265</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m61.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m61.TWR</pv_name>
+    <text>-</text>
+    <x>563</x>
+    <y>148</y>
+    <width>19</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #268</name>
+    <pv_name>13IDC:m61.TWV</pv_name>
+    <x>581</x>
+    <y>148</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #272</name>
+    <pv_name>13IDC:m61.VAL</pv_name>
+    <x>570</x>
+    <y>124</y>
+    <width>72</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #276</name>
+    <text>Soft-Limit</text>
+    <x>574</x>
+    <y>92</y>
+    <width>62</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m61.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #280</name>
+    <x>560</x>
+    <y>92</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m61.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #284</name>
+    <x>637</x>
+    <y>92</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m61.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #288</name>
+    <pv_name>13IDC:m61.RBV</pv_name>
+    <x>572</x>
+    <y>108</y>
+    <width>72</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #292</name>
+    <text>down(-)/up(+)</text>
+    <x>557</x>
+    <y>170</y>
+    <width>103</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="164" green="126" blue="60">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #295</name>
+    <pv_name>13IDC:m61.DESC</pv_name>
+    <x>559</x>
+    <y>74</y>
+    <width>93</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #299</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m60.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m60.TWF</pv_name>
+    <text>+</text>
+    <x>584</x>
+    <y>440</y>
+    <width>19</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #302</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m60.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m60.TWR</pv_name>
+    <text>-</text>
+    <x>514</x>
+    <y>440</y>
+    <width>19</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #305</name>
+    <pv_name>13IDC:m60.TWV</pv_name>
+    <x>532</x>
+    <y>440</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #309</name>
+    <pv_name>13IDC:m60.VAL</pv_name>
+    <x>520</x>
+    <y>416</y>
+    <width>72</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #313</name>
+    <text>Soft-Limit</text>
+    <x>526</x>
+    <y>386</y>
+    <width>62</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m60.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #317</name>
+    <x>511</x>
+    <y>386</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m60.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #321</name>
+    <x>588</x>
+    <y>386</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m60.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #325</name>
+    <pv_name>13IDC:m60.RBV</pv_name>
+    <x>527</x>
+    <y>399</y>
+    <width>72</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #329</name>
+    <pv_name>13IDC:m60.DESC</pv_name>
+    <x>509</x>
+    <y>367</y>
+    <width>93</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #333</name>
+    <text>in(-)/outboard(+)</text>
+    <x>505</x>
+    <y>460</y>
+    <width>103</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="164" green="126" blue="60">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #336</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m62.TWF</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m62.TWF</pv_name>
+    <text>+</text>
+    <x>491</x>
+    <y>300</y>
+    <width>19</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #339</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m62.TWR</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m62.TWR</pv_name>
+    <text>-</text>
+    <x>418</x>
+    <y>300</y>
+    <width>19</width>
+    <height>18</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #342</name>
+    <pv_name>13IDC:m62.TWV</pv_name>
+    <x>438</x>
+    <y>300</y>
+    <width>52</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #346</name>
+    <pv_name>13IDC:m62.VAL</pv_name>
+    <x>428</x>
+    <y>277</y>
+    <width>72</width>
+    <height>23</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #350</name>
+    <text>Soft-Limit</text>
+    <x>437</x>
+    <y>248</y>
+    <width>62</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m62.LVIO</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #354</name>
+    <pv_name>13IDC:m62.RBV</pv_name>
+    <x>429</x>
+    <y>260</y>
+    <width>72</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #358</name>
+    <text>up(-)/downstream(+)</text>
+    <x>417</x>
+    <y>321</y>
+    <width>103</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="164" green="126" blue="60">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #361</name>
+    <pv_name>13IDC:m62.DESC</pv_name>
+    <x>418</x>
+    <y>229</y>
+    <width>93</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #365</name>
+    <x>419</x>
+    <y>248</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m62.HLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #369</name>
+    <x>500</x>
+    <y>248</y>
+    <width>12</width>
+    <height>12</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:m62.LLS</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #373</name>
+    <pv_name>13IDC:m60.DESC</pv_name>
+    <x>113</x>
+    <y>397</y>
+    <width>90</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #377</name>
+    <pv_name>13IDC:m60:scanParms.EP</pv_name>
+    <x>286</x>
+    <y>409</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #381</name>
+    <text>End</text>
+    <x>286</x>
+    <y>397</y>
+    <width>80</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #384</name>
+    <text>#Pts</text>
+    <x>366</x>
+    <y>397</y>
+    <width>30</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #387</name>
+    <pv_name>13IDC:m60:scanParms.NP</pv_name>
+    <x>366</x>
+    <y>409</y>
+    <width>30</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #391</name>
+    <text>StepSize</text>
+    <x>396</x>
+    <y>397</y>
+    <width>60</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #394</name>
+    <pv_name>13IDC:m60:scanParms.STEP</pv_name>
+    <x>396</x>
+    <y>412</y>
+    <width>60</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #398</name>
+    <text>Start</text>
+    <x>206</x>
+    <y>397</y>
+    <width>80</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #401</name>
+    <pv_name>13IDC:m60:scanParms.SP</pv_name>
+    <x>206</x>
+    <y>409</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #405</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m60:scanParms.LOAD</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m60:scanParms.LOAD</pv_name>
+    <text>Load</text>
+    <x>113</x>
+    <y>409</y>
+    <width>35</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #408</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m60:scanParms.GO</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m60:scanParms.GO</pv_name>
+    <text>Load&amp;Go</text>
+    <x>148</x>
+    <y>409</y>
+    <width>55</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #411</name>
+    <pv_name>13IDC:m60.NAME</pv_name>
+    <x>278</x>
+    <y>429</y>
+    <width>80</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #415</name>
+    <text>Positioner:</text>
+    <x>213</x>
+    <y>429</y>
+    <width>60</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #418</name>
+    <pv_name>13IDC:m60.EGU</pv_name>
+    <x>403</x>
+    <y>429</y>
+    <width>60</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #422</name>
+    <text>Units:</text>
+    <x>368</x>
+    <y>429</y>
+    <width>35</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #425</name>
+    <pv_name>13IDC:m60:scanParms.AFT</pv_name>
+    <x>378</x>
+    <y>439</y>
+    <width>80</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #428</name>
+    <pv_name>13IDC:m60:scanParms.AR</pv_name>
+    <x>218</x>
+    <y>439</y>
+    <width>80</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #431</name>
+    <text>AfterScan:</text>
+    <x>308</x>
+    <y>442</y>
+    <width>65</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #434</name>
+    <pv_name>13IDC:scanActive.VAL</pv_name>
+    <x>148</x>
+    <y>429</y>
+    <width>55</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #438</name>
+    <pv_name>13IDC:m62.DESC</pv_name>
+    <x>12</x>
+    <y>265</y>
+    <width>90</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #442</name>
+    <pv_name>13IDC:m62:scanParms.EP</pv_name>
+    <x>185</x>
+    <y>277</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #446</name>
+    <text>End</text>
+    <x>185</x>
+    <y>265</y>
+    <width>80</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #449</name>
+    <text>#Pts</text>
+    <x>265</x>
+    <y>265</y>
+    <width>30</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #452</name>
+    <pv_name>13IDC:m62:scanParms.NP</pv_name>
+    <x>265</x>
+    <y>277</y>
+    <width>30</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #456</name>
+    <text>StepSize</text>
+    <x>295</x>
+    <y>265</y>
+    <width>60</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #459</name>
+    <pv_name>13IDC:m62:scanParms.STEP</pv_name>
+    <x>295</x>
+    <y>280</y>
+    <width>60</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #463</name>
+    <text>Start</text>
+    <x>105</x>
+    <y>265</y>
+    <width>80</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #466</name>
+    <pv_name>13IDC:m62:scanParms.SP</pv_name>
+    <x>105</x>
+    <y>277</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #470</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m62:scanParms.LOAD</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m62:scanParms.LOAD</pv_name>
+    <text>Load</text>
+    <x>12</x>
+    <y>277</y>
+    <width>35</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #473</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m62:scanParms.GO</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m62:scanParms.GO</pv_name>
+    <text>Load&amp;Go</text>
+    <x>47</x>
+    <y>277</y>
+    <width>55</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #476</name>
+    <pv_name>13IDC:m62.NAME</pv_name>
+    <x>177</x>
+    <y>297</y>
+    <width>80</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #480</name>
+    <text>Positioner:</text>
+    <x>112</x>
+    <y>297</y>
+    <width>60</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #483</name>
+    <pv_name>13IDC:m62.EGU</pv_name>
+    <x>303</x>
+    <y>297</y>
+    <width>60</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #487</name>
+    <text>Units:</text>
+    <x>268</x>
+    <y>297</y>
+    <width>35</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #490</name>
+    <pv_name>13IDC:m62:scanParms.AFT</pv_name>
+    <x>278</x>
+    <y>307</y>
+    <width>80</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #493</name>
+    <pv_name>13IDC:m62:scanParms.AR</pv_name>
+    <x>118</x>
+    <y>307</y>
+    <width>80</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #496</name>
+    <text>AfterScan:</text>
+    <x>208</x>
+    <y>310</y>
+    <width>65</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #499</name>
+    <pv_name>13IDC:scanActive.VAL</pv_name>
+    <x>47</x>
+    <y>297</y>
+    <width>55</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #503</name>
+    <x>1372</x>
+    <y>512</y>
+    <width>270</width>
+    <height>57</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #506</name>
+    <actions>
+      <action type="open_display">
+        <file>USB1808_module.opi</file>
+        <macros>
+          <Ai>Ai</Ai>
+          <Ao>Ao</Ao>
+          <Bd>Bd</Bd>
+          <Bi>Bi</Bi>
+          <Bo>Bo</Bo>
+          <Ct>Counter</Ct>
+          <Enc>Encoder</Enc>
+          <Li>Li</Li>
+          <Lo>Lo</Lo>
+          <P>13IDC:USB1808:</P>
+          <Pg>PulseGen</Pg>
+          <Tg>Trig</Tg>
+          <Wd>WaveDig</Wd>
+          <Wg>WaveGen</Wg>
+        </macros>
+        <target>tab</target>
+        <description>USB-1808X</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>B1</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>i0 Preamp #B1</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>B4</A>
+          <P>13IDC:</P>
+        </macros>
+        <target>tab</target>
+        <description>i1 Preamp #B4</description>
+      </action>
+    </actions>
+    <text>Ion Chambers</text>
+    <x>1376</x>
+    <y>515</y>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #511</name>
+    <text>i1 =</text>
+    <x>1506</x>
+    <y>545</y>
+    <width>45</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #514</name>
+    <pv_name>13IDC:USB1808:Ai4</pv_name>
+    <x>1547</x>
+    <y>545</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #518</name>
+    <text>i0 =</text>
+    <x>1505</x>
+    <y>520</y>
+    <width>48</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #521</name>
+    <pv_name>13IDC:USB1808:Ai1</pv_name>
+    <x>1546</x>
+    <y>520</y>
+    <width>70</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #525</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>13IDC:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scaler</description>
+      </action>
+    </actions>
+    <text>Scaler</text>
+    <x>1377</x>
+    <y>542</y>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #529</name>
+    <pv_name>13IDA:eps_mbbi25</pv_name>
+    <x>1577</x>
+    <y>417</y>
+    <width>55</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #533</name>
+    <text>Status</text>
+    <x>1506</x>
+    <y>418</y>
+    <width>60</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #536</name>
+    <x>1501</x>
+    <y>385</y>
+    <width>140</width>
+    <height>55</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #539</name>
+    <text>FOE Shutter</text>
+    <x>1505</x>
+    <y>395</y>
+    <width>60</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #542</name>
+    <actions>
+      <action type="open_display">
+        <file>GSE_MonoEnergy.opi</file>
+        <macros>
+          <ID>S13ID:DSID</ID>
+          <MH>m58</MH>
+          <MONO>13IDA:CDEn</MONO>
+          <MP>m59</MP>
+          <MR>m30</MR>
+          <MX>m30</MX>
+          <P>13IDA:</P>
+          <PP>2</PP>
+          <PR>3</PR>
+          <Q>CD</Q>
+          <SHUTTER>eps_mbbi26</SHUTTER>
+          <TC1>Ch2</TC1>
+          <TC2>Ch3</TC2>
+          <TH>m57</TH>
+          <TITLE>CD_Energy</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>ID-C/D Energy</description>
+      </action>
+    </actions>
+    <text>Monochromator</text>
+    <x>1374</x>
+    <y>447</y>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #546</name>
+    <text>Energy(eV)=</text>
+    <x>1478</x>
+    <y>450</y>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #549</name>
+    <pv_name>13IDA:CDEn:E_RBV</pv_name>
+    <x>1581</x>
+    <y>450</y>
+    <width>52</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #553</name>
+    <actions>
+      <action type="open_display">
+        <file>13ID_CD_mono_feedback.opi</file>
+        <macros>
+          <HEIGHT_MOTOR>m58</HEIGHT_MOTOR>
+          <IDC_PITCH_PID>mono_pid3</IDC_PITCH_PID>
+          <IDC_ROLL_PID>mono_pid4</IDC_ROLL_PID>
+          <IDD_PITCH_PID>mono_pid1</IDD_PITCH_PID>
+          <IDD_ROLL_PID>mono_pid2</IDD_ROLL_PID>
+          <P>13IDA:</P>
+          <PITCH_DAC>DAC1_2</PITCH_DAC>
+          <PITCH_MOTOR>m59</PITCH_MOTOR>
+          <ROLL_DAC>DAC1_3</ROLL_DAC>
+          <ROLL_MOTOR>m60</ROLL_MOTOR>
+          <THETA_MOTOR>m57</THETA_MOTOR>
+        </macros>
+        <target>tab</target>
+        <description>Full Feedback</description>
+      </action>
+    </actions>
+    <text>Feedback</text>
+    <x>1374</x>
+    <y>479</y>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #557</name>
+    <x>1527</x>
+    <y>484</y>
+    <width>16</width>
+    <height>16</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #560</name>
+      <width>16</width>
+      <height>16</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13IDA:mono_pid3Locked</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #564</name>
+      <width>16</width>
+      <height>16</height>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13IDA:mono_pid3Locked</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #568</name>
+    <text>Pitch</text>
+    <x>1478</x>
+    <y>484</y>
+    <width>39</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #571</name>
+    <text>Roll</text>
+    <x>1551</x>
+    <y>484</y>
+    <width>39</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #574</name>
+    <x>1372</x>
+    <y>443</y>
+    <width>270</width>
+    <height>65</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #577</name>
+    <x>1591</x>
+    <y>484</y>
+    <width>16</width>
+    <height>16</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:mono_pid4Locked</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #581</name>
+    <x>1591</x>
+    <y>484</y>
+    <width>16</width>
+    <height>16</height>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:mono_pid4Locked</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #585</name>
+    <pv_name>13IDC:m61.DESC</pv_name>
+    <x>185</x>
+    <y>107</y>
+    <width>90</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #589</name>
+    <pv_name>13IDC:m61:scanParms.EP</pv_name>
+    <x>358</x>
+    <y>119</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #593</name>
+    <text>End</text>
+    <x>358</x>
+    <y>107</y>
+    <width>80</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #596</name>
+    <text>#Pts</text>
+    <x>438</x>
+    <y>107</y>
+    <width>30</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #599</name>
+    <pv_name>13IDC:m61:scanParms.NP</pv_name>
+    <x>438</x>
+    <y>119</y>
+    <width>30</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #603</name>
+    <text>StepSize</text>
+    <x>468</x>
+    <y>107</y>
+    <width>60</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #606</name>
+    <pv_name>13IDC:m61:scanParms.STEP</pv_name>
+    <x>468</x>
+    <y>122</y>
+    <width>60</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #610</name>
+    <text>Start</text>
+    <x>278</x>
+    <y>107</y>
+    <width>80</width>
+    <height>13</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #613</name>
+    <pv_name>13IDC:m61:scanParms.SP</pv_name>
+    <x>278</x>
+    <y>119</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #617</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m61:scanParms.LOAD</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m61:scanParms.LOAD</pv_name>
+    <text>Load</text>
+    <x>185</x>
+    <y>119</y>
+    <width>35</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #620</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:m61:scanParms.GO</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:m61:scanParms.GO</pv_name>
+    <text>Load&amp;Go</text>
+    <x>220</x>
+    <y>119</y>
+    <width>55</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #623</name>
+    <pv_name>13IDC:m61.NAME</pv_name>
+    <x>350</x>
+    <y>139</y>
+    <width>80</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #627</name>
+    <text>Positioner:</text>
+    <x>285</x>
+    <y>139</y>
+    <width>60</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #630</name>
+    <pv_name>13IDC:m61.EGU</pv_name>
+    <x>475</x>
+    <y>139</y>
+    <width>60</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #634</name>
+    <pv_name>13IDC:m61:scanParms.AFT</pv_name>
+    <x>450</x>
+    <y>149</y>
+    <width>80</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #637</name>
+    <pv_name>13IDC:m61:scanParms.AR</pv_name>
+    <x>290</x>
+    <y>149</y>
+    <width>80</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #640</name>
+    <text>AfterScan:</text>
+    <x>380</x>
+    <y>152</y>
+    <width>65</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #643</name>
+    <pv_name>13IDC:scanActive.VAL</pv_name>
+    <x>220</x>
+    <y>139</y>
+    <width>55</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #647</name>
+    <pv_name>13PECELL:DMM1:Ch1_calc.VAL</pv_name>
+    <x>982</x>
+    <y>452</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #651</name>
+    <text>Hydraulic Pressure</text>
+    <x>920</x>
+    <y>423</y>
+    <width>240</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #654</name>
+    <x>908</x>
+    <y>629</y>
+    <width>360</width>
+    <height>135</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #657</name>
+    <x>1041</x>
+    <y>633</y>
+    <width>120</width>
+    <height>21</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #660</name>
+    <text>Voltage (V)</text>
+    <x>1046</x>
+    <y>634</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #663</name>
+    <pv_name>13PECELL:HP_PS1:dV</pv_name>
+    <x>1068</x>
+    <y>664</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #667</name>
+    <text>Measured</text>
+    <x>983</x>
+    <y>664</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #670</name>
+    <text>Tweak</text>
+    <x>1013</x>
+    <y>713</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #673</name>
+    <pv_name>13PECELL:HP_PS1:SP_V_tweak</pv_name>
+    <x>1084</x>
+    <y>713</y>
+    <width>62</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #677</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PECELL:HP_PS1:SP_V_tweak_up.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PECELL:HP_PS1:SP_V_tweak_up.PROC</pv_name>
+    <text>&gt;</text>
+    <x>1147</x>
+    <y>713</y>
+    <width>15</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #680</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PECELL:HP_PS1:SP_V_tweak_down.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PECELL:HP_PS1:SP_V_tweak_down.PROC</pv_name>
+    <text>&lt;</text>
+    <x>1068</x>
+    <y>713</y>
+    <width>15</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #683</name>
+    <pv_name>13PECELL:HP_PS1:setV</pv_name>
+    <x>1068</x>
+    <y>688</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #687</name>
+    <pv_name>13PECELL:HP_PS1:getVoltLevel</pv_name>
+    <x>1158</x>
+    <y>688</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #691</name>
+    <text>Setpoint</text>
+    <x>983</x>
+    <y>688</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #694</name>
+    <pv_name>13PECELL:HP_PS1:setVoltProt</pv_name>
+    <x>1068</x>
+    <y>736</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #698</name>
+    <pv_name>13PECELL:HP_PS1:getVoltProt</pv_name>
+    <x>1158</x>
+    <y>736</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #702</name>
+    <text>Limit</text>
+    <x>1013</x>
+    <y>736</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #705</name>
+    <x>1272</x>
+    <y>629</y>
+    <width>360</width>
+    <height>135</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #708</name>
+    <x>1410</x>
+    <y>633</y>
+    <width>120</width>
+    <height>21</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #711</name>
+    <text>Current (A)</text>
+    <x>1415</x>
+    <y>634</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #714</name>
+    <pv_name>13PECELL:HP_PS1:dC</pv_name>
+    <x>1435</x>
+    <y>664</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #718</name>
+    <text>Measured</text>
+    <x>1350</x>
+    <y>664</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #721</name>
+    <text>Tweak</text>
+    <x>1380</x>
+    <y>713</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #724</name>
+    <pv_name>13PECELL:HP_PS1:SP_C_tweak</pv_name>
+    <x>1451</x>
+    <y>713</y>
+    <width>62</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #728</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PECELL:HP_PS1:SP_C_tweak_up.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PECELL:HP_PS1:SP_C_tweak_up.PROC</pv_name>
+    <text>&gt;</text>
+    <x>1514</x>
+    <y>713</y>
+    <width>15</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #731</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PECELL:HP_PS1:SP_C_tweak_down.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PECELL:HP_PS1:SP_C_tweak_down.PROC</pv_name>
+    <text>&lt;</text>
+    <x>1435</x>
+    <y>713</y>
+    <width>15</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #734</name>
+    <pv_name>13PECELL:HP_PS1:setC</pv_name>
+    <x>1435</x>
+    <y>688</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #738</name>
+    <pv_name>13PECELL:HP_PS1:getCurrentLevel</pv_name>
+    <x>1525</x>
+    <y>688</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #742</name>
+    <text>Setpoint</text>
+    <x>1350</x>
+    <y>688</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #745</name>
+    <pv_name>13PECELL:HP_PS1:Protect</pv_name>
+    <x>1525</x>
+    <y>736</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #749</name>
+    <text>Protection</text>
+    <x>1330</x>
+    <y>736</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #752</name>
+    <pv_name>13PECELL:HP_PS1:ProtectOnOff.VAL</pv_name>
+    <x>1435</x>
+    <y>736</y>
+    <width>85</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #755</name>
+    <x>908</x>
+    <y>859</y>
+    <width>390</width>
+    <height>85</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #758</name>
+    <x>1036</x>
+    <y>863</y>
+    <width>130</width>
+    <height>21</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #761</name>
+    <text>Calculations</text>
+    <x>1042</x>
+    <y>864</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #764</name>
+    <pv_name>13PECELL:HP_PS1:SR:powerOutPut</pv_name>
+    <x>1142</x>
+    <y>892</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #768</name>
+    <text>Power (W)</text>
+    <x>1045</x>
+    <y>892</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #771</name>
+    <pv_name>13PECELL:HP_PS1:SR:Resistance</pv_name>
+    <x>1142</x>
+    <y>917</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #775</name>
+    <text>Resistance (Ohm)</text>
+    <x>977</x>
+    <y>917</y>
+    <width>160</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #778</name>
+    <x>1410</x>
+    <y>773</y>
+    <width>120</width>
+    <height>21</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #781</name>
+    <text>Status</text>
+    <x>1415</x>
+    <y>774</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #784</name>
+    <x>1305</x>
+    <y>769</y>
+    <width>330</width>
+    <height>174</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #787</name>
+    <x>908</x>
+    <y>769</y>
+    <width>390</width>
+    <height>85</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #790</name>
+    <x>1041</x>
+    <y>773</y>
+    <width>120</width>
+    <height>21</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #793</name>
+    <text>Control</text>
+    <x>1066</x>
+    <y>774</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #796</name>
+    <pv_name>13PECELL:HP_PS1:Output</pv_name>
+    <x>1203</x>
+    <y>802</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #800</name>
+    <text>Power Off/On</text>
+    <x>988</x>
+    <y>802</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #803</name>
+    <pv_name>13PECELL:HP_PS1:OnOff.VAL</pv_name>
+    <x>1113</x>
+    <y>802</y>
+    <width>85</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #806</name>
+    <pv_name>13PECELL:HP_PS1:ReadAll.SCAN</pv_name>
+    <x>1115</x>
+    <y>827</y>
+    <width>85</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #809</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PECELL:HP_PS1:ReadAll.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PECELL:HP_PS1:ReadAll.PROC</pv_name>
+    <text>Read</text>
+    <x>1205</x>
+    <y>827</y>
+    <width>85</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #812</name>
+    <text>Readback rate</text>
+    <x>980</x>
+    <y>827</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #815</name>
+    <text>Voltage Trip</text>
+    <x>1382</x>
+    <y>804</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #818</name>
+    <text>Current Trip</text>
+    <x>1381</x>
+    <y>829</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #821</name>
+    <text>Over Temp</text>
+    <x>1412</x>
+    <y>854</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #824</name>
+    <text>PS UnRegulated</text>
+    <x>1361</x>
+    <y>879</y>
+    <width>140</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #827</name>
+    <pv_name>13PECELL:HP_PS1:SR:Vtrip</pv_name>
+    <x>1509</x>
+    <y>804</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #831</name>
+    <pv_name>13PECELL:HP_PS1:SR:Itrip</pv_name>
+    <x>1508</x>
+    <y>829</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #835</name>
+    <pv_name>13PECELL:HP_PS1:SR:OverTemp</pv_name>
+    <x>1509</x>
+    <y>854</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #839</name>
+    <pv_name>13PECELL:HP_PS1:SR:UnReg</pv_name>
+    <x>1508</x>
+    <y>879</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #843</name>
+    <text>Clear fault</text>
+    <x>1391</x>
+    <y>913</y>
+    <width>110</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #846</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PECELL:HP_PS1:ErrClr.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PECELL:HP_PS1:ErrClr.PROC</pv_name>
+    <text>Clear Fault</text>
+    <x>1508</x>
+    <y>913</y>
+    <width>85</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #849</name>
+    <actions>
+      <action type="open_display">
+        <file>13PECell.opi</file>
+        <macros>
+          <S>PS1:</S>
+        </macros>
+        <target>tab</target>
+        <description>PE Cell</description>
+      </action>
+    </actions>
+    <text>Furnace Control</text>
+    <x>1133</x>
+    <y>580</y>
+    <width>268</width>
+    <height>45</height>
+    <foreground_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="199" green="187" blue="109">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #852</name>
+    <text>Step #2</text>
+    <x>1310</x>
+    <y>913</y>
+    <width>80</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #855</name>
+    <text>Step #1</text>
+    <x>909</x>
+    <y>802</y>
+    <width>80</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #858</name>
+    <text>Step #3</text>
+    <x>1271</x>
+    <y>688</y>
+    <width>80</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #861</name>
+    <text>Step #4</text>
+    <x>928</x>
+    <y>713</y>
+    <width>80</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #864</name>
+    <pv_name>13MCC:m1.RBV</pv_name>
+    <x>886</x>
+    <y>130</y>
+    <width>72</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #868</name>
+    <text>Soller Slits X</text>
+    <x>706</x>
+    <y>128</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #871</name>
+    <pv_name>13MCC:m2.RBV</pv_name>
+    <x>886</x>
+    <y>155</y>
+    <width>72</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #875</name>
+    <text>Soller Slits Z</text>
+    <x>706</x>
+    <y>153</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #878</name>
+    <pv_name>13MCC:m3.RBV</pv_name>
+    <x>886</x>
+    <y>179</y>
+    <width>72</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #882</name>
+    <text>Soller Slits Theta</text>
+    <x>696</x>
+    <y>177</y>
+    <width>190</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #885</name>
+    <x>680</x>
+    <y>112</y>
+    <width>300</width>
+    <height>100</height>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #888</name>
+    <x>1274</x>
+    <y>276</y>
+    <width>137</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="135.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </line_color>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&gt;0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDA:eps_mbbi26</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #893</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13IDC:AbortScans.PROC</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13IDC:AbortScans.PROC</pv_name>
+    <text>ABORT SCAN</text>
+    <x>484</x>
+    <y>503</y>
+    <width>80</width>
+    <height>50</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #896</name>
+    <x>178</x>
+    <y>83</y>
+    <width>360</width>
+    <height>100</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #899</name>
+    <text>PE Y scan</text>
+    <x>178</x>
+    <y>65</y>
+    <width>360</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #902</name>
+    <text>PE Z scan</text>
+    <x>7</x>
+    <y>223</y>
+    <width>360</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #905</name>
+    <x>6</x>
+    <y>241</y>
+    <width>360</width>
+    <height>100</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #908</name>
+    <text>PE X scan</text>
+    <x>106</x>
+    <y>360</y>
+    <width>360</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #911</name>
+    <x>106</x>
+    <y>378</y>
+    <width>360</width>
+    <height>100</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #914</name>
+    <text>Units:</text>
+    <x>440</x>
+    <y>139</y>
+    <width>35</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #917</name>
+    <text>(psi)</text>
+    <x>924</x>
+    <y>452</y>
+    <width>240</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #920</name>
+    <text>Threshold (keV)</text>
+    <x>26</x>
+    <y>790</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #923</name>
+    <pv_name>13PIL300K:cam1:ThresholdEnergy</pv_name>
+    <x>181</x>
+    <y>790</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #927</name>
+    <pv_name>13PIL300K:cam1:ThresholdEnergy_RBV</pv_name>
+    <x>247</x>
+    <y>791</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #931</name>
+    <text>En./Thr. apply</text>
+    <x>26</x>
+    <y>840</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #934</name>
+    <pv_name>13PIL300K:cam1:ThresholdAutoApply</pv_name>
+    <x>181</x>
+    <y>840</y>
+    <width>60</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #937</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>13PIL300K:cam1:ThresholdApply</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>13PIL300K:cam1:ThresholdApply</pv_name>
+    <text>Apply</text>
+    <x>249</x>
+    <y>841</y>
+    <width>60</width>
+    <height>19</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #940</name>
+    <text>Energy (keV)</text>
+    <x>56</x>
+    <y>815</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #943</name>
+    <pv_name>13PIL300K:cam1:Energy</pv_name>
+    <x>181</x>
+    <y>815</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #947</name>
+    <pv_name>13PIL300K:cam1:Energy_RBV</pv_name>
+    <x>247</x>
+    <y>816</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #951</name>
+    <x>399</x>
+    <y>842</y>
+    <width>105</width>
+    <height>21</height>
+    <line_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #954</name>
+    <x>16</x>
+    <y>866</y>
+    <width>857</width>
+    <height>80</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #957</name>
+    <text>Status</text>
+    <x>420</x>
+    <y>842</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #960</name>
+    <text>From camserver:</text>
+    <x>19</x>
+    <y>927</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #963</name>
+    <pv_name>13PIL300K:cam1:StringFromServer_RBV</pv_name>
+    <x>171</x>
+    <y>930</y>
+    <width>700</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #967</name>
+    <text>Status:</text>
+    <x>99</x>
+    <y>877</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #970</name>
+    <pv_name>13PIL300K:cam1:StatusMessage_RBV</pv_name>
+    <x>171</x>
+    <y>880</y>
+    <width>700</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #974</name>
+    <text>To camserver:</text>
+    <x>39</x>
+    <y>902</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #977</name>
+    <pv_name>13PIL300K:cam1:StringToServer_RBV</pv_name>
+    <x>171</x>
+    <y>905</y>
+    <width>700</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #981</name>
+    <x>16</x>
+    <y>783</y>
+    <width>300</width>
+    <height>80</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #984</name>
+    <text>NO Ent Slits (2026-1)</text>
+    <x>1291</x>
+    <y>35</y>
+    <width>200</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #987</name>
+    <x>133</x>
+    <y>529</y>
+    <width>210</width>
+    <line_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:scan1.ALRT</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #991</name>
+    <pv_name>13IDC:scan1.CPT</pv_name>
+    <x>423</x>
+    <y>528</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #995</name>
+    <pv_name>13IDC:scan1.NPTS</pv_name>
+    <x>373</x>
+    <y>529</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #999</name>
+    <text>#PTS</text>
+    <x>343</x>
+    <y>534</y>
+    <width>30</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDC:scan1.DISA</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #1003</name>
+    <pv_name>13IDC:scan1.SMSG</pv_name>
+    <x>136</x>
+    <y>530</y>
+    <width>204</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #1007</name>
+    <text>Scan Status</text>
+    <x>54</x>
+    <y>501</y>
+    <width>360</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #1010</name>
+    <x>122</x>
+    <y>494</y>
+    <width>450</width>
+    <height>66</height>
+    <line_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+</display>

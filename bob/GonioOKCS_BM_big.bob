@@ -1,0 +1,4051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:46 by epics-->
+<display version="2.0.0">
+  <name>GonioOKCS_BM_big</name>
+  <x>61</x>
+  <y>146</y>
+  <width>795</width>
+  <height>205</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>795</width>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>Goniometer - $(assy)</text>
+    <x>6</x>
+    <y>3</y>
+    <width>300</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>ActPos</text>
+    <y>90</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>RqsPos</text>
+    <y>110</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #18</name>
+    <text>Tweak</text>
+    <y>132</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #21</name>
+    <actions>
+      <action type="open_display">
+        <file>GonioOKCS_BM.opi</file>
+        <target>replace</target>
+        <description>Less Controls</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>2</x>
+    <y>23</y>
+    <width>18</width>
+    <height>18</height>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>Mem</text>
+    <y>152</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #27</name>
+    <text>Limits</text>
+    <y>188</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #30</name>
+    <x>423</x>
+    <y>22</y>
+    <width>181</width>
+    <height>180</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #33</name>
+    <pv_name>$(assy)CX:RqsPos</pv_name>
+    <x>426</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #37</name>
+    <pv_name>$(assy)CX:RqsPosInc</pv_name>
+    <x>441</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #41</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CX:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CX:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>490</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #44</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CX:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CX:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>425</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #47</name>
+    <pv_name>$(assy)CX:ActPos</pv_name>
+    <x>426</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #51</name>
+    <pv_name>$(assy)CX:ActPos.DESC</pv_name>
+    <x>426</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #55</name>
+    <pv_name>$(assy)CX:ActPos.EGU</pv_name>
+    <x>426</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #59</name>
+    <pv_name>$(assy)CX:MemPos</pv_name>
+    <x>427</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #63</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CX:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CX:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>469</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #66</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CX:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CX:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>427</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #69</name>
+    <pv_name>$(assy)CX:RqsPos.DRVL</pv_name>
+    <x>425</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #73</name>
+    <pv_name>$(assy)CX:RqsPos.DRVH</pv_name>
+    <x>470</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #77</name>
+    <pv_name>$(assy)CY:RqsPos</pv_name>
+    <x>516</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #81</name>
+    <pv_name>$(assy)CY:RqsPosInc</pv_name>
+    <x>531</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #85</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CY:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CY:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>580</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #88</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CY:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CY:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>515</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #91</name>
+    <pv_name>$(assy)CY:ActPos</pv_name>
+    <x>516</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #95</name>
+    <pv_name>$(assy)CY:ActPos.DESC</pv_name>
+    <x>516</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #99</name>
+    <pv_name>$(assy)CY:ActPos.EGU</pv_name>
+    <x>516</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #103</name>
+    <pv_name>$(assy)CY:MemPos</pv_name>
+    <x>517</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #107</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CY:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CY:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>559</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #110</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CY:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CY:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>517</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #113</name>
+    <pv_name>$(assy)CY:RqsPos.DRVL</pv_name>
+    <x>515</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #117</name>
+    <pv_name>$(assy)CY:RqsPos.DRVH</pv_name>
+    <x>560</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #121</name>
+    <x>44</x>
+    <y>22</y>
+    <width>98</width>
+    <height>180</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #124</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)Om:Abort</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)Om:Abort</pv_name>
+    <text>Abort</text>
+    <x>46</x>
+    <y>24</y>
+    <width>45</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #127</name>
+    <x>93</x>
+    <y>24</y>
+    <width>50</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #130</name>
+      <text>Manual</text>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)Om:AutoStart</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #134</name>
+      <text>Disabled</text>
+      <y>9</y>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)Om:Motion</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #138</name>
+    <pv_name>$(assy)KP:RqsPos</pv_name>
+    <x>150</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #142</name>
+    <pv_name>$(assy)KP:RqsPosInc</pv_name>
+    <x>165</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #146</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)KP:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)KP:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>214</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #149</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)KP:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)KP:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>149</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #152</name>
+    <pv_name>$(assy)KP:ActPos</pv_name>
+    <x>150</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #156</name>
+    <pv_name>$(assy)KP:ActPos.DESC</pv_name>
+    <x>150</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #160</name>
+    <pv_name>$(assy)KP:ActPos.EGU</pv_name>
+    <x>150</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #164</name>
+    <pv_name>$(assy)KP:MemPos</pv_name>
+    <x>152</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #168</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)KP:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)KP:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>194</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #171</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)KP:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)KP:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>152</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #174</name>
+    <pv_name>$(assy)KP:RqsPos.DRVL</pv_name>
+    <x>150</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #178</name>
+    <pv_name>$(assy)KP:RqsPos.DRVH</pv_name>
+    <x>195</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #182</name>
+    <pv_name>$(assy)PH:RqsPos</pv_name>
+    <x>239</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #186</name>
+    <pv_name>$(assy)PH:RqsPosInc</pv_name>
+    <x>254</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #190</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)PH:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)PH:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>303</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #193</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)PH:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)PH:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>238</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #196</name>
+    <pv_name>$(assy)PH:ActPos</pv_name>
+    <x>239</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #200</name>
+    <pv_name>$(assy)PH:ActPos.DESC</pv_name>
+    <x>239</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #204</name>
+    <pv_name>$(assy)PH:ActPos.EGU</pv_name>
+    <x>239</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #208</name>
+    <pv_name>$(assy)PH:MemPos</pv_name>
+    <x>241</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #212</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)PH:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)PH:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>283</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #215</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)PH:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)PH:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>241</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #218</name>
+    <pv_name>$(assy)PH:RqsPos.DRVL</pv_name>
+    <x>239</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #222</name>
+    <pv_name>$(assy)PH:RqsPos.DRVH</pv_name>
+    <x>284</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #226</name>
+    <pv_name>$(assy)OM:RqsPos</pv_name>
+    <x>53</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #230</name>
+    <pv_name>$(assy)OM:RqsPosInc</pv_name>
+    <x>68</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #234</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)OM:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)OM:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>117</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #237</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)OM:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)OM:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>52</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #240</name>
+    <pv_name>$(assy)OM:ActPos</pv_name>
+    <x>53</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #244</name>
+    <pv_name>$(assy)OM:ActPos.DESC</pv_name>
+    <x>53</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #248</name>
+    <pv_name>$(assy)OM:ActPos.EGU</pv_name>
+    <x>53</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #252</name>
+    <pv_name>$(assy)OM:MemPos</pv_name>
+    <x>53</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #256</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)OM:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)OM:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>95</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #259</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)OM:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)OM:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>53</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #262</name>
+    <pv_name>$(assy)OM:RqsPos.DRVL</pv_name>
+    <x>51</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #266</name>
+    <pv_name>$(assy)OM:RqsPos.DRVH</pv_name>
+    <x>96</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #270</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)Kp:Abort</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)Kp:Abort</pv_name>
+    <text>Abort</text>
+    <x>151</x>
+    <y>24</y>
+    <width>45</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #273</name>
+    <x>147</x>
+    <y>22</y>
+    <width>272</width>
+    <height>180</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #276</name>
+      <width>272</width>
+      <height>180</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="120" green="120" blue="120">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #279</name>
+    <pv_name>$(assy)SH:RqsPos</pv_name>
+    <x>615</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #283</name>
+    <pv_name>$(assy)SH:RqsPosInc</pv_name>
+    <x>630</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #287</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SH:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SH:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>679</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #290</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SH:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SH:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>614</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #293</name>
+    <pv_name>$(assy)SH:ActPos</pv_name>
+    <x>615</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #297</name>
+    <x>609</x>
+    <y>22</y>
+    <width>181</width>
+    <height>180</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #300</name>
+    <pv_name>$(assy)SH:ActPos.DESC</pv_name>
+    <x>615</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #304</name>
+    <pv_name>$(assy)SH:ActPos.EGU</pv_name>
+    <x>615</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #308</name>
+    <pv_name>$(assy)SH:MemPos</pv_name>
+    <x>615</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #312</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SH:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SH:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>657</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #315</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SH:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SH:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>615</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #318</name>
+    <pv_name>$(assy)SH:RqsPos.DRVL</pv_name>
+    <x>613</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #322</name>
+    <pv_name>$(assy)SH:RqsPos.DRVH</pv_name>
+    <x>658</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #326</name>
+    <pv_name>$(assy)CZ:RqsPos</pv_name>
+    <x>331</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #330</name>
+    <pv_name>$(assy)CZ:RqsPosInc</pv_name>
+    <x>346</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #334</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CZ:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CZ:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>395</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #337</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CZ:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CZ:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>330</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #340</name>
+    <pv_name>$(assy)CZ:ActPos</pv_name>
+    <x>331</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #344</name>
+    <pv_name>$(assy)CZ:ActPos.DESC</pv_name>
+    <x>331</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #348</name>
+    <pv_name>$(assy)CZ:ActPos.EGU</pv_name>
+    <x>331</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #352</name>
+    <pv_name>$(assy)CZ:MemPos</pv_name>
+    <x>330</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #356</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CZ:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CZ:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>372</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #359</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)CZ:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)CZ:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>330</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #362</name>
+    <pv_name>$(assy)CZ:RqsPos.DRVL</pv_name>
+    <x>328</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #366</name>
+    <pv_name>$(assy)CZ:RqsPos.DRVH</pv_name>
+    <x>373</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #370</name>
+    <actions>
+      <action type="open_display">
+        <file>Move1_large.opi</file>
+        <macros>
+          <assy>$(assy)Om:</assy>
+          <ax1>$(assy)OM:</ax1>
+        </macros>
+        <target>tab</target>
+        <description>Gonio Omega</description>
+      </action>
+      <action type="open_display">
+        <file>Move3_large.opi</file>
+        <macros>
+          <assy>$(assy)Kp:</assy>
+          <ax1>$(assy)KP:</ax1>
+          <ax2>$(assy)PH:</ax2>
+          <ax3>$(assy)CZ:</ax3>
+        </macros>
+        <target>tab</target>
+        <description>Gonio Kappa</description>
+      </action>
+      <action type="open_display">
+        <file>Move2_large.opi</file>
+        <macros>
+          <assy>$(assy)Cr:</assy>
+          <ax1>$(assy)CX:</ax1>
+          <ax2>$(assy)CY:</ax2>
+        </macros>
+        <target>tab</target>
+        <description>Gonio Crystal XY</description>
+      </action>
+      <action type="open_display">
+        <file>Move2_large.opi</file>
+        <macros>
+          <assy>$(assy)$(st):</assy>
+          <ax1>$(assy)SH:</ax1>
+          <ax2>$(assy)SV:</ax2>
+        </macros>
+        <target>tab</target>
+        <description>Gonio Support</description>
+      </action>
+      <action type="open_display">
+        <file>GonioOCS_BM_big.opi</file>
+        <target>replace</target>
+        <description>Hide Kappa</description>
+      </action>
+    </actions>
+    <text>More</text>
+    <x>743</x>
+    <y>2</y>
+    <width>45</width>
+    <height>18</height>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #377</name>
+    <x>607</x>
+    <y>1</y>
+    <width>115</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>shell command #380</name>
+      <actions>
+        <action type="command">
+          <command>"xterm -e home23_v2.pl $(Beamline) GO:Om noMedmHome noMedmMove noMacroReset noUnlink32 &amp;" </command>
+          <description>"Home Omega"</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>20</width>
+      <height>20</height>
+      <background_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #383</name>
+      <x>20</x>
+      <y>1</y>
+      <width>95</width>
+      <height>18</height>
+      <line_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #386</name>
+      <text>&lt;-Home Omega</text>
+      <x>25</x>
+      <y>4</y>
+      <width>85</width>
+      <height>14</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #389</name>
+      <x>20</x>
+      <y>1</y>
+      <width>95</width>
+      <height>18</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="105" green="105" blue="105">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #392</name>
+    <actions>
+      <action type="open_display">
+        <file>Move1_speed.opi</file>
+        <macros>
+          <assy>$(assy)Om:</assy>
+          <ax1>$(assy)OM:</ax1>
+        </macros>
+        <target>tab</target>
+        <description>Gonio Omega</description>
+      </action>
+    </actions>
+    <text>Omega Speed</text>
+    <x>514</x>
+    <y>2</y>
+    <width>85</width>
+    <height>18</height>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #395</name>
+    <pv_name>$(assy)OM:speed</pv_name>
+    <x>451</x>
+    <y>4</y>
+    <width>60</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #399</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)Om:AutoStart</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)Om:AutoStart</pv_name>
+    <text>A</text>
+    <x>130</x>
+    <y>24</y>
+    <width>10</width>
+    <height>10</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #402</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)Cr:Abort</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)Cr:Abort</pv_name>
+    <text>Abort</text>
+    <x>428</x>
+    <y>24</y>
+    <width>45</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #405</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)$(st):Abort</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)$(st):Abort</pv_name>
+    <text>Abort</text>
+    <x>614</x>
+    <y>24</y>
+    <width>45</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #408</name>
+    <x>254</x>
+    <y>24</y>
+    <width>50</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #411</name>
+      <text>Manual</text>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)Kp:AutoStart</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #415</name>
+      <text>Disabled</text>
+      <y>9</y>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)Kp:Motion</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #419</name>
+    <x>486</x>
+    <y>24</y>
+    <width>50</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #422</name>
+      <text>Manual</text>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)Cr:AutoStart</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #426</name>
+      <text>Disabled</text>
+      <y>9</y>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)Cr:Motion</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #430</name>
+    <x>676</x>
+    <y>24</y>
+    <width>50</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #433</name>
+      <text>Manual</text>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)$(st):AutoStart</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #437</name>
+      <text>Disabled</text>
+      <y>9</y>
+      <width>50</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)$(st):Motion</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #441</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)Cr:AutoStart</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)Cr:AutoStart</pv_name>
+    <text>AUTO</text>
+    <x>571</x>
+    <y>24</y>
+    <width>30</width>
+    <height>10</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #444</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)Kp:AutoStart</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)Kp:AutoStart</pv_name>
+    <text>AUTO</text>
+    <x>386</x>
+    <y>24</y>
+    <width>30</width>
+    <height>10</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #447</name>
+    <x>63</x>
+    <y>75</y>
+    <width>58</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #450</name>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #453</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #456</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)OM:NgLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #460</name>
+      <x>48</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #463</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #466</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)OM:PsLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #470</name>
+      <x>16</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #473</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #476</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)OM:AmpEna</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #480</name>
+      <x>32</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #483</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #486</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)Om:InPos</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #490</name>
+    <x>436</x>
+    <y>75</y>
+    <width>148</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #493</name>
+      <width>58</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #496</name>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #499</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #502</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0!=0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)CX:NgLimSet</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #506</name>
+        <x>48</x>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #509</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #512</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0!=0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)CX:PsLimSet</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #516</name>
+        <x>16</x>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #519</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #522</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="251" green="243" blue="74">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="251" green="243" blue="74">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0==0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)CX:AmpEna</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #526</name>
+        <x>32</x>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #529</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #532</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0==0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)Cr:InPos</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #536</name>
+      <x>90</x>
+      <width>58</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #539</name>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #542</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #545</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0!=0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)CY:NgLimSet</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #549</name>
+        <x>48</x>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #552</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #555</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="222" green="19" blue="9">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0!=0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)CY:PsLimSet</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #559</name>
+        <x>16</x>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #562</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #565</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="251" green="243" blue="74">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="251" green="243" blue="74">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0==0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)CY:AmpEna</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #569</name>
+        <x>32</x>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #572</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #575</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0==0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)Cr:InPos</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #579</name>
+    <x>625</x>
+    <y>75</y>
+    <width>58</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #582</name>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #585</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #588</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)SH:NgLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #592</name>
+      <x>48</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #595</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #598</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)SH:PsLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #602</name>
+      <x>16</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #605</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #608</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)SH:AmpEna</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #612</name>
+      <x>32</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #615</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #618</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)$(st):InPos</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #622</name>
+    <x>160</x>
+    <y>75</y>
+    <width>58</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #625</name>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #628</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #631</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)KP:NgLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #635</name>
+      <x>48</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #638</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #641</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)KP:PsLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #645</name>
+      <x>16</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #648</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #651</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)KP:AmpEna</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #655</name>
+      <x>32</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #658</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #661</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)Kp:InPos</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #665</name>
+    <x>249</x>
+    <y>75</y>
+    <width>58</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #668</name>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #671</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #674</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)PH:NgLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #678</name>
+      <x>48</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #681</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #684</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)PH:PsLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #688</name>
+      <x>16</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #691</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #694</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)PH:AmpEna</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #698</name>
+      <x>32</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="2.0.0">
+        <name>composite #701</name>
+        <width>10</width>
+        <height>10</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #704</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="145" green="145" blue="145">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>oval #707</name>
+          <width>10</width>
+          <height>10</height>
+          <line_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="82" green="218" blue="59">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+              <exp bool_exp="!(pv0==0)">
+                <value>false</value>
+              </exp>
+              <pv_name>$(assy)Kp:InPos</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #711</name>
+    <x>340</x>
+    <y>75</y>
+    <width>58</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #714</name>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #717</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #720</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)CZ:NgLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #724</name>
+      <x>48</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #727</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #730</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)CZ:PsLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #734</name>
+      <x>16</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #737</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #740</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)CZ:AmpEna</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #744</name>
+      <x>32</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #747</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #750</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)Kp:InPos</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #754</name>
+    <pv_name>$(assy)SV:RqsPos</pv_name>
+    <x>704</x>
+    <y>105</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #758</name>
+    <pv_name>$(assy)SV:RqsPosInc</pv_name>
+    <x>719</x>
+    <y>127</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #762</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SV:RqsPosIncBmp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SV:RqsPosIncBmp</pv_name>
+    <text>&gt;</text>
+    <x>768</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #765</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SV:RqsPosIncBmp</pv_name>
+        <value>-1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SV:RqsPosIncBmp</pv_name>
+    <text>&lt;</text>
+    <x>703</x>
+    <y>126</y>
+    <width>18</width>
+    <height>22</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #768</name>
+    <pv_name>$(assy)SV:ActPos</pv_name>
+    <x>704</x>
+    <y>90</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #772</name>
+    <pv_name>$(assy)SV:ActPos.DESC</pv_name>
+    <x>704</x>
+    <y>45</y>
+    <width>80</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #776</name>
+    <pv_name>$(assy)SV:ActPos.EGU</pv_name>
+    <x>704</x>
+    <y>58</y>
+    <width>80</width>
+    <height>13</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #780</name>
+    <pv_name>$(assy)SV:MemPos</pv_name>
+    <x>703</x>
+    <y>149</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #784</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SV:MemPosRcl.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SV:MemPosRcl.PROC</pv_name>
+    <text>recall</text>
+    <x>745</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #787</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)SV:MemPosSto.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)SV:MemPosSto.PROC</pv_name>
+    <text>store</text>
+    <x>703</x>
+    <y>169</y>
+    <width>38</width>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #790</name>
+    <pv_name>$(assy)SV:RqsPos.DRVL</pv_name>
+    <x>701</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #794</name>
+    <pv_name>$(assy)SV:RqsPos.DRVH</pv_name>
+    <x>746</x>
+    <y>187</y>
+    <width>40</width>
+    <height>11</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #798</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(assy)$(st):AutoStart</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(assy)$(st):AutoStart</pv_name>
+    <text>AUTO</text>
+    <x>758</x>
+    <y>24</y>
+    <width>30</width>
+    <height>10</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #801</name>
+    <x>714</x>
+    <y>75</y>
+    <width>58</width>
+    <height>10</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #804</name>
+      <x>16</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #807</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #810</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="251" green="243" blue="74">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)SV:AmpEna</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #814</name>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #817</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #820</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)SV:NgLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #824</name>
+      <x>48</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #827</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #830</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="222" green="19" blue="9">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0!=0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)SV:PsLimSet</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #834</name>
+      <x>32</x>
+      <width>10</width>
+      <height>10</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #837</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="145" green="145" blue="145">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>oval #840</name>
+        <width>10</width>
+        <height>10</height>
+        <line_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="82" green="218" blue="59">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)$(st):InPos</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+</display>

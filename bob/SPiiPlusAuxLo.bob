@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:44 by epics-->
+<display version="2.0.0">
+  <name>SPiiPlusAuxLo</name>
+  <x>476</x>
+  <y>146</y>
+  <width>390</width>
+  <height>30</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>$(R)</text>
+    <x>5</x>
+    <y>5</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #9</name>
+    <x>85</x>
+    <y>5</y>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #12</name>
+      <pv_name>$(P)$(C)$(R).VAL</pv_name>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #16</name>
+      <pv_name>$(P)$(C)$(R)_RBV.VAL</pv_name>
+      <x>100</x>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #20</name>
+      <pv_name>$(P)$(C)$(R).DESC</pv_name>
+      <x>200</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>4</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+</display>

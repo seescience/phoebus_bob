@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:30 by epics-->
+<display version="2.0.0">
+  <name>PmacClock_view2</name>
+  <x>244</x>
+  <y>231</y>
+  <width>570</width>
+  <height>90</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>570</width>
+    <height>22</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>PMAC Driver Servo Clock Watchdog</text>
+    <x>4</x>
+    <y>4</y>
+    <width>270</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>$(bl)</text>
+    <x>472</x>
+    <y>5</y>
+    <width>95</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #15</name>
+    <x>83</x>
+    <y>28</y>
+    <width>482</width>
+    <height>37</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #18</name>
+      <width>482</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #21</name>
+        <text>$(pmac1)</text>
+        <x>384</x>
+        <width>98</width>
+        <height>14</height>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #24</name>
+        <pv_name>$(pmac1)mbx:SvoTm</pv_name>
+        <width>97</width>
+        <height>15</height>
+        <numBits>24</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #27</name>
+        <pv_name>$(pmac1)svo:SvoTm</pv_name>
+        <x>104</x>
+        <width>97</width>
+        <height>15</height>
+        <numBits>24</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #30</name>
+        <pv_name>$(pmac1)bkg:SvoTm</pv_name>
+        <x>208</x>
+        <width>97</width>
+        <height>15</height>
+        <numBits>24</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #33</name>
+        <pv_name>$(pmac1)var:SvoTm</pv_name>
+        <x>312</x>
+        <width>65</width>
+        <height>15</height>
+        <numBits>16</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #36</name>
+      <y>22</y>
+      <width>482</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #39</name>
+        <text>$(pmac2)</text>
+        <x>384</x>
+        <width>98</width>
+        <height>14</height>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #42</name>
+        <pv_name>$(pmac2)mbx:SvoTm</pv_name>
+        <width>97</width>
+        <height>15</height>
+        <numBits>24</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #45</name>
+        <pv_name>$(pmac2)svo:SvoTm</pv_name>
+        <x>104</x>
+        <width>97</width>
+        <height>15</height>
+        <numBits>24</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #48</name>
+        <pv_name>$(pmac2)bkg:SvoTm</pv_name>
+        <x>208</x>
+        <width>97</width>
+        <height>15</height>
+        <numBits>24</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>bar #51</name>
+        <pv_name>$(pmac2)var:SvoTm</pv_name>
+        <x>312</x>
+        <width>65</width>
+        <height>15</height>
+        <numBits>16</numBits>
+        <square>true</square>
+        <foreground_color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </foreground_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #54</name>
+    <text>Mailbox</text>
+    <x>45</x>
+    <y>69</y>
+    <width>97</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #57</name>
+    <text>Servo</text>
+    <x>187</x>
+    <y>69</y>
+    <width>97</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #60</name>
+    <text>Backgr</text>
+    <x>291</x>
+    <y>69</y>
+    <width>97</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #63</name>
+    <text>Var</text>
+    <x>395</x>
+    <y>69</y>
+    <width>65</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #66</name>
+    <pv_name>$(pmac1)mbx:ClockStatus</pv_name>
+    <x>6</x>
+    <y>29</y>
+    <width>74</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #70</name>
+    <pv_name>$(pmac2)mbx:ClockStatus</pv_name>
+    <x>5</x>
+    <y>51</y>
+    <width>74</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>

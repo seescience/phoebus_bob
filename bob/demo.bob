@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:49 by epics-->
+<display version="2.0.0">
+  <name>demo</name>
+  <x>10</x>
+  <y>10</y>
+  <width>501</width>
+  <height>202</height>
+  <background_color>
+    <color red="145" green="145" blue="145">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="stripchart" version="2.1.0">
+    <name>strip chart #6</name>
+    <x>4</x>
+    <y>4</y>
+    <width>496</width>
+    <height>135</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <title>Voltage</title>
+    <show_toolbar>false</show_toolbar>
+    <start>10 second</start>
+    <y_axes>
+      <y_axis>
+        <title></title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <visible>true</visible>
+        <color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </color>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>demo:voltage</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <y_pv>demo:lightOn</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="115" green="255" blue="107">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[2].y_pv)</name>
+        <y_pv>demo:lightOff</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="26" green="115" blue="9">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[3].y_pv)</name>
+        <y_pv>demo:loLimit</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="205" green="97" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[4].y_pv)</name>
+        <y_pv>demo:hiLimit</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="205" green="97" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="scaledslider" version="2.0.0">
+    <name>valuator #14</name>
+    <pv_name>demo:loLimit</pv_name>
+    <x>5</x>
+    <y>141</y>
+    <width>200</width>
+    <height>59</height>
+    <background_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="scaledslider" version="2.0.0">
+    <name>valuator #17</name>
+    <pv_name>demo:hiLimit</pv_name>
+    <x>293</x>
+    <y>141</y>
+    <width>204</width>
+    <height>57</height>
+    <background_color>
+      <color red="255" green="176" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #20</name>
+    <x>208</x>
+    <y>141</y>
+    <width>82</width>
+    <height>57</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>demo:light</pv_name>
+      </rule>
+    </rules>
+  </widget>
+</display>

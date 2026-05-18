@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:49 by epics-->
+<display version="2.0.0">
+  <name>cmdButtons</name>
+  <x>764</x>
+  <y>105</y>
+  <width>300</width>
+  <height>250</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>300</width>
+    <height>30</height>
+    <line_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>cmdButtons Sequencer</text>
+    <y>6</y>
+    <width>300</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #12</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>cmdBtns:start</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>cmdBtns:start</pv_name>
+    <text>Start</text>
+    <x>62</x>
+    <y>85</y>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #15</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>cmdBtns:stop</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>cmdBtns:stop</pv_name>
+    <text>Stop</text>
+    <x>62</x>
+    <y>109</y>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #18</name>
+    <pv_name>cmdBtns:start.RVAL</pv_name>
+    <x>176</x>
+    <y>87</y>
+    <width>37</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>.RVAL</text>
+    <x>222</x>
+    <y>90</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #25</name>
+    <pv_name>cmdBtns:stop.RVAL</pv_name>
+    <x>176</x>
+    <y>111</y>
+    <width>37</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #29</name>
+    <text>.RVAL</text>
+    <x>222</x>
+    <y>114</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #32</name>
+    <pv_name>cmdBtns:seqMsg</pv_name>
+    <x>63</x>
+    <y>137</y>
+    <width>150</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #36</name>
+    <text>Start button will be 1 while counting and 0 after</text>
+    <x>10</x>
+    <y>184</y>
+    <width>240</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #39</name>
+    <text>10s or stopped.  This can be seen with RVAL.</text>
+    <x>10</x>
+    <y>204</y>
+    <width>240</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #42</name>
+    <y>234</y>
+    <width>300</width>
+    <height>15</height>
+    <line_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="39" green="84" blue="141">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #45</name>
+    <text>(wmoore, 2012-07-24)</text>
+    <y>236</y>
+    <width>300</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="235" green="241" blue="181">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #48</name>
+    <x>20</x>
+    <y>44</y>
+    <width>260</width>
+    <height>15</height>
+    <line_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #51</name>
+    <text>10 second Counter</text>
+    <x>20</x>
+    <y>47</y>
+    <width>260</width>
+    <height>10</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>

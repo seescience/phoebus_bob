@@ -1,0 +1,4268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:19 by epics-->
+<display version="2.0.0">
+  <name>CalibCCDSt</name>
+  <x>5</x>
+  <y>24</y>
+  <width>850</width>
+  <height>740</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>850</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>$(assy)</text>
+    <x>725</x>
+    <y>4</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #12</name>
+    <pv_name>$(assy)Start.DESC</pv_name>
+    <x>4</x>
+    <y>4</y>
+    <width>300</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #16</name>
+    <x>3</x>
+    <y>34</y>
+    <width>840</width>
+    <height>195</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #19</name>
+    <x>6</x>
+    <y>111</y>
+    <width>785</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="784.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>(mm)</text>
+    <x>100</x>
+    <y>95</y>
+    <width>30</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #27</name>
+    <text>=</text>
+    <x>168</x>
+    <y>68</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #30</name>
+    <x>175</x>
+    <y>51</y>
+    <width>15</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="14.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #34</name>
+    <x>186</x>
+    <y>49</y>
+    <width>13</width>
+    <height>44</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="12.0" y="43.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #38</name>
+    <x>197</x>
+    <y>40</y>
+    <width>14</width>
+    <height>56</height>
+    <points>
+      <point x="13.0" y="1.0">
+      </point>
+      <point x="1.0" y="55.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #42</name>
+    <x>208</x>
+    <y>40</y>
+    <width>394</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="393.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #46</name>
+    <text>(</text>
+    <x>211</x>
+    <y>55</y>
+    <width>16</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #49</name>
+    <x>67</x>
+    <y>48</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #52</name>
+    <text>$(x1)</text>
+    <x>82</x>
+    <y>51</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #55</name>
+    <pv_name>$(x1)ActPos</pv_name>
+    <x>77</x>
+    <y>71</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #59</name>
+    <x>7</x>
+    <y>70</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #62</name>
+    <text>D</text>
+    <x>7</x>
+    <y>73</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #65</name>
+    <text>=</text>
+    <x>47</x>
+    <y>70</y>
+    <width>18</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #68</name>
+    <text>(degr)</text>
+    <x>95</x>
+    <y>191</y>
+    <width>40</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #71</name>
+    <x>67</x>
+    <y>143</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #74</name>
+    <text>$(x2)</text>
+    <x>82</x>
+    <y>146</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #77</name>
+    <pv_name>$(x2)ActPos</pv_name>
+    <x>77</x>
+    <y>166</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #81</name>
+    <text>= RAD2DEG ASIN</text>
+    <x>168</x>
+    <y>163</y>
+    <width>155</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #84</name>
+    <x>382</x>
+    <y>173</y>
+    <width>239</width>
+    <height>42</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #87</name>
+      <text>(</text>
+      <y>6</y>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #90</name>
+      <text>2</text>
+      <x>122</x>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #93</name>
+      <text>(</text>
+      <x>150</x>
+      <y>6</y>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #96</name>
+      <text>+</text>
+      <x>135</x>
+      <y>19</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #99</name>
+      <text>)</text>
+      <x>112</x>
+      <y>6</y>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #102</name>
+      <x>169</x>
+      <y>15</y>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #105</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #108</name>
+        <text>Lv</text>
+        <y>2</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #111</name>
+      <text>)</text>
+      <x>209</x>
+      <y>6</y>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #114</name>
+      <text>2</text>
+      <x>219</x>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #117</name>
+      <x>15</x>
+      <y>15</y>
+      <width>103</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #120</name>
+        <text>+</text>
+        <x>41</x>
+        <width>20</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #123</name>
+        <x>63</x>
+        <width>40</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>rectangle #126</name>
+          <width>40</width>
+          <line_color>
+            <color red="158" green="158" blue="158">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="158" green="158" blue="158">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>text #129</name>
+          <text>Lh</text>
+          <y>3</y>
+          <width>40</width>
+          <height>14</height>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>composite #132</name>
+        <width>40</width>
+        <height>20</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>rectangle #135</name>
+          <width>40</width>
+          <line_color>
+            <color red="158" green="158" blue="158">
+            </color>
+          </line_color>
+          <background_color>
+            <color red="158" green="158" blue="158">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>text #138</name>
+          <text>D</text>
+          <y>3</y>
+          <width>40</width>
+          <height>14</height>
+          <horizontal_alignment>1</horizontal_alignment>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #141</name>
+    <x>7</x>
+    <y>167</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #144</name>
+    <text>2Q</text>
+    <x>7</x>
+    <y>170</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #147</name>
+    <text>=</text>
+    <x>49</x>
+    <y>166</y>
+    <width>18</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #150</name>
+    <x>319</x>
+    <y>173</y>
+    <width>379</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="378.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #154</name>
+    <text>-</text>
+    <x>495</x>
+    <y>148</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #157</name>
+    <x>515</x>
+    <y>148</y>
+    <width>40</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #160</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #163</name>
+      <text>Lv</text>
+      <y>2</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #166</name>
+    <x>320</x>
+    <y>148</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #169</name>
+    <text>Hu</text>
+    <x>320</x>
+    <y>151</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #172</name>
+    <x>264</x>
+    <y>120</y>
+    <width>15</width>
+    <height>103</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #175</name>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #179</name>
+      <width>2</width>
+      <height>103</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="1.0" y="102.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #183</name>
+      <y>101</y>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #187</name>
+    <x>823</x>
+    <y>120</y>
+    <width>15</width>
+    <height>103</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #190</name>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #194</name>
+      <x>13</x>
+      <width>2</width>
+      <height>103</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="1.0" y="102.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #198</name>
+      <y>101</y>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #202</name>
+    <x>692</x>
+    <y>125</y>
+    <width>15</width>
+    <height>95</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #205</name>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #209</name>
+      <x>13</x>
+      <width>2</width>
+      <height>95</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="1.0" y="94.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #213</name>
+      <y>92</y>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #217</name>
+    <x>311</x>
+    <y>125</y>
+    <width>15</width>
+    <height>94</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #220</name>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #224</name>
+      <width>2</width>
+      <height>94</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="1.0" y="93.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #228</name>
+      <y>92</y>
+      <width>15</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="14.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #232</name>
+    <text>+</text>
+    <x>422</x>
+    <y>68</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #235</name>
+    <text>+</text>
+    <x>345</x>
+    <y>68</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #238</name>
+    <text>(</text>
+    <x>360</x>
+    <y>55</y>
+    <width>16</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #241</name>
+    <x>378</x>
+    <y>66</y>
+    <width>43</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #244</name>
+    <text>Hu</text>
+    <x>378</x>
+    <y>68</y>
+    <width>43</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #247</name>
+    <text>2</text>
+    <x>488</x>
+    <y>49</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #250</name>
+    <text>(</text>
+    <x>516</x>
+    <y>55</y>
+    <width>16</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #253</name>
+    <text>-</text>
+    <x>501</x>
+    <y>68</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #256</name>
+    <text>)</text>
+    <x>478</x>
+    <y>55</y>
+    <width>16</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #259</name>
+    <x>535</x>
+    <y>66</y>
+    <width>40</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #262</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #265</name>
+      <text>Lv</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #268</name>
+    <text>)</text>
+    <x>572</x>
+    <y>55</y>
+    <width>16</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #271</name>
+    <text>2</text>
+    <x>582</x>
+    <y>49</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #274</name>
+    <x>442</x>
+    <y>66</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #277</name>
+    <text>Lv</text>
+    <x>442</x>
+    <y>69</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #280</name>
+    <x>328</x>
+    <y>49</y>
+    <width>30</width>
+    <height>42</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #283</name>
+      <text>)</text>
+      <y>6</y>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #286</name>
+      <text>2</text>
+      <x>10</x>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #289</name>
+    <x>229</x>
+    <y>66</y>
+    <width>40</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #292</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #295</name>
+      <text>X</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #298</name>
+    <x>292</x>
+    <y>66</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #301</name>
+    <text>Lh</text>
+    <x>292</x>
+    <y>69</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #304</name>
+    <text>+</text>
+    <x>270</x>
+    <y>68</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #307</name>
+    <x>602</x>
+    <y>66</y>
+    <width>66</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #310</name>
+      <text>-</text>
+      <y>2</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #313</name>
+      <x>26</x>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #316</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #319</name>
+        <text>Lh</text>
+        <y>3</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #322</name>
+    <x>560</x>
+    <y>138</y>
+    <width>142</width>
+    <height>36</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #325</name>
+      <text>*</text>
+      <y>13</y>
+      <width>14</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #328</name>
+      <text>(</text>
+      <x>7</x>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #331</name>
+      <x>26</x>
+      <y>10</y>
+      <width>43</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #334</name>
+      <text>D</text>
+      <x>26</x>
+      <y>12</y>
+      <width>43</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #337</name>
+      <text>-</text>
+      <x>69</x>
+      <y>10</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #340</name>
+      <x>88</x>
+      <y>10</y>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #343</name>
+      <text>X</text>
+      <x>88</x>
+      <y>13</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #346</name>
+      <text>)</text>
+      <x>126</x>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #349</name>
+    <x>368</x>
+    <y>138</y>
+    <width>128</width>
+    <height>36</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #352</name>
+      <text>+</text>
+      <x>56</x>
+      <y>10</y>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #355</name>
+      <x>78</x>
+      <y>10</y>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #358</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #361</name>
+        <text>Lh</text>
+        <y>3</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #364</name>
+      <x>15</x>
+      <y>10</y>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #367</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #370</name>
+        <text>D</text>
+        <y>3</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #373</name>
+      <text>(</text>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #376</name>
+      <text>)</text>
+      <x>112</x>
+      <width>16</width>
+      <height>36</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #379</name>
+    <text>*</text>
+    <x>362</x>
+    <y>151</y>
+    <width>14</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #382</name>
+    <text>VFM angle</text>
+    <x>346</x>
+    <y>260</y>
+    <width>60</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #385</name>
+    <pv_name>$(assy)mLink</pv_name>
+    <x>715</x>
+    <y>322</y>
+    <height>36</height>
+    <background_color>
+      <color red="214" green="127" blue="226">
+      </color>
+    </background_color>
+    <horizontal>false</horizontal>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #388</name>
+    <x>7</x>
+    <y>371</y>
+    <width>318</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #391</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #394</name>
+      <text>$(assy)Dms</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #397</name>
+      <pv_name>$(assy)Dms</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #401</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #404</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #407</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #410</name>
+      <text>Dms</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #413</name>
+      <text>(mm)</text>
+      <x>288</x>
+      <y>7</y>
+      <width>30</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #416</name>
+    <x>714</x>
+    <y>162</y>
+    <width>60</width>
+    <height>21</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #419</name>
+      <x>16</x>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #422</name>
+      <text>- 2*a</text>
+      <y>1</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #425</name>
+    <x>788</x>
+    <y>162</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #428</name>
+    <text>- 2*b</text>
+    <x>772</x>
+    <y>163</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #431</name>
+    <x>3</x>
+    <y>395</y>
+    <width>820</width>
+    <height>175</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #434</name>
+    <x>3</x>
+    <y>575</y>
+    <width>820</width>
+    <height>100</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #437</name>
+    <x>11</x>
+    <y>585</y>
+    <width>40</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #440</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #443</name>
+      <text>X</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #446</name>
+    <x>11</x>
+    <y>615</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #449</name>
+    <text>Hu</text>
+    <x>11</x>
+    <y>618</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #452</name>
+    <x>11</x>
+    <y>647</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #455</name>
+    <text>Hd</text>
+    <x>11</x>
+    <y>650</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #458</name>
+    <x>76</x>
+    <y>586</y>
+    <width>290</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #461</name>
+    <text>(D+Lh)*cos(2Q_eff) - Lv*sin(2Q_eff) - Lh</text>
+    <x>78</x>
+    <y>589</y>
+    <width>290</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #464</name>
+    <x>75</x>
+    <y>615</y>
+    <width>290</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #467</name>
+    <text>(D+Lh)*sin(2Q_eff) + Lv*cos(2Q_eff) - Lv</text>
+    <x>80</x>
+    <y>618</y>
+    <width>290</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #470</name>
+    <x>75</x>
+    <y>645</y>
+    <width>290</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #473</name>
+    <text>Hu + L*tan(2Q_eff) + dH/cos(2Q_eff) - dH</text>
+    <x>79</x>
+    <y>647</y>
+    <width>290</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #476</name>
+    <text>=</text>
+    <x>54</x>
+    <y>585</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #479</name>
+    <text>=</text>
+    <x>54</x>
+    <y>615</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #482</name>
+    <text>=</text>
+    <x>54</x>
+    <y>647</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #485</name>
+    <text>INVERSE EQUATIONS</text>
+    <x>645</x>
+    <y>580</y>
+    <width>175</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #488</name>
+    <actions>
+      <action type="open_display">
+        <file>CalibCCDSt_help.opi</file>
+        <target>tab</target>
+        <description>Help</description>
+      </action>
+    </actions>
+    <text>HELP</text>
+    <x>792</x>
+    <y>689</y>
+    <width>54</width>
+    <height>20</height>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #491</name>
+    <x>3</x>
+    <y>681</y>
+    <width>165</width>
+    <height>24</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #494</name>
+    <x>180</x>
+    <y>683</y>
+    <width>550</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #497</name>
+    <text>Bring CCD to nominal beam height at alpha=0 &amp; using Offsets set:  Hu=Hd=0, X=D</text>
+    <x>180</x>
+    <y>686</y>
+    <width>550</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #500</name>
+    <text>SETUP PROCEDURE:</text>
+    <x>3</x>
+    <y>683</y>
+    <width>165</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #503</name>
+    <text>=</text>
+    <x>175</x>
+    <y>425</y>
+    <width>24</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #506</name>
+    <x>200</x>
+    <y>405</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #509</name>
+    <text>$(m1)</text>
+    <x>215</x>
+    <y>408</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #512</name>
+    <text>*</text>
+    <x>308</x>
+    <y>428</y>
+    <width>20</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #515</name>
+    <text>+</text>
+    <x>449</x>
+    <y>426</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #518</name>
+    <x>471</x>
+    <y>405</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #521</name>
+    <pv_name>$(d1)Offset</pv_name>
+    <x>481</x>
+    <y>424</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #525</name>
+    <text>$(d1)Offset</text>
+    <x>476</x>
+    <y>409</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #528</name>
+    <x>330</x>
+    <y>405</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #531</name>
+    <pv_name>$(d1)Scale</pv_name>
+    <x>340</x>
+    <y>424</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #535</name>
+    <text>$(d1)Scale</text>
+    <x>335</x>
+    <y>409</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #538</name>
+    <pv_name>$(m1)ActPos</pv_name>
+    <x>210</x>
+    <y>428</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #542</name>
+    <text>=</text>
+    <x>54</x>
+    <y>428</y>
+    <width>18</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #545</name>
+    <x>11</x>
+    <y>428</y>
+    <width>40</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #548</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #551</name>
+      <text>X</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #554</name>
+    <text>=</text>
+    <x>175</x>
+    <y>480</y>
+    <width>24</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #557</name>
+    <text>*</text>
+    <x>308</x>
+    <y>483</y>
+    <width>20</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #560</name>
+    <text>+</text>
+    <x>449</x>
+    <y>481</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #563</name>
+    <x>471</x>
+    <y>460</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #566</name>
+    <pv_name>$(d2)Offset</pv_name>
+    <x>481</x>
+    <y>479</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #570</name>
+    <text>$(d2)Offset</text>
+    <x>476</x>
+    <y>464</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #573</name>
+    <x>330</x>
+    <y>460</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #576</name>
+    <pv_name>$(d2)Scale</pv_name>
+    <x>340</x>
+    <y>479</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #580</name>
+    <text>$(d2)Scale</text>
+    <x>335</x>
+    <y>464</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #583</name>
+    <x>75</x>
+    <y>460</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #586</name>
+    <text>$(d2)</text>
+    <x>90</x>
+    <y>463</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #589</name>
+    <pv_name>$(d2)ActPos</pv_name>
+    <x>85</x>
+    <y>483</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #593</name>
+    <x>11</x>
+    <y>483</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #596</name>
+    <text>Hu</text>
+    <x>11</x>
+    <y>486</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #599</name>
+    <text>=</text>
+    <x>54</x>
+    <y>483</y>
+    <width>18</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #602</name>
+    <text>-</text>
+    <x>593</x>
+    <y>479</y>
+    <width>24</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #605</name>
+    <text>=</text>
+    <x>175</x>
+    <y>535</y>
+    <width>24</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #608</name>
+    <x>200</x>
+    <y>515</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #611</name>
+    <text>$(m3)</text>
+    <x>215</x>
+    <y>518</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #614</name>
+    <text>*</text>
+    <x>308</x>
+    <y>538</y>
+    <width>20</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #617</name>
+    <text>+</text>
+    <x>449</x>
+    <y>536</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #620</name>
+    <x>471</x>
+    <y>515</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #623</name>
+    <pv_name>$(d3)Offset</pv_name>
+    <x>481</x>
+    <y>534</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #627</name>
+    <text>$(d3)Offset</text>
+    <x>476</x>
+    <y>519</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #630</name>
+    <x>330</x>
+    <y>515</y>
+    <width>120</width>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #633</name>
+    <pv_name>$(d3)Scale</pv_name>
+    <x>340</x>
+    <y>534</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #637</name>
+    <text>$(d3)Scale</text>
+    <x>335</x>
+    <y>519</y>
+    <width>110</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #640</name>
+    <pv_name>$(m3)ActPos</pv_name>
+    <x>210</x>
+    <y>538</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #644</name>
+    <x>75</x>
+    <y>515</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #647</name>
+    <text>$(d3)</text>
+    <x>90</x>
+    <y>518</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #650</name>
+    <pv_name>$(d3)ActPos</pv_name>
+    <x>85</x>
+    <y>538</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #654</name>
+    <x>11</x>
+    <y>538</y>
+    <width>40</width>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #657</name>
+    <text>Hd</text>
+    <x>11</x>
+    <y>541</y>
+    <width>40</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #660</name>
+    <text>=</text>
+    <x>54</x>
+    <y>538</y>
+    <width>18</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #663</name>
+    <text>-</text>
+    <x>593</x>
+    <y>534</y>
+    <width>24</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #666</name>
+    <x>75</x>
+    <y>405</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #669</name>
+    <text>$(d1)</text>
+    <x>90</x>
+    <y>408</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #672</name>
+    <pv_name>$(d1)ActPos</pv_name>
+    <x>85</x>
+    <y>428</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #676</name>
+    <x>200</x>
+    <y>460</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #679</name>
+    <text>$(m2)</text>
+    <x>215</x>
+    <y>463</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #682</name>
+    <pv_name>$(m2)ActPos</pv_name>
+    <x>210</x>
+    <y>483</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #686</name>
+    <x>618</x>
+    <y>460</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #689</name>
+    <text>S</text>
+    <x>633</x>
+    <y>463</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #692</name>
+    <pv_name>$(assy)S</pv_name>
+    <x>628</x>
+    <y>483</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #696</name>
+    <x>618</x>
+    <y>515</y>
+    <height>44</height>
+    <line_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #699</name>
+    <text>S</text>
+    <x>633</x>
+    <y>518</y>
+    <width>70</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #702</name>
+    <pv_name>$(assy)S</pv_name>
+    <x>628</x>
+    <y>538</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #706</name>
+    <text>DIRECT EQUATIONS</text>
+    <x>645</x>
+    <y>400</y>
+    <width>175</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #709</name>
+    <x>730</x>
+    <y>428</y>
+    <width>71</width>
+    <height>126</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #712</name>
+      <width>70</width>
+      <height>16</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #715</name>
+        <pv_name>$(m1)Mtr</pv_name>
+        <x>40</x>
+        <width>30</width>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #719</name>
+        <text>mtr=</text>
+        <width>40</width>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>2</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #722</name>
+      <pv_name>$(m2)Mtr</pv_name>
+      <x>40</x>
+      <y>55</y>
+      <width>30</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #726</name>
+      <text>mtr=</text>
+      <y>55</y>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #729</name>
+      <pv_name>$(m3)Mtr</pv_name>
+      <x>41</x>
+      <y>110</y>
+      <width>30</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #733</name>
+      <text>mtr=</text>
+      <x>1</x>
+      <y>110</y>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #736</name>
+    <y>714</y>
+    <width>850</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #739</name>
+    <x>5</x>
+    <y>720</y>
+    <width>230</width>
+    <height>16</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #742</name>
+      <text>pmac=</text>
+      <width>45</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #745</name>
+      <pv_name>$(assy)Pmac</pv_name>
+      <x>45</x>
+      <width>110</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="212" green="219" blue="157">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #749</name>
+      <text>pcs=</text>
+      <x>150</x>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #752</name>
+      <pv_name>$(assy)Pcs</pv_name>
+      <x>190</x>
+      <width>40</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="212" green="219" blue="157">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #756</name>
+    <text>ioc=$(ioc)</text>
+    <x>260</x>
+    <y>720</y>
+    <width>150</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #759</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(ioc):saveTrigger.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(ioc):saveTrigger.PROC</pv_name>
+    <text>Save $(ioc)</text>
+    <x>685</x>
+    <y>717</y>
+    <width>163</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="166" green="164" blue="98">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #762</name>
+    <x>7</x>
+    <y>237</y>
+    <width>316</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #765</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #768</name>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #771</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #774</name>
+        <text>L</text>
+        <y>3</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #777</name>
+      <pv_name>$(assy)L</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #781</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #784</name>
+      <text>$(assy)L</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #787</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #790</name>
+      <text>(mm)</text>
+      <x>286</x>
+      <y>7</y>
+      <width>30</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #793</name>
+    <x>7</x>
+    <y>272</y>
+    <width>316</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #796</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #799</name>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #802</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #805</name>
+        <text>Lh</text>
+        <y>3</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #808</name>
+      <pv_name>$(assy)Lh</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #812</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #815</name>
+      <text>$(assy)Lh</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #818</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #821</name>
+      <text>(mm)</text>
+      <x>286</x>
+      <y>6</y>
+      <width>30</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #824</name>
+    <x>7</x>
+    <y>307</y>
+    <width>316</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #827</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #830</name>
+      <width>40</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #833</name>
+        <width>40</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #836</name>
+        <text>Lv</text>
+        <y>3</y>
+        <width>40</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #839</name>
+      <pv_name>$(assy)Lv</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #843</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #846</name>
+      <text>$(assy)Lv</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #849</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #852</name>
+      <text>(mm)</text>
+      <x>286</x>
+      <y>6</y>
+      <width>30</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #855</name>
+    <x>7</x>
+    <y>342</y>
+    <width>316</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #858</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #861</name>
+      <text>dH</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #864</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #867</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #870</name>
+      <text>$(assy)dH</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #873</name>
+      <pv_name>$(assy)dH</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #877</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #880</name>
+      <text>(mm)</text>
+      <x>286</x>
+      <y>6</y>
+      <width>30</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #883</name>
+    <pv_name>$(VFM_angle)ActPos</pv_name>
+    <x>539</x>
+    <y>260</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #887</name>
+    <text>$(VFM_angle) =</text>
+    <x>435</x>
+    <y>260</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #890</name>
+    <x>353</x>
+    <y>240</y>
+    <width>328</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #893</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #896</name>
+      <pv_name>$(assy)aV</pv_name>
+      <x>186</x>
+      <y>1</y>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #900</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #903</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #906</name>
+      <text>alpha</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #909</name>
+      <text>(mrad)</text>
+      <x>288</x>
+      <y>6</y>
+      <width>40</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #912</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #915</name>
+      <text>$(assy)aV</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #918</name>
+    <x>353</x>
+    <y>275</y>
+    <width>328</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #921</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #924</name>
+      <text>$(assy)bV</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #927</name>
+      <pv_name>$(assy)bV</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #931</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #934</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #937</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #940</name>
+      <text>beta</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #943</name>
+      <text>(mrad)</text>
+      <x>288</x>
+      <y>7</y>
+      <width>40</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #946</name>
+    <x>353</x>
+    <y>307</y>
+    <width>318</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #949</name>
+      <x>62</x>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #952</name>
+      <text>$(assy)sV</text>
+      <x>62</x>
+      <y>3</y>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #955</name>
+      <pv_name>$(assy)sV</pv_name>
+      <x>186</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+      <format>2</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #959</name>
+      <text>=</text>
+      <x>167</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #962</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #965</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #968</name>
+      <text>Svo</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #971</name>
+      <text>(mm)</text>
+      <x>288</x>
+      <y>7</y>
+      <width>30</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #974</name>
+    <x>353</x>
+    <y>371</y>
+    <width>408</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #977</name>
+      <text>=</text>
+      <x>44</x>
+      <y>3</y>
+      <width>16</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #980</name>
+      <width>40</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #983</name>
+      <text>S</text>
+      <y>3</y>
+      <width>40</width>
+      <height>14</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #986</name>
+      <x>62</x>
+      <width>180</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #989</name>
+      <text>Dms * tan(2*a+2*b) + Svo</text>
+      <x>62</x>
+      <y>3</y>
+      <width>180</width>
+      <height>14</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #992</name>
+      <x>247</x>
+      <y>1</y>
+      <width>161</width>
+      <height>17</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #995</name>
+        <text>=</text>
+        <y>2</y>
+        <width>16</width>
+        <height>14</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #998</name>
+        <pv_name>$(assy)S</pv_name>
+        <x>20</x>
+        <height>16</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="238" green="182" blue="43">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #1002</name>
+        <text>(mm)</text>
+        <x>121</x>
+        <y>5</y>
+        <width>40</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1005</name>
+    <x>724</x>
+    <y>156</y>
+    <width>50</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #1008</name>
+      <width>50</width>
+      <height>30</height>
+      <points>
+        <point x="48.0" y="2.0">
+        </point>
+        <point x="2.0" y="28.0">
+        </point>
+      </points>
+      <line_width>4</line_width>
+      <line_color>
+        <color red="214" green="127" blue="226">
+        </color>
+      </line_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)mLink</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #1013</name>
+      <width>50</width>
+      <height>31</height>
+      <points>
+        <point x="2.0" y="2.0">
+        </point>
+        <point x="48.0" y="29.0">
+        </point>
+      </points>
+      <line_width>4</line_width>
+      <line_color>
+        <color red="214" green="127" blue="226">
+        </color>
+      </line_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)mLink</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1018</name>
+    <x>482</x>
+    <y>368</y>
+    <width>35</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #1021</name>
+      <width>37</width>
+      <height>25</height>
+      <points>
+        <point x="35.0" y="2.0">
+        </point>
+        <point x="2.0" y="23.0">
+        </point>
+      </points>
+      <line_width>4</line_width>
+      <line_color>
+        <color red="214" green="127" blue="226">
+        </color>
+      </line_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)mLink</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #1026</name>
+      <width>37</width>
+      <height>26</height>
+      <points>
+        <point x="2.0" y="2.0">
+        </point>
+        <point x="35.0" y="24.0">
+        </point>
+      </points>
+      <line_width>4</line_width>
+      <line_color>
+        <color red="214" green="127" blue="226">
+        </color>
+      </line_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(assy)mLink</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1031</name>
+    <x>352</x>
+    <y>341</y>
+    <width>174</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #1034</name>
+      <x>64</x>
+      <y>1</y>
+      <width>110</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #1037</name>
+      <y>1</y>
+      <width>43</width>
+      <line_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="158" green="158" blue="158">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #1040</name>
+      <text>2Q_eff =  2Q + 2*a + 2*b</text>
+      <x>2</x>
+      <y>4</y>
+      <width>170</width>
+      <height>14</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #1043</name>
+      <x>99</x>
+      <width>35</width>
+      <height>25</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1046</name>
+        <width>37</width>
+        <height>25</height>
+        <points>
+          <point x="35.0" y="2.0">
+          </point>
+          <point x="2.0" y="23.0">
+          </point>
+        </points>
+        <line_width>4</line_width>
+        <line_color>
+          <color red="214" green="127" blue="226">
+          </color>
+        </line_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)mLink</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>polyline #1051</name>
+        <width>37</width>
+        <height>26</height>
+        <points>
+          <point x="2.0" y="2.0">
+          </point>
+          <point x="35.0" y="24.0">
+          </point>
+        </points>
+        <line_width>4</line_width>
+        <line_color>
+          <color red="214" green="127" blue="226">
+          </color>
+        </line_color>
+        <rules>
+          <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+            <exp bool_exp="!(pv0==0)">
+              <value>false</value>
+            </exp>
+            <pv_name>$(assy)mLink</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #1056</name>
+    <x>703</x>
+    <y>241</y>
+    <width>139</width>
+    <height>71</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>composite #1059</name>
+      <width>139</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #1062</name>
+        <x>64</x>
+        <width>75</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #1065</name>
+        <width>43</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #1068</name>
+        <text>a    = alpha/1000</text>
+        <x>2</x>
+        <y>3</y>
+        <width>135</width>
+        <height>14</height>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #1071</name>
+        <text>(rad)</text>
+        <x>4</x>
+        <y>23</y>
+        <width>35</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #1074</name>
+        <text>(mrad)</text>
+        <x>65</x>
+        <y>22</y>
+        <width>40</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #1077</name>
+      <text>(rad)</text>
+      <x>4</x>
+      <y>59</y>
+      <width>35</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #1080</name>
+      <text>(mrad)</text>
+      <x>65</x>
+      <y>58</y>
+      <width>40</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #1083</name>
+      <y>36</y>
+      <width>139</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #1086</name>
+        <x>64</x>
+        <width>75</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>rectangle #1089</name>
+        <width>43</width>
+        <line_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="158" green="158" blue="158">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #1092</name>
+        <text>b    = beta/1000</text>
+        <x>2</x>
+        <y>3</y>
+        <width>135</width>
+        <height>14</height>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+</display>

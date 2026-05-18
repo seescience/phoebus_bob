@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:55 by epics-->
+<display version="2.0.0">
+  <name>IxMtrAll</name>
+  <x>225</x>
+  <y>90</y>
+  <width>530</width>
+  <height>610</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>IxSvoCtl.opi</file>
+        <target>replace</target>
+        <description>Kill</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>507</x>
+    <y>27</y>
+    <width>20</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #9</name>
+    <actions>
+      <action type="open_display">
+        <file>IxMtrMv.opi</file>
+        <target>replace</target>
+        <description>Kill</description>
+      </action>
+    </actions>
+    <text>X</text>
+    <x>506</x>
+    <y>336</y>
+    <width>20</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #12</name>
+    <x>506</x>
+    <y>336</y>
+    <width>20</width>
+    <line_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>X</text>
+    <x>510</x>
+    <y>336</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #18</name>
+    <x>507</x>
+    <y>27</y>
+    <width>20</width>
+    <line_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="190" green="25" blue="11">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #21</name>
+    <text>X</text>
+    <x>511</x>
+    <y>27</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #24</name>
+    <width>528</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #27</name>
+    <text>$(mtr)</text>
+    <x>402</x>
+    <y>4</y>
+    <width>120</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #30</name>
+    <pv_name>$(mtr)Ix20:FAN.DESC</pv_name>
+    <x>4</x>
+    <y>32</y>
+    <width>200</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>4</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #34</name>
+    <text>Motor Move (Ix20-Ix29)</text>
+    <x>4</x>
+    <y>4</y>
+    <width>300</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #37</name>
+    <pv_name>$(mtr)Ix30:FAN.DESC</pv_name>
+    <x>4</x>
+    <y>340</y>
+    <width>200</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>4</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #41</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)Ix30:FAN.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)Ix30:FAN.PROC</pv_name>
+    <text>Update Readbacks</text>
+    <x>234</x>
+    <y>340</y>
+    <width>140</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #44</name>
+    <y>308</y>
+    <width>528</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #47</name>
+    <text>$(mtr)</text>
+    <x>402</x>
+    <y>312</y>
+    <width>120</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #50</name>
+    <text>Servo Control (Ix30-Ix69)</text>
+    <x>4</x>
+    <y>313</y>
+    <width>300</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #53</name>
+    <pv_name>$(mtr)Ix30:LI.DESC</pv_name>
+    <x>7</x>
+    <y>365</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #57</name>
+    <pv_name>$(mtr)Ix31:LI.DESC</pv_name>
+    <x>7</x>
+    <y>387</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #61</name>
+    <pv_name>$(mtr)Ix32:LI.DESC</pv_name>
+    <x>7</x>
+    <y>410</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #65</name>
+    <pv_name>$(mtr)Ix33:LI.DESC</pv_name>
+    <x>7</x>
+    <y>432</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #69</name>
+    <pv_name>$(mtr)Ix34:BI.DESC</pv_name>
+    <x>7</x>
+    <y>457</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #73</name>
+    <pv_name>$(mtr)Ix35:LI.DESC</pv_name>
+    <x>7</x>
+    <y>481</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #77</name>
+    <pv_name>$(mtr)Ix64:LI.DESC</pv_name>
+    <x>7</x>
+    <y>522</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #81</name>
+    <pv_name>$(mtr)Ix65:LI.DESC</pv_name>
+    <x>7</x>
+    <y>544</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #85</name>
+    <pv_name>$(mtr)Ix67:LI.DESC</pv_name>
+    <x>7</x>
+    <y>566</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #89</name>
+    <pv_name>$(mtr)Ix69:LI.DESC</pv_name>
+    <x>8</x>
+    <y>588</y>
+    <width>175</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #93</name>
+    <pv_name>$(mtr)Ix30:LI</pv_name>
+    <x>193</x>
+    <y>364</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #97</name>
+    <pv_name>$(mtr)Ix31:LI</pv_name>
+    <x>193</x>
+    <y>389</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #101</name>
+    <pv_name>$(mtr)Ix32:LI</pv_name>
+    <x>193</x>
+    <y>412</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #105</name>
+    <pv_name>$(mtr)Ix33:LI</pv_name>
+    <x>193</x>
+    <y>435</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #109</name>
+    <pv_name>$(mtr)Ix34:BI</pv_name>
+    <x>193</x>
+    <y>457</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #113</name>
+    <pv_name>$(mtr)Ix35:LI</pv_name>
+    <x>193</x>
+    <y>482</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #117</name>
+    <pv_name>$(mtr)Ix64:LI</pv_name>
+    <x>193</x>
+    <y>522</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #121</name>
+    <pv_name>$(mtr)Ix30:LO</pv_name>
+    <x>303</x>
+    <y>362</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #125</name>
+    <pv_name>$(mtr)Ix31:LO</pv_name>
+    <x>303</x>
+    <y>387</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #129</name>
+    <pv_name>$(mtr)Ix32:LO</pv_name>
+    <x>303</x>
+    <y>410</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #133</name>
+    <pv_name>$(mtr)Ix33:LO</pv_name>
+    <x>303</x>
+    <y>433</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #137</name>
+    <pv_name>$(mtr)Ix64:LO</pv_name>
+    <x>303</x>
+    <y>520</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #141</name>
+    <pv_name>$(mtr)Ix35:LO</pv_name>
+    <x>303</x>
+    <y>478</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #145</name>
+    <pv_name>$(mtr)Ix34:BO</pv_name>
+    <x>303</x>
+    <y>456</y>
+    <height>16</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #148</name>
+    <pv_name>$(mtr)Ix30:LI.EGU</pv_name>
+    <x>411</x>
+    <y>363</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #152</name>
+    <pv_name>$(mtr)Ix31:LI.EGU</pv_name>
+    <x>411</x>
+    <y>389</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #156</name>
+    <pv_name>$(mtr)Ix32:LI.EGU</pv_name>
+    <x>411</x>
+    <y>413</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #160</name>
+    <pv_name>$(mtr)Ix33:LI.EGU</pv_name>
+    <x>411</x>
+    <y>437</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #164</name>
+    <pv_name>$(mtr)Ix35:LI.EGU</pv_name>
+    <x>411</x>
+    <y>479</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #168</name>
+    <pv_name>$(mtr)Ix64:LI.EGU</pv_name>
+    <x>411</x>
+    <y>521</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #172</name>
+    <pv_name>$(mtr)Ix65:LI</pv_name>
+    <x>193</x>
+    <y>544</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #176</name>
+    <pv_name>$(mtr)Ix65:LO</pv_name>
+    <x>303</x>
+    <y>542</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #180</name>
+    <pv_name>$(mtr)Ix65:LI.EGU</pv_name>
+    <x>411</x>
+    <y>543</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #184</name>
+    <pv_name>$(mtr)Ix67:LI</pv_name>
+    <x>193</x>
+    <y>566</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #188</name>
+    <pv_name>$(mtr)Ix67:LO</pv_name>
+    <x>303</x>
+    <y>564</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #192</name>
+    <pv_name>$(mtr)Ix67:LI.EGU</pv_name>
+    <x>411</x>
+    <y>565</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #196</name>
+    <pv_name>$(mtr)Ix69:LI</pv_name>
+    <x>194</x>
+    <y>588</y>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #200</name>
+    <pv_name>$(mtr)Ix69:LO</pv_name>
+    <x>304</x>
+    <y>586</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #204</name>
+    <pv_name>$(mtr)Ix69:LI.EGU</pv_name>
+    <x>411</x>
+    <y>587</y>
+    <width>110</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #208</name>
+    <x>7</x>
+    <y>57</y>
+    <width>175</width>
+    <height>241</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #211</name>
+      <pv_name>$(mtr)Ix20:LI.DESC</pv_name>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #215</name>
+      <pv_name>$(mtr)Ix21:LI.DESC</pv_name>
+      <y>22</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #219</name>
+      <pv_name>$(mtr)Ix25:LI.DESC</pv_name>
+      <y>134</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #223</name>
+      <pv_name>$(mtr)Ix26:LI.DESC</pv_name>
+      <y>158</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #227</name>
+      <pv_name>$(mtr)Ix28:LI.DESC</pv_name>
+      <y>203</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #231</name>
+      <pv_name>$(mtr)Ix29:LI.DESC</pv_name>
+      <y>227</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #235</name>
+      <pv_name>$(mtr)Ix23:AI.DESC</pv_name>
+      <y>85</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #239</name>
+      <pv_name>$(mtr)Ix22:AI.DESC</pv_name>
+      <y>63</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #243</name>
+      <pv_name>$(mtr)Ix16:AI.DESC</pv_name>
+      <y>42</y>
+      <width>175</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #247</name>
+    <x>191</x>
+    <y>32</y>
+    <width>328</width>
+    <height>268</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #250</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(mtr)Ix20:FAN.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(mtr)Ix20:FAN.PROC</pv_name>
+      <text>Update Readbacks</text>
+      <x>49</x>
+      <width>140</width>
+      <height>18</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #253</name>
+      <pv_name>$(mtr)Ix20:LI</pv_name>
+      <y>24</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #257</name>
+      <pv_name>$(mtr)Ix21:LI</pv_name>
+      <y>49</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #261</name>
+      <pv_name>$(mtr)Ix20:LO</pv_name>
+      <x>110</x>
+      <y>22</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #265</name>
+      <pv_name>$(mtr)Ix21:LO</pv_name>
+      <x>110</x>
+      <y>47</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #269</name>
+      <pv_name>$(mtr)Ix20:LI.EGU</pv_name>
+      <x>218</x>
+      <y>23</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #273</name>
+      <pv_name>$(mtr)Ix21:LI.EGU</pv_name>
+      <x>218</x>
+      <y>49</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #277</name>
+      <pv_name>$(mtr)Ix25:LI</pv_name>
+      <y>160</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>4</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #281</name>
+      <pv_name>$(mtr)Ix26:LI</pv_name>
+      <y>183</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #285</name>
+      <pv_name>$(mtr)Ix28:LI</pv_name>
+      <y>228</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #289</name>
+      <pv_name>$(mtr)Ix29:LI</pv_name>
+      <y>252</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #293</name>
+      <pv_name>$(mtr)Ix26:LO</pv_name>
+      <x>110</x>
+      <y>181</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #297</name>
+      <pv_name>$(mtr)Ix28:LO</pv_name>
+      <x>110</x>
+      <y>226</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #301</name>
+      <pv_name>$(mtr)Ix29:LO</pv_name>
+      <x>110</x>
+      <y>250</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #305</name>
+      <pv_name>$(mtr)Ix25:SO</pv_name>
+      <x>110</x>
+      <y>156</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #309</name>
+      <pv_name>$(mtr)Ix25:LI.EGU</pv_name>
+      <x>218</x>
+      <y>157</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #313</name>
+      <pv_name>$(mtr)Ix26:LI.EGU</pv_name>
+      <x>218</x>
+      <y>182</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #317</name>
+      <pv_name>$(mtr)Ix28:LI.EGU</pv_name>
+      <x>218</x>
+      <y>230</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #321</name>
+      <pv_name>$(mtr)Ix29:LI.EGU</pv_name>
+      <x>218</x>
+      <y>253</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #325</name>
+      <text>Format:   $a0c***</text>
+      <x>66</x>
+      <y>145</y>
+      <width>110</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="222" green="19" blue="9">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #328</name>
+      <pv_name>$(mtr)Ix23:AI</pv_name>
+      <y>113</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #332</name>
+      <pv_name>$(mtr)Ix23:AO</pv_name>
+      <x>110</x>
+      <y>111</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #336</name>
+      <pv_name>$(mtr)Ix23:AI.EGU</pv_name>
+      <x>218</x>
+      <y>115</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #340</name>
+      <pv_name>$(mtr)Ix22:AI</pv_name>
+      <y>90</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #344</name>
+      <pv_name>$(mtr)Ix22:AO</pv_name>
+      <x>110</x>
+      <y>88</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #348</name>
+      <pv_name>$(mtr)Ix22:AI.EGU</pv_name>
+      <x>218</x>
+      <y>91</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #352</name>
+      <pv_name>$(mtr)Ix16:AI</pv_name>
+      <y>69</y>
+      <height>14</height>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #356</name>
+      <pv_name>$(mtr)Ix16:AO</pv_name>
+      <x>110</x>
+      <y>67</y>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #360</name>
+      <pv_name>$(mtr)Ix16:AI.EGU</pv_name>
+      <x>218</x>
+      <y>70</y>
+      <width>110</width>
+      <height>14</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #364</name>
+    <x>-1</x>
+    <y>306</y>
+    <width>529</width>
+    <height>2</height>
+    <points>
+      <point x="0.0" y="1.0">
+      </point>
+      <point x="527.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="105" green="105" blue="105">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #368</name>
+    <x>456</x>
+    <y>335</y>
+    <width>24</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #371</name>
+      <actions>
+        <action type="open_display">
+          <file>IxSvoCtl_Help.opi</file>
+          <target>tab</target>
+          <description>Help</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>20</width>
+      <height>20</height>
+      <foreground_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #374</name>
+      <width>20</width>
+      <line_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #377</name>
+      <text>?</text>
+      <x>4</x>
+      <width>20</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:52:00 by epics-->
+<display version="2.0.0">
+  <name>zoom2backlightCalibration</name>
+  <x>1236</x>
+  <y>34</y>
+  <width>399</width>
+  <height>364</height>
+  <background_color>
+    <color red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>395</width>
+    <height>26</height>
+    <line_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #9</name>
+    <x>-1</x>
+    <y>27</y>
+    <width>399</width>
+    <height>3</height>
+    <points>
+      <point x="0.0" y="1.0">
+      </point>
+      <point x="396.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #13</name>
+    <pv_name>$(P)$(C).DESC</pv_name>
+    <width>240</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #17</name>
+    <text>($(P)$(C))</text>
+    <x>240</x>
+    <y>6</y>
+    <width>160</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #20</name>
+    <x>5</x>
+    <y>34</y>
+    <width>391</width>
+    <height>279</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #23</name>
+      <x>4</x>
+      <width>382</width>
+      <height>18</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #26</name>
+      <text>ATTENTION: update constants on the right, then save IOC.</text>
+      <x>7</x>
+      <y>2</y>
+      <width>375</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #29</name>
+      <text>LINK VALUE</text>
+      <x>235</x>
+      <y>24</y>
+      <width>150</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #32</name>
+      <text>PVNAME or CONSTANT</text>
+      <x>22</x>
+      <y>24</y>
+      <width>210</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #35</name>
+      <pv_name>$(P)$(C).A</pv_name>
+      <x>235</x>
+      <y>39</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #39</name>
+      <pv_name>$(P)$(C).B</pv_name>
+      <x>235</x>
+      <y>61</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #43</name>
+      <pv_name>$(P)$(C).C</pv_name>
+      <x>235</x>
+      <y>83</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #47</name>
+      <pv_name>$(P)$(C).D</pv_name>
+      <x>235</x>
+      <y>105</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #51</name>
+      <text>A: low zoom...........</text>
+      <x>5</x>
+      <y>42</y>
+      <width>220</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #54</name>
+      <text>B: high zoom..........</text>
+      <x>5</x>
+      <y>64</y>
+      <width>220</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #57</name>
+      <text>C: low zoom backlight.</text>
+      <x>5</x>
+      <y>86</y>
+      <width>220</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #60</name>
+      <text>D: high zoom backlight</text>
+      <x>5</x>
+      <y>108</y>
+      <width>219</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #63</name>
+      <pv_name>$(P)$(C).VAL</pv_name>
+      <x>282</x>
+      <y>231</y>
+      <width>96</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #67</name>
+      <pv_name>$(P)$(C).CALC</pv_name>
+      <x>25</x>
+      <y>231</y>
+      <width>255</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #71</name>
+      <text>CALC (CALCULATION)</text>
+      <x>75</x>
+      <y>221</y>
+      <width>200</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #74</name>
+      <text>HELP</text>
+      <x>4</x>
+      <y>221</y>
+      <width>25</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #77</name>
+      <text>RESULT</text>
+      <x>280</x>
+      <y>221</y>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #80</name>
+      <y>215</y>
+      <width>385</width>
+      <height>41</height>
+      <line_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="10" green="0" blue="184">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #83</name>
+      <actions>
+        <action type="open_display">
+          <file>calcExamples.opi</file>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>?</text>
+      <x>5</x>
+      <y>231</y>
+      <width>20</width>
+      <height>20</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="40" green="147" blue="21">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #86</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(ioc):saveTrigger.PROC</pv_name>
+          <value>1</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(ioc):saveTrigger.PROC</pv_name>
+      <text>Save $(ioc)</text>
+      <y>259</y>
+      <width>125</width>
+      <height>20</height>
+      <background_color>
+        <color red="78" green="165" blue="249">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #89</name>
+      <text>E:</text>
+      <x>5</x>
+      <y>136</y>
+      <width>15</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #92</name>
+      <x>25</x>
+      <y>133</y>
+      <width>209</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(C).INEV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #96</name>
+      <pv_name>$(P)$(C).INPE</pv_name>
+      <x>27</x>
+      <y>135</y>
+      <width>205</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="164" green="170" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #100</name>
+      <pv_name>$(P)$(C).E</pv_name>
+      <x>235</x>
+      <y>135</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #104</name>
+      <text>F:</text>
+      <x>5</x>
+      <y>163</y>
+      <width>15</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #107</name>
+      <x>25</x>
+      <y>160</y>
+      <width>209</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(C).INFV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #111</name>
+      <pv_name>$(P)$(C).INPF</pv_name>
+      <x>27</x>
+      <y>162</y>
+      <width>205</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="164" green="170" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #115</name>
+      <pv_name>$(P)$(C).F</pv_name>
+      <x>235</x>
+      <y>162</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #119</name>
+      <text>G:</text>
+      <x>5</x>
+      <y>190</y>
+      <width>15</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #122</name>
+      <x>25</x>
+      <y>187</y>
+      <width>209</width>
+      <height>24</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(C).INGV</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #126</name>
+      <pv_name>$(P)$(C).INPG</pv_name>
+      <x>27</x>
+      <y>189</y>
+      <width>205</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="164" green="170" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #130</name>
+      <pv_name>$(P)$(C).G</pv_name>
+      <x>235</x>
+      <y>189</y>
+      <width>150</width>
+      <height>22</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <format>5</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #134</name>
+      <pv_name>$(P)$(C).OUT</pv_name>
+      <x>205</x>
+      <y>259</y>
+      <width>186</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="164" green="170" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #138</name>
+      <text>OUT</text>
+      <x>161</x>
+      <y>258</y>
+      <width>40</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #141</name>
+      <text>LINK</text>
+      <x>161</x>
+      <y>269</y>
+      <width>40</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #144</name>
+    <y>322</y>
+    <width>399</width>
+    <height>3</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="397.0" y="1.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #148</name>
+    <pv_name>$(P)$(SDIS)</pv_name>
+    <x>298</x>
+    <y>327</y>
+    <width>97</width>
+    <height>32</height>
+    <background_color>
+      <color red="78" green="165" blue="249">
+      </color>
+    </background_color>
+    <horizontal>false</horizontal>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #151</name>
+    <x>10</x>
+    <y>335</y>
+    <width>273</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #154</name>
+      <text>Zoom-Brightness link</text>
+      <y>1</y>
+      <width>165</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #157</name>
+      <pv_name>$(P)$(SDIS)</pv_name>
+      <x>173</x>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="30" green="187" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>6</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+</display>

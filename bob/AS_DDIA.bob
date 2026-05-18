@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:17 by epics-->
+<display version="2.0.0">
+  <name>AS_DDIA</name>
+  <x>594</x>
+  <y>74</y>
+  <width>311</width>
+  <height>280</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>20</x>
+    <y>12</y>
+    <width>250</width>
+    <height>61</height>
+    <line_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>Australian</text>
+    <x>70</x>
+    <y>20</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>D-DIA</text>
+    <x>25</x>
+    <y>45</y>
+    <width>240</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>Beamline Control</text>
+    <x>70</x>
+    <y>81</y>
+    <width>160</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #18</name>
+    <actions>
+      <action type="open_display">
+        <file>13BM.opi</file>
+        <target>tab</target>
+        <description>Beamline Control</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>79</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #21</name>
+    <actions>
+      <action type="open_display">
+        <file>4motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <P>AS_DDIA:</P>
+          <TITLE>Press_Motion</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Press motion</description>
+      </action>
+      <action type="open_display">
+        <file>3motors.opi</file>
+        <macros>
+          <M1>m5</M1>
+          <M2>m6</M2>
+          <M3>m7</M3>
+          <P>AS_DDIA:</P>
+          <TITLE>Press_pumps</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Pumps</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>106</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>D-DIA Motors</text>
+    <x>70</x>
+    <y>108</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #28</name>
+    <actions>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A1</A>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamplifier 1</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A2</A>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamplifier 2</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM1</Dmm>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2000 DMM1</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM2</Dmm>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley 2000 DMM2</description>
+      </action>
+      <action type="open_display">
+        <file>singleDAC.opi</file>
+        <macros>
+          <C>1</C>
+          <D>1</D>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>DAC</description>
+      </action>
+      <action type="open_display">
+        <file>LVP_furnace.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <PID>PID1</PID>
+        </macros>
+        <target>tab</target>
+        <description>LVP furnace control</description>
+      </action>
+      <action type="open_display">
+        <file>BM_LVP_pressure.opi</file>
+        <macros>
+          <C>8</C>
+          <D>1</D>
+          <P>AS_DDIA:</P>
+          <R>Press_</R>
+        </macros>
+        <target>tab</target>
+        <description>LVP pressure control</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM4</Dmm>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>D-DIA Keithley</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>133</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #38</name>
+    <text>LVP electronics</text>
+    <x>70</x>
+    <y>135</y>
+    <width>150</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #41</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <S>scaler1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scaler</description>
+      </action>
+      <action type="open_display">
+        <file>Ip330Scan.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>IP330_</R>
+        </macros>
+        <target>tab</target>
+        <description>SRSAcromag IP-330 ADC</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A2</A>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamp 2</description>
+      </action>
+      <action type="open_display">
+        <file>SR570.opi</file>
+        <macros>
+          <A>A3</A>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>SRS Current Preamp 3</description>
+      </action>
+      <action type="open_display">
+        <file>IpUnidig.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>Unidig1</R>
+        </macros>
+        <target>tab</target>
+        <description>Unidig Binary I/O</description>
+      </action>
+      <action type="open_display">
+        <file>Keithley2kDMM_mf.opi</file>
+        <macros>
+          <Dmm>DMM3</Dmm>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>Keithley multimeter</description>
+      </action>
+      <action type="open_display">
+        <file>heater_control.opi</file>
+        <macros>
+          <C>2</C>
+          <D>1</D>
+          <INP>AS_DDIA:DMM3Ch4_calc</INP>
+          <OUT>AS_DDIA:DAC1_2</OUT>
+          <P>AS_DDIA:</P>
+          <PID>PID2</PID>
+          <TITLE>Heater_Control</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Heater control</description>
+      </action>
+      <action type="open_display">
+        <file>8_DACs.opi</file>
+        <macros>
+          <D>1</D>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>8 DACs</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>160</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #51</name>
+    <text>Other electronics</text>
+    <x>70</x>
+    <y>162</y>
+    <width>170</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #54</name>
+    <actions>
+      <action type="open_display">
+        <file>userTransforms10.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>User transforms</description>
+      </action>
+      <action type="open_display">
+        <file>userStringCalcs10.opi</file>
+        <macros>
+          <P>AD_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>User stringCalcs</description>
+      </action>
+      <action type="open_display">
+        <file>userArrayCalcs10.opi</file>
+        <macros>
+          <P>AD_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>User arrayCalcs</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>187</y>
+    <width>60</width>
+    <height>24</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #59</name>
+    <text>User calcs, transforms</text>
+    <x>70</x>
+    <y>189</y>
+    <width>220</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #62</name>
+    <actions>
+      <action type="open_display">
+        <file>IOC_Status.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>vxWorks statistics</description>
+      </action>
+      <action type="open_display">
+        <file>save_restoreStatus_more.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+        </macros>
+        <target>tab</target>
+        <description>Save/restore status</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>241</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #66</name>
+    <text>IOC statistics</text>
+    <x>70</x>
+    <y>243</y>
+    <width>140</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #69</name>
+    <text>Generic serial 1-8</text>
+    <x>70</x>
+    <y>216</y>
+    <width>180</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #72</name>
+    <actions>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial1</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 1</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial2</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 2</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial3</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 3</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial4</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 4</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial5</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 5</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial6</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 6</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial7</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 7</description>
+      </action>
+      <action type="open_display">
+        <file>asynOctet.opi</file>
+        <macros>
+          <P>AS_DDIA:</P>
+          <R>serial8</R>
+        </macros>
+        <target>tab</target>
+        <description>Serial 8</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>5</x>
+    <y>214</y>
+    <width>60</width>
+    <height>25</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:21 by epics-->
+<display version="2.0.0">
+  <name>Automation1PSO</name>
+  <x>1</x>
+  <y>72</y>
+  <width>400</width>
+  <height>400</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>motorx_tiny.opi</file>
+        <target>replace</target>
+        <description>$(M) (Tiny)</description>
+      </action>
+      <action type="open_display">
+        <file>motorx.opi</file>
+        <target>replace</target>
+        <description>$(M) (Small)</description>
+      </action>
+      <action type="open_display">
+        <file>motorx_more.opi</file>
+        <target>replace</target>
+        <description>$(M) (Medium)</description>
+      </action>
+      <action type="open_display">
+        <file>motorx_setup.opi</file>
+        <target>replace</target>
+        <description>$(M) (Setup)</description>
+      </action>
+      <action type="open_display">
+        <file>scanParms.opi</file>
+        <macros>
+          <PV>$(M)</PV>
+          <Q>$(M)</Q>
+        </macros>
+        <target>tab</target>
+        <description>Scan Parameters</description>
+      </action>
+    </actions>
+    <text>More</text>
+    <x>329</x>
+    <y>367</y>
+    <width>40</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="153" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #13</name>
+    <text>Pulse Length (us)</text>
+    <x>50</x>
+    <y>167</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>Pulse Dir</text>
+    <x>50</x>
+    <y>138</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #19</name>
+    <text>Pulse Mode</text>
+    <x>50</x>
+    <y>109</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>Pulse Source</text>
+    <x>50</x>
+    <y>225</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>Pulse Output</text>
+    <x>50</x>
+    <y>254</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>Pulse Axis</text>
+    <x>50</x>
+    <y>283</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #31</name>
+    <text>Pulse Period (us)</text>
+    <x>50</x>
+    <y>196</y>
+    <width>205</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #34</name>
+    <pv_name>$(P)$(R)PulseLength</pv_name>
+    <x>260</x>
+    <y>167</y>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #38</name>
+    <pv_name>$(P)$(R)PulseDir</pv_name>
+    <x>260</x>
+    <y>138</y>
+    <height>24</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #41</name>
+    <pv_name>$(P)$(R)PulseMode</pv_name>
+    <x>260</x>
+    <y>109</y>
+    <height>24</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #44</name>
+    <pv_name>$(P)$(R)PulseSrc</pv_name>
+    <x>260</x>
+    <y>225</y>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #48</name>
+    <pv_name>$(P)$(R)PulseOut</pv_name>
+    <x>260</x>
+    <y>254</y>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #52</name>
+    <pv_name>$(P)$(R)PulseAxis</pv_name>
+    <x>260</x>
+    <y>283</y>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #56</name>
+    <pv_name>$(P)$(R)PulsePeriod</pv_name>
+    <x>260</x>
+    <y>196</y>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #60</name>
+    <text>$(P)$(R) PSO</text>
+    <y>25</y>
+    <width>400</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>

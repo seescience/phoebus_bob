@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:52:00 by epics-->
+<display version="2.0.0">
+  <name>13Automation1_test</name>
+  <x>112</x>
+  <y>135</y>
+  <width>400</width>
+  <height>400</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #6</name>
+    <actions>
+      <action type="open_display">
+        <file>1motors.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <P>13TEST:Auto1:</P>
+          <TITLE>Automation1_theta</TITLE>
+        </macros>
+        <target>tab</target>
+        <description>Motor 1</description>
+      </action>
+      <action type="open_display">
+        <file>Automation1PSO.opi</file>
+        <macros>
+          <M>m1</M>
+          <P>13TEST:Auto1:</P>
+          <R>pm1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Automation1 PSO</description>
+      </action>
+      <action type="open_display">
+        <file>PositionCompare.opi</file>
+        <macros>
+          <M1>m1</M1>
+          <P>13TEST:Auto1:</P>
+        </macros>
+        <target>tab</target>
+        <description>Position Compare</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>109</x>
+    <y>26</y>
+    <width>154</width>
+    <height>36</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

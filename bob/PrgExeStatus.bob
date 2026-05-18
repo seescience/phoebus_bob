@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:33 by epics-->
+<display version="2.0.0">
+  <name>PrgExeStatus</name>
+  <x>333</x>
+  <y>318</y>
+  <width>690</width>
+  <height>545</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>2</x>
+    <y>52</y>
+    <width>686</width>
+    <height>50</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #9</name>
+    <width>690</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>$(pcs)</text>
+    <x>534</x>
+    <y>4</y>
+    <width>150</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #15</name>
+    <pv_name>$(pcs)Start.DESC</pv_name>
+    <x>4</x>
+    <y>4</y>
+    <width>287</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #19</name>
+    <text>PCS=</text>
+    <x>182</x>
+    <y>30</y>
+    <width>40</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>PMAC=</text>
+    <x>1</x>
+    <y>30</y>
+    <width>45</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #25</name>
+    <pv_name>$(pcs)StrRsp</pv_name>
+    <x>555</x>
+    <y>30</y>
+    <width>130</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>bar #29</name>
+    <pv_name>$(pcs)PrgExeSts</pv_name>
+    <x>9</x>
+    <y>111</y>
+    <width>10</width>
+    <height>427</height>
+    <numBits>24</numBits>
+    <horizontal>false</horizontal>
+    <square>true</square>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #32</name>
+    <x>381</x>
+    <y>111</y>
+    <height>427</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #35</name>
+      <text>[b23] Z-axis used in feedrate calculations</text>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #38</name>
+      <text>[b22] Z-axis incremental mode</text>
+      <y>18</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #41</name>
+      <text>[b21] Y-axis used in feedrate calculations</text>
+      <y>36</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #44</name>
+      <text>[b20] Y-axis incremental mode</text>
+      <y>54</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #47</name>
+      <text>[b19] X-axis used in feedrate calculations</text>
+      <y>72</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #50</name>
+      <text>[b18] X-axis incremental mode</text>
+      <y>90</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #53</name>
+      <text>[b17] W-axis used in feedrate calculations</text>
+      <y>108</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #56</name>
+      <text>[b16] W-axis incremental mode</text>
+      <y>126</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #59</name>
+      <text>[b15] V-axis used in feedrate calculations</text>
+      <y>144</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #62</name>
+      <text>[b14] V-axis incremental mode</text>
+      <y>162</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #65</name>
+      <text>[b13] U-axis used in feedrate calculations</text>
+      <y>180</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #68</name>
+      <text>[b12] U-axis incremental mode</text>
+      <y>198</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #71</name>
+      <text>[b11] C-axis used in feedrate calculations</text>
+      <y>216</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #74</name>
+      <text>[b10] C-axis incremental mode</text>
+      <y>234</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #77</name>
+      <text>[b9] B-axis used in feedrate calculations</text>
+      <y>252</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #80</name>
+      <text>[b8] B-axis incremental mode</text>
+      <y>270</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #83</name>
+      <text>[b7] A-axis used in feedrate calculations</text>
+      <y>288</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #86</name>
+      <text>[b6] A-axis incremental mode</text>
+      <y>306</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #89</name>
+      <text>[b5] Radius vector incremental mode</text>
+      <y>324</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #92</name>
+      <text>[b4] Continuous-motion request</text>
+      <y>342</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #95</name>
+      <text>[b3] Move-specified-by-time mode</text>
+      <y>360</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #98</name>
+      <text>[b2] Continuous-motion mode</text>
+      <y>378</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #101</name>
+      <text>[b1] Single step mode</text>
+      <y>396</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #104</name>
+      <text>[b0] Program running</text>
+      <y>414</y>
+      <width>300</width>
+      <height>13</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>bar #107</name>
+    <pv_name>$(pcs)Sts1</pv_name>
+    <x>366</x>
+    <y>111</y>
+    <width>10</width>
+    <height>427</height>
+    <numBits>24</numBits>
+    <horizontal>false</horizontal>
+    <square>true</square>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #110</name>
+    <text>[b23] Lookahead in progress</text>
+    <x>25</x>
+    <y>111</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #113</name>
+    <text>[b22] Run time error (err code in Y:$002x14)</text>
+    <x>25</x>
+    <y>129</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #116</name>
+    <text>[b21] Circle radius error</text>
+    <x>25</x>
+    <y>147</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #119</name>
+    <text>[b20] Amplifier fault error (any motor)</text>
+    <x>25</x>
+    <y>165</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #122</name>
+    <text>[b19] Fatal following error (any motor)</text>
+    <x>25</x>
+    <y>183</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #125</name>
+    <text>[b18] Warning following error (any motor)</text>
+    <x>25</x>
+    <y>201</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #128</name>
+    <text>[b17] In-position (all motors)</text>
+    <x>25</x>
+    <y>219</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #132</name>
+    <text>[b16] Rotary buffer full</text>
+    <x>25</x>
+    <y>237</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #135</name>
+    <text>[b15] Delayed calculation flag</text>
+    <x>25</x>
+    <y>255</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #138</name>
+    <text>[b14] End-of-block (/) stop in progress</text>
+    <x>25</x>
+    <y>273</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #141</name>
+    <text>[b13] Synchronous M-variable one-shot</text>
+    <x>25</x>
+    <y>291</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #144</name>
+    <text>[b12] Dwell move buffered</text>
+    <x>25</x>
+    <y>309</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #147</name>
+    <text>[b11] Cutter compensation outside corner</text>
+    <x>25</x>
+    <y>327</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #150</name>
+    <text>[b10] Cutter compensation move stop request</text>
+    <x>25</x>
+    <y>345</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #153</name>
+    <text>[b9] Cutter compensation move buffered</text>
+    <x>25</x>
+    <y>363</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #156</name>
+    <text>[b8] Pre Jog move flag</text>
+    <x>25</x>
+    <y>381</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #159</name>
+    <text>[b7] Segmented move in progress</text>
+    <x>25</x>
+    <y>399</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #162</name>
+    <text>[b6] Segmented move acceleration in progress</text>
+    <x>25</x>
+    <y>417</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #165</name>
+    <text>[b5] Segmented move stop request</text>
+    <x>25</x>
+    <y>435</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #168</name>
+    <text>[b4] PVT/SPLINE move mode</text>
+    <x>25</x>
+    <y>453</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #171</name>
+    <text>[b3] Cutter compensation left</text>
+    <x>25</x>
+    <y>471</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #174</name>
+    <text>[b2] Cutter compensation on</text>
+    <x>25</x>
+    <y>489</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #177</name>
+    <text>[b1] CCW CIRCLE/RAPID move mode</text>
+    <x>25</x>
+    <y>507</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #180</name>
+    <text>[b0] CIRCLE/SPLINE move mode</text>
+    <x>25</x>
+    <y>525</y>
+    <width>300</width>
+    <height>13</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #183</name>
+    <text>[b0] Program running</text>
+    <x>381</x>
+    <y>525</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #187</name>
+    <text>[b1] Single step mode</text>
+    <x>381</x>
+    <y>507</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;2)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #191</name>
+    <text>[b2] Continuous-motion mode</text>
+    <x>381</x>
+    <y>489</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;4)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #195</name>
+    <text>[b3] Move-specified-by-time mode</text>
+    <x>381</x>
+    <y>471</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;8)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #199</name>
+    <text>[b4] Continuous-motion request</text>
+    <x>381</x>
+    <y>453</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;16)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #203</name>
+    <text>[b5] Radius vector incremental mode</text>
+    <x>381</x>
+    <y>435</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;32)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #207</name>
+    <text>[b6] A-axis incremental mode</text>
+    <x>381</x>
+    <y>417</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;64)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #211</name>
+    <text>[b7] A-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>399</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;128)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #215</name>
+    <text>[b8] B-axis incremental mode</text>
+    <x>381</x>
+    <y>381</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;256)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #219</name>
+    <text>[b9] B-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>363</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;512)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #223</name>
+    <text>[b10] C-axis incremental mode</text>
+    <x>381</x>
+    <y>345</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;1024)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #227</name>
+    <text>[b11] C-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>327</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;2048)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #231</name>
+    <text>[b12] U-axis incremental mode</text>
+    <x>381</x>
+    <y>309</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;4096)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #235</name>
+    <text>[b13] U-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>291</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;8192)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #239</name>
+    <text>[b14] V-axis incremental mode</text>
+    <x>381</x>
+    <y>273</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;16384)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #243</name>
+    <text>[b15] V-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>255</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;32768)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #247</name>
+    <text>[b16] W-axis incremental mode</text>
+    <x>381</x>
+    <y>237</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;65536)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #251</name>
+    <text>[b17] W-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>219</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;131072)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #255</name>
+    <text>[b18] X-axis incremental mode</text>
+    <x>381</x>
+    <y>201</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;262144)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #259</name>
+    <text>[b19] X-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>183</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;524288)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #263</name>
+    <text>[b20] Y-axis incremental mode</text>
+    <x>381</x>
+    <y>165</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;1048576)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #267</name>
+    <text>[b21] Y-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>147</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;2097152)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #271</name>
+    <text>[b22] Z-axis incremental mode</text>
+    <x>381</x>
+    <y>129</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;4194304)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #275</name>
+    <text>[b23] Z-axis used in feedrate calculations</text>
+    <x>381</x>
+    <y>111</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;8388608)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)Sts1</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #279</name>
+    <x>2</x>
+    <y>104</y>
+    <width>686</width>
+    <height>438</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #282</name>
+    <text>[b0] CIRCLE/SPLINE move mode</text>
+    <x>25</x>
+    <y>525</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;1)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #286</name>
+    <text>[b1] CCW CIRCLE/RAPID move mode</text>
+    <x>25</x>
+    <y>507</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;2)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #290</name>
+    <text>[b2] Cutter compensation on</text>
+    <x>25</x>
+    <y>489</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;4)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #294</name>
+    <text>[b3] Cutter compensation left</text>
+    <x>25</x>
+    <y>471</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;8)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #298</name>
+    <text>[b4] PVT/SPLINE move mode</text>
+    <x>25</x>
+    <y>453</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;16)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #302</name>
+    <text>[b5] Segmented move stop request</text>
+    <x>25</x>
+    <y>435</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;32)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #306</name>
+    <text>[b6] Segmented move acceleration in progress</text>
+    <x>25</x>
+    <y>417</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;64)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #310</name>
+    <text>[b7] Segmented move in progress</text>
+    <x>25</x>
+    <y>399</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;128)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #314</name>
+    <text>[b8] Pre Jog move flag</text>
+    <x>25</x>
+    <y>381</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;256)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts.BI08</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #318</name>
+    <text>[b9] Cutter compensation move buffered</text>
+    <x>25</x>
+    <y>363</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;512)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #322</name>
+    <text>[b10] Cutter compensation move stop request</text>
+    <x>25</x>
+    <y>345</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;1024)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #326</name>
+    <text>[b11] Cutter compensation outside corner</text>
+    <x>25</x>
+    <y>327</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;2048)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #330</name>
+    <text>[b12] Dwell move buffered</text>
+    <x>25</x>
+    <y>309</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;4096)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #334</name>
+    <text>[b13] Synchronous M-variable one-shot</text>
+    <x>25</x>
+    <y>291</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;8192)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #338</name>
+    <text>[b14] End-of-block (/) stop in progress</text>
+    <x>25</x>
+    <y>273</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;16384)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #342</name>
+    <text>[b15] Delayed calculation flag</text>
+    <x>25</x>
+    <y>255</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;32768)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #346</name>
+    <text>[b16] Rotary buffer full</text>
+    <x>25</x>
+    <y>237</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;65536)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #350</name>
+    <text>[b17] In-position (all motors)</text>
+    <x>25</x>
+    <y>219</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;131072)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #354</name>
+    <text>[b18] Warning following error (any motor)</text>
+    <x>25</x>
+    <y>201</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;262144)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #358</name>
+    <text>[b19] Fatal following error (any motor)</text>
+    <x>25</x>
+    <y>183</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;524288)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #362</name>
+    <text>[b20] Amplifier fault error (any motor)</text>
+    <x>25</x>
+    <y>165</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;1048576)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #366</name>
+    <text>[b21] Circle radius error</text>
+    <x>25</x>
+    <y>147</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;2097152)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #370</name>
+    <text>[b22] Run time error (err code in Y:$002x14)</text>
+    <x>25</x>
+    <y>129</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;4194304)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #374</name>
+    <text>[b23] Lookahead in progress</text>
+    <x>25</x>
+    <y>111</y>
+    <width>300</width>
+    <height>13</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0&amp;8388608)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pcs)PrgExeSts</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #378</name>
+    <pv_name>$(pcs)Pmac</pv_name>
+    <x>49</x>
+    <y>30</y>
+    <width>90</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #382</name>
+    <pv_name>$(pcs)Pcs</pv_name>
+    <x>224</x>
+    <y>30</y>
+    <width>90</width>
+    <height>14</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #386</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pcs)Abort</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(pcs)Abort</pv_name>
+    <text>Abort</text>
+    <x>6</x>
+    <y>56</y>
+    <width>80</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #389</name>
+    <pv_name>$(pcs)AutoStart</pv_name>
+    <x>583</x>
+    <y>56</y>
+    <height>17</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #392</name>
+    <text>execution</text>
+    <x>183</x>
+    <y>81</y>
+    <width>62</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #395</name>
+    <text>ready</text>
+    <x>360</x>
+    <y>81</y>
+    <width>62</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #398</name>
+    <pv_name>$(pcs)Homed</pv_name>
+    <x>604</x>
+    <y>83</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #402</name>
+    <text>homed</text>
+    <x>538</x>
+    <y>83</y>
+    <width>62</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #405</name>
+    <pv_name>$(pcs)Ready</pv_name>
+    <x>426</x>
+    <y>83</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #409</name>
+    <pv_name>$(pcs)RunPrg</pv_name>
+    <x>249</x>
+    <y>83</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #413</name>
+    <pv_name>$(pcs)InPos</pv_name>
+    <x>74</x>
+    <y>83</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #417</name>
+    <text>positioned</text>
+    <x>8</x>
+    <y>83</y>
+    <width>62</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #420</name>
+    <text>motion</text>
+    <x>246</x>
+    <y>58</y>
+    <width>62</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #423</name>
+    <pv_name>$(pcs)Motion</pv_name>
+    <x>318</x>
+    <y>56</y>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #426</name>
+    <text>PCS CMD=</text>
+    <x>364</x>
+    <y>30</y>
+    <width>65</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #429</name>
+    <pv_name>$(pcs)StrCmd</pv_name>
+    <x>430</x>
+    <y>27</y>
+    <width>120</width>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

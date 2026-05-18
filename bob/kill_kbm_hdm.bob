@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:55 by epics-->
+<display version="2.0.0">
+  <name>kill_kbm_hdm</name>
+  <x>502</x>
+  <y>24</y>
+  <width>300</width>
+  <height>640</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>KILL</text>
+    <x>1</x>
+    <y>5</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #9</name>
+    <x>181</x>
+    <y>129</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mhz2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #13</name>
+    <x>181</x>
+    <y>162</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mhz3:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #17</name>
+    <x>181</x>
+    <y>195</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvy1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #21</name>
+    <x>181</x>
+    <y>228</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvy2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #25</name>
+    <x>181</x>
+    <y>261</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvz1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #29</name>
+    <x>181</x>
+    <y>294</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvz2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #33</name>
+    <x>181</x>
+    <y>327</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvz3:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #37</name>
+    <text>Enabled</text>
+    <x>165</x>
+    <y>5</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #40</name>
+    <x>181</x>
+    <y>96</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mhz1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #44</name>
+    <x>100</x>
+    <y>129</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mhz2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #48</name>
+    <x>100</x>
+    <y>162</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mhz3:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #52</name>
+    <x>100</x>
+    <y>195</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvy1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #56</name>
+    <x>100</x>
+    <y>228</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvy2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #60</name>
+    <x>100</x>
+    <y>261</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvz1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #64</name>
+    <x>100</x>
+    <y>294</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvz2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #68</name>
+    <x>100</x>
+    <y>327</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mvz3:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #72</name>
+    <text>Disabled</text>
+    <x>84</x>
+    <y>5</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #75</name>
+    <x>100</x>
+    <y>96</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)KB:mhz1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #79</name>
+    <text>Enable</text>
+    <x>238</x>
+    <y>5</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #82</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mhz2:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mhz2:StrCmd</pv_name>
+    <text>HZ2</text>
+    <x>5</x>
+    <y>129</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #85</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mhz3:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mhz3:StrCmd</pv_name>
+    <text>HZ3</text>
+    <x>5</x>
+    <y>162</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #88</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvy1:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvy1:StrCmd</pv_name>
+    <text>VY1</text>
+    <x>5</x>
+    <y>195</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #91</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvy2:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvy2:StrCmd</pv_name>
+    <text>VY2</text>
+    <x>5</x>
+    <y>228</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #94</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvz1:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvz1:StrCmd</pv_name>
+    <text>VZ1</text>
+    <x>5</x>
+    <y>261</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #97</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvz2:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvz2:StrCmd</pv_name>
+    <text>VZ2</text>
+    <x>5</x>
+    <y>294</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #100</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvz3:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvz3:StrCmd</pv_name>
+    <text>VZ3</text>
+    <x>5</x>
+    <y>327</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #103</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mhz1:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mhz1:StrCmd</pv_name>
+    <text>HZ1</text>
+    <x>5</x>
+    <y>96</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #106</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mhz2:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mhz2:StrCmd</pv_name>
+    <text>HZ2</text>
+    <x>243</x>
+    <y>129</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #109</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mhz3:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mhz3:StrCmd</pv_name>
+    <text>HZ3</text>
+    <x>243</x>
+    <y>162</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #112</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvy1:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvy1:StrCmd</pv_name>
+    <text>VY1</text>
+    <x>243</x>
+    <y>195</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #115</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvy2:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvy2:StrCmd</pv_name>
+    <text>VY2</text>
+    <x>243</x>
+    <y>228</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #118</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvz1:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvz1:StrCmd</pv_name>
+    <text>VZ1</text>
+    <x>243</x>
+    <y>261</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #121</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvz2:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvz2:StrCmd</pv_name>
+    <text>VZ2</text>
+    <x>243</x>
+    <y>294</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #124</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mvz3:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mvz3:StrCmd</pv_name>
+    <text>VZ3</text>
+    <x>243</x>
+    <y>327</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #127</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)KB:mhz1:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)KB:mhz1:StrCmd</pv_name>
+    <text>HZ1</text>
+    <x>243</x>
+    <y>96</y>
+    <width>50</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #130</name>
+    <x>5</x>
+    <y>601</y>
+    <width>290</width>
+    <height>34</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>polyline #133</name>
+      <x>1</x>
+      <width>288</width>
+      <height>2</height>
+      <points>
+        <point x="1.0" y="1.0">
+        </point>
+        <point x="287.0" y="1.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>shell command #138</name>
+      <actions>
+        <action type="command">
+          <command>"kill_kbm.pl" "$(P)"</command>
+          <description>"LILL ALL"</description>
+        </action>
+      </actions>
+      <text>KILL ALL</text>
+      <y>7</y>
+      <width>133</width>
+      <height>27</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>shell command #141</name>
+      <actions>
+        <action type="command">
+          <command>"kill_kbm.pl" "$(P) -reverse"</command>
+          <description>"LILL ALL"</description>
+        </action>
+      </actions>
+      <text>ENABLE ALL</text>
+      <x>157</x>
+      <y>7</y>
+      <width>133</width>
+      <height>27</height>
+      <background_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #144</name>
+    <x>5</x>
+    <y>30</y>
+    <width>288</width>
+    <height>61</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #147</name>
+      <x>176</x>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)KB:mhy1:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #151</name>
+      <x>176</x>
+      <y>33</y>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)KB:mhy2:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #155</name>
+      <x>95</x>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)KB:mhy1:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #159</name>
+      <x>95</x>
+      <y>33</y>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)KB:mhy2:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #163</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)KB:mhy1:StrCmd</pv_name>
+          <value>K</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)KB:mhy1:StrCmd</pv_name>
+      <text>HY1</text>
+      <width>50</width>
+      <height>28</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #166</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)KB:mhy2:StrCmd</pv_name>
+          <value>K</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)KB:mhy2:StrCmd</pv_name>
+      <text>HY2</text>
+      <y>33</y>
+      <width>50</width>
+      <height>28</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #169</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)KB:mhy1:StrCmd</pv_name>
+          <value>O0 J/</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)KB:mhy1:StrCmd</pv_name>
+      <text>HY1</text>
+      <x>238</x>
+      <width>50</width>
+      <height>28</height>
+      <background_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #172</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)KB:mhy2:StrCmd</pv_name>
+          <value>O0 J/</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)KB:mhy2:StrCmd</pv_name>
+      <text>HY2</text>
+      <x>238</x>
+      <y>33</y>
+      <width>50</width>
+      <height>28</height>
+      <background_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #175</name>
+    <x>181</x>
+    <y>370</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:muy1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #179</name>
+    <x>181</x>
+    <y>403</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:muy2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #183</name>
+    <x>100</x>
+    <y>370</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:muy1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #187</name>
+    <x>100</x>
+    <y>403</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:muy2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #191</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:muy1:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:muy1:StrCmd</pv_name>
+    <text>HDU-Y1</text>
+    <x>5</x>
+    <y>370</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #194</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:muy2:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:muy2:StrCmd</pv_name>
+    <text>HDU-Y2</text>
+    <x>5</x>
+    <y>403</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #197</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:muy1:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:muy1:StrCmd</pv_name>
+    <text>HDU-Y1</text>
+    <x>223</x>
+    <y>370</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #200</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:muy2:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:muy2:StrCmd</pv_name>
+    <text>HDU-Y2</text>
+    <x>223</x>
+    <y>403</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #203</name>
+    <x>181</x>
+    <y>436</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:mdy1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #207</name>
+    <x>100</x>
+    <y>436</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:mdy1:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #211</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:mdy1:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:mdy1:StrCmd</pv_name>
+    <text>HDD-Y1</text>
+    <x>5</x>
+    <y>436</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #214</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:mdy1:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:mdy1:StrCmd</pv_name>
+    <text>HDD-Y1</text>
+    <x>223</x>
+    <y>436</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #217</name>
+    <x>5</x>
+    <y>469</y>
+    <width>288</width>
+    <height>28</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #220</name>
+      <x>176</x>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)HD:mdy2:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #224</name>
+      <x>95</x>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)HD:mdy2:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #228</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)HD:mdy2:StrCmd</pv_name>
+          <value>K</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)HD:mdy2:StrCmd</pv_name>
+      <text>HDD-Y2</text>
+      <width>70</width>
+      <height>28</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #231</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)HD:mdy2:StrCmd</pv_name>
+          <value>O0 J/</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)HD:mdy2:StrCmd</pv_name>
+      <text>HDD-Y2</text>
+      <x>218</x>
+      <width>70</width>
+      <height>28</height>
+      <background_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #234</name>
+    <x>5</x>
+    <y>502</y>
+    <width>288</width>
+    <height>28</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #237</name>
+      <x>176</x>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)HD:mz1:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>oval #241</name>
+      <x>95</x>
+      <width>28</width>
+      <height>28</height>
+      <line_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)HD:mz1:AmpEna</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #245</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)HD:mz1:StrCmd</pv_name>
+          <value>K</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)HD:mz1:StrCmd</pv_name>
+      <text>HD-Z1</text>
+      <width>70</width>
+      <height>28</height>
+      <background_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #248</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)HD:mz1:StrCmd</pv_name>
+          <value>O0 J/</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(P)HD:mz1:StrCmd</pv_name>
+      <text>HD-Z1</text>
+      <x>218</x>
+      <width>70</width>
+      <height>28</height>
+      <background_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #251</name>
+    <x>181</x>
+    <y>534</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:mz2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #255</name>
+    <x>100</x>
+    <y>534</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:mz2:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #259</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:mz2:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:mz2:StrCmd</pv_name>
+    <text>HD-Z2</text>
+    <x>5</x>
+    <y>534</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #262</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:mz2:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:mz2:StrCmd</pv_name>
+    <text>HD-Z2</text>
+    <x>223</x>
+    <y>534</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #265</name>
+    <x>181</x>
+    <y>567</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:mz3:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>oval #269</name>
+    <x>100</x>
+    <y>567</y>
+    <width>28</width>
+    <height>28</height>
+    <line_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)HD:mz3:AmpEna</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #273</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:mz3:StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:mz3:StrCmd</pv_name>
+    <text>HD-Z3</text>
+    <x>5</x>
+    <y>567</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #276</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)HD:mz3:StrCmd</pv_name>
+        <value>O0 J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)HD:mz3:StrCmd</pv_name>
+    <text>HD-Z3</text>
+    <x>223</x>
+    <y>567</y>
+    <width>70</width>
+    <height>28</height>
+    <background_color>
+      <color red="60" green="180" blue="32">
+      </color>
+    </background_color>
+  </widget>
+</display>

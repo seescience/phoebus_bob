@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:52:00 by epics-->
+<display version="2.0.0">
+  <name>eiger2_Saving_Data</name>
+  <x>285</x>
+  <y>1749</y>
+  <width>560</width>
+  <height>84</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>Is The Eiger2 Saving Images??</text>
+    <x>4</x>
+    <y>24</y>
+    <width>450</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="30.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #9</name>
+    <x>465</x>
+    <y>26</y>
+    <width>82</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #12</name>
+      <text>YES</text>
+      <width>63</width>
+      <height>30</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13EIG2:TIFF1:AutoSave</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #16</name>
+      <text>NO!!!!</text>
+      <x>2</x>
+      <width>80</width>
+      <height>30</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="30.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="253" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <rules>
+        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>13EIG2:TIFF1:AutoSave</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+</display>

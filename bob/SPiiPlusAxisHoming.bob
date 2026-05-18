@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:45 by epics-->
+<display version="2.0.0">
+  <name>SPiiPlusAxisHoming</name>
+  <x>739</x>
+  <y>294</y>
+  <width>350</width>
+  <height>200</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>($(P)$(M))</text>
+    <x>124</x>
+    <y>3</y>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #9</name>
+    <pv_name>$(P)$(M):homingMethod.VAL</pv_name>
+    <x>241</x>
+    <y>32</y>
+    <width>97</width>
+    <height>27</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Homing Max Dist</text>
+    <x>6</x>
+    <y>63</y>
+    <width>230</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>Homing Method</text>
+    <x>6</x>
+    <y>32</y>
+    <width>230</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #18</name>
+    <text>Homing Offset Pos</text>
+    <x>6</x>
+    <y>94</y>
+    <width>230</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #21</name>
+    <text>Homing Offset Neg</text>
+    <x>6</x>
+    <y>125</y>
+    <width>230</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>Homing Curr Limit</text>
+    <x>6</x>
+    <y>156</y>
+    <width>230</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #27</name>
+    <pv_name>$(P)$(M):homingMaxDist.VAL</pv_name>
+    <x>241</x>
+    <y>63</y>
+    <width>94</width>
+    <height>27</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #31</name>
+    <pv_name>$(P)$(M):homingOffsetPos.VAL</pv_name>
+    <x>241</x>
+    <y>94</y>
+    <width>94</width>
+    <height>27</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #35</name>
+    <pv_name>$(P)$(M):homingOffsetNeg.VAL</pv_name>
+    <x>241</x>
+    <y>125</y>
+    <width>94</width>
+    <height>27</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #39</name>
+    <pv_name>$(P)$(M):homingCurrLimit.VAL</pv_name>
+    <x>241</x>
+    <y>156</y>
+    <width>94</width>
+    <height>27</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="28.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

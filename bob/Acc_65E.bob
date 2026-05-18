@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:18 by epics-->
+<display version="2.0.0">
+  <name>Acc_65E</name>
+  <x>326</x>
+  <y>423</y>
+  <width>330</width>
+  <height>157</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>330</width>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>$(pmac)</text>
+    <x>230</x>
+    <y>2</y>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>PMAC Digital I/O (ACC 65E)</text>
+    <x>3</x>
+    <y>2</y>
+    <width>206</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #15</name>
+    <pv_name>$(pmac)acc65e:OUT.VAL</pv_name>
+    <x>261</x>
+    <y>82</y>
+    <width>65</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="52" green="51" blue="134">
+      </color>
+    </background_color>
+    <format>4</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #19</name>
+    <pv_name>$(pmac)acc65e:IN.VAL</pv_name>
+    <x>263</x>
+    <y>40</y>
+    <width>60</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="52" green="51" blue="134">
+      </color>
+    </background_color>
+    <format>4</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #23</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pmac)acc65e:OUT.VAL</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(pmac)acc65e:OUT.VAL</pv_name>
+    <text>0ut</text>
+    <x>277</x>
+    <y>110</y>
+    <width>40</width>
+    <height>20</height>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #26</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pmac)acc65e:OUT.VAL</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(pmac)acc65e:OUT.VAL</pv_name>
+    <text>In</text>
+    <x>276</x>
+    <y>133</y>
+    <width>40</width>
+    <height>20</height>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #29</name>
+    <x>5</x>
+    <y>68</y>
+    <width>250</width>
+    <height>48</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #32</name>
+      <x>41</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #35</name>
+      <x>203</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #38</name>
+      <x>121</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #41</name>
+      <pv_name>$(pmac)acc65e:OUT_rb.VAL</pv_name>
+      <x>82</x>
+      <y>19</y>
+      <width>161</width>
+      <height>10</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #44</name>
+      <pv_name>$(pmac)acc65e:OUT_rb.VAL</pv_name>
+      <y>19</y>
+      <width>81</width>
+      <height>10</height>
+      <startBit>16</startBit>
+      <square>true</square>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #47</name>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #50</name>
+      <text>0</text>
+      <x>238</x>
+      <y>36</y>
+      <width>12</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #53</name>
+      <text>4</text>
+      <x>198</x>
+      <y>36</y>
+      <width>12</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #56</name>
+      <text>8</text>
+      <x>156</x>
+      <y>36</y>
+      <width>12</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #59</name>
+      <text>12</text>
+      <x>112</x>
+      <y>36</y>
+      <width>12</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #62</name>
+      <text>16</text>
+      <x>70</x>
+      <y>36</y>
+      <width>12</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #65</name>
+      <text>20</text>
+      <x>30</x>
+      <y>36</y>
+      <width>12</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #68</name>
+      <x>81</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #71</name>
+      <x>163</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #74</name>
+      <text>Output</text>
+      <x>3</x>
+      <width>42</width>
+      <height>14</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #77</name>
+    <x>5</x>
+    <y>22</y>
+    <width>250</width>
+    <height>46</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #80</name>
+      <x>203</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #83</name>
+      <x>121</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #86</name>
+      <x>41</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="218" green="218" blue="218">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #89</name>
+      <pv_name>$(pmac)acc65e:IN.VAL</pv_name>
+      <x>82</x>
+      <y>19</y>
+      <width>161</width>
+      <height>10</height>
+      <numBits>16</numBits>
+      <square>true</square>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #92</name>
+      <pv_name>$(pmac)acc65e:IN.VAL</pv_name>
+      <y>19</y>
+      <width>81</width>
+      <height>10</height>
+      <startBit>16</startBit>
+      <square>true</square>
+      <foreground_color>
+        <color red="249" green="218" blue="60">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #95</name>
+      <text>0</text>
+      <x>238</x>
+      <y>36</y>
+      <width>12</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #98</name>
+      <text>4</text>
+      <x>198</x>
+      <y>36</y>
+      <width>12</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #101</name>
+      <text>8</text>
+      <x>156</x>
+      <y>36</y>
+      <width>12</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #104</name>
+      <text>12</text>
+      <x>112</x>
+      <y>36</y>
+      <width>12</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #107</name>
+      <text>16</text>
+      <x>70</x>
+      <y>36</y>
+      <width>12</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #110</name>
+      <text>20</text>
+      <x>30</x>
+      <y>36</y>
+      <width>12</width>
+      <height>10</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="70" green="70" blue="70">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #113</name>
+      <x>81</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #116</name>
+      <x>163</x>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>rectangle #119</name>
+      <y>16</y>
+      <width>42</width>
+      <height>18</height>
+      <line_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="133" green="133" blue="133">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #122</name>
+      <text>Input</text>
+      <x>2</x>
+      <width>36</width>
+      <height>14</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+</display>

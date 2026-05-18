@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:30 by epics-->
+<display version="2.0.0">
+  <name>Bckgnd0</name>
+  <x>182</x>
+  <y>77</y>
+  <width>360</width>
+  <height>100</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>360</width>
+    <height>14</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #10</name>
+    <text>$(pmac)</text>
+    <x>10</x>
+    <y>2</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #14</name>
+    <x>10</x>
+    <y>28</y>
+    <width>340</width>
+    <height>62</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #17</name>
+      <text>Bkgfix Servo Timer</text>
+      <width>110</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #20</name>
+      <pv_name>$(pmac)bkg:SvoTm</pv_name>
+      <x>120</x>
+      <width>110</width>
+      <height>12</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>4</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>bar #23</name>
+      <pv_name>$(pmac)bkg:SvoTm</pv_name>
+      <x>190</x>
+      <width>150</width>
+      <height>12</height>
+      <numBits>16</numBits>
+      <square>true</square>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #26</name>
+      <y>25</y>
+      <width>230</width>
+      <height>12</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #29</name>
+        <text>Control Panel H/W</text>
+        <width>110</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #32</name>
+        <pv_name>$(pmac)CtlPnlHwPrt</pv_name>
+        <x>120</x>
+        <width>110</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>4</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>composite #35</name>
+      <y>50</y>
+      <width>261</width>
+      <height>12</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>text #38</name>
+        <text>Machine I/O</text>
+        <width>110</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>text update #41</name>
+        <pv_name>$(pmac)MacIoHwPrt</pv_name>
+        <x>120</x>
+        <width>141</width>
+        <height>12</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="187" green="187" blue="187">
+          </color>
+        </background_color>
+        <format>4</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+  </widget>
+</display>

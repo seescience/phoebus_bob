@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:35 by epics-->
+<display version="2.0.0">
+  <name>Channel32</name>
+  <x>400</x>
+  <y>76</y>
+  <width>540</width>
+  <height>375</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>270</x>
+    <y>321</y>
+    <width>260</width>
+    <height>15</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #9</name>
+    <width>540</width>
+    <height>26</height>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>$(mtr)</text>
+    <x>414</x>
+    <y>4</y>
+    <width>120</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #15</name>
+    <pv_name>$(mtr)AsgnToCs</pv_name>
+    <x>876</x>
+    <y>245</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #19</name>
+    <pv_name>$(mtr)AmpEna</pv_name>
+    <x>876</x>
+    <y>261</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #23</name>
+    <pv_name>$(mtr)StpOnPosLim</pv_name>
+    <x>876</x>
+    <y>277</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #27</name>
+    <pv_name>$(mtr)AsgnToCs.DESC</pv_name>
+    <x>716</x>
+    <y>245</y>
+    <width>150</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #31</name>
+    <pv_name>$(mtr)AmpEna.DESC</pv_name>
+    <x>716</x>
+    <y>261</y>
+    <width>150</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #35</name>
+    <pv_name>$(mtr)StpOnPosLim.DESC</pv_name>
+    <x>716</x>
+    <y>277</y>
+    <width>150</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #39</name>
+    <pv_name>$(mtr)HmCplt</pv_name>
+    <x>876</x>
+    <y>293</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #43</name>
+    <pv_name>$(mtr)AmpFltErr</pv_name>
+    <x>876</x>
+    <y>309</y>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #47</name>
+    <pv_name>$(mtr)HmCplt.DESC</pv_name>
+    <x>716</x>
+    <y>293</y>
+    <width>150</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #51</name>
+    <pv_name>$(mtr)AmpFltErr.DESC</pv_name>
+    <x>716</x>
+    <y>309</y>
+    <width>150</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #55</name>
+    <pv_name>$(mtr)ActPos.DESC</pv_name>
+    <x>4</x>
+    <y>4</y>
+    <width>287</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #59</name>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <x>320</x>
+    <y>27</y>
+    <height>22</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #63</name>
+    <pv_name>$(mtr)StrRsp</pv_name>
+    <x>425</x>
+    <y>30</y>
+    <width>110</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #67</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>J/</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Stop</text>
+    <x>7</x>
+    <y>55</y>
+    <width>50</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #70</name>
+    <x>2</x>
+    <y>52</y>
+    <width>537</width>
+    <height>130</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #73</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>homez</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Homez</text>
+    <x>486</x>
+    <y>55</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #76</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>home</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Home</text>
+    <x>436</x>
+    <y>55</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #79</name>
+    <x>320</x>
+    <y>55</y>
+    <width>100</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #82</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(mtr)StrCmd</pv_name>
+          <value>J-</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(mtr)StrCmd</pv_name>
+      <text>Push-</text>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #85</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(mtr)StrCmd</pv_name>
+          <value>J+</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(mtr)StrCmd</pv_name>
+      <text>Push+</text>
+      <x>50</x>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #88</name>
+    <x>200</x>
+    <y>55</y>
+    <width>100</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #91</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(mtr)StrCmd</pv_name>
+          <value>J-</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(mtr)StrCmd</pv_name>
+      <text>Jog-</text>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #94</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(mtr)StrCmd</pv_name>
+          <value>J+</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(mtr)StrCmd</pv_name>
+      <text>Jog+</text>
+      <x>50</x>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #97</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>K</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Kill</text>
+    <x>70</x>
+    <y>55</y>
+    <width>50</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="222" green="19" blue="9">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #100</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>O0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Enable</text>
+    <x>120</x>
+    <y>55</y>
+    <width>50</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="225" green="144" blue="21">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #103</name>
+    <pv_name>$(mtr)StpOnLim.DESC</pv_name>
+    <x>272</x>
+    <y>80</y>
+    <width>150</width>
+    <height>13</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #107</name>
+    <pv_name>$(mtr)StpOnLim</pv_name>
+    <x>429</x>
+    <y>80</y>
+    <height>13</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #111</name>
+    <x>272</x>
+    <y>128</y>
+    <width>257</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #114</name>
+      <pv_name>$(mtr)AmpFltErr.DESC</pv_name>
+      <width>150</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #118</name>
+      <pv_name>$(mtr)AmpFltErr</pv_name>
+      <x>157</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #122</name>
+    <pv_name>$(mtr)NgLimSet.DESC</pv_name>
+    <x>272</x>
+    <y>96</y>
+    <width>150</width>
+    <height>13</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #126</name>
+    <pv_name>$(mtr)NgLimSet</pv_name>
+    <x>429</x>
+    <y>96</y>
+    <height>13</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #130</name>
+    <x>272</x>
+    <y>112</y>
+    <width>257</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #133</name>
+      <pv_name>$(mtr)PsLimSet.DESC</pv_name>
+      <width>150</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #137</name>
+      <pv_name>$(mtr)PsLimSet</pv_name>
+      <x>157</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #141</name>
+    <x>7</x>
+    <y>112</y>
+    <width>252</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #144</name>
+      <pv_name>$(mtr)ActVel.DESC</pv_name>
+      <width>145</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #148</name>
+      <pv_name>$(mtr)ActVel</pv_name>
+      <x>152</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #152</name>
+    <x>7</x>
+    <y>80</y>
+    <width>252</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #155</name>
+      <pv_name>$(mtr)InPos.DESC</pv_name>
+      <width>145</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #159</name>
+      <pv_name>$(mtr)InPos</pv_name>
+      <x>152</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #163</name>
+    <x>7</x>
+    <y>96</y>
+    <width>252</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #166</name>
+      <text>Actual Position(cts)</text>
+      <width>145</width>
+      <height>13</height>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #169</name>
+      <pv_name>$(mtr)ActPos</pv_name>
+      <x>152</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #173</name>
+    <x>272</x>
+    <y>144</y>
+    <width>257</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #176</name>
+      <pv_name>$(mtr)FatalFolErr.DESC</pv_name>
+      <width>150</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #180</name>
+      <pv_name>$(mtr)FatalFolErr</pv_name>
+      <x>157</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #184</name>
+    <x>7</x>
+    <y>144</y>
+    <width>252</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #187</name>
+      <pv_name>$(mtr)HmCplt</pv_name>
+      <x>152</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #191</name>
+      <pv_name>$(mtr)HmCplt.DESC</pv_name>
+      <width>145</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #195</name>
+    <x>7</x>
+    <y>128</y>
+    <width>252</width>
+    <height>13</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #198</name>
+      <pv_name>$(mtr)AmpEna.DESC</pv_name>
+      <width>145</width>
+      <height>13</height>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #202</name>
+      <pv_name>$(mtr)AmpEna</pv_name>
+      <x>152</x>
+      <height>13</height>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #206</name>
+    <text>MTR CMD=</text>
+    <x>254</x>
+    <y>30</y>
+    <width>65</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #209</name>
+    <text>MOTOR=$(mtrNo)</text>
+    <x>155</x>
+    <y>30</y>
+    <width>75</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #212</name>
+    <text>PMAC=$(pmac)</text>
+    <x>1</x>
+    <y>30</y>
+    <width>110</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #215</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)22</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Jog speed Ix22</text>
+    <x>2</x>
+    <y>211</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #218</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)23</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Home speed Ix23</text>
+    <x>2</x>
+    <y>236</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #221</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)16</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Prg speed Ix16</text>
+    <x>2</x>
+    <y>186</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #224</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)20</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Acceler.time Ix20</text>
+    <x>2</x>
+    <y>261</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #227</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)21</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>S-curve time Ix21</text>
+    <x>2</x>
+    <y>286</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #230</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)34</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Integrat. mode Ix34</text>
+    <x>403</x>
+    <y>186</y>
+    <width>137</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #233</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)64</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Deadband Gain Ix64</text>
+    <x>403</x>
+    <y>211</y>
+    <width>137</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #236</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)65</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Deadband Ix65</text>
+    <x>403</x>
+    <y>236</y>
+    <width>137</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #239</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)67</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Pos.err.limit Ix67</text>
+    <x>403</x>
+    <y>261</y>
+    <width>137</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #242</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)69</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Out DAC limit Ix69</text>
+    <x>403</x>
+    <y>286</y>
+    <width>137</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #245</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)30</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Proport. gain Ix30</text>
+    <x>265</x>
+    <y>186</y>
+    <width>135</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #248</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)31</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Derivat. gain Ix31</text>
+    <x>265</x>
+    <y>211</y>
+    <width>135</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #251</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)32</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Velocity gain Ix32</text>
+    <x>265</x>
+    <y>236</y>
+    <width>135</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #254</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)33</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Integral gain Ix33</text>
+    <x>265</x>
+    <y>261</y>
+    <width>135</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #257</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)35</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Acceler. gain Ix35</text>
+    <x>265</x>
+    <y>285</y>
+    <width>135</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #260</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)25</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Limit addr. Ix25</text>
+    <x>133</x>
+    <y>211</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #263</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)26</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Home offset Ix26</text>
+    <x>133</x>
+    <y>236</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #266</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)28</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>InPos. band Ix28</text>
+    <x>133</x>
+    <y>261</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #269</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)29</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>DAC bias Ix29</text>
+    <x>133</x>
+    <y>286</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #272</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)24</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Flag modes Ix24</text>
+    <x>133</x>
+    <y>186</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #275</name>
+    <x>2</x>
+    <y>312</y>
+    <width>536</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="535.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #279</name>
+    <pv_name>$(mtr)FolErr</pv_name>
+    <x>429</x>
+    <y>160</y>
+    <height>13</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #283</name>
+    <pv_name>$(mtr)FolErr.DESC</pv_name>
+    <x>272</x>
+    <y>160</y>
+    <width>150</width>
+    <height>13</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #287</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>I$(mtrNo)11</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>16*(Fatal Foll.Err.limit), Ix11</text>
+    <x>10</x>
+    <y>159</y>
+    <width>250</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #290</name>
+    <x>3</x>
+    <y>349</y>
+    <width>537</width>
+    <height>24</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>related display #293</name>
+      <actions>
+        <action type="open_display">
+          <file>PmacClock.opi</file>
+          <target>tab</target>
+          <description>Clock</description>
+        </action>
+      </actions>
+      <text>clock</text>
+      <y>3</y>
+      <width>45</width>
+      <height>16</height>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #296</name>
+      <text>PMAC CMD=</text>
+      <x>52</x>
+      <y>3</y>
+      <width>75</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #299</name>
+      <pv_name>$(pmac)StrCmd</pv_name>
+      <x>129</x>
+      <width>160</width>
+      <height>24</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="187" green="187" blue="187">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #303</name>
+      <pv_name>$(pmac)StrRsp</pv_name>
+      <x>298</x>
+      <y>3</y>
+      <width>160</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="238" green="182" blue="43">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>message button #307</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pmac)StrCmd</pv_name>
+          <value>save</value>
+          <description>Write</description>
+        </action>
+      </actions>
+      <pv_name>$(pmac)StrCmd</pv_name>
+      <text>Save PMAC</text>
+      <x>462</x>
+      <y>1</y>
+      <width>75</width>
+      <height>20</height>
+      <background_color>
+        <color red="251" green="243" blue="74">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #310</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>M$(mtrNo)80</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>Is linked to Assy?</text>
+    <x>2</x>
+    <y>319</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #313</name>
+    <x>2</x>
+    <y>342</y>
+    <width>536</width>
+    <height>2</height>
+    <points>
+      <point x="1.0" y="1.0">
+      </point>
+      <point x="535.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #317</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(mtr)StrCmd</pv_name>
+        <value>M$(mtrNo)81</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(mtr)StrCmd</pv_name>
+    <text>What is AssyNo-1?</text>
+    <x>133</x>
+    <y>318</y>
+    <width>130</width>
+    <height>20</height>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #320</name>
+    <text>To unlink type: &amp;AssyNo #$(mtrNo)-&gt;0</text>
+    <x>271</x>
+    <y>322</y>
+    <width>260</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>

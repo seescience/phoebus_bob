@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:48 by epics-->
+<display version="2.0.0">
+  <name>UndulatorCtl_small</name>
+  <x>200</x>
+  <y>200</y>
+  <width>320</width>
+  <height>138</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>320</width>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #9</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>ID$(xx):Stop.VAL</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>ID$(xx):Stop.VAL</pv_name>
+    <text>Abort</text>
+    <x>3</x>
+    <y>25</y>
+    <width>80</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #12</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>ID$(xx):Start.VAL</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>ID$(xx):Start.VAL</pv_name>
+    <text>Start</text>
+    <x>3</x>
+    <y>68</y>
+    <width>80</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>RqsPos</text>
+    <x>100</x>
+    <y>72</y>
+    <width>50</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #18</name>
+    <text>ActPos</text>
+    <x>100</x>
+    <y>50</y>
+    <width>50</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #21</name>
+    <x>3</x>
+    <y>47</y>
+    <width>80</width>
+    <height>18</height>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #24</name>
+    <text>Moving</text>
+    <x>3</x>
+    <y>48</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID$(xx):Busy.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>Positioned</text>
+    <x>3</x>
+    <y>48</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="82" green="218" blue="59">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>ID$(xx):Busy.VAL</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #32</name>
+    <pv_name>ID$(xx):Message3.VAL</pv_name>
+    <x>7</x>
+    <y>116</y>
+    <width>305</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #36</name>
+    <actions>
+      <action type="open_display">
+        <file>UndulatorCtl.opi</file>
+        <target>replace</target>
+        <description>More</description>
+      </action>
+    </actions>
+    <text>More</text>
+    <x>268</x>
+    <y>1</y>
+    <width>50</width>
+    <height>18</height>
+    <background_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #39</name>
+    <text>Sector #$(xx) Undulator Gap Control</text>
+    <x>4</x>
+    <y>3</y>
+    <width>260</width>
+    <height>14</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #42</name>
+    <text>Access:</text>
+    <x>130</x>
+    <y>98</y>
+    <width>57</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #45</name>
+    <pv_name>ID$(xx):AccessSecurity.VAL</pv_name>
+    <x>192</x>
+    <y>98</y>
+    <width>120</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #49</name>
+    <x>2</x>
+    <y>91</y>
+    <width>315</width>
+    <height>44</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #52</name>
+    <text>(keV)</text>
+    <x>152</x>
+    <y>37</y>
+    <width>80</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #55</name>
+    <text>Average</text>
+    <x>152</x>
+    <y>23</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #58</name>
+    <text>Taper</text>
+    <x>237</x>
+    <y>23</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #61</name>
+    <pv_name>ID$(xx):Energy.VAL</pv_name>
+    <x>152</x>
+    <y>50</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #65</name>
+    <pv_name>ID$(xx):EnergySet.VAL</pv_name>
+    <x>152</x>
+    <y>69</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #69</name>
+    <pv_name>ID$(xx):TaperEnergySet.VAL</pv_name>
+    <x>237</x>
+    <y>69</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #73</name>
+    <pv_name>ID$(xx):TaperEnergy.VAL</pv_name>
+    <x>237</x>
+    <y>50</y>
+    <width>80</width>
+    <height>14</height>
+    <foreground_color>
+      <color red="238" green="182" blue="43">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #77</name>
+    <text>(keV)</text>
+    <x>237</x>
+    <y>37</y>
+    <width>80</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #80</name>
+    <text>Harmonic [1-7]:</text>
+    <x>7</x>
+    <y>98</y>
+    <width>97</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #83</name>
+    <pv_name>ID$(xx):HarmonicValue</pv_name>
+    <x>107</x>
+    <y>94</y>
+    <width>20</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

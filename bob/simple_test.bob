@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:51:55 by epics-->
+<display version="2.0.0">
+  <name>simple_test</name>
+  <x>707</x>
+  <y>40</y>
+  <width>400</width>
+  <height>400</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #6</name>
+    <pv_name>test_bo</pv_name>
+    <x>77</x>
+    <y>37</y>
+    <width>109</width>
+    <height>40</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <horizontal>false</horizontal>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #9</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>reset.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>reset.PROC</pv_name>
+    <text>Reset</text>
+    <x>77</x>
+    <y>126</y>
+    <width>108</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

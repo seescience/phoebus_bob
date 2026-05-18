@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:47:44 by epics-->
+<display version="2.0.0">
+  <name>Hy8522Top</name>
+  <x>227</x>
+  <y>135</y>
+  <width>300</width>
+  <height>100</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>Hytec 8522 Scaler</text>
+    <x>49</x>
+    <y>14</y>
+    <width>202</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #9</name>
+    <actions>
+      <action type="open_display">
+        <file>scaler_full.opi</file>
+        <macros>
+          <P>SCALER:</P>
+          <S>SCALER1</S>
+        </macros>
+        <target>tab</target>
+        <description>Scaler</description>
+      </action>
+      <action type="open_display">
+        <file>histogram8522.opi</file>
+        <target>tab</target>
+        <description>Histogram</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>88</x>
+    <y>56</y>
+    <width>125</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+  </widget>
+</display>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-18 13:48:00 by epics-->
+<display version="2.0.0">
+  <name>LoHi1_full</name>
+  <x>310</x>
+  <y>519</y>
+  <width>475</width>
+  <height>90</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <width>490</width>
+    <line_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>$(ax1)</text>
+    <x>350</x>
+    <y>3</y>
+    <width>120</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #12</name>
+    <pv_name>$(ax1)ActPos.DESC</pv_name>
+    <x>4</x>
+    <y>3</y>
+    <width>300</width>
+    <height>14</height>
+    <background_color>
+      <color red="212" green="219" blue="157">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #16</name>
+    <text>RqsPos</text>
+    <y>61</y>
+    <width>55</width>
+    <height>14</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #19</name>
+    <x>167</x>
+    <y>22</y>
+    <width>95</width>
+    <height>60</height>
+    <line_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #22</name>
+    <pv_name>$(ax1)RqsPos.LOPR</pv_name>
+    <x>175</x>
+    <y>58</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #26</name>
+    <text>LOPR</text>
+    <x>187</x>
+    <y>23</y>
+    <width>55</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #29</name>
+    <text>lower plot limit</text>
+    <x>170</x>
+    <y>39</y>
+    <width>90</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #32</name>
+    <x>64</x>
+    <y>22</y>
+    <width>95</width>
+    <height>60</height>
+    <line_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #35</name>
+    <pv_name>$(ax1)RqsPos.DRVL</pv_name>
+    <x>72</x>
+    <y>58</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #39</name>
+    <text>DRVL</text>
+    <x>84</x>
+    <y>23</y>
+    <width>55</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #42</name>
+    <text>lower drive limit</text>
+    <x>67</x>
+    <y>39</y>
+    <width>90</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #45</name>
+    <x>375</x>
+    <y>22</y>
+    <width>95</width>
+    <height>60</height>
+    <line_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #48</name>
+    <pv_name>$(ax1)RqsPos.DRVH</pv_name>
+    <x>383</x>
+    <y>58</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #52</name>
+    <text>DRVH</text>
+    <x>395</x>
+    <y>23</y>
+    <width>55</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #55</name>
+    <text>higher drive limit</text>
+    <x>378</x>
+    <y>39</y>
+    <width>90</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #58</name>
+    <x>271</x>
+    <y>22</y>
+    <width>95</width>
+    <height>60</height>
+    <line_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #61</name>
+    <pv_name>$(ax1)RqsPos.HOPR</pv_name>
+    <x>279</x>
+    <y>58</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #65</name>
+    <text>HOPR</text>
+    <x>291</x>
+    <y>23</y>
+    <width>55</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #68</name>
+    <text>higher plot limit</text>
+    <x>274</x>
+    <y>39</y>
+    <width>90</width>
+    <height>12</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #71</name>
+    <text>&lt;=</text>
+    <x>359</x>
+    <y>16</y>
+    <width>28</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #74</name>
+    <text>&lt;=</text>
+    <x>255</x>
+    <y>16</y>
+    <width>28</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #77</name>
+    <text>&lt;=</text>
+    <x>150</x>
+    <y>16</y>
+    <width>28</width>
+    <height>24</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #80</name>
+    <actions>
+      <action type="open_display">
+        <file>LoHi1.opi</file>
+        <target>replace</target>
+        <description>Less Limits</description>
+      </action>
+    </actions>
+    <text>LESS</text>
+    <x>1</x>
+    <y>22</y>
+    <width>60</width>
+    <height>18</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+</display>
