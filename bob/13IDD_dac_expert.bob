@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-05-18 13:47:11 by epics-->
+<!--Saved on 2026-06-15 08:35:44 by epics-->
 <display version="2.0.0">
   <name>13IDD_dac_expert</name>
   <x>156</x>
@@ -8563,19 +8563,19 @@
         <exp bool_exp="!(pv0==0)">
           <value>false</value>
         </exp>
-        <pv_name>13IDD_Linux:alldone</pv_name>
+        <pv_name>13IDD:alldone</pv_name>
       </rule>
     </rules>
     <widget type="action_button" version="3.0.0">
       <name>message button #1513</name>
       <actions>
         <action type="write_pv">
-          <pv_name>13IDD_Linux:allstop</pv_name>
+          <pv_name>13IDD:allstop</pv_name>
           <value>1</value>
           <description>Write</description>
         </action>
       </actions>
-      <pv_name>13IDD_Linux:allstop</pv_name>
+      <pv_name>13IDD:allstop</pv_name>
       <text>STOP</text>
       <width>105</width>
       <height>80</height>
@@ -9953,9 +9953,9 @@
       <action type="open_display">
         <file>quadEM.opi</file>
         <macros>
-          <P>13IDA:</P>
-          <P_FFT>13IDA:QE1_FFT:</P_FFT>
-          <P_TS>13IDA:QE1_TS:</P_TS>
+          <P>13IDA_CDMONO:</P>
+          <P_FFT>13IDA_CDMONO:QE1_FFT:</P_FFT>
+          <P_TS>13IDA_CDMONO:QE1_TS:</P_TS>
           <R>QE1:</R>
         </macros>
         <target>tab</target>
@@ -9964,8 +9964,8 @@
       <action type="open_display">
         <file>quadEM_TimeSeries.opi</file>
         <macros>
-          <P>13IDA:QE1_TS:</P>
-          <P_FFT>13IDA:QE1_FFT:</P_FFT>
+          <P>13IDA_CDMONO:QE1_TS:</P>
+          <P_FFT>13IDA_CDMONO:QE1_FFT:</P_FFT>
           <T12>Vertical_BPM</T12>
           <T34>Horizontal_BPM</T34>
         </macros>

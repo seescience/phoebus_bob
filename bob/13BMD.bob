@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-05-18 13:49:43 by epics-->
+<!--Saved on 2026-06-08 12:31:00 by epics-->
 <display version="2.0.0">
   <name>13BMD</name>
   <x>557</x>
@@ -2241,6 +2241,24 @@
         <target>tab</target>
         <description>Galil 9 controller</description>
       </action>
+      <action type="open_display">
+        <file>galil_dmc_ctrl.opi</file>
+        <macros>
+          <AMP1>AD</AMP1>
+          <AMP2>EH</AMP2>
+          <DMC>13BMD:Galil10:</DMC>
+          <M1>m105</M1>
+          <M2>m106</M2>
+          <M3>m107</M3>
+          <M4>m108</M4>
+          <M5>m109</M5>
+          <M6>m110</M6>
+          <M7>m111</M7>
+          <M8>m112</M8>
+        </macros>
+        <target>tab</target>
+        <description>Galil 10 controller</description>
+      </action>
     </actions>
     <text></text>
     <y>191</y>
@@ -2252,7 +2270,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #275</name>
+    <name>text #276</name>
     <text>Galil Controllers</text>
     <x>65</x>
     <y>193</y>

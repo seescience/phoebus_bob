@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2023-05-10 12:52:40 by epics-->
+<!--Saved on 2026-05-31 13:03:54 by epics-->
 <display version="2.0.0">
   <name>ID_LVP_pressure</name>
-  <x>642</x>
-  <y>255</y>
+  <x>760</x>
+  <y>484</y>
   <width>479</width>
-  <height>580</height>
+  <height>530</height>
   <background_color>
     <color red="187" green="187" blue="187">
     </color>
@@ -15,9 +15,9 @@
   <widget type="label" version="2.0.0">
     <name>text #6</name>
     <text>1000 Ton Press Load Control</text>
-    <x>75</x>
+    <x>104</x>
     <y>11</y>
-    <width>324</width>
+    <width>270</width>
     <height>25</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
@@ -50,21 +50,22 @@
         <description>PID control</description>
       </action>
       <action type="open_display">
-        <file>Serial_IO.opi</file>
+        <file>motorx_all.opi</file>
         <macros>
-          <REC>$(P)$(R)Serial</REC>
+          <M>m56</M>
+          <P>13IDD:</P>
         </macros>
         <target>tab</target>
-        <description>Generic serial</description>
+        <description>Radial pump</description>
       </action>
       <action type="open_display">
-        <file>scan_more.opi</file>
+        <file>motorx_all.opi</file>
         <macros>
-          <N></N>
-          <S>$(R)RampScan</S>
+          <M>m54</M>
+          <P>13IDD:</P>
         </macros>
         <target>tab</target>
-        <description>Scan</description>
+        <description>Syringe pump</description>
       </action>
     </actions>
     <text>More</text>
@@ -79,7 +80,7 @@
   </widget>
   <widget type="combo" version="2.0.0">
     <name>menu #17</name>
-    <pv_name>$(P)$(R)Value.SCAN</pv_name>
+    <pv_name>$(P)$(R)CurrentPressure.SCAN</pv_name>
     <x>78</x>
     <y>74</y>
     <width>87</width>
@@ -105,7 +106,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>rectangle #23</name>
-    <x>2</x>
+    <x>3</x>
     <y>48</y>
     <width>471</width>
     <height>200</height>
@@ -122,7 +123,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>text update #26</name>
-    <pv_name>$(P)$(R)Value</pv_name>
+    <pv_name>$(P)$(R)CurrentPressure</pv_name>
     <x>193</x>
     <y>74</y>
     <width>93</width>
@@ -349,508 +350,439 @@
     </font>
     <auto_size>true</auto_size>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>composite #72</name>
-    <x>2</x>
-    <y>435</y>
-    <width>471</width>
-    <height>140</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>text #75</name>
-      <text>Ramp Load</text>
-      <x>190</x>
-      <y>5</y>
-      <width>90</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
+  <widget type="label" version="2.0.0">
+    <name>text #72</name>
+    <text>Ramp Load</text>
+    <x>192</x>
+    <y>389</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
       </font>
-      <auto_size>true</auto_size>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>composite #78</name>
-      <x>97</x>
-      <y>34</y>
-      <width>70</width>
-      <height>54</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>text #81</name>
-        <text>Time</text>
-        <x>17</x>
-        <width>36</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="textentry" version="3.0.0">
-        <name>text entry #84</name>
-        <pv_name>$(P)$(R)RampTime.A</pv_name>
-        <y>34</y>
-        <width>70</width>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="115" green="223" blue="255">
-          </color>
-        </background_color>
-        <format>1</format>
-        <show_units>false</show_units>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>text #88</name>
-        <text>(hours)</text>
-        <x>4</x>
-        <y>16</y>
-        <width>63</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>composite #91</name>
-      <x>172</x>
-      <y>34</y>
-      <width>65</width>
-      <height>54</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>text #94</name>
-        <text>Start</text>
-        <x>10</x>
-        <width>45</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>text #97</name>
-        <text>Ramp</text>
-        <x>14</x>
-        <y>16</y>
-        <width>36</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>message button #100</name>
-        <actions>
-          <action type="write_pv">
-            <pv_name>$(P)$(R)StartRamp.PROC</pv_name>
-            <value>1</value>
-            <description>Write</description>
-          </action>
-        </actions>
-        <pv_name>$(P)$(R)StartRamp.PROC</pv_name>
-        <text>Start</text>
-        <y>35</y>
-        <width>65</width>
-        <height>19</height>
-        <background_color>
-          <color red="82" green="218" blue="59">
-          </color>
-        </background_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #103</name>
-      <text>Done</text>
-      <x>33</x>
-      <y>117</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #75</name>
+    <text>Time</text>
+    <x>116</x>
+    <y>418</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
       </font>
-      <foreground_color>
-        <color red="26" green="115" blue="9">
-        </color>
-      </foreground_color>
-      <auto_size>true</auto_size>
-      <rules>
-        <rule name="vis_if_zero" prop_id="visible" out_exp="false">
-          <exp bool_exp="!(pv0==0)">
-            <value>false</value>
-          </exp>
-          <pv_name>$(P)$(R)RampScan.EXSC</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #107</name>
-      <text>Ramping</text>
-      <x>20</x>
-      <y>117</y>
-      <width>63</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="253" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <auto_size>true</auto_size>
-      <rules>
-        <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
-          <exp bool_exp="!(pv0!=0)">
-            <value>false</value>
-          </exp>
-          <pv_name>$(P)$(R)RampScan.EXSC</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #111</name>
-      <text>Status</text>
-      <x>24</x>
-      <y>97</y>
-      <width>54</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <auto_size>true</auto_size>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>rectangle #114</name>
-      <width>471</width>
-      <height>140</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <background_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>composite #117</name>
-      <x>2</x>
-      <y>34</y>
-      <width>90</width>
-      <height>54</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>text #120</name>
-        <text>Final Load</text>
-        <width>90</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>text #123</name>
-        <text>(tons)</text>
-        <x>18</x>
-        <y>16</y>
-        <width>54</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-      <widget type="textentry" version="3.0.0">
-        <name>text entry #126</name>
-        <pv_name>$(P)$(R)RampScan.P1EP</pv_name>
-        <x>10</x>
-        <y>34</y>
-        <width>70</width>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="115" green="223" blue="255">
-          </color>
-        </background_color>
-        <format>1</format>
-        <show_units>false</show_units>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #130</name>
-      <text>Point</text>
-      <x>111</x>
-      <y>97</y>
-      <width>45</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <auto_size>true</auto_size>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #133</name>
-      <text>Stop</text>
-      <x>256</x>
-      <y>34</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #136</name>
-      <text>Ramp</text>
-      <x>256</x>
-      <y>50</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #139</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(P)$(R)RampScan.EXSC</pv_name>
-          <value>0</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>$(P)$(R)RampScan.EXSC</pv_name>
-      <text>Stop</text>
-      <x>242</x>
-      <y>69</y>
-      <width>65</width>
-      <height>19</height>
-      <background_color>
-        <color red="253" green="0" blue="0">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #142</name>
-      <text>Resume</text>
-      <x>406</x>
-      <y>34</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #145</name>
-      <text>Ramp</text>
-      <x>406</x>
-      <y>50</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #148</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(P)$(R)RampScan.PAUS</pv_name>
-          <value>0</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>$(P)$(R)RampScan.PAUS</pv_name>
-      <text>Resume</text>
-      <x>392</x>
-      <y>69</y>
-      <width>65</width>
-      <height>19</height>
-      <background_color>
-        <color red="251" green="243" blue="74">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #151</name>
-      <text>Pause</text>
-      <x>330</x>
-      <y>34</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #154</name>
-      <text>Ramp</text>
-      <x>330</x>
-      <y>50</y>
-      <width>36</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>message button #157</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(P)$(R)RampScan.PAUS</pv_name>
-          <value>1</value>
-          <description>Write</description>
-        </action>
-      </actions>
-      <pv_name>$(P)$(R)RampScan.PAUS</pv_name>
-      <text>Pause</text>
-      <x>316</x>
-      <y>69</y>
-      <width>65</width>
-      <height>19</height>
-      <background_color>
-        <color red="251" green="243" blue="74">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>text #160</name>
-      <text>Message</text>
-      <x>275</x>
-      <y>97</y>
-      <width>54</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <auto_size>true</auto_size>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>text update #163</name>
-      <pv_name>$(P)$(R)RampScan.SMSG</pv_name>
-      <x>192</x>
-      <y>116</y>
-      <width>270</width>
-      <height>15</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="10" green="0" blue="184">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="218" green="218" blue="218">
-        </color>
-      </background_color>
-      <format>1</format>
-      <show_units>false</show_units>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>composite #167</name>
-      <x>89</x>
-      <y>117</y>
-      <width>89</width>
-      <height>15</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="textupdate" version="2.0.0">
-        <name>text update #170</name>
-        <pv_name>$(P)$(R)RampScan.NPTS</pv_name>
-        <x>49</x>
-        <width>40</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="200" green="200" blue="200">
-          </color>
-        </background_color>
-        <format>1</format>
-        <show_units>false</show_units>
-        <horizontal_alignment>1</horizontal_alignment>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>text update #174</name>
-        <pv_name>$(P)$(R)RampScan.CPT</pv_name>
-        <width>40</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="200" green="200" blue="200">
-          </color>
-        </background_color>
-        <format>1</format>
-        <show_units>false</show_units>
-        <horizontal_alignment>1</horizontal_alignment>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>text #178</name>
-        <text>/</text>
-        <x>41</x>
-        <width>7</width>
-        <height>15</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <horizontal_alignment>1</horizontal_alignment>
-      </widget>
-    </widget>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>text entry #181</name>
-    <pv_name>$(P)$(R)Switch.B</pv_name>
+    <name>text entry #78</name>
+    <pv_name>$(P)$(R)RampTime</pv_name>
+    <x>99</x>
+    <y>452</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #82</name>
+    <text>(hours)</text>
+    <x>103</x>
+    <y>434</y>
+    <width>63</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #85</name>
+    <text>Start</text>
+    <x>184</x>
+    <y>418</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #88</name>
+    <text>Ramp</text>
+    <x>188</x>
+    <y>434</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #91</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)StartRamp.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)StartRamp.PROC</pv_name>
+    <text>Start</text>
+    <x>174</x>
+    <y>453</y>
+    <width>65</width>
+    <height>19</height>
+    <background_color>
+      <color red="82" green="218" blue="59">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #94</name>
+    <text>Done</text>
+    <x>35</x>
+    <y>501</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="26" green="115" blue="9">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(R)EnableRamp</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #98</name>
+    <text>Ramping</text>
+    <x>22</x>
+    <y>501</y>
+    <width>63</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+    <rules>
+      <rule name="vis_if_not_zero" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(R)EnableRamp</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #102</name>
+    <text>Status</text>
+    <x>26</x>
+    <y>481</y>
+    <width>54</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #105</name>
+    <x>3</x>
+    <y>384</y>
+    <width>471</width>
+    <height>140</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #108</name>
+    <text>Final Load</text>
+    <x>4</x>
+    <y>418</y>
+    <width>90</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #111</name>
+    <text>(tons)</text>
+    <x>22</x>
+    <y>434</y>
+    <width>54</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #114</name>
+    <pv_name>$(P)$(R)RampTarget</pv_name>
+    <x>14</x>
+    <y>452</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #118</name>
+    <text>Point</text>
+    <x>113</x>
+    <y>481</y>
+    <width>45</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #121</name>
+    <text>Stop</text>
+    <x>258</x>
+    <y>418</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #124</name>
+    <text>Ramp</text>
+    <x>258</x>
+    <y>434</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #127</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)EnableRamp</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)EnableRamp</pv_name>
+    <text>Stop</text>
+    <x>244</x>
+    <y>453</y>
+    <width>65</width>
+    <height>19</height>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #130</name>
+    <text>Resume</text>
+    <x>408</x>
+    <y>418</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #133</name>
+    <text>Ramp</text>
+    <x>408</x>
+    <y>434</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #136</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)EnableRamp</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)EnableRamp</pv_name>
+    <text>Resume</text>
+    <x>394</x>
+    <y>453</y>
+    <width>65</width>
+    <height>19</height>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #139</name>
+    <text>Pause</text>
+    <x>332</x>
+    <y>418</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #142</name>
+    <text>Ramp</text>
+    <x>332</x>
+    <y>434</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #145</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)EnableRamp</pv_name>
+        <value>0</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)EnableRamp</pv_name>
+    <text>Pause</text>
+    <x>318</x>
+    <y>453</y>
+    <width>65</width>
+    <height>19</height>
+    <background_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #148</name>
+    <pv_name>$(P)$(R)StartRamp.D</pv_name>
+    <x>140</x>
+    <y>501</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>text update #152</name>
+    <pv_name>$(P)$(R)RampCounter</pv_name>
+    <x>91</x>
+    <y>501</y>
+    <width>40</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #156</name>
+    <text>/</text>
+    <x>132</x>
+    <y>501</y>
+    <width>7</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #159</name>
+    <pv_name>$(P)$(R)SwitchoverPressure</pv_name>
     <x>195</x>
     <y>201</y>
     <width>91</width>
@@ -867,7 +799,7 @@
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #185</name>
+    <name>text #163</name>
     <text>Switchover Load</text>
     <x>49</x>
     <y>204</y>
@@ -880,7 +812,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #188</name>
+    <name>text #166</name>
     <text>Radial to Syringe</text>
     <x>295</x>
     <y>204</y>
@@ -892,215 +824,8 @@
     </font>
     <auto_size>true</auto_size>
   </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #191</name>
-    <pv_name>$(P)$(RADIAL_DAC).VAL</pv_name>
-    <x>26</x>
-    <y>283</y>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="scrollbar" version="2.0.0">
-    <name>valuator #195</name>
-    <pv_name>$(P)$(RADIAL_DAC).VAL</pv_name>
-    <x>160</x>
-    <y>283</y>
-    <width>152</width>
-    <bar_length>1.0</bar_length>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #199</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(P)$(RADIAL_DAC)TweakDown.PROC</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>$(P)$(RADIAL_DAC)TweakDown.PROC</pv_name>
-    <text>&lt;</text>
-    <x>136</x>
-    <y>284</y>
-    <width>20</width>
-    <height>19</height>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #202</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(P)$(RADIAL_DAC)TweakUp.PROC</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>$(P)$(RADIAL_DAC)TweakUp.PROC</pv_name>
-    <text>&gt;</text>
-    <x>316</x>
-    <y>284</y>
-    <width>20</width>
-    <height>19</height>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #205</name>
-    <pv_name>$(P)$(RADIAL_DAC)TweakVal</pv_name>
-    <x>355</x>
-    <y>283</y>
-    <width>50</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
   <widget type="label" version="2.0.0">
-    <name>text #209</name>
-    <text>Tweak</text>
-    <x>408</x>
-    <y>286</y>
-    <width>45</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #212</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(P)$(R)StopRadial.PROC</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>$(P)$(R)StopRadial.PROC</pv_name>
-    <text>Stop motor</text>
-    <x>36</x>
-    <y>260</y>
-    <width>80</width>
-    <height>19</height>
-    <background_color>
-      <color red="253" green="0" blue="0">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #215</name>
-    <pv_name>$(P)$(RADIAL_DAC).DRVL</pv_name>
-    <x>115</x>
-    <y>311</y>
-    <width>80</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #219</name>
-    <pv_name>$(P)$(RADIAL_DAC).DRVH</pv_name>
-    <x>270</x>
-    <y>311</y>
-    <width>80</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #223</name>
-    <text>Upper limit</text>
-    <x>359</x>
-    <y>314</y>
-    <width>99</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #226</name>
-    <text>Lower limit</text>
-    <x>11</x>
-    <y>314</y>
-    <width>99</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #229</name>
-    <text>Radial Speed(%)</text>
-    <x>162</x>
-    <y>257</y>
-    <width>150</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>rectangle #232</name>
-    <x>2</x>
-    <y>254</y>
-    <width>471</width>
-    <height>85</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color red="0" green="0" blue="0">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #235</name>
+    <name>text #169</name>
     <text>Blowout Drop</text>
     <x>75</x>
     <y>227</y>
@@ -1113,7 +838,7 @@
     <auto_size>true</auto_size>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>text entry #238</name>
+    <name>text entry #172</name>
     <pv_name>$(P)$(R)Blowout.C</pv_name>
     <x>195</x>
     <y>224</y>
@@ -1130,215 +855,8 @@
     <show_units>false</show_units>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>rectangle #242</name>
-    <x>2</x>
-    <y>345</y>
-    <width>475</width>
-    <height>85</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color red="0" green="0" blue="0">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #245</name>
-    <text>Syringe Speed(%)</text>
-    <x>157</x>
-    <y>348</y>
-    <width>160</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #248</name>
-    <pv_name>$(P)$(SYRINGE_DAC).VAL</pv_name>
-    <x>26</x>
-    <y>374</y>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="scrollbar" version="2.0.0">
-    <name>valuator #252</name>
-    <pv_name>$(P)$(SYRINGE_DAC).VAL</pv_name>
-    <x>160</x>
-    <y>374</y>
-    <width>152</width>
-    <bar_length>1.0</bar_length>
-  </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #256</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(P)$(SYRINGE_DAC)TweakDown.PROC</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>$(P)$(SYRINGE_DAC)TweakDown.PROC</pv_name>
-    <text>&lt;</text>
-    <x>136</x>
-    <y>375</y>
-    <width>20</width>
-    <height>19</height>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #259</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(P)$(SYRINGE_DAC)TweakUp.PROC</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>$(P)$(SYRINGE_DAC)TweakUp.PROC</pv_name>
-    <text>&gt;</text>
-    <x>316</x>
-    <y>375</y>
-    <width>20</width>
-    <height>19</height>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #262</name>
-    <pv_name>$(P)$(SYRINGE_DAC)TweakVal</pv_name>
-    <x>355</x>
-    <y>374</y>
-    <width>50</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #266</name>
-    <text>Tweak</text>
-    <x>408</x>
-    <y>377</y>
-    <width>45</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #269</name>
-    <actions>
-      <action type="write_pv">
-        <pv_name>$(P)$(R)StopSyringe.PROC</pv_name>
-        <value>1</value>
-        <description>Write</description>
-      </action>
-    </actions>
-    <pv_name>$(P)$(R)StopSyringe.PROC</pv_name>
-    <text>Stop motor</text>
-    <x>36</x>
-    <y>351</y>
-    <width>80</width>
-    <height>19</height>
-    <background_color>
-      <color red="253" green="0" blue="0">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #272</name>
-    <pv_name>$(P)$(SYRINGE_DAC).DRVL</pv_name>
-    <x>115</x>
-    <y>402</y>
-    <width>80</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>text entry #276</name>
-    <pv_name>$(P)$(SYRINGE_DAC).DRVH</pv_name>
-    <x>270</x>
-    <y>402</y>
-    <width>80</width>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="115" green="223" blue="255">
-      </color>
-    </background_color>
-    <format>1</format>
-    <show_units>false</show_units>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #280</name>
-    <text>Upper limit</text>
-    <x>359</x>
-    <y>405</y>
-    <width>99</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>text #283</name>
-    <text>Lower limit</text>
-    <x>11</x>
-    <y>405</y>
-    <width>99</width>
-    <height>15</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="16.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>message button #286</name>
+    <name>message button #176</name>
     <actions>
       <action type="write_pv">
         <pv_name>$(P)$(R)StopBoth.PROC</pv_name>
@@ -1358,7 +876,7 @@
     </background_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>text update #289</name>
+    <name>text update #179</name>
     <pv_name>$(P)$(R)BlowoutLatch</pv_name>
     <x>293</x>
     <y>225</y>
@@ -1381,7 +899,7 @@
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>message button #293</name>
+    <name>message button #183</name>
     <actions>
       <action type="write_pv">
         <pv_name>$(P)$(R)BlowoutLatch</pv_name>
@@ -1401,7 +919,7 @@
     </background_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>text #296</name>
+    <name>text #186</name>
     <text>Limit</text>
     <x>291</x>
     <y>74</y>
@@ -1420,7 +938,331 @@
         <exp bool_exp="!(pv0!=0)">
           <value>false</value>
         </exp>
-        <pv_name>$(P)$(R)Value.STAT</pv_name>
+        <pv_name>$(P)$(R)CurrentPressure.STAT</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #190</name>
+    <text>Radial Speed</text>
+    <x>179</x>
+    <y>257</y>
+    <width>120</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #193</name>
+    <x>3</x>
+    <y>254</y>
+    <width>471</width>
+    <height>60</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #196</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)StopRadial.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)StopRadial.PROC</pv_name>
+    <text>Stop motor</text>
+    <x>11</x>
+    <y>285</y>
+    <width>80</width>
+    <height>19</height>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #199</name>
+    <text>Current</text>
+    <x>101</x>
+    <y>289</y>
+    <width>63</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #202</name>
+    <pv_name>$(RADIAL_MOTOR).JVEL</pv_name>
+    <x>169</x>
+    <y>286</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #206</name>
+    <text>Maximum</text>
+    <x>279</x>
+    <y>288</y>
+    <width>63</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #209</name>
+    <pv_name>$(RADIAL_MOTOR).VMAX</pv_name>
+    <x>347</x>
+    <y>285</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #213</name>
+    <text>Syringe Speed</text>
+    <x>174</x>
+    <y>322</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #216</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)StopSyringe.PROC</pv_name>
+        <value>1</value>
+        <description>Write</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)StopSyringe.PROC</pv_name>
+    <text>Stop motor</text>
+    <x>11</x>
+    <y>347</y>
+    <width>80</width>
+    <height>19</height>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #219</name>
+    <text>Current</text>
+    <x>101</x>
+    <y>351</y>
+    <width>63</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #222</name>
+    <pv_name>$(SYRINGE_MOTOR).JVEL</pv_name>
+    <x>169</x>
+    <y>348</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #226</name>
+    <text>Maximum</text>
+    <x>279</x>
+    <y>350</y>
+    <width>63</width>
+    <height>15</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #229</name>
+    <pv_name>$(SYRINGE_MOTOR).VMAX</pv_name>
+    <x>347</x>
+    <y>347</y>
+    <width>80</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #233</name>
+    <x>3</x>
+    <y>319</y>
+    <width>471</width>
+    <height>60</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #236</name>
+    <text>Moving</text>
+    <x>340</x>
+    <y>259</y>
+    <width>98</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(((pv0==0)&amp;&amp;(pv1==0)))">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:m56.DMOV</pv_name>
+        <pv_name>13IDD:m56.STAT</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #240</name>
+    <text>Moving</text>
+    <x>338</x>
+    <y>258</y>
+    <width>98</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(((pv0==0)&amp;&amp;(pv1==0)))">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:m56.DMOV</pv_name>
+        <pv_name>13IDD:m56.STAT</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #244</name>
+    <text>Moving</text>
+    <x>340</x>
+    <y>324</y>
+    <width>98</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(((pv0==0)&amp;&amp;(pv1==0)))">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:m54.DMOV</pv_name>
+        <pv_name>13IDD:m54.STAT</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #248</name>
+    <text>Moving</text>
+    <x>338</x>
+    <y>323</y>
+    <width>98</width>
+    <height>26</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="153" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules>
+      <rule name="vis_calc" prop_id="visible" out_exp="false">
+        <exp bool_exp="!(((pv0==0)&amp;&amp;(pv1==0)))">
+          <value>false</value>
+        </exp>
+        <pv_name>13IDD:m54.DMOV</pv_name>
+        <pv_name>13IDD:m54.STAT</pv_name>
       </rule>
     </rules>
   </widget>
