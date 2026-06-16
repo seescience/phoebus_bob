@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-31 13:03:58 by epics-->
+<display version="2.0.0">
+  <name>All_IOC_status_argo_2</name>
+  <x>180</x>
+  <y>130</y>
+  <width>660</width>
+  <height>350</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>13-BM-D</text>
+    <x>270</x>
+    <y>10</y>
+    <width>120</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>IOC prefix</text>
+    <x>15</x>
+    <y>65</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>Host</text>
+    <x>170</x>
+    <y>65</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #15</name>
+    <text>Uptime</text>
+    <x>270</x>
+    <y>65</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #18</name>
+    <x>350</x>
+    <y>45</y>
+    <width>60</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #21</name>
+      <text>CA PV</text>
+      <x>5</x>
+      <width>50</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #24</name>
+      <text>conns.</text>
+      <y>20</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #27</name>
+    <text>IOC CPU</text>
+    <x>417</x>
+    <y>45</y>
+    <width>70</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #30</name>
+    <text>load</text>
+    <x>431</x>
+    <y>65</y>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>composite #33</name>
+    <x>500</x>
+    <y>45</y>
+    <width>60</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #36</name>
+      <text>Free</text>
+      <x>10</x>
+      <width>40</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #39</name>
+      <text>memory</text>
+      <y>20</y>
+      <width>60</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #42</name>
+    <macros>
+      <PREFIX>13BMD</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>90</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #44</name>
+    <macros>
+      <PREFIX>13BMD_DAC_XPS</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>115</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #46</name>
+    <macros>
+      <PREFIX>13BMD_LVP_XPS</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>140</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #48</name>
+    <macros>
+      <PREFIX>13BMD_AEROTECH</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>165</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #50</name>
+    <macros>
+      <PREFIX>13BMD_PACE5000</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>190</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #52</name>
+    <macros>
+      <PREFIX>13BMDLF1</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>215</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #54</name>
+    <macros>
+      <PREFIX>13BMDPG1</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>240</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #56</name>
+    <macros>
+      <PREFIX>13BMDPG2</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>265</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #58</name>
+    <macros>
+      <PREFIX>13BMDPG3</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>290</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>composite #60</name>
+    <macros>
+      <PREFIX>13BMDPG4</PREFIX>
+    </macros>
+    <file>IOC_status.bob</file>
+    <x>10</x>
+    <y>315</y>
+    <width>640</width>
+    <height>21</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #62</name>
+    <x>5</x>
+    <y>5</y>
+    <width>650</width>
+    <height>340</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+</display>
